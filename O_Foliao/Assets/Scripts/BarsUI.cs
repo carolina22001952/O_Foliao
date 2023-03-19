@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class BarsUI : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class BarsUI : MonoBehaviour
     [SerializeField]
     private Image energyFill;
     [SerializeField]
-    private Text text;
+    private TextMeshProUGUI text;
 
 
 
@@ -53,7 +54,7 @@ public class BarsUI : MonoBehaviour
         energySlider.value = energy;
         energyFill.color = energyGradient.Evaluate(energySlider.value);
 
-        text.text = money.ToString() + "€";
+        text.text = money.ToString() + "ï¿½";
     }
 
 
