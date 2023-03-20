@@ -6,7 +6,6 @@ public class Movement: MonoBehaviour
 {
     public Player player;
     private bool timetomove = true;
-    private bool choice = false;
     private bool stillmoving = false;
     private bool moving = false;
 
@@ -19,14 +18,19 @@ public class Movement: MonoBehaviour
         
     }
 
-    public bool isMoving()
+    public bool IsMoving()
     {
         return timetomove;
     }
 
-    public void TimetoMove()
+    public void TakeMovementInput()
     {
         timetomove = true;
+    }
+
+    public void StopTakingMovementInput()
+    {
+        timetomove = false;
     }
     public void Update()
     {
@@ -73,7 +77,6 @@ public class Movement: MonoBehaviour
                                 waypoints.Add(node.target.transform);
                                 Move(player, waypoints[waypoints.Count - 1].gameObject);
                                 moving = true;
-                                choice = true;
 
                                 break;
                             }
@@ -96,9 +99,8 @@ public class Movement: MonoBehaviour
 
                     if (waypoints.Count == 0)
                     {
-                        choice = false;
                         moving = false;
-                        timetomove = false;
+                        StopTakingMovementInput();
                         stillmoving = false;
                     }
                 }
@@ -109,11 +111,7 @@ public class Movement: MonoBehaviour
         }
     }
 
-    IEnumerator StillMoving(Player player,GameObject child)
-    {
-        yield return new WaitWhile(() => player.gameObject.transform.position != child.transform.position);
-    }
-
+   
 
 
 }

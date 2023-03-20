@@ -141,13 +141,10 @@ public class PrimaryEventList : MonoBehaviour
         {
             case 1:
                 return GetDay1Events();
-                break;
             case 2:
                 return GetDay2Events();
-                break;
             case 3:
                 return GetDay3Events();
-                break;
             default:
                 throw new NotImplementedException("Day" + time.GetDay() + "unknown");
         }
@@ -181,7 +178,6 @@ public class PrimaryEventList : MonoBehaviour
             if(events.eventType == EventType.Primary)
             {
                 return EventType.Primary;
-                break;
             }
         }
 
@@ -190,7 +186,6 @@ public class PrimaryEventList : MonoBehaviour
             if (events.eventType == EventType.Secondary)
             {
                 return EventType.Secondary;
-                break;
             }
         }
 
@@ -199,7 +194,6 @@ public class PrimaryEventList : MonoBehaviour
             if (events.eventType == EventType.Random)
             {
                 return EventType.Secondary;
-                break;
             }
         }
 

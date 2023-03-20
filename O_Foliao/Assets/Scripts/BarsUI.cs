@@ -25,7 +25,7 @@ public class BarsUI : MonoBehaviour
     [SerializeField]
     private Image energyFill;
     [SerializeField]
-    private TextMeshProUGUI text;
+    private TextMeshProUGUI moneyText;
 
 
 
@@ -54,7 +54,7 @@ public class BarsUI : MonoBehaviour
         energySlider.value = energy;
         energyFill.color = energyGradient.Evaluate(energySlider.value);
 
-        text.text = money.ToString() + "�";
+        moneyText.text = money.ToString() + "€";
     }
 
 

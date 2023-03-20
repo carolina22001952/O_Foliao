@@ -18,12 +18,12 @@ public class Game : MonoBehaviour
     private Events randomEvent;
     private void Update()
     {
-        if (move.isMoving() == true)
+        if (move.IsMoving() == true)
         {
             GetComponent<Movement>().enabled = true;
 
         }
-        if (move.isMoving() == false)
+        if (move.IsMoving() == false)
         {
             GetComponent<Movement>().enabled = false;
 
@@ -32,14 +32,17 @@ public class Game : MonoBehaviour
                 player.Position().GetComponent<ILocal>().localInteraction(player, clock);
             }
 
-            /* randomEvent = eventsList.ChooseRandomEvent(player,node,eventsUi);
-             eventsUi.EventUi(randomEvent);*/
             if (clock.GetDay() >= 3)
             {
                 sceneChanger.Win();
             }
-            move.TimetoMove();
 
+            StartMovement();
         }
+    }
+
+    public void StartMovement()
+    {
+        move.TakeMovementInput();
     }
 }

@@ -7,15 +7,26 @@ using UnityEngine.UI;
 public class UIEvents : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI dialogueText;
-    [SerializeField]
-    private TextMeshProUGUI npcName;
+    private GameObject DialogCanvas;
+
+    [Header("Dialog Object")]
     [SerializeField]
     private GameObject dialogueGameObject;
     [SerializeField]
+    private TextMeshProUGUI dialogueText;
+    [SerializeField]
+    private TextMeshProUGUI nameText;
+
+
+    [Header("Character Objects")]
+    [SerializeField]
+    private GameObject npcSpriteGameObject;
     private Sprite npcSprite;
+    [SerializeField]
+    private GameObject characterSpriteGameObject;
+    private Sprite charatcerSprite;
 
-
+    [Header("Player Choices Objects")]
     [SerializeField]
     private GameObject playerChoicesGameObjectGroup;
     [SerializeField]
@@ -36,18 +47,40 @@ public class UIEvents : MonoBehaviour
 
 
 
-    [SerializeField]
-    public float textspeed;
 
-    private void Start()
+    public void OpenCanvas()
     {
-
+        DialogCanvas.SetActive(true);
     }
 
+    public void CloseCanvas()
+    {
+        DialogCanvas.SetActive(false);
+    }
     public void UpdateNpcSprite(Sprite sprite)
     {
 
         npcSprite = sprite;
+    }
+
+    public void OpenNpcGameObject()
+    {
+        npcSpriteGameObject.SetActive(true);
+    }
+
+    public void CloseNpcGameObject()
+    {
+        npcSpriteGameObject.SetActive(false);
+    }
+
+    public void OpenCharacterGameObject()
+    {
+        characterSpriteGameObject.SetActive(true);
+    }
+
+    public void CloseCharacterGameObject()
+    {
+        characterSpriteGameObject.SetActive(false);
     }
 
     public string GetDialogueText()
@@ -101,7 +134,7 @@ public class UIEvents : MonoBehaviour
 
     public void UpdateNpcName(string name)
     {
-        npcName.text = name;
+        nameText.text = name;
     }
 
     public void UpdateNpcDialogue(string dialogue)
@@ -119,8 +152,57 @@ public class UIEvents : MonoBehaviour
         dialogueGameObject.SetActive(false);
     }
 
-    public void UpdateEventUI(Events events)
+    public void OpenPlayerChoicesGroup()
     {
-
+        playerChoicesGameObjectGroup.SetActive(true);
     }
+    public void ClosePlayerChoicesGroup()
+    {
+        playerChoicesGameObjectGroup.SetActive(false);
+    }
+
+    public void OpenMultipleChoices(int numberOfChoices)
+    {
+        OpenPlayerChoicesGroup();
+        switch(numberOfChoices)
+        {
+            case 0:
+                break;
+            case 1:
+                OpenPlayerChoice1();
+                break;
+            case 2:
+                OpenPlayerChoice1();
+                OpenPlayerChoice2();
+                break;
+            case 3:
+                OpenPlayerChoice1();
+                OpenPlayerChoice2();
+                OpenPlayerChoice3();
+                break;
+        }
+    }
+
+    public void CloseMultipleChoices(int numberOfChoices)
+    {
+        ClosePlayerChoicesGroup();
+        switch (numberOfChoices)
+        {
+            case 0:
+                break;
+            case 1:
+                ClosePlayerChoice1();
+                break;
+            case 2:
+                ClosePlayerChoice1();
+                ClosePlayerChoice2();
+                break;
+            case 3:
+                ClosePlayerChoice1();
+                ClosePlayerChoice2();
+                ClosePlayerChoice3();
+                break;
+        }
+    }
+
 }
