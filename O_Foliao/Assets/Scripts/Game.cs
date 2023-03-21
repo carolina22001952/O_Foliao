@@ -8,8 +8,6 @@ public class Game : MonoBehaviour
 {
     [SerializeField] private Player player;
     [SerializeField] private Movement move;
-    /*  [SerializeField] private EventsUi eventsUi;*/
-    [SerializeField] private EventList eventsList;
     [SerializeField] private Node node;
     [SerializeField] private Clock clock;
     [SerializeField] private SceneChanger sceneChanger;
@@ -29,6 +27,15 @@ public class Game : MonoBehaviour
         {
             sceneChanger.Win();
         }   
+
+        if(player.GetEnergy() <= 0)
+        {
+            sceneChanger.DeathEnergy();
+        }
+        if(player.GetAlcohol() >= 100)
+        {
+            sceneChanger.DeathAlcool();
+        }
     }
 
     public void CheckForInteraction()
