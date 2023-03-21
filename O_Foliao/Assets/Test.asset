@@ -18,7 +18,7 @@ MonoBehaviour:
     _npc: {fileID: 11400000, guid: f1e17f47e3c49b1449d68a5452164259, type: 2}
     _background: {fileID: 21300000, guid: 25cd164b6b0ccdc46a5b6e62a2b01e6f, type: 3}
   - _text: bro
-    _npc: {fileID: 11400000, guid: f1e17f47e3c49b1449d68a5452164259, type: 2}
+    _npc: {fileID: 11400000, guid: 077692066a602bc419e237bf3cccc85c, type: 2}
     _background: {fileID: 21300000, guid: 25cd164b6b0ccdc46a5b6e62a2b01e6f, type: 3}
   - _text: nao sei
     _npc: {fileID: 11400000, guid: f1e17f47e3c49b1449d68a5452164259, type: 2}
@@ -34,21 +34,21 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: 0
-      _moneyPlus: 0
-      _energyPlus: 0
+      _timePassed: 10
+      _alcoolPlus: 10
+      _funPlus: 10
+      _moneyPlus: 10
+      _energyPlus: -10
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000}
     _failedEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: 0
-      _moneyPlus: 0
-      _energyPlus: 0
+      _timePassed: 5
+      _alcoolPlus: 5
+      _funPlus: 5
+      _moneyPlus: 5
+      _energyPlus: -5
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000}
   - _choiceDialogue: Escolha 2
     _maxAlcool: 0
     _minAlcool: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 146818dca8787be4f87e4b7f0812776c, type: 2}
+      _nextEvent: {fileID: 11400000}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -71,6 +71,28 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000}
+  - _choiceDialogue: ghgh
+    _maxAlcool: 0
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
   alcool: 0
   energy: 0
   _timeOfDay: 0

@@ -82,8 +82,8 @@ public struct Dialogue
     [SerializeField] private string _text;
     public string text { get { return _text; } }
 
-    [SerializeField] private NPC _npc;
-    public NPC npc { get { return _npc; } }
+    [SerializeField] private NPCData _npc;
+    public NPCData npc { get { return _npc; } }
 
     [SerializeField] private Sprite _background;
     public Sprite background { get { return _background; } }
@@ -111,8 +111,22 @@ public struct EventOutcome
     [SerializeField] private Achievement _achievement;
     public Achievement achievement { get { return _achievement; } }
 
-    [SerializeField] Events _nextEvent;
-    public Events nextEvent { get { return _nextEvent; } }
+    [SerializeField] Events? _nextEvent;
+    public Events? nextEvent { get { return _nextEvent; } }
+
+
+}
+
+public struct NPCChanges
+{
+    [SerializeField] private Achievement[] _achievement;
+    public Achievement[] achievement { get { return _achievement; } }
+
+    [SerializeField] private NPCData _npc;
+    public NPCData npc { get { return _npc; } }
+
+    [SerializeField] private int _friendshipPointsPlus;
+    public int friendshipPointsPlus { get { return _friendshipPointsPlus; } }
 
 
 }

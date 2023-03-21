@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement: MonoBehaviour
 {
+    public Game game;
     public Player player;
     private bool timetomove = true;
     private bool stillmoving = false;
@@ -101,7 +102,9 @@ public class Movement: MonoBehaviour
                     {
                         moving = false;
                         StopTakingMovementInput();
+                        game.CheckForInteraction();
                         stillmoving = false;
+                        
                     }
                 }
 

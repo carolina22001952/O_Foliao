@@ -31,7 +31,7 @@ public class BatataLocal : MonoBehaviour, ILocal
         events = eventListTools.UnionEvents(events, resourceEvents);
         //Get only 1 type of events and choose a random one
         //primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
-        chosenEvent = eventListTools.ChooseARandomEvent(events);
+        chosenEvent = eventListTools.ChooseARandomEvent(events);   
         //Stop the movement of the player
         uiEventManager.StartDialogue(chosenEvent);
     }

@@ -1,6 +1,8 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
@@ -10,18 +12,20 @@ public class UIEventManager : MonoBehaviour
     public Player player;
     public bool reading = false;
     private int index = 0;
-    private float textSpeed = 0.3f;
+    [SerializeField]
+    private float textSpeed = 0.8f;
     private Events currentEvent;
+    public Clock time;
     [SerializeField]
     private Game game;
 
     private void Start()
     {
         uiEvents.UpdateNpcDialogue(string.Empty);
+
     }
     public void StartDialogue(Events events)
     {
-        Debug.Log("Yup");
         uiEvents.OpenCanvas();
         int index = 0;
         currentEvent = events;
@@ -29,14 +33,15 @@ public class UIEventManager : MonoBehaviour
         uiEvents.OpenDialogueObject();
         uiEvents.UpdateNpcName(events.dialogue[index].npc.name);
         uiEvents.UpdateNpcSprite(events.dialogue[index].npc.sprite);
+        uiEvents.CloseMultipleChoices(3);
         StartCoroutine(TypeLine());
     
     }
 
-    
-
     public void StartChoices()
     {
+        uiEvents.OpenPlayerChoicesGroup();
+        Debug.Log(currentEvent.decisions.Length);
         switch (currentEvent.decisions.Length)
         {
             case 0:
@@ -61,7 +66,6 @@ public class UIEventManager : MonoBehaviour
 
     public void Choice(int choice)
     {
-        Debug.Log("Not nullfffffff bruv");
         if (player.GetAlcohol() > currentEvent.decisions[choice].minAlcool &&
             player.GetEnergy() > currentEvent.decisions[choice].minEnergy &&
             player.GetFun() > currentEvent.decisions[choice].minFun)
@@ -70,42 +74,43 @@ public class UIEventManager : MonoBehaviour
                 currentEvent.decisions[choice].sucessEvent.funPlus,
                 currentEvent.decisions[choice].sucessEvent.moneyPlus,
                 currentEvent.decisions[choice].sucessEvent.energyPlus);
-            //Call achivement
+            time.UpdateTime(currentEvent.decisions[choice].sucessEvent.timePassed);
+            //Call achievement
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
-                Debug.Log("Not null bruv");
                 uiEvents.CloseMultipleChoices(3);
                 StartDialogue(currentEvent.decisions[choice].sucessEvent.nextEvent);
             }else
             {
-                Debug.Log("Restart");
                 uiEvents.CloseCanvas();
                 uiEvents.CloseDialogueObject();
                 uiEvents.CloseMultipleChoices(3);
                 Restart();
             }
+           
         }else
         {
             player.ChangeStats(player, currentEvent.decisions[choice].failedEvent.alcoolPlus,
                 currentEvent.decisions[choice].failedEvent.funPlus,
                 currentEvent.decisions[choice].failedEvent.moneyPlus,
                 currentEvent.decisions[choice].failedEvent.energyPlus);
-            //Call achivement
-            if (currentEvent.decisions[choice].failedEvent.nextEvent != null)
-            {
-                Debug.Log("Not null br2uv");
+            time.UpdateTime(currentEvent.decisions[choice].sucessEvent.timePassed);
+            //Call achievement
+            if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
+            {;
                 uiEvents.CloseMultipleChoices(3);
                 StartDialogue(currentEvent.decisions[choice].failedEvent.nextEvent);
             }
             else
             {
-                Debug.Log("Rest333art");
                 uiEvents.CloseCanvas();
                 uiEvents.CloseDialogueObject();
                 uiEvents.CloseMultipleChoices(3);
                 Restart();
             }
+
         }
+          
     }
 
     IEnumerator TypeLine()
@@ -146,7 +151,9 @@ public class UIEventManager : MonoBehaviour
         }else
         {
             reading = false;
-            uiEvents.OpenPlayerChoicesGroup();
+            index = 0;
+            uiEvents.UpdateNpcDialogue(string.Empty);
+            StartChoices();
             uiEvents.CloseDialogueObject();
         }
     }

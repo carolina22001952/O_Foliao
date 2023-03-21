@@ -44,6 +44,13 @@ public class PrimaryEventList : MonoBehaviour
     [SerializeField] private List<Events> highAlcohol;
     [SerializeField] private List<Events> lowEnergy;
 
+    [Header("Bench Event")]
+    [SerializeField] private List<Events> Bench;
+    [SerializeField] private List<Events> RandomBench;
+
+    [Header("Hotel")]
+    [SerializeField] private List<Events> Hotel;
+
     [SerializeField] private int lowAlcoholThreshold = 20;
     [SerializeField] private int highAlcoholThreshold = 80;
     [SerializeField] private int lowEnergyThreshold = 20;

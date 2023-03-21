@@ -125,16 +125,16 @@ public class UIEvents : MonoBehaviour
     }
     public void ClosePlayerChoice3()
     {
-        playerChoices1GameObject.SetActive(false);
+        playerChoices3GameObject.SetActive(false);
     }
     public void OpenPlayerChoice3()
     {
-        playerChoices1GameObject.SetActive(true);
+        playerChoices3GameObject.SetActive(true);
     }
 
     public void UpdateNpcName(string name)
     {
-        nameText.text = name;
+        nameText.text= name + ":";
     }
 
     public void UpdateNpcDialogue(string dialogue)
