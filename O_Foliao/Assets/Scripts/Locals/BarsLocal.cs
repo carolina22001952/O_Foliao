@@ -20,7 +20,7 @@ public class BarsLocal : MonoBehaviour, ILocal
     private List<Events> resourceEvents;
     public void localInteraction(Player player, Clock clock)
     {
-        barsUI.OpenBarsUI();
+
     }
 
 

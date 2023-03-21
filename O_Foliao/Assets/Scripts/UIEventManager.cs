@@ -24,18 +24,23 @@ public class UIEventManager : MonoBehaviour
         uiEvents.UpdateNpcDialogue(string.Empty);
 
     }
-    public void StartDialogue(Events events)
+
+    public void SetupDialogue(Events events)
     {
         uiEvents.OpenCanvas();
-        int index = 0;
-        currentEvent = events;
-        reading = true;
         uiEvents.OpenDialogueObject();
         uiEvents.UpdateNpcName(events.dialogue[index].npc.name);
         uiEvents.UpdateNpcSprite(events.dialogue[index].npc.sprite);
+        uiEvents.OpenDialogueObject();
         uiEvents.CloseMultipleChoices(3);
-        StartCoroutine(TypeLine());
-    
+    }
+
+    public void StartDialogue(Events events)
+    {
+        int index = 0;
+        currentEvent = events;
+        reading = true;
+        StartCoroutine(TypeLine());  
     }
 
     public void StartChoices()
@@ -78,7 +83,7 @@ public class UIEventManager : MonoBehaviour
             //Call achievement
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
-                uiEvents.CloseMultipleChoices(3);
+                SetupDialogue(currentEvent.decisions[choice].sucessEvent.nextEvent);
                 StartDialogue(currentEvent.decisions[choice].sucessEvent.nextEvent);
             }else
             {
@@ -98,7 +103,7 @@ public class UIEventManager : MonoBehaviour
             //Call achievement
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {;
-                uiEvents.CloseMultipleChoices(3);
+                SetupDialogue(currentEvent.decisions[choice].sucessEvent.nextEvent);
                 StartDialogue(currentEvent.decisions[choice].failedEvent.nextEvent);
             }
             else

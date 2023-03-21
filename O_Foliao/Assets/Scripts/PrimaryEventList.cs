@@ -210,7 +210,7 @@ public class PrimaryEventList : MonoBehaviour
 
     public List<Events> GetAllEventsOfOneType(List<Events> eventList, EventType eventType)
     {
-        List<Events> newList = null;
+        List<Events> newList = new List<Events>();
         foreach(Events events in eventList)
         {
             if(events.eventType == eventType)

@@ -5,16 +5,11 @@ using UnityEngine;
 public class BarslUI : MonoBehaviour
 {
     [SerializeField]
-    private GameObject BarGameObject;
+    UIEvents uiEvents;
 
-    public void OpenBarsUI()
+    public void SetupUI()
     {
-        BarGameObject.SetActive(true);
-    }
 
-    public void CloseBarsUI()
-    {
-        BarGameObject.SetActive(false);
     }
 
 }
