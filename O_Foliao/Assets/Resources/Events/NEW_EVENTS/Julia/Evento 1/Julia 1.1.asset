@@ -64,8 +64,8 @@ MonoBehaviour:
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
   - _choiceDialogue: "(S\xE9ria) *Ficar em sil\xEAncio ao p\xE9 delas.*"
-    _maxAlcool: 65
-    _minAlcool: 0
+    _maxAlcool: 0
+    _minAlcool: 65
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
