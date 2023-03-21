@@ -158,13 +158,25 @@ public class UIEventManager : MonoBehaviour
             reading = false;
             index = 0;
             uiEvents.UpdateNpcDialogue(string.Empty);
-            StartChoices();
+            if (currentEvent.decisions.Length > 0)
+            {
+
+                StartChoices();
+               
+            }else
+            {
+
+                Restart();
+            }
+
             uiEvents.CloseDialogueObject();
+
         }
     }
 
     public void Restart()
     {
+        uiEvents.CloseCanvas();
         game.StartMovement();
     }
 

@@ -85,7 +85,6 @@ public class UIEvents : MonoBehaviour
 
     public string GetDialogueText()
     {
-        Debug.Log("Updated");
         return dialogueText.text;
     }
 
