@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BarsLocal : MonoBehaviour, ILocal
 {
@@ -13,6 +15,12 @@ public class BarsLocal : MonoBehaviour, ILocal
     [SerializeField]
     private BarslUI barsUI;
 
+    [SerializeField]
+    private GameObject DialogObject;
+    private TextMeshProUGUI dialogtext;
+    private Image Background;
+
+
 
 
     private List<Events> barsInsideEvents;
@@ -20,7 +28,7 @@ public class BarsLocal : MonoBehaviour, ILocal
     private List<Events> resourceEvents;
     public void localInteraction(Player player, Clock clock)
     {
-
+        
     }
 
 
