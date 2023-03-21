@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,9 +10,9 @@ public class Node : MonoBehaviour
     [SerializeField]
     private Type type;
     [SerializeField]
-    private Material normal;
+    private Sprite normal;
     [SerializeField]
-    private Material highLight;
+    private Sprite highLight;
     public Node node;
     [SerializeField]
     private List<ILocal> local;
@@ -33,12 +34,12 @@ public class Node : MonoBehaviour
 
     public void HighLight()
     {
-        gameObject.GetComponentInParent<Renderer>().material = highLight;
+        gameObject.transform.GetComponentInChildren<SpriteRenderer>().sprite = highLight;
     }
 
     public void BacktoNormal()
     {
-        gameObject.GetComponentInParent<Renderer>().material = normal;
+        gameObject.transform.GetComponentInChildren<SpriteRenderer>().sprite = normal;
     }
 
     public Node GetNode(Player player)
@@ -51,6 +52,14 @@ public class Node : MonoBehaviour
     {
         node = GetNode(player);
         return node.type;
+    }
+
+    public void UpdateMaterials()
+    {
+        foreach(TargetNode targetlist in options)
+        {
+            HighLight();
+        }
     }
 }
 

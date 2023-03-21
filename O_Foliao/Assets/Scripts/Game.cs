@@ -35,7 +35,6 @@ public class Game : MonoBehaviour
     {
         if (player.Position().GetComponent<ILocal>() is ILocal)
         {
-            Debug.Log("sup");
             player.Position().GetComponent<ILocal>().localInteraction(player, clock);
         }
 

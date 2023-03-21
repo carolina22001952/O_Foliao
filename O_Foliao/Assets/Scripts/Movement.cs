@@ -42,6 +42,7 @@ public class Movement: MonoBehaviour
             {
                 if (node.target)
                 {
+                    Debug.Log("yA");
                     node.target.HighLight();
                 }
             }
