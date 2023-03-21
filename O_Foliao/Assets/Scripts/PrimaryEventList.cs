@@ -29,6 +29,11 @@ public class PrimaryEventList : MonoBehaviour
     [SerializeField] private List<Events> skadi;
     [SerializeField] private List<Events> barsInside;
 
+    [Header("Barmen")]
+    [SerializeField] private List<Events> Barmen;
+    [Header("BarDance")]
+    [SerializeField] private List<Events> BarDance;
+
     [Header("TimeOfDay")]
     [SerializeField] private List<Events> morningDeck;
     [SerializeField] private List<Events> afternoonDeck;
@@ -62,6 +67,14 @@ public class PrimaryEventList : MonoBehaviour
         return this.bars;
     }
 
+    public List<Events> GetBarmenEvents()
+    {
+        return this.Barmen;
+    }
+    public List<Events> GetBarDanceEvents()
+    {
+        return this.BarDance;
+    }
     public List<Events> GetBatataZoneEvents()
     {
         return this.batata;

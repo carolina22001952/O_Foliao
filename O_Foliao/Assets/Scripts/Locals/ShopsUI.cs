@@ -1,18 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopsUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private GameObject dialogueGroup;
+    [SerializeField]
+    private TextMeshProUGUI dialogueText;
+    [SerializeField]
+    private Image background;
+
+    public void OpenShopUI()
     {
-        
+        dialogueGroup.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CloseShopUI()
     {
-        
+        dialogueGroup.SetActive(false);
     }
+
+    public void UpdateShopDialogue(string dialogue)
+    {
+        dialogueText.text = dialogue;
+    }
+
+    public void UpdateBackground(Sprite newbackground)
+    {
+        background.sprite = newbackground;
+    }
+
+
+
+
 }

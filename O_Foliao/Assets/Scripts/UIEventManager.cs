@@ -18,6 +18,8 @@ public class UIEventManager : MonoBehaviour
     public Clock time;
     [SerializeField]
     private Game game;
+    [SerializeField]
+    private bool restart;
 
     private void Start()
     {
@@ -35,9 +37,10 @@ public class UIEventManager : MonoBehaviour
         uiEvents.CloseMultipleChoices(3);
     }
 
-    public void StartDialogue(Events events)
+    public void StartDialogue(Events events, bool stop = true)
     {
         int index = 0;
+        restart = stop;
         currentEvent = events;
         reading = true;
         StartCoroutine(TypeLine());  
@@ -165,8 +168,11 @@ public class UIEventManager : MonoBehaviour
                
             }else
             {
-
-                Restart();
+                if (restart == true)
+                {
+                    Restart();
+                }
+                uiEvents.CloseCanvas();
             }
 
             uiEvents.CloseDialogueObject();
@@ -176,7 +182,6 @@ public class UIEventManager : MonoBehaviour
 
     public void Restart()
     {
-        uiEvents.CloseCanvas();
         game.StartMovement();
     }
 
