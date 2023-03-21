@@ -71,9 +71,9 @@ public class UIEventManager : MonoBehaviour
 
     public void Choice(int choice)
     {
-        if (player.GetAlcohol() > currentEvent.decisions[choice].minAlcool &&
-            player.GetEnergy() > currentEvent.decisions[choice].minEnergy &&
-            player.GetFun() > currentEvent.decisions[choice].minFun)
+        if (player.GetAlcohol() >= currentEvent.decisions[choice].minAlcool &&
+            player.GetEnergy() >= currentEvent.decisions[choice].minEnergy &&
+            player.GetFun() >= currentEvent.decisions[choice].minFun)
         {
             player.ChangeStats(player, currentEvent.decisions[choice].sucessEvent.alcoolPlus,
                 currentEvent.decisions[choice].sucessEvent.funPlus,

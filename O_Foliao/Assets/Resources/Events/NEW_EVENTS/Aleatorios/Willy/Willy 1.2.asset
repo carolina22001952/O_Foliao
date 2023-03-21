@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: Ana 1.2
+  m_Name: Willy 1.2
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _text: "Ol\xE9\xE9\xE9\xE9\xE9\xE9\xE9!"
-    _npc: {fileID: 11400000, guid: 02909333923443f428a5de210a55a5c9, type: 2}
+  - _text: Genieten!
+    _npc: {fileID: 11400000, guid: 7608e80c879e62242866ad5e525cfbb2, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions: []
   alcool: 0
