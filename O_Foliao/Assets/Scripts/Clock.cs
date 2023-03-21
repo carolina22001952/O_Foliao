@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public class Clock : MonoBehaviour
     [SerializeField] private Image iconMorning;
     [SerializeField] private Image iconAfternoon;
     [SerializeField] private Image iconNight;
+    [SerializeField] private TextMeshProUGUI time;
 
     public enum TimesOfDay
     {
@@ -78,7 +80,7 @@ public class Clock : MonoBehaviour
         }
 
         TimeOfDay();
-
+        UpdateClockUI();
         return (hours.ToString() + ":" + minutes.ToString());
         
     }
@@ -113,5 +115,10 @@ public class Clock : MonoBehaviour
             iconNight.enabled = true;
         }
 
+    }
+
+    public void UpdateClockUI()
+    {
+        time.text = hours.ToString() + ":" + minutes.ToString();
     }
 }
