@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Paulo G.1.1
+  m_EditorClassIdentifier: 
+  _eventType: 0
+  _dialogue:
+  - _text: Seja bem aparecida.
+    _npc: {fileID: 11400000, guid: 657fe297657509f4e90bee1dda84b394, type: 2}
+    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+  _decisions:
+  - _choiceDialogue: (Brincalhona) Pago-te uma cerveja em forma de paz.
+    _maxAlcool: 0
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 15
+      _alcoolPlus: 5
+      _funPlus: 15
+      _moneyPlus: -5
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: cb152c11ef41fdc4f8cecbe2b74659b1, type: 2}
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+  - _choiceDialogue: '(Provocadora) Desta vez vais-me pagar uma cerveja. '
+    _maxAlcool: 0
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 15
+      _alcoolPlus: 10
+      _funPlus: 15
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: dd535e47e6147584bb3ab638a754fa71, type: 2}
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+  alcool: 0
+  energy: 0
+  _timeOfDay: 0
+  _dayOfWeek: 0
+  _locals: 

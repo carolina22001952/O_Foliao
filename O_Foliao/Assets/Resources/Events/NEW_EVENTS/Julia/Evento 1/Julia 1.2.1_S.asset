@@ -10,37 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: Julia 1.2.2_F
+  m_Name: Julia 1.2.1_S
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _dialogue: Hmm precisas de ajuda?
-    _npc: {fileID: 0}
-    _background: {fileID: 0}
+  - _text: "Ai p\xE1ra, fiquei t\xEDmida agora..."
+    _npc: {fileID: 11400000, guid: 228120d56cd44aa44887eff68a7ccc0a, type: 2}
+    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
-  - _choiceDialogue: "(Misteriosa)Tou s\xF3 a ver."
-    _maxAlcool: 0
-    _minAlcool: 0
+  - _choiceDialogue: "(Brincalhona) Coras f\xE1cil."
+    _maxAlcool: 40
+    _minAlcool: 40
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
       _timePassed: 0
       _alcoolPlus: 0
-      _funPlus: 0
+      _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 24fe1b670a057bd4687549d139d9224d, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
-      _funPlus: 0
+      _funPlus: -15
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
-  - _choiceDialogue: (Impulsiva) Apaixonei-me, juro.
+      _nextEvent: {fileID: 11400000, guid: a53526c5965c48b449b79f71d6ac919b, type: 2}
+  - _choiceDialogue: (Confiante) Anda beber um copo, pago eu!
     _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
@@ -48,9 +48,9 @@ MonoBehaviour:
     _minMoney: 0
     _sucessEvent:
       _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: 0
-      _moneyPlus: 0
+      _alcoolPlus: 10
+      _funPlus: 10
+      _moneyPlus: -5
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
