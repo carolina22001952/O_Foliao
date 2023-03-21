@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: DJManel 1.1
+  m_Name: J&J 1
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _text: "PARAB\xC9NS A VOC\xCA... NESTA DATA QUERIDA..."
-    _npc: {fileID: 11400000, guid: b1a75f89d43887446ad24b7fbacfa814, type: 2}
+  - _text: "O teu sorriso \xE9 t\xE3o lindo  quanto a view from the  top of the London
+      Eye, n\xE3o \xE9 mate?"
+    _npc: {fileID: 11400000, guid: 708ab0e83232ca74bb2713f9c735427f, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
-  - _choiceDialogue: 'MUITAS FELICIDADES, MUITOS ANOS DE VIDA! '
+  - _choiceDialogue: "(Ir\xF3nica) Very thanks, innit."
     _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
@@ -26,12 +27,12 @@ MonoBehaviour:
     _minMoney: 0
     _sucessEvent:
       _timePassed: 0
-      _alcoolPlus: 5
-      _funPlus: 15
+      _alcoolPlus: 0
+      _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 27c71662f54e23540a20a8ece7300223, type: 2}
+      _nextEvent: {fileID: 11400000, guid: 05b0d19d3d756d04fa97f7f5b8e00d62, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -40,7 +41,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
-  - _choiceDialogue: "ANIVERS\xC1RIO PRECOCE... AI QUE PERVERTIDA..."
+  - _choiceDialogue: (Brincalhona) You tens a beautiful sorriso too.
     _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
@@ -48,12 +49,12 @@ MonoBehaviour:
     _minMoney: 0
     _sucessEvent:
       _timePassed: 0
-      _alcoolPlus: 5
-      _funPlus: 15
+      _alcoolPlus: 0
+      _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 27c71662f54e23540a20a8ece7300223, type: 2}
+      _nextEvent: {fileID: 11400000, guid: 05b0d19d3d756d04fa97f7f5b8e00d62, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0

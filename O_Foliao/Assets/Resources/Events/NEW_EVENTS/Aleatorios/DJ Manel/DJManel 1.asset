@@ -31,7 +31,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 30b204c79ab5c9f4dac8fe188b13f1f3, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 30b204c79ab5c9f4dac8fe188b13f1f3, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0

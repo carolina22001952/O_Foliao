@@ -170,8 +170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
-  highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 195062984}
@@ -1294,8 +1294,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 2100000, guid: 2c1cf122b292390448dcfa18a75959b7, type: 2}
-  highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
+  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 911360577}
@@ -1536,8 +1536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 2100000, guid: 2c1cf122b292390448dcfa18a75959b7, type: 2}
-  highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
+  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
   node: {fileID: 119468170}
   options:
   - target: {fileID: 911360577}
@@ -1565,7 +1565,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0.17}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 995134277}
   m_Father: {fileID: 1846024370}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2159,8 +2160,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
-  highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 3950662}
@@ -2761,8 +2762,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 2100000, guid: 2c1cf122b292390448dcfa18a75959b7, type: 2}
-  highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
+  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
   node: {fileID: 239217042}
   options:
   - target: {fileID: 1946886343}
@@ -3345,8 +3346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
-  highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 119468170}
@@ -4746,8 +4747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
-  highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 845040698}
@@ -5496,8 +5497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 2100000, guid: 2c1cf122b292390448dcfa18a75959b7, type: 2}
-  highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 1342336684}
@@ -7013,8 +7014,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
-  highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 290813224}
@@ -7022,6 +7023,8 @@ MonoBehaviour:
   - target: {fileID: 500871887}
     waypoints: []
   - target: {fileID: 1671169448}
+    waypoints: []
+  - target: {fileID: 895441763}
     waypoints: []
 --- !u!4 &845040699
 Transform:
@@ -7663,8 +7666,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
-  highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 845040698}
@@ -7722,8 +7725,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 2100000, guid: 2c1cf122b292390448dcfa18a75959b7, type: 2}
-  highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
+  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
   node: {fileID: 911360577}
   options:
   - target: {fileID: 119468170}
@@ -8793,12 +8796,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995134276}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.03255127, y: -1.0837313, z: 0.0022827173}
-  m_LocalScale: {x: 0.59999996, y: 0.6999998, z: 1}
+  m_LocalPosition: {x: -0.0013489916, y: -0.021674654, z: -0.0033543413}
+  m_LocalScale: {x: 0.012, y: 0.013999997, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1846024370}
-  m_RootOrder: 1
+  m_Father: {fileID: 119468172}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &995134278
 SpriteRenderer:
@@ -11612,8 +11615,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 2100000, guid: 2c1cf122b292390448dcfa18a75959b7, type: 2}
-  highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 290813224}
@@ -12338,8 +12341,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  normal: {fileID: 2100000, guid: ba8379942f9510f44966742ca36667d4, type: 2}
-  highLight: {fileID: 2100000, guid: de3029a32e595494dbe844f2689a5423, type: 2}
+  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 99934418}
@@ -13710,8 +13713,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
-  highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 3950662}
@@ -13798,8 +13801,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
-  highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 290813224}
@@ -13807,6 +13810,8 @@ MonoBehaviour:
   - target: {fileID: 845040698}
     waypoints: []
   - target: {fileID: 500871887}
+    waypoints: []
+  - target: {fileID: 895441763}
     waypoints: []
 --- !u!114 &1671169449
 MonoBehaviour:
@@ -15303,7 +15308,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 119468172}
-  - {fileID: 995134277}
   m_Father: {fileID: 61069693}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -16134,8 +16138,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 2100000, guid: 2c1cf122b292390448dcfa18a75959b7, type: 2}
-  highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
+  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 1946886343}
@@ -16849,7 +16853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -268, y: -147}
+  m_AnchoredPosition: {x: -268, y: -140}
   m_SizeDelta: {x: 700, y: 153.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1992769262
@@ -16907,11 +16911,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 42.85
+  m_fontSizeBase: 42
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 1
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 42
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -17558,8 +17562,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 2100000, guid: 2c1cf122b292390448dcfa18a75959b7, type: 2}
-  highLight: {fileID: 2100000, guid: b51264b80fc689045834669cd1431205, type: 2}
+  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
   node: {fileID: 2041921417}
   options:
   - target: {fileID: 911360577}
@@ -18008,8 +18012,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 2100000, guid: b7797ab8c0bf6074cbcd2f80e5d2e4ba, type: 2}
-  highLight: {fileID: 2100000, guid: 8d03fcdca33c7c24e8a06500c0e2ad4e, type: 2}
+  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 1657135961}
