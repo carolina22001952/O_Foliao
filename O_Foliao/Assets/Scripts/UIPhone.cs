@@ -42,7 +42,7 @@ public class UIPhone : MonoBehaviour
                     {
                         isMouseOver = true ;
                         animator.SetBool("IsMouseOver", true);
-                        Debug.Log("ta aqui");
+                        //Debug.Log("ta aqui");
                     }              
                 }   
             }
@@ -51,7 +51,7 @@ public class UIPhone : MonoBehaviour
         {
             isMouseOver = false;
             animator.SetBool("IsMouseOver", false);
-            Debug.Log("nao ta aqui");
+            //Debug.Log("nao ta aqui");
         }
     }
 

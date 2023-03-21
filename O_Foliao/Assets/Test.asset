@@ -14,18 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _text: Ola teste teste
-    _npc: {fileID: 11400000, guid: f1e17f47e3c49b1449d68a5452164259, type: 2}
-    _background: {fileID: 21300000, guid: 25cd164b6b0ccdc46a5b6e62a2b01e6f, type: 3}
-  - _text: bro
+  - _text: 
     _npc: {fileID: 11400000, guid: 077692066a602bc419e237bf3cccc85c, type: 2}
-    _background: {fileID: 21300000, guid: 25cd164b6b0ccdc46a5b6e62a2b01e6f, type: 3}
-  - _text: nao sei
-    _npc: {fileID: 11400000, guid: f1e17f47e3c49b1449d68a5452164259, type: 2}
-    _background: {fileID: 21300000, guid: 25cd164b6b0ccdc46a5b6e62a2b01e6f, type: 3}
-  - _text: que tas a fazer
-    _npc: {fileID: 11400000, guid: f1e17f47e3c49b1449d68a5452164259, type: 2}
-    _background: {fileID: 21300000, guid: 25cd164b6b0ccdc46a5b6e62a2b01e6f, type: 3}
+    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: Escolha 1
     _maxAlcool: 0
