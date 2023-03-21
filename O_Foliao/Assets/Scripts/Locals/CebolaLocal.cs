@@ -23,7 +23,7 @@ public class CebolaLocal : MonoBehaviour, ILocal
         List<Events> events = new List<Events>();
         Events chosenEvent;
         //Get the events
-        cebolaEvents = primaryEventList.GetBatataZoneEvents();
+        cebolaEvents = primaryEventList.GetCebolaZoneEvents();
         dayEvents = primaryEventList.GetDayDeck(clock);
         resourceEvents = primaryEventList.GetResourceEvents(player);
         //Intersect the events

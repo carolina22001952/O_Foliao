@@ -1319,6 +1319,7 @@ MonoBehaviour:
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
   barsUI: {fileID: 0}
+  DialogObject: {fileID: 0}
 --- !u!1 &100980895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,6 +2787,7 @@ MonoBehaviour:
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
   barsUI: {fileID: 0}
+  DialogObject: {fileID: 0}
 --- !u!1 &244730962
 GameObject:
   m_ObjectHideFlags: 0
@@ -5233,11 +5235,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1968258323}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 596, y: -245}
+  m_AnchoredPosition: {x: 596, y: -59}
   m_SizeDelta: {x: 400, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649196795
@@ -5520,6 +5522,7 @@ MonoBehaviour:
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
   barsUI: {fileID: 0}
+  DialogObject: {fileID: 0}
 --- !u!1 &701223692
 GameObject:
   m_ObjectHideFlags: 0
@@ -7766,6 +7769,7 @@ MonoBehaviour:
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
   barsUI: {fileID: 0}
+  DialogObject: {fileID: 0}
 --- !u!1 &919089304
 GameObject:
   m_ObjectHideFlags: 0
@@ -11295,8 +11299,17 @@ MonoBehaviour:
   bars: []
   batata:
   - {fileID: 11400000, guid: d18b2c03119dc9049843a2ecb5000a48, type: 2}
+  - {fileID: 11400000, guid: a93bece6c7a93204db3306092fb3a61d, type: 2}
+  - {fileID: 11400000, guid: 525ace12fe6735f45be5307d4c867d6f, type: 2}
+  - {fileID: 11400000, guid: 4cef214400ae2e544a5d0a9ad81863ec, type: 2}
+  - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
   cebola:
   - {fileID: 11400000, guid: 92b66dc39b14eea43b431fdf569641e4, type: 2}
+  - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
+  - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
+  - {fileID: 11400000, guid: 03ba44fbe609cb1458063c477af92422, type: 2}
+  - {fileID: 11400000, guid: d579435ac7d8331459373cc203582d75, type: 2}
+  - {fileID: 11400000, guid: a15dd788d74404c4897dbe4964276586, type: 2}
   bench: []
   market:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
@@ -11680,12 +11693,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1342336682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
+  m_Script: {fileID: 11500000, guid: 8425a6e7230dc3a4dbe46e126a1e27d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  barsUI: {fileID: 0}
+  uiEventManager: {fileID: 60811739}
 --- !u!1 &1342539880
 GameObject:
   m_ObjectHideFlags: 0
@@ -12296,11 +12309,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1968258323}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -578, y: -245}
+  m_AnchoredPosition: {x: -578, y: -59}
   m_SizeDelta: {x: 500, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1381204843
@@ -16207,6 +16220,7 @@ MonoBehaviour:
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
   barsUI: {fileID: 0}
+  DialogObject: {fileID: 0}
 --- !u!1 &1953889450
 GameObject:
   m_ObjectHideFlags: 0
@@ -16555,8 +16569,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1377245516}
-  - {fileID: 1381204842}
   - {fileID: 649196794}
+  - {fileID: 1381204842}
   - {fileID: 2018002900}
   - {fileID: 2122361242}
   - {fileID: 521140800}
@@ -17149,15 +17163,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1509434, g: 0.13456747, b: 0.13456747, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 25e5f5c15a105e8429a4027fd7507c2b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -17631,6 +17645,7 @@ MonoBehaviour:
   primaryEventList: {fileID: 0}
   eventListTools: {fileID: 0}
   barsUI: {fileID: 0}
+  DialogObject: {fileID: 0}
 --- !u!1 &2045546134
 GameObject:
   m_ObjectHideFlags: 0
