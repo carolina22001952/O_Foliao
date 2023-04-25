@@ -18,6 +18,9 @@ public class CameraPan : MonoBehaviour
     [SerializeField]
     private SpriteRenderer map;
 
+    [SerializeField]
+    private Vector2 panLimit;
+
     private float mapMinX, mapMaxX, mapMinY, mapMaxY;
 
 
@@ -34,11 +37,13 @@ public class CameraPan : MonoBehaviour
     /// </summary>
     private void Awake()
     {
+        
         mapMinX = map.transform.position.x - map.bounds.size.x / 2f;
         mapMaxX = map.transform.position.x + map.bounds.size.x / 2f;
 
-        mapMinY = map.transform.position.y - map.bounds.size.y / 2f;
-        mapMaxY = map.transform.position.y + map.bounds.size.y / 2f;
+        mapMinY = map.transform.position.z - map.bounds.size.z / 2f;
+        mapMaxY = map.transform.position.z + map.bounds.size.z/ 2f;
+        
     }
 
     private Vector3 ClampCamera(Vector3 targetPosition)
@@ -53,6 +58,9 @@ public class CameraPan : MonoBehaviour
 
         float newX = Mathf.Clamp(targetPosition.x, minX, maxX);
         float newY = Mathf.Clamp(targetPosition.y, minY, maxY);
+
+        //targetPosition.x = Mathf.Clamp(targetPosition.x, -panLimit.x, panLimit.x);
+        targetPosition.z = Mathf.Clamp(targetPosition.z, -panLimit.y, panLimit.y);
 
         return new Vector3(newX, newY, targetPosition.z);
     }
@@ -76,6 +84,7 @@ public class CameraPan : MonoBehaviour
             Vector3 difference = dragOrigin - cam.ScreenToWorldPoint(Input.mousePosition);
 
             cam.transform.position = ClampCamera(cam.transform.position + difference);
+
         }
     }
     /// <summary>

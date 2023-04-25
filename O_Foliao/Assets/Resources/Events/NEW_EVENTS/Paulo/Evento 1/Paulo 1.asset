@@ -20,7 +20,7 @@ MonoBehaviour:
   _decisions:
   - _choiceDialogue: (Apreensiva) Conhecemo-nos...?
     _maxAlcool: 0
-    _minAlcool: -1
+    _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
       _nextEvent: {fileID: 0}
   - _choiceDialogue: (Arriscada) Chamas-te Paulo, certo?
     _maxAlcool: 0
-    _minAlcool: -1
+    _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
       _nextEvent: {fileID: 0}
   - _choiceDialogue: "(Sincera) Acho que j\xE1 vi a tua cara algures por a\xED."
     _maxAlcool: 0
-    _minAlcool: -1
+    _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0

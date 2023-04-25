@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c245ed41572c14741ad9804ef31d78cb, type: 3}
   m_Name: Ana NPC
   m_EditorClassIdentifier: 
-  _name: 
-  _sprite: {fileID: 0}
+  _name: Ana
+  _sprite: {fileID: 21300000, guid: 8535024eaf10d37439aa1497469d236e, type: 3}
   _eventsFriendship: []

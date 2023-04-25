@@ -49,7 +49,6 @@ public class UIEventManager : MonoBehaviour
     public void StartChoices()
     {
         uiEvents.OpenPlayerChoicesGroup();
-        Debug.Log(currentEvent.decisions.Length);
         switch (currentEvent.decisions.Length)
         {
             case 0:
@@ -74,7 +73,7 @@ public class UIEventManager : MonoBehaviour
 
     public void Choice(int choice)
     {
-        if (player.GetAlcohol() <= currentEvent.decisions[choice].minAlcool &&
+        if (
             player.GetEnergy() >= currentEvent.decisions[choice].minEnergy &&
             player.GetFun() >= currentEvent.decisions[choice].minFun
             && player.GetMoney() >= currentEvent.decisions[choice].minMoney)

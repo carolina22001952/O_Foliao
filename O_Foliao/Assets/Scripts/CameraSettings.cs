@@ -1,5 +1,5 @@
 using UnityEngine;
-
+/*
 /// <summary>
 /// Class responsible for the camera setup.
 /// This class is used for camera resizing.
@@ -33,3 +33,4 @@ public class CameraSettings
         cam.GetComponent<CameraPan>().enabled = true;
     }
 }
+*/
