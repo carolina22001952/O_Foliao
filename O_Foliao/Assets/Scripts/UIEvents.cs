@@ -46,17 +46,23 @@ public class UIEvents : MonoBehaviour
     private Image Background;
 
 
+    // Animation
+    [SerializeField]
+    private Animator animator;
 
 
     public void OpenCanvas()
     {
+        animator.SetBool("Active", true);
         DialogCanvas.SetActive(true);
     }
 
     public void CloseCanvas()
     {
-        DialogCanvas.SetActive(false);
+        animator.SetBool("Active", false);
+        //DialogCanvas.SetActive(false);
     }
+
     public void UpdateNpcSprite(Sprite sprite)
     {
 

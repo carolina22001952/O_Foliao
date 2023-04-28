@@ -27,6 +27,7 @@ public class BarsUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI moneyText;
 
+    private AnimationStatus animStatus;
 
 
     public void SetMaxAllBars(int maxAlcool, int maxFun,
@@ -47,6 +48,8 @@ public class BarsUI : MonoBehaviour
     {
         alcoolSlider.value = alcool;
         alcoolFill.color = alcoolGradient.Evaluate(alcoolSlider.value);
+
+        //animStatus.ChangeEnergySize();
 
         funSlider.value = fun;
         funFill.color = funGradient.Evaluate(funSlider.value);
