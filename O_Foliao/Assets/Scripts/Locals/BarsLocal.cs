@@ -52,6 +52,10 @@ public class BarsLocal : MonoBehaviour, ILocal
         shopUi.OpenShopUI();
 
     }
+    public void localChoice(bool more)
+    {
+
+    }
 
     public void ChoiceUI()
     {
@@ -79,14 +83,15 @@ public class BarsLocal : MonoBehaviour, ILocal
         }
     }
 
+
     public void BarmenEvents()
     {
         List<Events> events = new List<Events>();
         Events chosenEvent;
 
         barmenEvents = primaryEventList.GetBarmenEvents();
-        uiEventManager.SetupDialogue(barmenEvents[0]);
-        uiEventManager.StartDialogue(barmenEvents[0],false);
+       // uiEventManager.SetupDialogue(barmenEvents[0]);
+      //  uiEventManager.StartDialogue(barmenEvents[0],false);
     }
 
     public void DanceEvents()
@@ -95,8 +100,8 @@ public class BarsLocal : MonoBehaviour, ILocal
         Events chosenEvent;
 
         barDanceEvents = primaryEventList.GetBarsInsideZoneEvents();
-        uiEventManager.SetupDialogue(barDanceEvents[0]);
-        uiEventManager.StartDialogue(barDanceEvents[0],false);
+      //  uiEventManager.SetupDialogue(barDanceEvents[0]);
+      //  uiEventManager.StartDialogue(barDanceEvents[0],false);
     }
 
     public void QuitBar()
@@ -105,7 +110,12 @@ public class BarsLocal : MonoBehaviour, ILocal
         uiEventManager.Restart();
     }
 
+    public void localDialogue(bool more)
+    {
+
+    }
 
 
-   
+
+
 }

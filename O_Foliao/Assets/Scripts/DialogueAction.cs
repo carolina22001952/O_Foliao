@@ -1,14 +1,8 @@
-using JetBrains.Annotations;
-using Sirenix.Utilities;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using UnityEditor.PackageManager;
-//using UnityEditor.PackageManager;
 using UnityEngine;
 
-public class UIEventManager : MonoBehaviour
+public class DialogueAction : MonoBehaviour
 {
     public UIEvents uiEvents;
     public PrimaryEventList primaryEventList;
@@ -25,23 +19,17 @@ public class UIEventManager : MonoBehaviour
     [SerializeField]
     private bool restart;
 
-    public void GetEvent()
-    {
-        uiEvents.ResetCanvas();
-        currentEvent = primaryEventList.GetCurrentEvent();
-    }
-
-    public void ChangeCurrentEvent(Events events)
-    {
-        currentEvent = events;
-    }
+    //1 
 
     public void OpenCanvas()
     {
         uiEvents.OpenCanvas();
     }
-    
 
+    public bool IsReading()
+    {
+        return reading; 
+    }
     private void Start()
     {
         uiEvents.UpdateNpcDialogue(string.Empty);
@@ -51,24 +39,23 @@ public class UIEventManager : MonoBehaviour
     public void SetupDialogue()
     {
         uiEvents.OpenDialogueObject();
-        if (!currentEvent.dialogue[index].npc.name.IsNullOrWhitespace())
-        {
-            uiEvents.UpdateNpcName(currentEvent.dialogue[index].npc.name);
-            uiEvents.OpenCharacterGameObject();
-            uiEvents.OpenNpcGameObject();
-            uiEvents.UpdateNpcSprite(currentEvent.dialogue[index].npc.sprite);
-        }
-
         uiEvents.CloseMultipleChoices(3);
     }
 
-    public void StartDialogue(bool stop = true)
+    public void StartDialogue()
     {
         SetupDialogue();
-        int index = 0;
-        restart = stop;
+        currentEvent = primaryEventList.GetCurrentEvent();
+        uiEvents.UpdateNpcName(currentEvent.dialogue[index].npc.name);
+        uiEvents.OpenCharacterGameObject();
+        uiEvents.OpenNpcGameObject();
+        uiEvents.UpdateNpcSprite(currentEvent.dialogue[index].npc.sprite);
+        
+        index = 0;
         reading = true;
-        StartCoroutine(TypeLine());  
+        StartCoroutine(TypeLine());
+
+
     }
 
     public void StartChoices()
@@ -108,19 +95,21 @@ public class UIEventManager : MonoBehaviour
                 currentEvent.decisions[choice].sucessEvent.moneyPlus,
                 currentEvent.decisions[choice].sucessEvent.energyPlus);
             time.UpdateTime(currentEvent.decisions[choice].sucessEvent.timePassed);
-            //Call achievement
+            //Call achievemen
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
-                ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
-            }else
-            {
-                uiEvents.CloseCanvas();
-                uiEvents.CloseDialogueObject();
-                uiEvents.CloseMultipleChoices(3);
-                Restart();
+                Debug.Log("yup");
+                primaryEventList.ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
+                player.Position().GetComponent<ILocal>().localChoice(true);
             }
-           
-        }else
+            else
+            {
+                uiEvents.CloseDialogueObject();
+                player.Position().GetComponent<ILocal>().localChoice(false);
+            }
+
+        }
+        else
         {
             player.ChangeStats(player, currentEvent.decisions[choice].failedEvent.alcoolPlus,
                 currentEvent.decisions[choice].failedEvent.funPlus,
@@ -130,26 +119,26 @@ public class UIEventManager : MonoBehaviour
             //Call achievement
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
-                ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
+                Debug.Log("yup2");
+                primaryEventList.ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
+                player.Position().GetComponent<ILocal>().localChoice(true);
             }
             else
             {
-                uiEvents.CloseCanvas();
                 uiEvents.CloseDialogueObject();
-                uiEvents.CloseMultipleChoices(3);
-                Restart();
+                player.Position().GetComponent<ILocal>().localChoice(false);
             }
 
         }
 
-        StartDialogue();
+
 
 
     }
 
     IEnumerator TypeLine()
     {
-        foreach(char c in currentEvent.dialogue[index].text.ToCharArray())
+        foreach (char c in currentEvent.dialogue[index].text.ToCharArray())
         {
             uiEvents.TypeNpcDialogue(c);
             yield return new WaitForSeconds(textSpeed);
@@ -158,15 +147,16 @@ public class UIEventManager : MonoBehaviour
 
     public void Update()
     {
-        if(reading)
+        if (reading)
         {
 
-            if(Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
-                if (uiEvents.GetDialogueText() == currentEvent.dialogue[index].text )
-                {                
+                if (uiEvents.GetDialogueText() == currentEvent.dialogue[index].text)
+                {
                     NextLine();
-                }else
+                }
+                else
                 {
                     StopAllCoroutines();
                     uiEvents.UpdateNpcDialogue(currentEvent.dialogue[index].text);
@@ -177,39 +167,31 @@ public class UIEventManager : MonoBehaviour
 
     public void NextLine()
     {
-        if(index < currentEvent.dialogue.Length -1)
+        if (index < currentEvent.dialogue.Length - 1)
         {
             index++;
             uiEvents.UpdateNpcDialogue(string.Empty);
             StartCoroutine(TypeLine());
-        }else
+        }
+        else
         {
             reading = false;
             index = 0;
             uiEvents.UpdateNpcDialogue(string.Empty);
+            uiEvents.CloseDialogueObject();
             if (currentEvent.decisions.Length > 0)
             {
 
-                StartChoices();
-               
-            }else
-            {
-                if (restart == true)
-                {
-                    Restart();
-                }
-                uiEvents.CloseCanvas();
+                player.Position().GetComponent<ILocal>().localDialogue(true);
+
             }
-
-            uiEvents.CloseDialogueObject();
-
+            else
+            {
+                uiEvents.CloseCanvas();
+                player.Position().GetComponent<ILocal>().localDialogue(false);
+            }
+            
         }
     }
-
-    public void Restart()
-    {
-        game.StartMovement();
-    }
-
 
 }

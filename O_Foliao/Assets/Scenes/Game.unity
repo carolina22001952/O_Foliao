@@ -194,7 +194,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &7912527
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +585,7 @@ GameObject:
   - component: {fileID: 60811740}
   - component: {fileID: 60811739}
   - component: {fileID: 60811741}
+  - component: {fileID: 60811742}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -689,12 +692,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60811730}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83b0e18f483d30340b0465db35a20892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   uiEvents: {fileID: 1780539478}
+  primaryEventList: {fileID: 0}
   player: {fileID: 1592390869}
   reading: 0
   textSpeed: 0.1
@@ -728,6 +732,26 @@ MonoBehaviour:
   dialogueGroup: {fileID: 938050666}
   dialogueText: {fileID: 1597696859}
   background: {fileID: 2127916734}
+--- !u!114 &60811742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60811730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b502e3ee1fc6db44b43691fb86ca023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiEvents: {fileID: 1780539478}
+  primaryEventList: {fileID: 1305438561}
+  player: {fileID: 1592390869}
+  reading: 0
+  textSpeed: 0.1
+  time: {fileID: 60811737}
+  game: {fileID: 60811733}
+  restart: 0
 --- !u!1 &61069692
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,8 +969,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 60811739}
-        m_TargetAssemblyTypeName: UIEventManager, Assembly-CSharp
+      - m_Target: {fileID: 60811742}
+        m_TargetAssemblyTypeName: DialogueAction, Assembly-CSharp
         m_MethodName: Choice
         m_Mode: 3
         m_Arguments:
@@ -1226,7 +1250,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &100980895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,7 +1422,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &132996300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,7 +1974,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &205655876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,7 +2481,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &251691202
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,7 +2899,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &302797539
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,8 +3161,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 60811739}
-        m_TargetAssemblyTypeName: UIEventManager, Assembly-CSharp
+      - m_Target: {fileID: 60811742}
+        m_TargetAssemblyTypeName: DialogueAction, Assembly-CSharp
         m_MethodName: Choice
         m_Mode: 3
         m_Arguments:
@@ -3744,7 +3778,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &521140799
 GameObject:
   m_ObjectHideFlags: 0
@@ -4231,7 +4267,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &701223692
 GameObject:
   m_ObjectHideFlags: 0
@@ -5295,7 +5333,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &854474982
 GameObject:
   m_ObjectHideFlags: 0
@@ -5639,6 +5679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 895441764}
   - component: {fileID: 895441763}
+  - component: {fileID: 895441765}
   m_Layer: 0
   m_Name: Node_EntrePalcos
   m_TagString: Point
@@ -5687,6 +5728,23 @@ Transform:
   m_Father: {fileID: 1757844433}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895441765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895441762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7919b9c66b93dee4e8aa38472dd52d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &911360576
 GameObject:
   m_ObjectHideFlags: 0
@@ -5758,7 +5816,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &919089304
 GameObject:
   m_ObjectHideFlags: 0
@@ -7977,6 +8037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventListTools: {fileID: 60811740}
+  currentEvent: {fileID: 0}
   bars: []
   batata:
   - {fileID: 11400000, guid: d18b2c03119dc9049843a2ecb5000a48, type: 2}
@@ -8808,7 +8869,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &1428536985
 GameObject:
   m_ObjectHideFlags: 0
@@ -9934,7 +9997,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &1671169446
 GameObject:
   m_ObjectHideFlags: 0
@@ -10008,7 +10073,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &1699521899
 GameObject:
   m_ObjectHideFlags: 0
@@ -11624,7 +11691,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &1955006304
 GameObject:
   m_ObjectHideFlags: 0
@@ -12570,7 +12639,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &2067610773
 GameObject:
   m_ObjectHideFlags: 0
@@ -12793,8 +12864,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 60811739}
-        m_TargetAssemblyTypeName: UIEventManager, Assembly-CSharp
+      - m_Target: {fileID: 60811742}
+        m_TargetAssemblyTypeName: DialogueAction, Assembly-CSharp
         m_MethodName: Choice
         m_Mode: 3
         m_Arguments:
@@ -12914,7 +12985,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &2127916732
 GameObject:
   m_ObjectHideFlags: 0

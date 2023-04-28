@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class TunelLocal : MonoBehaviour, ILocal
@@ -47,5 +48,14 @@ public class TunelLocal : MonoBehaviour, ILocal
         }
     }
 
+    public void localChoice(bool more)
+    {
+
+    }
+
+    public void localDialogue(bool more)
+    {
+
+    }
 
 }

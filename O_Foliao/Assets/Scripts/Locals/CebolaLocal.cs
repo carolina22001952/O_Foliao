@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class CebolaLocal : MonoBehaviour, ILocal
@@ -11,13 +12,23 @@ public class CebolaLocal : MonoBehaviour, ILocal
     private EventListTools eventListTools;
 
     [SerializeField]
-    private UIEventManager uiEventManager;
+    private DialogueAction dialogueAction;
+
+    [SerializeField]
+    private UIEvents uiEvents;
+
+    [SerializeField]
+    private Game game;
 
 
+
+    private bool cebola = false;
 
     private List<Events> cebolaEvents;
     private List<Events> dayEvents;
     private List<Events> resourceEvents;
+
+    private Events chosenEvent;
     public void localInteraction(Player player, Clock clock)
     {
         List<Events> events = new List<Events>();
@@ -33,8 +44,45 @@ public class CebolaLocal : MonoBehaviour, ILocal
 
         events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
         chosenEvent = eventListTools.ChooseARandomEvent(events);
-        //Stop the movement of the player
-        uiEventManager.SetupDialogue(chosenEvent);
-        uiEventManager.StartDialogue(chosenEvent);
+        primaryEventList.ChangeCurrentEvent(chosenEvent);
+
+        uiEvents.OpenCanvas();
+        uiEvents.ResetCanvas();
+        dialogueAction.StartDialogue();
+
+
+
+
     }
+
+    public void localChoice(bool more)
+    {
+        Debug.Log("LocalChoice");
+        if (more)
+        {
+            dialogueAction.StartDialogue();
+        }else
+        {
+            uiEvents.CloseCanvas();
+            game.StartMovement();
+        }
+    }
+
+    public void localDialogue(bool more)
+    {
+        Debug.Log("LocalDialogue");
+        if (more)
+        {
+            dialogueAction.StartChoices();
+        }else
+        {
+            Restart();
+        }
+    }
+
+    public void Restart()
+    {
+        game.StartMovement();
+    }
+
 }

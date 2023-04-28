@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class BatataLocal : MonoBehaviour, ILocal
@@ -11,9 +12,13 @@ public class BatataLocal : MonoBehaviour, ILocal
     private EventListTools eventListTools;
 
     [SerializeField]
-    private UIEventManager uiEventManager;
+    private DialogueAction dialogueAction;
 
+    [SerializeField]
+    private UIEvents uiEvents;
 
+    [SerializeField]
+    private Game game;
 
     private List<Events> batataEvents;
     private List<Events> dayEvents;
@@ -34,8 +39,42 @@ public class BatataLocal : MonoBehaviour, ILocal
         events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
         chosenEvent = eventListTools.ChooseARandomEvent(events);
         //Stop the movement of the player
-        uiEventManager.SetupDialogue(chosenEvent);
-        uiEventManager.StartDialogue(chosenEvent);
+        primaryEventList.ChangeCurrentEvent(chosenEvent);
+
+        uiEvents.OpenCanvas();
+        uiEvents.ResetCanvas();
+        dialogueAction.StartDialogue();
+
+    }
+
+    public void localChoice(bool more)
+    {
+        Debug.Log("LocalChoice");
+        if (more)
+        {
+            dialogueAction.StartDialogue();
+        }else
+        {
+            uiEvents.CloseCanvas();
+            game.StartMovement();
+        }
+    }
+    public void localDialogue(bool more)
+    {
+        Debug.Log("LocalDialogue");
+        if (more)
+        {
+            dialogueAction.StartChoices();
+        }
+        else
+        {
+            Restart();
+        }
+    }
+
+    public void Restart()
+    {
+        game.StartMovement();
     }
 
 }

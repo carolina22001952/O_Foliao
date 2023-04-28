@@ -8,6 +8,8 @@ public class PrimaryEventList : MonoBehaviour
 {
     public EventListTools eventListTools;
 
+    public Events currentEvent;
+
     [Header("Zones")]
     [SerializeField] private List<Events> bars;
     [SerializeField] private List<Events> batata;
@@ -62,6 +64,15 @@ public class PrimaryEventList : MonoBehaviour
 
     public event EventHandler Event;
 
+    public void ChangeCurrentEvent(Events events)
+    {
+        currentEvent = events;
+    }
+
+    public Events GetCurrentEvent()
+    {
+        return currentEvent;
+    }
     public List<Events> GetBarsZoneEvents()
     {
         return this.bars;

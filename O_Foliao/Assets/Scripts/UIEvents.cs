@@ -204,4 +204,13 @@ public class UIEvents : MonoBehaviour
         }
     }
 
+    public void ResetCanvas()
+    {
+        CloseNpcGameObject();
+        CloseMultipleChoices(3);
+        CloseCharacterGameObject();
+        CloseDialogueObject();
+        
+    }
+
 }
