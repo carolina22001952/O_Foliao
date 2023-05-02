@@ -6,9 +6,9 @@ public class AnimationStatus : MonoBehaviour
 {
     //[SerializeField] private Animator animator;
 
-    [SerializeField] private GameObject alcoholSprite;
-    [SerializeField] private GameObject funSprite;
-    [SerializeField] private GameObject energySprite;
+    [SerializeField] private SpriteRenderer alcoholSprite;
+    [SerializeField] private SpriteRenderer funSprite;
+    [SerializeField] private SpriteRenderer energySprite;
 
     [SerializeField] private int scaleDuration;
 
@@ -16,29 +16,36 @@ public class AnimationStatus : MonoBehaviour
 
     public void ChangeAlcoholSize()
     {   
-        alcoholSprite.transform.localScale = scaleUp;
-        StartCoroutine(Wait());
-        alcoholSprite.transform.localScale = originalScale;
+        StartCoroutine(ChangeSizeCR(alcoholSprite.transform));
+    }
+
+    IEnumerator ChangeSizeCR(Transform target)
+    {
+        float s = 0.0f;
+        while (s < 1.0f)
+        {
+            target.localScale = Vector3.Lerp(originalScale, scaleUp, s);
+            s = s + Time.deltaTime;
+            yield return null;
+        }
+        target.localScale = scaleUp;
+        yield return new WaitForSeconds(scaleDuration);
+        while (s > 0.0f)
+        {
+            target.localScale = Vector3.Lerp(originalScale, scaleUp, s);
+            s = s - Time.deltaTime;
+            yield return null;
+        }
+        target.localScale = originalScale;
     }
 
     public void ChangeFunSize()
     {   
-        funSprite.transform.localScale = scaleUp;
-        StartCoroutine(Wait());
-        funSprite.transform.localScale = originalScale;
+        StartCoroutine(ChangeSizeCR(funSprite.transform));
     }
 
     public void ChangeEnergySize()
     {   
-        energySprite.transform.localScale = scaleUp;
-        StartCoroutine(Wait());
-        energySprite.transform.localScale = originalScale;
-    }
-
-
-    IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(scaleDuration);
-    }
-    
+        StartCoroutine(ChangeSizeCR(energySprite.transform));
+    }    
 }
