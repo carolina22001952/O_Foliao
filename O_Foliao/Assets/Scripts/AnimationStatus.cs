@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AnimationStatus : MonoBehaviour
 {
     //[SerializeField] private Animator animator;
 
-    [SerializeField] private SpriteRenderer alcoholSprite;
-    [SerializeField] private SpriteRenderer funSprite;
-    [SerializeField] private SpriteRenderer energySprite;
+    [SerializeField] private Image alcoholSprite;
+    [SerializeField] private Image funSprite;
+    [SerializeField] private Image energySprite;
 
-    [SerializeField] private int scaleDuration;
+    [SerializeField] private float scaleDuration;
 
     [SerializeField] private Vector3 scaleUp, originalScale;
 

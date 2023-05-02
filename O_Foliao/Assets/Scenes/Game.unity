@@ -7206,8 +7206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007777faf95635b4d9a4f2e2dd775182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alcoolSlider: {fileID: 1297288050}
-  alcoolGradient:
+  alcoholSlider: {fileID: 1297288050}
+  alcoholGradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
     key1: {r: 1, g: 1, b: 1, a: 1}
@@ -7236,7 +7236,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  alcoolFill: {fileID: 54306203}
+  alcoholFill: {fileID: 54306203}
   funSlider: {fileID: 1370587958}
   funGradient:
     serializedVersion: 2
@@ -7300,6 +7300,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   energyFill: {fileID: 457646814}
   moneyText: {fileID: 940118807}
+  animStatus: {fileID: 1156481686}
 --- !u!4 &1156481685
 Transform:
   m_ObjectHideFlags: 0
@@ -7329,11 +7330,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661b8133eaf034845a3533c8ac5f1d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alcoholSprite: {fileID: 1955006304}
-  funSprite: {fileID: 1624208097}
-  energySprite: {fileID: 1184624941}
-  scaleDuration: 0
-  scaleUp: {x: 2, y: 2, z: 2}
+  alcoholSprite: {fileID: 1955006306}
+  funSprite: {fileID: 1624208099}
+  energySprite: {fileID: 1184624943}
+  scaleDuration: 0.1
+  scaleUp: {x: 1.4, y: 1.4, z: 1.4}
   originalScale: {x: 1, y: 1, z: 1}
 --- !u!1 &1161609759
 GameObject:

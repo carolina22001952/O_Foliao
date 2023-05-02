@@ -5,11 +5,11 @@ using TMPro;
 public class BarsUI : MonoBehaviour
 {
     [SerializeField]
-    private Slider alcoolSlider;
+    private Slider alcoholSlider;
     [SerializeField]
-    private Gradient alcoolGradient;
+    private Gradient alcoholGradient;
     [SerializeField]
-    private Image alcoolFill;
+    private Image alcoholFill;
 
     [SerializeField]
     private Slider funSlider;
@@ -27,13 +27,14 @@ public class BarsUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI moneyText;
 
+    [SerializeField]
     private AnimationStatus animStatus;
 
 
-    public void SetMaxAllBars(int maxAlcool, int maxFun,
+    public void SetMaxAllBars(int maxAlcohol, int maxFun,
                               int maxEnergy, int money)
     {
-        alcoolSlider.maxValue = maxAlcool;
+        alcoholSlider.maxValue = maxAlcohol;
 
         funSlider.maxValue = maxFun;
 
@@ -43,19 +44,31 @@ public class BarsUI : MonoBehaviour
         SetValueAllBars();
     }
 
-    public void SetValueAllBars(int alcool = 0, int fun = 50,
+    public void SetValueAllBars(int alcohol = 0, int fun = 50,
                                 int energy = 100, int money = 100)
     {
-        alcoolSlider.value = alcool;
-        alcoolFill.color = alcoolGradient.Evaluate(alcoolSlider.value);
-
-        //animStatus.ChangeEnergySize();
-
+        
+        //alcoolFill.color = alcoolGradient.Evaluate(alcoolSlider.value);
+        if(alcoholSlider.value != alcohol)
+        {
+            animStatus.ChangeAlcoholSize();
+        }
+        alcoholSlider.value = alcohol;
+    
+        //funFill.color = funGradient.Evaluate(funSlider.value);
+        if(funSlider.value != fun)
+        {
+            animStatus.ChangeFunSize();
+        }
         funSlider.value = fun;
-        funFill.color = funGradient.Evaluate(funSlider.value);
 
+        
+        //energyFill.color = energyGradient.Evaluate(energySlider.value);
+        if(energySlider.value != energy)
+        {
+            animStatus.ChangeEnergySize();
+        }
         energySlider.value = energy;
-        energyFill.color = energyGradient.Evaluate(energySlider.value);
 
         moneyText.text = money.ToString() + "€";
     }
