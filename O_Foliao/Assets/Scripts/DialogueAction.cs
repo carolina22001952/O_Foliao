@@ -86,6 +86,7 @@ public class DialogueAction : MonoBehaviour
     public void Choice(int choice)
     {
         if (
+            player.GetAlcohol() >= currentEvent.decisions[choice].minAlcool &&
             player.GetEnergy() >= currentEvent.decisions[choice].minEnergy &&
             player.GetFun() >= currentEvent.decisions[choice].minFun
             && player.GetMoney() >= currentEvent.decisions[choice].minMoney)
@@ -95,6 +96,9 @@ public class DialogueAction : MonoBehaviour
                 currentEvent.decisions[choice].sucessEvent.moneyPlus,
                 currentEvent.decisions[choice].sucessEvent.energyPlus);
             time.UpdateTime(currentEvent.decisions[choice].sucessEvent.timePassed);
+
+            ///
+            primaryEventList.EventContinuation(currentEvent.decisions[choice].sucessEvent.eventsToInsert);
             //Call achievemen
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
@@ -109,6 +113,7 @@ public class DialogueAction : MonoBehaviour
             }
 
         }
+
         else
         {
             player.ChangeStats(player, currentEvent.decisions[choice].failedEvent.alcoolPlus,
@@ -117,10 +122,11 @@ public class DialogueAction : MonoBehaviour
                 currentEvent.decisions[choice].failedEvent.energyPlus);
             time.UpdateTime(currentEvent.decisions[choice].sucessEvent.timePassed);
             //Call achievement
-            if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
+            primaryEventList.EventContinuation(currentEvent.decisions[choice].failedEvent.eventsToInsert);
+            if (currentEvent.decisions[choice].failedEvent.nextEvent != null)
             {
                 Debug.Log("yup2");
-                primaryEventList.ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
+                primaryEventList.ChangeCurrentEvent(currentEvent.decisions[choice].failedEvent.nextEvent);
                 player.Position().GetComponent<ILocal>().localChoice(true);
             }
             else
@@ -193,5 +199,7 @@ public class DialogueAction : MonoBehaviour
             
         }
     }
+
+
 
 }

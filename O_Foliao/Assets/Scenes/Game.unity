@@ -3829,6 +3829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 620162010}
   - component: {fileID: 620162011}
+  - component: {fileID: 620162012}
   m_Layer: 0
   m_Name: Ponto_Palcos
   m_TagString: Untagged
@@ -3903,6 +3904,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &620162012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620162009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7919b9c66b93dee4e8aa38472dd52d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &641232601
 GameObject:
   m_ObjectHideFlags: 0
@@ -7972,7 +7990,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1305438557}
   - component: {fileID: 1305438559}
-  - component: {fileID: 1305438560}
   - component: {fileID: 1305438561}
   m_Layer: 0
   m_Name: Events
@@ -8013,19 +8030,6 @@ MonoBehaviour:
   highLight: {fileID: 0}
   node: {fileID: 0}
   options: []
---- !u!114 &1305438560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305438556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3ecd12c2952d904ebd638ab09b60467, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventList: {fileID: 0}
 --- !u!114 &1305438561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8069,10 +8073,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 525ace12fe6735f45be5307d4c867d6f, type: 2}
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
-  Barmen:
-  - {fileID: 11400000, guid: dd1f05d70b77c884385290acada50ed4, type: 2}
-  - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
-  BarDance: []
+  barmen: []
+  barDance: []
   morningDeck:
   - {fileID: 11400000, guid: a15dd788d74404c4897dbe4964276586, type: 2}
   - {fileID: 11400000, guid: 191c1ac5679bbe14e91c29d8f02dbe00, type: 2}
@@ -8446,9 +8448,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  uiEventManager: {fileID: 60811739}
+  dialogueAction: {fileID: 0}
   shopUi: {fileID: 60811741}
   barsUI: {fileID: 0}
+  game: {fileID: 0}
+  uiEvents: {fileID: 0}
   playerChoicesGroup: {fileID: 1699521899}
   playerChoice1: {fileID: 1123119260}
   playerChoice2: {fileID: 1051461250}

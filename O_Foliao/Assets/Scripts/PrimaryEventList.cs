@@ -1,8 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 //using System.Runtime.CompilerServices;
 using UnityEngine;
+using static EventBaseData;
+using DayOfWeek = EventBaseData.DayOfWeek;
 
 public class PrimaryEventList : MonoBehaviour
 {
@@ -32,9 +35,9 @@ public class PrimaryEventList : MonoBehaviour
     [SerializeField] private List<Events> barsInside;
 
     [Header("Barmen")]
-    [SerializeField] private List<Events> Barmen;
+    [SerializeField] private List<Events> barmen;
     [Header("BarDance")]
-    [SerializeField] private List<Events> BarDance;
+    [SerializeField] private List<Events> barDance;
 
     [Header("TimeOfDay")]
     [SerializeField] private List<Events> morningDeck;
@@ -84,11 +87,11 @@ public class PrimaryEventList : MonoBehaviour
 
     public List<Events> GetBarmenEvents()
     {
-        return this.Barmen;
+        return this.barmen;
     }
     public List<Events> GetBarDanceEvents()
     {
-        return this.BarDance;
+        return this.barDance;
     }
     public List<Events> GetBatataZoneEvents()
     {
@@ -249,6 +252,105 @@ public class PrimaryEventList : MonoBehaviour
 
         return newList;
 
+    }
+
+    public void EventContinuation(Events[] eventslist)
+    {
+        foreach(Events events in eventslist )
+        {
+            if( events.eventBaseData.locals.Length > 0)
+            {
+                foreach(Locals local in events.eventBaseData.locals)
+                {
+                    switch (local)
+                    {
+                        case Locals.Cebola:
+                            eventListTools.InsertAnEvent(events, cebola);
+                            break;
+                        case Locals.Batata:
+                            eventListTools.InsertAnEvent(events, batata);
+                            break;
+                        case Locals.Bars:
+                            eventListTools.InsertAnEvent(events, bars);
+                            break;
+                        case Locals.Bench:
+                            eventListTools.InsertAnEvent(events, bench);
+                            break;
+                        case Locals.Barmen:
+                            eventListTools.InsertAnEvent(events, barmen);
+                            break;
+                        case Locals.Celeiro:
+                            eventListTools.InsertAnEvent(events, celeiro);
+                            break;
+                        case Locals.Skadi:
+                            eventListTools.InsertAnEvent(events, skadi);
+                            break;
+                        case Locals.Vinil:
+                            eventListTools.InsertAnEvent(events, vinil);
+                            break;
+                        case Locals.Tunel:
+                            eventListTools.InsertAnEvent(events, tunel);
+                            break;
+                        case Locals.Hotel:
+                            eventListTools.InsertAnEvent(events, hotel);
+                            break;
+                        case Locals.Market:
+                            eventListTools.InsertAnEvent(events, market);
+                            break;
+                    }
+                }
+
+                foreach(TimeOfDay timeOfDay in events.eventBaseData.timeOfDay)
+                {
+                    switch(timeOfDay)
+                    {
+                        case TimeOfDay.Morning:
+                            eventListTools.InsertAnEvent(events, morningDeck);
+                            break;
+                        case TimeOfDay.Afternoon:
+                            eventListTools.InsertAnEvent(events, afternoonDeck);
+                            break;
+                        case TimeOfDay.Night:
+                            eventListTools.InsertAnEvent(events, nightDeck);
+                            break;
+                    }
+
+                }
+
+                foreach (DayOfWeek timeOfDay in events.eventBaseData.dayOfWeek)
+                {
+                    switch (timeOfDay)
+                    {
+                        case DayOfWeek.Day1:
+                            eventListTools.InsertAnEvent(events, morningDeck);
+                            break;
+                        case DayOfWeek.Day2:
+                            eventListTools.InsertAnEvent(events, afternoonDeck);
+                            break;
+                        case DayOfWeek.Day3:
+                            eventListTools.InsertAnEvent(events, nightDeck);
+                            break;
+                    }
+
+                }
+
+                foreach (Alcohol alcoholLvl in events.eventBaseData.alcohol)
+                {
+                    switch (alcoholLvl)
+                    {
+                        case Alcohol.Low30:
+                            eventListTools.InsertAnEvent(events, lowAlcohol);
+                            break;
+                        case Alcohol.Normal:
+                            break;
+                        case Alcohol.High80:
+                            eventListTools.InsertAnEvent(events, highAlcohol);
+                            break;
+                    }
+
+                }
+            }
+        }
     }
 
 }

@@ -12,9 +12,6 @@ public struct Decisions
     [SerializeField] private string _choiceDialogue;
     public string choiceDialogue { get { return _choiceDialogue; } }
 
-    [SerializeField] private int _maxAlcool;
-    public int maxAlcool { get { return _maxAlcool; } }
-
     [SerializeField] private int _minAlcool;
     public int minAlcool { get { return _minAlcool; } }
 
@@ -120,7 +117,7 @@ public struct EventBaseData
     [SerializeField] private DayOfWeek[] _dayOfWeek;
     public DayOfWeek[] dayOfWeek { get { return _dayOfWeek; } }
 
-    public enum Locals { Cebola, Batata, Bars, Celeiro, Vinil, Skadi, Tunel, Bench, Barmen };
+    public enum Locals { Cebola, Batata, Bars, Celeiro, Vinil, Skadi, Tunel, Bench, Barmen, Hotel, Market };
 
     [SerializeField] private Locals[] _locals;
     public Locals[] locals { get { return _locals; } }
