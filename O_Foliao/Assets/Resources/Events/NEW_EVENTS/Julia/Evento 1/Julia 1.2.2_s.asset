@@ -62,8 +62,8 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
-  alcool: 1
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 00000000

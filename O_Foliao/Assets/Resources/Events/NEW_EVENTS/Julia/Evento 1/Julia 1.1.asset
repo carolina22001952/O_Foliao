@@ -87,6 +87,6 @@ MonoBehaviour:
       _nextEvent: {fileID: 11400000, guid: 5aae10f910c28ca44bc22a4102c3e237, type: 2}
   alcool: 0
   energy: 0
-  _timeOfDay: 0
+  _timeOfDay: 1
   _dayOfWeek: 0
   _locals: 01000000

@@ -47,33 +47,9 @@ public class Events : ScriptableObject
     [SerializeField] Decisions[] _decisions = null;
     public Decisions[] decisions { get { return _decisions; } }
 
+    [SerializeField] EventBaseData _eventBaseData;
+    public EventBaseData eventBaseData { get { return _eventBaseData; } }
 
-    //Tags only for easy finding and placing of the object
-    public enum Alcool { Low30, Normal, High80 };
-
-    [SerializeField]
-    private Alcool alcool;
-
-    public enum Energy { Low30, Normal };
-
-    [SerializeField]
-    private Energy energy;
-
-    public enum TimeOfDay { Morning, Afternoon, Night };
-
-    [SerializeField] private TimeOfDay _timeOfDay;
-    public TimeOfDay timeOfDay { get { return _timeOfDay; } }
-
-
-    public enum DayOfWeek { Day1, Day2, Day3, Day4, Day5 };
-
-    [SerializeField] private DayOfWeek _dayOfWeek;
-    public DayOfWeek dayOfWeek { get { return _dayOfWeek; } }
-
-    public enum Locals { Stages, Bars, Hotels };
-
-    [SerializeField] private Locals[] _locals;
-    public Locals[] locals { get { return _locals; } }
 
 }
 [Serializable()]
@@ -111,22 +87,48 @@ public struct EventOutcome
     [SerializeField] private Achievement _achievement;
     public Achievement achievement { get { return _achievement; } }
 
-    [SerializeField] Events? _nextEvent;
-    public Events? nextEvent { get { return _nextEvent; } }
+    [SerializeField] Events _nextEvent;
+    public Events nextEvent { get { return _nextEvent; } }
+
+    [SerializeField] Events[] _eventsToInsert;
+    public Events[] eventsToInsert { get { return _eventsToInsert; } }
 
 
 }
-
+[Serializable]
 public struct NPCChanges
 {
-    [SerializeField] private Achievement[] _achievement;
-    public Achievement[] achievement { get { return _achievement; } }
-
-    [SerializeField] private NPCData _npc;
-    public NPCData npc { get { return _npc; } }
+    [SerializeField] private NPCData[] _npc;
+    public NPCData[] npc { get { return _npc; } }
 
     [SerializeField] private int _friendshipPointsPlus;
     public int friendshipPointsPlus { get { return _friendshipPointsPlus; } }
+
+
+}
+[Serializable]
+public struct EventBaseData
+{
+    public enum TimeOfDay { Morning, Afternoon, Night };
+
+    [SerializeField] private TimeOfDay[] _timeOfDay;
+    public TimeOfDay[] timeOfDay { get { return _timeOfDay; } }
+
+
+    public enum DayOfWeek { Day1, Day2, Day3, Day4, Day5 };
+
+    [SerializeField] private DayOfWeek[] _dayOfWeek;
+    public DayOfWeek[] dayOfWeek { get { return _dayOfWeek; } }
+
+    public enum Locals { Cebola, Batata, Bars, Celeiro, Vinil, Skadi, Tunel, Bench, Barmen };
+
+    [SerializeField] private Locals[] _locals;
+    public Locals[] locals { get { return _locals; } }
+
+    public enum Alcohol { Low30, Normal, High80 };
+
+    [SerializeField] private Alcohol[] _alcohol;
+    public Alcohol[] alcohol { get { return _alcohol; } }
 
 
 }

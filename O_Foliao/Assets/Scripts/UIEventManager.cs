@@ -31,11 +31,6 @@ public class UIEventManager : MonoBehaviour
         currentEvent = primaryEventList.GetCurrentEvent();
     }
 
-    public void ChangeCurrentEvent(Events events)
-    {
-        currentEvent = events;
-    }
-
     public void OpenCanvas()
     {
         uiEvents.OpenCanvas();
@@ -111,7 +106,7 @@ public class UIEventManager : MonoBehaviour
             //Call achievement
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
-                ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
+                primaryEventList.ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
             }else
             {
                 uiEvents.CloseCanvas();
@@ -130,7 +125,7 @@ public class UIEventManager : MonoBehaviour
             //Call achievement
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
-                ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
+                primaryEventList.ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
             }
             else
             {

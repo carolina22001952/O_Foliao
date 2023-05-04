@@ -16,4 +16,14 @@ public class NPCData : ScriptableObject
 
     private enum friendshipLvl {Estranho = 0, Conhecido = 1, Amigo = 2, Proximo = 3, Intimo = 4, Amante = 5}
 
+    private int friendshipNumber = 0 ;
+    private friendshipLvl friendshiplvl = 0 ;
+
+    public void GainFriendShip(int friendship)
+    {
+
+    }
+
+
+
 }

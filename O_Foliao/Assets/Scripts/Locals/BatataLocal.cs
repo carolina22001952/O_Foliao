@@ -35,10 +35,10 @@ public class BatataLocal : MonoBehaviour, ILocal
         events = eventListTools.IntersectEventLists(batataEvents, dayEvents);
         events = eventListTools.UnionEvents(events, resourceEvents);
         //Get only 1 type of events and choose a random one
-
+    
         events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
         chosenEvent = eventListTools.ChooseARandomEvent(events);
-        //Stop the movement of the player
+
         primaryEventList.ChangeCurrentEvent(chosenEvent);
 
         uiEvents.OpenCanvas();

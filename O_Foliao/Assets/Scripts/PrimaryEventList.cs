@@ -66,6 +66,10 @@ public class PrimaryEventList : MonoBehaviour
 
     public void ChangeCurrentEvent(Events events)
     {
+        if (events.eventType != EventType.Random)
+        {
+            eventListTools.RemoveEvent(events, morningDeck, afternoonDeck, nightDeck);
+        }
         currentEvent = events;
     }
 

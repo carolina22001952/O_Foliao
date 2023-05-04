@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,13 +15,19 @@ public class BarsLocal : MonoBehaviour, ILocal
     private EventListTools eventListTools;
 
     [SerializeField]
-    private UIEventManager uiEventManager;
+    private DialogueAction dialogueAction;
 
     [SerializeField]
     private ShopsUI shopUi;
 
     [SerializeField]
     private BarslUI barsUI;
+
+    [SerializeField]
+    private Game game;
+
+    [SerializeField]
+    private UIEvents uiEvents;
 
     [SerializeField]
     private GameObject playerChoicesGroup;
@@ -54,7 +61,16 @@ public class BarsLocal : MonoBehaviour, ILocal
     }
     public void localChoice(bool more)
     {
-
+        Debug.Log("LocalChoice");
+        if (more)
+        {
+            dialogueAction.StartDialogue();
+        }
+        else
+        {
+            uiEvents.CloseCanvas();
+            shopUi.OpenShopUI();
+        }
     }
 
     public void ChoiceUI()
@@ -90,8 +106,9 @@ public class BarsLocal : MonoBehaviour, ILocal
         Events chosenEvent;
 
         barmenEvents = primaryEventList.GetBarmenEvents();
-       // uiEventManager.SetupDialogue(barmenEvents[0]);
-      //  uiEventManager.StartDialogue(barmenEvents[0],false);
+        chosenEvent = eventListTools.ChooseARandomEvent(events);
+        primaryEventList.ChangeCurrentEvent(chosenEvent);
+        dialogueAction.StartDialogue();
     }
 
     public void DanceEvents()
@@ -100,19 +117,28 @@ public class BarsLocal : MonoBehaviour, ILocal
         Events chosenEvent;
 
         barDanceEvents = primaryEventList.GetBarsInsideZoneEvents();
-      //  uiEventManager.SetupDialogue(barDanceEvents[0]);
-      //  uiEventManager.StartDialogue(barDanceEvents[0],false);
+        chosenEvent = eventListTools.ChooseARandomEvent(events);
+        primaryEventList.ChangeCurrentEvent(chosenEvent);
+        dialogueAction.StartDialogue();
     }
 
     public void QuitBar()
     {
         shopUi.CloseShopUI();
-        uiEventManager.Restart();
+        game.StartMovement();
     }
 
     public void localDialogue(bool more)
     {
-
+        Debug.Log("LocalDialogue");
+        if (more)
+        {
+            dialogueAction.StartChoices();
+        }
+        else
+        {
+            shopUi.OpenShopUI();
+        }
     }
 
 
