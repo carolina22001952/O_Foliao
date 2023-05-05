@@ -4,8 +4,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using UnityEditor.PackageManager;
-//using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class UIEventManager : MonoBehaviour

@@ -2381,6 +2381,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5781856281613257084, guid: a367968a8cb22cf4e9b3869dd0a146ea, type: 3}
+      propertyPath: m_Name
+      value: Maps_Fora
+      objectReference: {fileID: 0}
+    - target: {fileID: -5781856281613257084, guid: a367968a8cb22cf4e9b3869dd0a146ea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4331024933893142650, guid: a367968a8cb22cf4e9b3869dd0a146ea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1435633015614707214, guid: a367968a8cb22cf4e9b3869dd0a146ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.372
@@ -2814,7 +2826,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 457646816}
   m_HandleRect: {fileID: 0}
@@ -4479,11 +4491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4231e65be494a2488d524cb2732080f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheatShowEvent: {fileID: 11400000, guid: e826633957e721c468cb7b3d4f817207, type: 2}
-  cheatShowEventContinuity: {fileID: 11400000, guid: 6d2d0f7820a1b2f4484f32bf8d53842e, type: 2}
-  cheatShowEventContinuity2: {fileID: 11400000, guid: 13c6aacff0c0520419dcd0f421246a64, type: 2}
-  player: {fileID: 1592390869}
-  clock: {fileID: 60811737}
 --- !u!4 &723327612
 Transform:
   m_ObjectHideFlags: 0
@@ -8003,7 +8010,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 54306201}
   m_HandleRect: {fileID: 0}
@@ -8478,29 +8485,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1342336682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
+  m_Script: {fileID: 11500000, guid: 7919b9c66b93dee4e8aa38472dd52d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barType: 0
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  dialogueAction: {fileID: 0}
-  shopUi: {fileID: 60811741}
-  barsUI: {fileID: 0}
-  game: {fileID: 0}
-  uiEvents: {fileID: 0}
-  playerChoicesGroup: {fileID: 1699521899}
-  playerChoice1: {fileID: 1123119260}
-  playerChoice2: {fileID: 1051461250}
-  playerChoice3: {fileID: 1756712907}
-  playerChoice1Text: Falar com o barmen
-  playerChoice2Text: "Partir o ch\xE3o com a raba"
-  playerChoice3Text: Sair do bar
-  barDanceEvents: []
-  GenericBarmenEvents: []
-  SkadiUI: {fileID: 0}
-  VinilUI: {fileID: 0}
-  CeleiroUI: {fileID: 0}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &1342539880
 GameObject:
   m_ObjectHideFlags: 0
@@ -8681,7 +8673,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1119679984}
   m_HandleRect: {fileID: 0}
@@ -9541,6 +9533,70 @@ RectTransform:
   m_AnchoredPosition: {x: 31, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1572387182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572387184}
+  - component: {fileID: 1572387183}
+  m_Layer: 0
+  m_Name: APAGAR DEPOIS DA BUILD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1572387183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572387182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barType: 0
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 0}
+  shopUi: {fileID: 60811741}
+  barsUI: {fileID: 0}
+  game: {fileID: 0}
+  uiEvents: {fileID: 0}
+  playerChoicesGroup: {fileID: 1699521899}
+  playerChoice1: {fileID: 1123119260}
+  playerChoice2: {fileID: 1051461250}
+  playerChoice3: {fileID: 1756712907}
+  playerChoice1Text: Falar com o barmen
+  playerChoice2Text: "Partir o ch\xE3o com a raba"
+  playerChoice3Text: Sair do bar
+  barDanceEvents: []
+  GenericBarmenEvents: []
+  SkadiUI: {fileID: 0}
+  VinilUI: {fileID: 0}
+  CeleiroUI: {fileID: 0}
+--- !u!4 &1572387184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572387182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 202.78972, y: 547.5399, z: 6.491024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1592390868
 GameObject:
   m_ObjectHideFlags: 0
@@ -9654,7 +9710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592390868}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 644, y: 535, z: 90}
+  m_LocalPosition: {x: 629, y: 535, z: 173}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children:
