@@ -6835,7 +6835,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1342336685}
+      - m_Target: {fileID: 1161609765}
         m_TargetAssemblyTypeName: BarsLocal, Assembly-CSharp
         m_MethodName: BarChoices
         m_Mode: 3
@@ -7144,7 +7144,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1342336685}
+      - m_Target: {fileID: 1161609765}
         m_TargetAssemblyTypeName: BarsLocal, Assembly-CSharp
         m_MethodName: BarChoices
         m_Mode: 3
@@ -7367,6 +7367,7 @@ GameObject:
   - component: {fileID: 1161609762}
   - component: {fileID: 1161609761}
   - component: {fileID: 1161609760}
+  - component: {fileID: 1161609765}
   m_Layer: 5
   m_Name: Pause_Canvas
   m_TagString: Untagged
@@ -7470,6 +7471,40 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1161609765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161609759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barType: 0
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 60811742}
+  shopUi: {fileID: 60811741}
+  barsUI: {fileID: 0}
+  game: {fileID: 60811733}
+  uiEvents: {fileID: 1780539478}
+  playerChoicesGroup: {fileID: 1699521899}
+  playerChoice1: {fileID: 1123119260}
+  playerChoice2: {fileID: 1051461250}
+  playerChoice3: {fileID: 1756712907}
+  playerChoice1Text: Falar com o Barman
+  playerChoice2Text: "Ir para a pista dan\xE7ar!"
+  playerChoice3Text: Sair do bar
+  barDanceEvents:
+  - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
+  GenericBarmenEvents:
+  - {fileID: 11400000, guid: dd1f05d70b77c884385290acada50ed4, type: 2}
+  SkadiUI: {fileID: 0}
+  VinilUI: {fileID: 0}
+  CeleiroUI: {fileID: 0}
 --- !u!1 &1177945383
 GameObject:
   m_ObjectHideFlags: 0
@@ -8446,6 +8481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barType: 0
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
   dialogueAction: {fileID: 0}
@@ -8457,10 +8493,14 @@ MonoBehaviour:
   playerChoice1: {fileID: 1123119260}
   playerChoice2: {fileID: 1051461250}
   playerChoice3: {fileID: 1756712907}
-  background: {fileID: 21300000, guid: 83040aa0720f4a845b1cea562900a1aa, type: 3}
   playerChoice1Text: Falar com o barmen
   playerChoice2Text: "Partir o ch\xE3o com a raba"
   playerChoice3Text: Sair do bar
+  barDanceEvents: []
+  GenericBarmenEvents: []
+  SkadiUI: {fileID: 0}
+  VinilUI: {fileID: 0}
+  CeleiroUI: {fileID: 0}
 --- !u!1 &1342539880
 GameObject:
   m_ObjectHideFlags: 0
@@ -10455,7 +10495,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1342336685}
+      - m_Target: {fileID: 1161609765}
         m_TargetAssemblyTypeName: BarsLocal, Assembly-CSharp
         m_MethodName: BarChoices
         m_Mode: 3
@@ -13053,7 +13093,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 83040aa0720f4a845b1cea562900a1aa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

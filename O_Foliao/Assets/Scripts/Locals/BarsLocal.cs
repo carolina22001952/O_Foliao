@@ -8,6 +8,10 @@ using UnityEngine.UI;
 
 public class BarsLocal : MonoBehaviour, ILocal
 {
+    public enum Bar { Skadi, Vinil, Celeiro }
+    [SerializeField]
+    private Bar barType;
+
     [SerializeField]
     private PrimaryEventList primaryEventList;
 
@@ -39,25 +43,47 @@ public class BarsLocal : MonoBehaviour, ILocal
     private GameObject playerChoice3;
 
     [SerializeField]
-    private Sprite background;
-
-    [SerializeField]
     private string playerChoice1Text;
     [SerializeField]
     private string playerChoice2Text;
     [SerializeField]
     private string playerChoice3Text;
 
-    private List<Events> barsInsideEvents;
-    private List<Events> barmenEvents;
+    [Header("Events for Every Bar")]
+    [SerializeField]
     private List<Events> barDanceEvents;
-    private List<Events> dayEvents;
-    private List<Events> resourceEvents;
+    [SerializeField]
+    private List<Events> GenericBarmenEvents;
+    [Header("UI Event of Every Bar")]
+    [SerializeField]
+    private Events SkadiUI;
+    [SerializeField]
+    private Events VinilUI;
+    [SerializeField]
+    private Events CeleiroUI;
+
+    private Events currentBar;
+
+    private Clock clock;
     public void localInteraction(Player player, Clock clock)
     {
-        shopUi.UpdateBackground(background);
+        bool inBar = true;
+        this.clock = clock;
+        switch (barType)
+        {
+            case Bar.Skadi:
+                currentBar = SkadiUI;
+                break;
+            case Bar.Vinil:
+                currentBar = VinilUI;
+                break;
+            case Bar.Celeiro:
+                currentBar = CeleiroUI;
+                break;
+        }
         shopUi.OpenShopUI();
-
+        ChoiceUI();
+        
     }
     public void localChoice(bool more)
     {
@@ -91,7 +117,7 @@ public class BarsLocal : MonoBehaviour, ILocal
                 BarmenEvents();
                 break;
             case 1:
-                DanceEvents();
+                BarEvents();
                 break;
             case 2:
                 QuitBar();
@@ -105,18 +131,43 @@ public class BarsLocal : MonoBehaviour, ILocal
         List<Events> events = new List<Events>();
         Events chosenEvent;
 
-        barmenEvents = primaryEventList.GetBarmenEvents();
+        switch (barType)
+        {
+            case Bar.Skadi:
+                events = GenericBarmenEvents;
+                break;
+            case Bar.Vinil:
+                events = GenericBarmenEvents;
+                break;
+            case Bar.Celeiro:
+                events = primaryEventList.GetBarmenEvents();
+                break;
+        }
+
+
         chosenEvent = eventListTools.ChooseARandomEvent(events);
         primaryEventList.ChangeCurrentEvent(chosenEvent);
         dialogueAction.StartDialogue();
     }
 
-    public void DanceEvents()
+    public void BarEvents()
     {
         List<Events> events = new List<Events>();
         Events chosenEvent;
 
-        barDanceEvents = primaryEventList.GetBarsInsideZoneEvents();
+        switch (barType)
+        {
+            case Bar.Skadi:
+                events = eventListTools.IntersectEventLists(primaryEventList.GetSkadiZoneEvents(), primaryEventList.GetDayDeck(clock)) ;
+                break;
+            case Bar.Vinil:
+                events = eventListTools.IntersectEventLists(primaryEventList.GetVinilZoneEvents(), primaryEventList.GetDayDeck(clock));
+                break;
+            case Bar.Celeiro:
+                events = eventListTools.IntersectEventLists(primaryEventList.GetCeleiroZoneEvents(), primaryEventList.GetDayDeck(clock));
+                break;
+        }
+        events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
         chosenEvent = eventListTools.ChooseARandomEvent(events);
         primaryEventList.ChangeCurrentEvent(chosenEvent);
         dialogueAction.StartDialogue();
@@ -141,6 +192,11 @@ public class BarsLocal : MonoBehaviour, ILocal
         }
     }
 
+    public void OpenBar()
+    {
+        shopUi.OpenShopUI();
+        shopUi.UpdateBackground(currentBar.dialogue[0].background);     
+    }
 
 
 
