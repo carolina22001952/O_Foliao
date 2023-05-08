@@ -21,6 +21,7 @@ public class BatataLocal : MonoBehaviour, ILocal
 
     private List<Events> batataEvents;
     private List<Events> dayEvents;
+    private List<Events> timeOfDayEvents;
     private List<Events> resourceEvents;
     public void localInteraction(Player player, Clock clock)
     {
@@ -30,8 +31,9 @@ public class BatataLocal : MonoBehaviour, ILocal
         batataEvents = primaryEventList.GetBatataZoneEvents();
         dayEvents = primaryEventList.GetDayDeck(clock);
         resourceEvents = primaryEventList.GetResourceEvents(player);
+        timeOfDayEvents = primaryEventList.GetTimeOfDayDeck(clock);
         //Intersect the events
-        events = eventListTools.IntersectEventLists(batataEvents, dayEvents);
+        events = eventListTools.IntersectEventLists(batataEvents, dayEvents, timeOfDayEvents);
         events = eventListTools.UnionEvents(events, resourceEvents);
         //Get only 1 type of events and choose a random one
     

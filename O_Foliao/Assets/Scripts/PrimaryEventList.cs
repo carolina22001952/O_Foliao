@@ -187,6 +187,21 @@ public class PrimaryEventList : MonoBehaviour
         }
     }
 
+    public List<Events> GetTimeOfDayDeck(Clock time)
+    {
+        switch (time.GetCurrentTimeOfDay())
+        {
+            case Clock.TimesOfDay.Morning:
+                return GetMorningZoneEvents();
+            case Clock.TimesOfDay.Afternoon:
+                return GetAfternoonZoneEvents();
+            case Clock.TimesOfDay.Night:
+                return GetNightZoneEvents();
+            default:
+                throw new NotImplementedException("Day" + time.GetDay() + "unknown");
+        }
+    }
+
     public List<Events> GetResourceEvents(Player player)
     {
         List<Events> auxList = null;

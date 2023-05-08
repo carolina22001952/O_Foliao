@@ -81,7 +81,6 @@ public class BarsLocal : MonoBehaviour, ILocal
                 break;
         }
         shopUi.OpenShopUI();
-        ChoiceUI();
         
     }
     public void localChoice(bool more)
@@ -194,7 +193,7 @@ public class BarsLocal : MonoBehaviour, ILocal
     public void OpenBar()
     {
         shopUi.OpenShopUI();
-        shopUi.UpdateBackground(currentBar.dialogue[0].background);     
+        //shopUi.UpdateBackground(currentBar.dialogue[0].background);     
     }
 
 

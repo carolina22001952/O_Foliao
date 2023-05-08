@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using System;
 using Random = System.Random;
 
 public class EventListTools : MonoBehaviour
@@ -14,16 +12,18 @@ public class EventListTools : MonoBehaviour
     /// <returns>An empty list or the list of shared events</returns>
     public List<Events> IntersectEventLists(params List<Events>[] eventListsToIntersect)
     {
-        HashSet<Events> eventsAux = null;
-        foreach(List<Events> eventlist in eventListsToIntersect)
+
+        IEnumerable<Events> eventsAux = null; ;
+        foreach (List<Events> eventlist in eventListsToIntersect)
         {
             if(eventsAux == null)
             {
-                eventsAux = new HashSet<Events>(eventlist);
+                eventsAux = eventlist.AsQueryable();
             }
             else
             {
-                eventsAux.IntersectWith(eventlist);
+                eventsAux = eventsAux.AsQueryable().Intersect(eventlist);
+                eventsAux.Intersect(eventlist);
             }
         }
         return eventsAux == null ? new List<Events>() : eventsAux.ToList();
@@ -70,7 +70,7 @@ public class EventListTools : MonoBehaviour
             list.Remove(eventToRemove);
         }
     }
-
+     
     public void InsertAnEvent(Events eventToInsert, params List<Events>[] eventListsToInsert)
     {
         

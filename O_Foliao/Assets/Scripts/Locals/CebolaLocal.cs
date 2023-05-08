@@ -25,6 +25,7 @@ public class CebolaLocal : MonoBehaviour, ILocal
 
     private List<Events> cebolaEvents;
     private List<Events> dayEvents;
+    private List<Events> timeOfDayEvents;
     private List<Events> resourceEvents;
 
     private Events chosenEvent;
@@ -35,9 +36,18 @@ public class CebolaLocal : MonoBehaviour, ILocal
         //Get the events
         cebolaEvents = primaryEventList.GetCebolaZoneEvents();
         dayEvents = primaryEventList.GetDayDeck(clock);
+        timeOfDayEvents = primaryEventList.GetTimeOfDayDeck(clock);
         resourceEvents = primaryEventList.GetResourceEvents(player);
         //Intersect the events
-        events = eventListTools.IntersectEventLists(cebolaEvents, dayEvents);
+        foreach(Events ll in events)
+        {
+            Debug.Log(ll);
+        }
+        events = eventListTools.IntersectEventLists(cebolaEvents, dayEvents,timeOfDayEvents);
+        foreach (Events ll in events)
+        {
+            Debug.Log(ll);
+        }
         events = eventListTools.UnionEvents(events, resourceEvents);
         //Get only 1 type of events and choose a random one
 

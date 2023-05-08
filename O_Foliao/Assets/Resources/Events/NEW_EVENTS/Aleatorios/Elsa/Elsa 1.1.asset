@@ -19,7 +19,6 @@ MonoBehaviour:
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: "(Atrapalhada) Pe\xE7o imensa desculpa, senhora Agente!"
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -32,6 +31,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: adf64a9730d577b469d0dc62cf335a13, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -40,8 +40,9 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+    _choice: 
   - _choiceDialogue: "(Desconfiada) Hmm, preciso fazer o qu\xEA? "
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -54,6 +55,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: adf64a9730d577b469d0dc62cf335a13, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -62,8 +64,10 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert: []
+    _choice: 
+  _eventBaseData:
+    _timeOfDay: 01000000
+    _dayOfWeek: 00000000
+    _locals: 00000000
+    _alcohol: 
