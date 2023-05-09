@@ -30,10 +30,6 @@ public struct Decisions
     [SerializeField] EventOutcome _failedEvent;
     public EventOutcome failedEvent { get { return _failedEvent; } }
 
-    [TextArea (15, 20)]
-    [SerializeField] private string _choice;
-    public string choice { get { return _choice; } }
-
 }
 
 [CreateAssetMenu(fileName = "New Event", menuName = "Events/new Event")]
