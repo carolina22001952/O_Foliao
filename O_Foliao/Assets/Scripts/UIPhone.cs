@@ -18,13 +18,15 @@ public class UIPhone : MonoBehaviour
         if(Input.GetMouseButtonUp(0))
         {
             if(isMouseOver)
+            {
                 animator.SetBool("Active", !animator.GetBool("Active"));
+            }   
         }
         IsMouseOverUI();
     }
     
 
-     private void IsMouseOverUI()
+    private void IsMouseOverUI()
     {
         PointerEventData pointerData = new PointerEventData(EventSystem.current)
         {
@@ -36,9 +38,9 @@ public class UIPhone : MonoBehaviour
         List<RaycastResult> results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(pointerData, results);
 
-        if (results.Count > 0)
+        if(results.Count > 0)
         {
-            for (int i = 0; i < results.Count; ++i)
+            for(int i = 0; i < results.Count; ++i)
             {
                 if (results[i].gameObject.CompareTag("Phone"))
                 {
@@ -51,39 +53,6 @@ public class UIPhone : MonoBehaviour
         {
             isMouseOver = false;
         }
-        animator.SetBool("IsMouseOver", isMouseOver && Input.GetMouseButton(0));
+        //animator.SetBool("Active", isMouseOver && Input.GetMouseButton(0));
     }
-
-    /*private void IsMouseOverUI()
-    {
-        if (EventSystem.current.IsPointerOverGameObject())
-        {
-            PointerEventData pointerData = new PointerEventData(EventSystem.current)
-            {
-                pointerId = -1,
-            };
-    
-            pointerData.position = Input.mousePosition;
-    
-            List<RaycastResult> results = new List<RaycastResult>();
-            EventSystem.current.RaycastAll(pointerData, results);
-    
-            if (results.Count > 0)
-            {
-                for( int i = 0 ; i < results.Count ; ++i )
-                {
-                    if( results[i].gameObject.CompareTag( "Phone" ) )
-                    {
-                        isMouseOver = true ;
-                        animator.SetBool("IsMouseOver", true);
-                    }              
-                }   
-            }
-        }
-        else
-        {
-            isMouseOver = false;
-            animator.SetBool("IsMouseOver", false);
-        }
-    }*/
 }

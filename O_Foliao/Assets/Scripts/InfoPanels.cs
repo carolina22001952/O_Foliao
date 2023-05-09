@@ -21,28 +21,33 @@ public class InfoPanels : MonoBehaviour
     //Animators
     [Header("Animators")]
     [Header("Bars")]
-    [SerializeField] Animator vinilPanelAnimator;
-    [SerializeField] Animator celeiroPanelAnimator;
-    [SerializeField] Animator skadiPanelAnimator;
+    [SerializeField] private Animator vinilPanelAnimator;
+    [SerializeField] private Animator celeiroPanelAnimator;
+    [SerializeField] private Animator skadiPanelAnimator;
     [Header("Stages")]
-    [SerializeField] Animator batataPanelAnimator;
-    [SerializeField] Animator cebolaPanelAnimator;
+    [SerializeField] private Animator batataPanelAnimator;
+    [SerializeField] private Animator cebolaPanelAnimator;
     [Header("Benches")]
-    [SerializeField] Animator bench1PanelAnimator;
-    [SerializeField] Animator bench2PanelAnimator;
-    [SerializeField] Animator bench3PanelAnimator;
+    [SerializeField] private Animator bench1PanelAnimator;
+    [SerializeField] private Animator bench2PanelAnimator;
+    [SerializeField] private Animator bench3PanelAnimator;
 
+
+    [SerializeField] private Movement move;
 
     void Update()
     {
-        IsMouseOverPanel(vinilCollider, vinilPanelAnimator);
-        IsMouseOverPanel(celeiroCollider, celeiroPanelAnimator);
-        IsMouseOverPanel(skadiCollider, skadiPanelAnimator);
-        IsMouseOverPanel(batataCollider, batataPanelAnimator);
-        IsMouseOverPanel(cebolaCollider, cebolaPanelAnimator);
-        IsMouseOverPanel(bench1Collider, bench1PanelAnimator);
-        IsMouseOverPanel(bench2Collider, bench2PanelAnimator);
-        IsMouseOverPanel(bench3Collider, bench3PanelAnimator);
+        if(move.IsMoving())
+        {
+            IsMouseOverPanel(vinilCollider, vinilPanelAnimator);
+            IsMouseOverPanel(celeiroCollider, celeiroPanelAnimator);
+            IsMouseOverPanel(skadiCollider, skadiPanelAnimator);
+            IsMouseOverPanel(batataCollider, batataPanelAnimator);
+            IsMouseOverPanel(cebolaCollider, cebolaPanelAnimator);
+            IsMouseOverPanel(bench1Collider, bench1PanelAnimator);
+            IsMouseOverPanel(bench2Collider, bench2PanelAnimator);
+            IsMouseOverPanel(bench3Collider, bench3PanelAnimator);
+        }
     }
 
 
