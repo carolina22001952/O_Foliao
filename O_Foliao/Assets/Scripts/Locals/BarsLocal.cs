@@ -82,6 +82,7 @@ public class BarsLocal : MonoBehaviour, ILocal
         Debug.Log("LocalChoice");
         if (more)
         {
+            shopUi.ButtonInteraction(true);
             dialogueAction.StartDialogue();
         }
         else
