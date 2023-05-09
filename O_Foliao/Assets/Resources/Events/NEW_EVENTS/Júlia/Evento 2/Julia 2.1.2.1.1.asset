@@ -26,7 +26,7 @@ MonoBehaviour:
     _sucessEvent:
       _timePassed: 0
       _alcoolPlus: 0
-      _funPlus: 5
+      _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}

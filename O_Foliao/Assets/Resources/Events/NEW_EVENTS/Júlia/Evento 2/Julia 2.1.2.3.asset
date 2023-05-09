@@ -10,29 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: Julia 2.1.2
+  m_Name: Julia 2.1.2.3
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _text: Uma jola deixa-me mais animado...
+  - _text: "\xC9 o teu dia de sorte."
     _npc: {fileID: 11400000, guid: 228120d56cd44aa44887eff68a7ccc0a, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
-  - _choiceDialogue: "(Animada) \xC9 para j\xE1!"
+  - _choiceDialogue: "(Brincalhona) Olha que ele hoje est\xE1 generoso."
     _minAlcool: 0
-    _minFun: 0
+    _minFun: 35
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
-      _alcoolPlus: 5
-      _funPlus: 0
-      _moneyPlus: -5
-      _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 1324e727b96368b45a398d6461364598, type: 2}
-      _eventsToInsert: []
-    _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
@@ -41,21 +32,21 @@ MonoBehaviour:
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
-  - _choiceDialogue: (Brincalhona) Pagas tu?
-    _minAlcool: 0
-    _minFun: 0
-    _minEnergy: 0
-    _minMoney: 0
-    _sucessEvent:
+    _failedEvent:
       _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: -5
+      _alcoolPlus: 10
+      _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 0107bcf63ef00f746884519de84464e0, type: 2}
+      _nextEvent: {fileID: 11400000, guid: d349301f03e642e4aba19de90ff9fee5, type: 2}
       _eventsToInsert: []
-    _failedEvent:
+  - _choiceDialogue: "(Sarc\xE1stica) Que cavalheiro."
+    _minAlcool: 0
+    _minFun: 35
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
@@ -63,6 +54,15 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 10
+      _funPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: d349301f03e642e4aba19de90ff9fee5, type: 2}
       _eventsToInsert: []
   _eventBaseData:
     _timeOfDay: 00000000

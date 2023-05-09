@@ -26,11 +26,11 @@ MonoBehaviour:
     _sucessEvent:
       _timePassed: 0
       _alcoolPlus: 0
-      _funPlus: 0
+      _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: dd7c6a9ae09bab24ea11e10e273a681b, type: 2}
+      _nextEvent: {fileID: 11400000, guid: 2cd799c90091728498ebe63b112e3f0b, type: 2}
       _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
@@ -43,17 +43,17 @@ MonoBehaviour:
       _eventsToInsert: []
   - _choiceDialogue: (Atrevida) E se quiser?
     _minAlcool: 0
-    _minFun: 0
+    _minFun: 35
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
       _timePassed: 0
       _alcoolPlus: 0
-      _funPlus: 5
+      _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: ef511c6316c425d49b61c45b0c1ca311, type: 2}
+      _nextEvent: {fileID: 11400000, guid: fd151b23c7008764da59bc53f41a1e5e, type: 2}
       _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
