@@ -581,7 +581,6 @@ GameObject:
   - component: {fileID: 60811737}
   - component: {fileID: 60811732}
   - component: {fileID: 60811735}
-  - component: {fileID: 60811736}
   - component: {fileID: 60811740}
   - component: {fileID: 60811739}
   - component: {fileID: 60811741}
@@ -652,18 +651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3965ed4d381fac43a01ef37c0c2805a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &60811736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60811730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50beadb1724b2f48a3b8367a3dec5cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &60811737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,13 +717,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueGroup: {fileID: 938050666}
-  choice1Dialogue: {fileID: 0}
-  choice2Dialogue: {fileID: 0}
-  choice3Dialogue: {fileID: 0}
-  choice1Button: {fileID: 0}
-  choice2Button: {fileID: 0}
-  choice3Button: {fileID: 0}
+  choice1Dialogue: {fileID: 7912529}
+  choice2Dialogue: {fileID: 178628608}
+  choice3Dialogue: {fileID: 990953313}
+  choice1Button: {fileID: 1123119262}
+  choice2Button: {fileID: 1051461252}
+  choice3Button: {fileID: 1756712909}
   background: {fileID: 2127916734}
+  animator: {fileID: 938050671}
 --- !u!114 &60811742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10032,22 +10020,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barType: 0
-  primaryEventList: {fileID: 0}
-  eventListTools: {fileID: 0}
-  dialogueAction: {fileID: 0}
-  shopUi: {fileID: 0}
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 60811742}
+  shopUi: {fileID: 60811741}
   barsUI: {fileID: 0}
-  game: {fileID: 0}
-  uiEvents: {fileID: 0}
+  game: {fileID: 60811733}
+  uiEvents: {fileID: 1780539478}
   playerChoice1Text: 
   playerChoice2Text: 
   playerChoice3Text: 
   barDanceEvents: []
   GenericBarmenEvents: []
-  SkadiUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
-  VinilUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
-  CeleiroUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
-  clock: {fileID: 0}
+  SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
+  VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
+  CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
+  clock: {fileID: 60811737}
 --- !u!1 &1342539880
 GameObject:
   m_ObjectHideFlags: 0
