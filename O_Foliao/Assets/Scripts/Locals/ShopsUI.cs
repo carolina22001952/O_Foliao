@@ -10,7 +10,18 @@ public class ShopsUI : MonoBehaviour
     [SerializeField]
     private GameObject dialogueGroup;
     [SerializeField]
-    private TextMeshProUGUI dialogueText;
+    private TextMeshProUGUI choice1Dialogue;
+    [SerializeField]
+    private TextMeshProUGUI choice2Dialogue;
+    [SerializeField]
+    private TextMeshProUGUI choice3Dialogue;
+    [SerializeField]
+    private Button choice1Button;
+    [SerializeField]
+    private Button choice2Button;
+    [SerializeField]
+    private Button choice3Button;
+
     [SerializeField]
     private Image background;
 
@@ -24,9 +35,11 @@ public class ShopsUI : MonoBehaviour
         dialogueGroup.SetActive(false);
     }
 
-    public void UpdateShopDialogue(string dialogue)
+    public void UpdateChoices(Events events)
     {
-        dialogueText.text = dialogue;
+        choice1Dialogue.text = events.decisions[0].choiceDialogue;
+        choice1Dialogue.text = events.decisions[1].choiceDialogue;
+        choice1Dialogue.text = events.decisions[2].choiceDialogue;
     }
 
     public void UpdateBackground(Sprite newbackground)
@@ -34,6 +47,12 @@ public class ShopsUI : MonoBehaviour
         background.sprite = newbackground;
     }
 
+    public void ButtonInteraction(bool lever)
+    {
+        choice1Button.interactable = lever;
+        choice2Button.interactable = lever;
+        choice3Button.interactable = lever;
+    }
 
 
 

@@ -45,6 +45,7 @@ public class DialogueAction : MonoBehaviour
     public void StartDialogue()
     {
         SetupDialogue();
+        OpenCanvas();
         currentEvent = primaryEventList.GetCurrentEvent();
         uiEvents.UpdateNpcName(currentEvent.dialogue[index].npc.name);
         uiEvents.OpenCharacterGameObject();
@@ -144,9 +145,6 @@ public class DialogueAction : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        Debug.Log(currentEvent.dialogue[index].text);
-        currentEvent.dialogue[index].text.Replace("  ", " ").Trim();
-        Debug.Log(currentEvent.dialogue[index].text);
         foreach (char c in currentEvent.dialogue[index].text.ToCharArray())
         {
             uiEvents.TypeNpcDialogue(c);
@@ -179,7 +177,6 @@ public class DialogueAction : MonoBehaviour
     {
         if (index < currentEvent.dialogue.Length - 1)
         {
-            currentEvent.dialogue[index].text.Replace("  ", " ").Trim();
             index++;
             uiEvents.UpdateNpcDialogue(string.Empty);
             StartCoroutine(TypeLine());

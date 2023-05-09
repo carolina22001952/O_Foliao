@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -32,14 +33,7 @@ public class BarsLocal : MonoBehaviour, ILocal
     [SerializeField]
     private UIEvents uiEvents;
 
-    [SerializeField]
-    private GameObject playerChoicesGroup;
-    [SerializeField]
-    private GameObject playerChoice1;
-    [SerializeField]
-    private GameObject playerChoice2;
-    [SerializeField]
-    private GameObject playerChoice3;
+
 
     [SerializeField]
     private string playerChoice1Text;
@@ -62,12 +56,11 @@ public class BarsLocal : MonoBehaviour, ILocal
     private Events CeleiroUI;
 
     private Events currentBar;
-
+    [SerializeField]
     private Clock clock;
     public void localInteraction(Player player, Clock clock)
     {
         bool inBar = true;
-        this.clock = clock;
         switch (barType)
         {
             case Bar.Skadi:
@@ -80,7 +73,8 @@ public class BarsLocal : MonoBehaviour, ILocal
                 currentBar = CeleiroUI;
                 break;
         }
-        shopUi.OpenShopUI();
+
+        OpenBar();
         
     }
     public void localChoice(bool more)
@@ -92,19 +86,9 @@ public class BarsLocal : MonoBehaviour, ILocal
         }
         else
         {
+            shopUi.ButtonInteraction(true);
             uiEvents.CloseCanvas();
-            shopUi.OpenShopUI();
         }
-    }
-
-    public void ChoiceUI()
-    {
-        playerChoice1.GetComponent<TextMeshPro>().text = playerChoice1Text;
-        playerChoice2.GetComponent<TextMeshPro>().text = playerChoice2Text;
-        playerChoice3.GetComponent<TextMeshPro>().text = playerChoice3Text;
-        playerChoice1.SetActive(true);
-        playerChoice2.SetActive(true);
-        playerChoice3.SetActive(true);
     }
 
     public void BarChoices(int choice)
@@ -133,6 +117,7 @@ public class BarsLocal : MonoBehaviour, ILocal
         {
             case Bar.Skadi:
                 events = GenericBarmenEvents;
+                Debug.Log("Yah skadi");
                 break;
             case Bar.Vinil:
                 events = GenericBarmenEvents;
@@ -145,6 +130,8 @@ public class BarsLocal : MonoBehaviour, ILocal
 
         chosenEvent = eventListTools.ChooseARandomEvent(events);
         primaryEventList.ChangeCurrentEvent(chosenEvent);
+        uiEvents.OpenCanvas();
+        uiEvents.ResetCanvas();
         dialogueAction.StartDialogue();
     }
 
@@ -156,18 +143,21 @@ public class BarsLocal : MonoBehaviour, ILocal
         switch (barType)
         {
             case Bar.Skadi:
-                events = eventListTools.IntersectEventLists(primaryEventList.GetSkadiZoneEvents(), primaryEventList.GetDayDeck(clock)) ;
+                events = eventListTools.IntersectEventLists(primaryEventList.GetSkadiZoneEvents(), primaryEventList.GetDayDeck(clock), primaryEventList.GetTimeOfDayDeck(clock)) ;
                 break;
             case Bar.Vinil:
-                events = eventListTools.IntersectEventLists(primaryEventList.GetVinilZoneEvents(), primaryEventList.GetDayDeck(clock));
+                events = eventListTools.IntersectEventLists(primaryEventList.GetVinilZoneEvents(), primaryEventList.GetDayDeck(clock), primaryEventList.GetTimeOfDayDeck(clock));
                 break;
             case Bar.Celeiro:
-                events = eventListTools.IntersectEventLists(primaryEventList.GetCeleiroZoneEvents(), primaryEventList.GetDayDeck(clock));
+                events = eventListTools.IntersectEventLists(primaryEventList.GetCeleiroZoneEvents(), primaryEventList.GetDayDeck(clock), primaryEventList.GetTimeOfDayDeck(clock));
                 break;
         }
+
         events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
         chosenEvent = eventListTools.ChooseARandomEvent(events);
         primaryEventList.ChangeCurrentEvent(chosenEvent);
+        uiEvents.OpenCanvas();
+        uiEvents.ResetCanvas();
         dialogueAction.StartDialogue();
     }
 
@@ -182,18 +172,20 @@ public class BarsLocal : MonoBehaviour, ILocal
         Debug.Log("LocalDialogue");
         if (more)
         {
+            shopUi.ButtonInteraction(false);
             dialogueAction.StartChoices();
         }
         else
         {
-            shopUi.OpenShopUI();
+            uiEvents.CloseCanvas();
         }
     }
 
     public void OpenBar()
     {
         shopUi.OpenShopUI();
-        //shopUi.UpdateBackground(currentBar.dialogue[0].background);     
+        shopUi.UpdateBackground(currentBar.dialogue[0].background);
+        shopUi.UpdateChoices(currentBar);
     }
 
 
