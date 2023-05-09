@@ -581,7 +581,6 @@ GameObject:
   - component: {fileID: 60811737}
   - component: {fileID: 60811732}
   - component: {fileID: 60811735}
-  - component: {fileID: 60811736}
   - component: {fileID: 60811740}
   - component: {fileID: 60811739}
   - component: {fileID: 60811741}
@@ -652,18 +651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3965ed4d381fac43a01ef37c0c2805a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &60811736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60811730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50beadb1724b2f48a3b8367a3dec5cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &60811737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,7 +717,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueGroup: {fileID: 938050666}
-  dialogueText: {fileID: 1597696859}
+  choice1Dialogue: {fileID: 7912529}
+  choice2Dialogue: {fileID: 178628608}
+  choice3Dialogue: {fileID: 990953313}
+  choice1Button: {fileID: 1123119262}
+  choice2Button: {fileID: 1051461252}
+  choice3Button: {fileID: 1756712909}
   background: {fileID: 2127916734}
 --- !u!114 &60811742
 MonoBehaviour:
@@ -2222,10 +2214,6 @@ MonoBehaviour:
   barsUI: {fileID: 0}
   game: {fileID: 0}
   uiEvents: {fileID: 0}
-  playerChoicesGroup: {fileID: 0}
-  playerChoice1: {fileID: 0}
-  playerChoice2: {fileID: 0}
-  playerChoice3: {fileID: 0}
   playerChoice1Text: 
   playerChoice2Text: 
   playerChoice3Text: 
@@ -2234,6 +2222,7 @@ MonoBehaviour:
   SkadiUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
   VinilUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
   CeleiroUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
+  clock: {fileID: 0}
 --- !u!114 &233815545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4714,14 +4703,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 699324352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8425a6e7230dc3a4dbe46e126a1e27d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barType: 2
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
   dialogueAction: {fileID: 60811742}
-  uiEvents: {fileID: 1780539478}
+  shopUi: {fileID: 60811741}
+  barsUI: {fileID: 0}
   game: {fileID: 60811733}
+  uiEvents: {fileID: 1780539478}
+  playerChoice1Text: 
+  playerChoice2Text: 
+  playerChoice3Text: 
+  barDanceEvents: []
+  GenericBarmenEvents:
+  - {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
+  - {fileID: 11400000, guid: 70a7744e42eb10744be027fbb1534db0, type: 2}
+  - {fileID: 11400000, guid: b197c0aeff0628042a80315091f6d213, type: 2}
+  SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
+  VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
+  CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
+  clock: {fileID: 60811737}
 --- !u!1 &701223692
 GameObject:
   m_ObjectHideFlags: 0
@@ -4893,7 +4897,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 723327612}
-  - component: {fileID: 723327611}
   m_Layer: 0
   m_Name: Cheats
   m_TagString: Untagged
@@ -4901,18 +4904,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &723327611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723327610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4231e65be494a2488d524cb2732080f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &723327612
 Transform:
   m_ObjectHideFlags: 0
@@ -7869,8 +7860,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1080495807}
   - component: {fileID: 1080495810}
-  - component: {fileID: 1080495809}
   - component: {fileID: 1080495808}
+  - component: {fileID: 1080495811}
   m_Layer: 0
   m_Name: Node_Vinil
   m_TagString: Point
@@ -7907,23 +7898,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080495806}
   m_CullTransparentMesh: 1
---- !u!114 &1080495809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080495806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8425a6e7230dc3a4dbe46e126a1e27d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  primaryEventList: {fileID: 1305438561}
-  eventListTools: {fileID: 60811740}
-  dialogueAction: {fileID: 60811742}
-  uiEvents: {fileID: 1780539478}
-  game: {fileID: 60811733}
 --- !u!114 &1080495810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7947,6 +7921,38 @@ MonoBehaviour:
     waypoints: []
   - target: {fileID: 1342336684}
     waypoints: []
+--- !u!114 &1080495811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080495806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barType: 1
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 60811742}
+  shopUi: {fileID: 60811741}
+  barsUI: {fileID: 0}
+  game: {fileID: 60811733}
+  uiEvents: {fileID: 1780539478}
+  playerChoice1Text: 
+  playerChoice2Text: 
+  playerChoice3Text: 
+  barDanceEvents: []
+  GenericBarmenEvents:
+  - {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
+  - {fileID: 11400000, guid: 70a7744e42eb10744be027fbb1534db0, type: 2}
+  - {fileID: 11400000, guid: b197c0aeff0628042a80315091f6d213, type: 2}
+  SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
+  VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
+  CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
+  clock: {fileID: 60811737}
 --- !u!1 &1098563097
 GameObject:
   m_ObjectHideFlags: 0
@@ -8629,7 +8635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barType: 0
+  barType: 1
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
   dialogueAction: {fileID: 60811742}
@@ -8637,10 +8643,6 @@ MonoBehaviour:
   barsUI: {fileID: 0}
   game: {fileID: 60811733}
   uiEvents: {fileID: 1780539478}
-  playerChoicesGroup: {fileID: 1699521899}
-  playerChoice1: {fileID: 1123119260}
-  playerChoice2: {fileID: 1051461250}
-  playerChoice3: {fileID: 1756712907}
   playerChoice1Text: Falar com o Barman
   playerChoice2Text: "Ir para a pista dan\xE7ar!"
   playerChoice3Text: Sair do bar
@@ -8651,6 +8653,7 @@ MonoBehaviour:
   SkadiUI: {fileID: 0}
   VinilUI: {fileID: 0}
   CeleiroUI: {fileID: 0}
+  clock: {fileID: 0}
 --- !u!1 &1184624941
 GameObject:
   m_ObjectHideFlags: 0
@@ -9593,7 +9596,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
   barmen: []
-  barDance: []
+  barDance:
+  - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
   morningDeck:
   - {fileID: 11400000, guid: a15dd788d74404c4897dbe4964276586, type: 2}
   - {fileID: 11400000, guid: 191c1ac5679bbe14e91c29d8f02dbe00, type: 2}
@@ -9962,29 +9966,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1342336682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
+  m_Script: {fileID: 11500000, guid: 7919b9c66b93dee4e8aa38472dd52d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barType: 0
-  primaryEventList: {fileID: 0}
-  eventListTools: {fileID: 0}
-  dialogueAction: {fileID: 0}
-  shopUi: {fileID: 0}
-  barsUI: {fileID: 0}
-  game: {fileID: 0}
-  uiEvents: {fileID: 0}
-  playerChoicesGroup: {fileID: 0}
-  playerChoice1: {fileID: 0}
-  playerChoice2: {fileID: 0}
-  playerChoice3: {fileID: 0}
-  playerChoice1Text: 
-  playerChoice2Text: 
-  playerChoice3Text: 
-  barDanceEvents: []
-  GenericBarmenEvents: []
-  SkadiUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
-  VinilUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
-  CeleiroUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &1342539880
 GameObject:
   m_ObjectHideFlags: 0
@@ -14205,14 +14194,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1946886341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8425a6e7230dc3a4dbe46e126a1e27d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barType: 0
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
   dialogueAction: {fileID: 60811742}
-  uiEvents: {fileID: 1780539478}
+  shopUi: {fileID: 60811741}
+  barsUI: {fileID: 0}
   game: {fileID: 60811733}
+  uiEvents: {fileID: 1780539478}
+  playerChoice1Text: 
+  playerChoice2Text: 
+  playerChoice3Text: 
+  barDanceEvents: []
+  GenericBarmenEvents:
+  - {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
+  - {fileID: 11400000, guid: 70a7744e42eb10744be027fbb1534db0, type: 2}
+  - {fileID: 11400000, guid: b197c0aeff0628042a80315091f6d213, type: 2}
+  SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
+  VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
+  CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
+  clock: {fileID: 60811737}
 --- !u!1 &1955006304
 GameObject:
   m_ObjectHideFlags: 0
