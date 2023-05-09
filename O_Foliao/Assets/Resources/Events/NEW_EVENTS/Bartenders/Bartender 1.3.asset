@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Bartender 1.3
+  m_EditorClassIdentifier: 
+  _eventType: 0
+  _dialogue:
+  - _text: "J\xE1 sabes o que queres?"
+    _npc: {fileID: 11400000, guid: 4943ea1683f2edb47bf926adb3417996, type: 2}
+    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+  _decisions:
+  - _choiceDialogue: Uma caipirinha.
+    _minAlcool: 80
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: -15
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 6df1343d278f55f45a8bb88cc99738aa, type: 2}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 5
+      _alcoolPlus: 10
+      _funPlus: 0
+      _moneyPlus: -5
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 111c80bfa12a461468980535b2f32103, type: 2}
+      _eventsToInsert: []
+  - _choiceDialogue: Uma jola.
+    _minAlcool: 80
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: -15
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 6df1343d278f55f45a8bb88cc99738aa, type: 2}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 5
+      _alcoolPlus: 10
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: -2
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 23d6e2762219e954baaf7c36beb3bc8f, type: 2}
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 020000000000000001000000
+    _dayOfWeek: 0000000001000000
+    _locals: 02000000030000000400000005000000
+    _alcohol: 01000000
