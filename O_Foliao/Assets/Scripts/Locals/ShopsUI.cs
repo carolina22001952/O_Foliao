@@ -25,14 +25,19 @@ public class ShopsUI : MonoBehaviour
     [SerializeField]
     private Image background;
 
+    [SerializeField]
+    private Animator animator;
+
     public void OpenShopUI()
     {
         dialogueGroup.SetActive(true);
+        animator.SetBool("Active", true);
     }
 
     public void CloseShopUI()
     {
-        dialogueGroup.SetActive(false);
+        animator.SetBool("Active", false);
+        //dialogueGroup.SetActive(false);
     }
 
     public void UpdateChoices(Events events)
