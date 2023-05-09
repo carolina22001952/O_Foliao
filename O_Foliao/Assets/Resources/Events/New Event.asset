@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: New Event
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 2
   _dialogue:
-  - _text: 
+  - _text: dsds
     _npc: {fileID: 0}
-    _background: {fileID: 0}
+    _background: {fileID: 21300000, guid: 83040aa0720f4a845b1cea562900a1aa, type: 3}
   _decisions:
-  - _choiceDialogue: 
-    _maxAlcool: 0
+  - _choiceDialogue: Falar
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -42,8 +41,57 @@ MonoBehaviour:
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+    _choice: 
+  - _choiceDialogue: Dancar
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+    _choice: 
+  - _choiceDialogue: Quit
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+    _choice: 
   _eventBaseData:
-    _timeOfDay: 
-    _dayOfWeek: 
+    _timeOfDay: 00000000
+    _dayOfWeek: 00000000
     _locals: 00000000
-    _alcohol: 
+    _alcohol: 00000000
