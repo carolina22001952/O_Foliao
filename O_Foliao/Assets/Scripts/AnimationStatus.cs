@@ -15,11 +15,6 @@ public class AnimationStatus : MonoBehaviour
 
     [SerializeField] private Vector3 scaleUp, originalScale;
 
-    public void ChangeAlcoholSize()
-    {   
-        StartCoroutine(ChangeSizeCR(alcoholSprite.transform));
-    }
-
     IEnumerator ChangeSizeCR(Transform target)
     {
         float s = 0.0f;
@@ -49,4 +44,9 @@ public class AnimationStatus : MonoBehaviour
     {   
         StartCoroutine(ChangeSizeCR(energySprite.transform));
     }    
+
+    public void ChangeAlcoholSize()
+    {   
+        StartCoroutine(ChangeSizeCR(alcoholSprite.transform));
+    }
 }

@@ -33,18 +33,7 @@ public class BarsLocal : MonoBehaviour, ILocal
     [SerializeField]
     private UIEvents uiEvents;
 
-
-
-    [SerializeField]
-    private string playerChoice1Text;
-    [SerializeField]
-    private string playerChoice2Text;
-    [SerializeField]
-    private string playerChoice3Text;
-
     [Header("Events for Every Bar")]
-    [SerializeField]
-    private List<Events> barDanceEvents;
     [SerializeField]
     private List<Events> GenericBarmenEvents;
     [Header("UI Event of Every Bar")]

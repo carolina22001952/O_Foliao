@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 3950662}
   - component: {fileID: 3950663}
   m_Layer: 0
-  m_Name: Node_Batata_Esquerda
+  m_Name: Node_Banco3
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,11 +170,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
-  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 0}
   options:
-  - target: {fileID: 0}
+  - target: {fileID: 895441763}
     waypoints: []
   - target: {fileID: 1657135961}
     waypoints: []
@@ -786,6 +786,7 @@ Transform:
   - {fileID: 854474983}
   - {fileID: 1922573341}
   - {fileID: 1319043135}
+  - {fileID: 1757904128}
   m_Father: {fileID: 60811731}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -862,7 +863,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1293,7 +1294,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 86d756214b761c548be0635a07082324, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1336,8 +1337,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
-  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 119468170}
   options:
   - target: {fileID: 1080495810}
@@ -1348,11 +1349,14 @@ MonoBehaviour:
     - {fileID: 840118858}
     - {fileID: 1048900945}
   - target: {fileID: 699324354}
-    waypoints: []
+    waypoints:
+    - {fileID: 288064073}
   - target: {fileID: 1342336684}
-    waypoints: []
+    waypoints:
+    - {fileID: 288064073}
   - target: {fileID: 290813224}
-    waypoints: []
+    waypoints:
+    - {fileID: 288064073}
 --- !u!222 &119468171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1532,6 +1536,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132996300}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &143398865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143398866}
+  m_Layer: 0
+  m_Name: Waypoint (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &143398866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143398865}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 230.5276, y: 804.0001, z: 30.417725}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757904128}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &176133016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,7 +2208,7 @@ GameObject:
   - component: {fileID: 233815545}
   - component: {fileID: 233815544}
   m_Layer: 0
-  m_Name: Node_Banco
+  m_Name: Node_Banco1
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2215,10 +2250,6 @@ MonoBehaviour:
   barsUI: {fileID: 0}
   game: {fileID: 0}
   uiEvents: {fileID: 0}
-  playerChoice1Text: 
-  playerChoice2Text: 
-  playerChoice3Text: 
-  barDanceEvents: []
   GenericBarmenEvents: []
   SkadiUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
   VinilUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
@@ -2237,15 +2268,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 21300000, guid: 86d756214b761c548be0635a07082324, type: 3}
-  highLight: {fileID: 21300000, guid: 0a0cd64cf5141d34ca75a22b999cff2e, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 0}
   options:
-  - target: {fileID: 290813224}
-    waypoints: []
-  - target: {fileID: 699324354}
-    waypoints: []
-  - target: {fileID: 119468170}
+  - target: {fileID: 1342336684}
     waypoints: []
 --- !u!1 &237376493
 GameObject:
@@ -2359,7 +2386,7 @@ GameObject:
   - component: {fileID: 239217042}
   - component: {fileID: 239217043}
   m_Layer: 0
-  m_Name: Node_Confraria
+  m_Name: Node_Banco2
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2394,14 +2421,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
-  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 239217042}
   options:
   - target: {fileID: 1946886343}
-    waypoints:
-    - {fileID: 0}
-  - target: {fileID: 0}
     waypoints: []
 --- !u!114 &239217043
 MonoBehaviour:
@@ -2762,6 +2786,37 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &288064072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 288064073}
+  m_Layer: 0
+  m_Name: Waypoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &288064073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288064072}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 374.52762, y: 447.00006, z: 30.417786}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757904128}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &290813222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,17 +2864,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
-  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 119468170}
-    waypoints: []
+    waypoints:
+    - {fileID: 288064073}
   - target: {fileID: 1342336684}
     waypoints: []
-  - target: {fileID: 0}
+  - target: {fileID: 1080495810}
     waypoints: []
-  - target: {fileID: 0}
+  - target: {fileID: 845040698}
+    waypoints: []
+  - target: {fileID: 699324354}
     waypoints: []
 --- !u!114 &290813225
 MonoBehaviour:
@@ -2830,7 +2888,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 290813222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7919b9c66b93dee4e8aa38472dd52d0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8425a6e7230dc3a4dbe46e126a1e27d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
@@ -3281,7 +3339,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3365,7 +3423,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 86d756214b761c548be0635a07082324, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3449,7 +3507,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4120,7 +4178,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4221,7 +4279,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4245,7 +4303,7 @@ GameObject:
   - component: {fileID: 642078587}
   - component: {fileID: 642078586}
   m_Layer: 0
-  m_Name: Banco
+  m_Name: Banco1
   m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4687,14 +4745,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
-  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 1342336684}
-    waypoints: []
-  - target: {fileID: 0}
-    waypoints: []
+    waypoints:
+    - {fileID: 288064073}
+  - target: {fileID: 1946886343}
+    waypoints:
+    - {fileID: 143398866}
+    - {fileID: 840118858}
+    - {fileID: 1048900945}
+  - target: {fileID: 119468170}
+    waypoints:
+    - {fileID: 288064073}
+  - target: {fileID: 290813224}
+    waypoints:
+    - {fileID: 288064073}
 --- !u!114 &699324355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4715,10 +4783,6 @@ MonoBehaviour:
   barsUI: {fileID: 0}
   game: {fileID: 60811733}
   uiEvents: {fileID: 1780539478}
-  playerChoice1Text: 
-  playerChoice2Text: 
-  playerChoice3Text: 
-  barDanceEvents: []
   GenericBarmenEvents:
   - {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
   - {fileID: 11400000, guid: 70a7744e42eb10744be027fbb1534db0, type: 2}
@@ -5059,13 +5123,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759373748}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 599, y: 323.58215, z: 350}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 602.5276, y: 713.00006, z: 30.417786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1757904128}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &762165721
 GameObject:
@@ -5767,13 +5831,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840118857}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 583, y: 323.58215, z: 528}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 577.5276, y: 839.0001, z: 30.417725}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1757904128}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845040697
 GameObject:
@@ -5806,15 +5870,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
-  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 290813224}
     waypoints: []
-  - target: {fileID: 0}
-    waypoints: []
-  - target: {fileID: 0}
+  - target: {fileID: 1342336684}
     waypoints: []
   - target: {fileID: 895441763}
     waypoints: []
@@ -6179,6 +6241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 895441764}
   - component: {fileID: 895441763}
+  - component: {fileID: 895441765}
   m_Layer: 0
   m_Name: Node_EntrePalcos
   m_TagString: Point
@@ -6199,17 +6262,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
-  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 845040698}
     waypoints: []
   - target: {fileID: 3950662}
     waypoints: []
-  - target: {fileID: 0}
+  - target: {fileID: 1657135961}
     waypoints: []
-  - target: {fileID: 0}
+  - target: {fileID: 2125884204}
     waypoints: []
 --- !u!4 &895441764
 Transform:
@@ -6227,6 +6290,23 @@ Transform:
   m_Father: {fileID: 1757844433}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895441765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895441762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8425a6e7230dc3a4dbe46e126a1e27d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
 --- !u!1 &919089304
 GameObject:
   m_ObjectHideFlags: 0
@@ -7162,7 +7242,7 @@ Transform:
   m_GameObject: {fileID: 995134276}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.0013489916, y: -0.021674654, z: -0.0033543413}
-  m_LocalScale: {x: 0.012, y: 0.013999997, z: 0.02}
+  m_LocalScale: {x: 0.012, y: 0.014, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 119468172}
@@ -7209,7 +7289,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7709,13 +7789,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048900944}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 683, y: 323.58215, z: 531}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 696.5276, y: 876.0001, z: 30.417725}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1757904128}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1051461250
 GameObject:
@@ -7912,15 +7992,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
-  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 1080495810}
   options:
-  - target: {fileID: 0}
+  - target: {fileID: 119468170}
     waypoints: []
   - target: {fileID: 290813224}
-    waypoints: []
-  - target: {fileID: 1342336684}
     waypoints: []
 --- !u!114 &1080495811
 MonoBehaviour:
@@ -7942,10 +8020,6 @@ MonoBehaviour:
   barsUI: {fileID: 0}
   game: {fileID: 60811733}
   uiEvents: {fileID: 1780539478}
-  playerChoice1Text: 
-  playerChoice2Text: 
-  playerChoice3Text: 
-  barDanceEvents: []
   GenericBarmenEvents:
   - {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
   - {fileID: 11400000, guid: 70a7744e42eb10744be027fbb1534db0, type: 2}
@@ -8908,7 +8982,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9556,6 +9630,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
   celeiro:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
+  - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   vinil:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
   skadi:
@@ -9564,7 +9639,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 525ace12fe6735f45be5307d4c867d6f, type: 2}
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
-  barmen: []
+  barmen:
+  - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
+  - {fileID: 11400000, guid: d667ea3feaee2c04ab5020f20ffe5d3e, type: 2}
   barDance:
   - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
   morningDeck:
@@ -9916,15 +9993,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 21300000, guid: 86d756214b761c548be0635a07082324, type: 3}
-  highLight: {fileID: 21300000, guid: 0a0cd64cf5141d34ca75a22b999cff2e, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 290813224}
     waypoints: []
   - target: {fileID: 699324354}
-    waypoints: []
+    waypoints:
+    - {fileID: 288064073}
   - target: {fileID: 119468170}
+    waypoints: []
+  - target: {fileID: 233815545}
+    waypoints: []
+  - target: {fileID: 845040698}
     waypoints: []
 --- !u!114 &1342336685
 MonoBehaviour:
@@ -11486,15 +11568,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
-  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 3950662}
     waypoints: []
   - target: {fileID: 2125884204}
     waypoints: []
-  - target: {fileID: 0}
+  - target: {fileID: 895441763}
     waypoints: []
 --- !u!4 &1657135962
 Transform:
@@ -12227,6 +12309,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757844432}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1757904127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1757904128}
+  m_Layer: 0
+  m_Name: Waypoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1757904128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757904127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 759373749}
+  - {fileID: 840118858}
+  - {fileID: 1048900945}
+  - {fileID: 288064073}
+  - {fileID: 143398866}
+  m_Father: {fileID: 61069693}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1774463443
 GameObject:
   m_ObjectHideFlags: 0
@@ -12765,7 +12883,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14146,14 +14264,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  normal: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
-  highLight: {fileID: 21300000, guid: d6d5bc656ac3a91458f104b45b58b611, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 0}
   options:
-  - target: {fileID: 1946886343}
-    waypoints: []
   - target: {fileID: 239217042}
     waypoints: []
+  - target: {fileID: 699324354}
+    waypoints:
+    - {fileID: 1048900945}
+    - {fileID: 840118858}
+    - {fileID: 143398866}
+  - target: {fileID: 119468170}
+    waypoints:
+    - {fileID: 1048900945}
+    - {fileID: 840118858}
 --- !u!114 &1946886344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14174,10 +14299,6 @@ MonoBehaviour:
   barsUI: {fileID: 0}
   game: {fileID: 60811733}
   uiEvents: {fileID: 1780539478}
-  playerChoice1Text: 
-  playerChoice2Text: 
-  playerChoice3Text: 
-  barDanceEvents: []
   GenericBarmenEvents:
   - {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
   - {fileID: 11400000, guid: 70a7744e42eb10744be027fbb1534db0, type: 2}
@@ -14848,7 +14969,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15067,7 +15188,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15571,13 +15692,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  normal: {fileID: 21300000, guid: e99d4c00baf3649498f700fd257e10b0, type: 3}
-  highLight: {fileID: 21300000, guid: 5a6899c75e445cf4a99430e53041fb33, type: 3}
+  normal: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
+  highLight: {fileID: 21300000, guid: 64c049d703348ab4c8c0939e607007ec, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 1657135961}
     waypoints: []
-  - target: {fileID: 0}
+  - target: {fileID: 895441763}
     waypoints: []
   - target: {fileID: 3950662}
     waypoints: []
@@ -15968,7 +16089,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab9de74a432d134489c273050eaae02f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f1931076d0ca534ca8bee2807a96513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
