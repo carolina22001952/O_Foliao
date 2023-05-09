@@ -8,19 +8,53 @@ public class UIPhone : MonoBehaviour
     [SerializeField] Animator animator;
 
     private bool isMouseOver = false;
-
-    void Play()
-    {
-        animator = GetComponent<Animator>();
-        isMouseOver = false;
-    }
-
     void Update()
     {
-        IsMouseOverUI();
+        IsMouseDown();
     }
 
-    private void IsMouseOverUI()
+    private void IsMouseDown()
+    {
+        if(Input.GetMouseButtonUp(0))
+        {
+            if(isMouseOver)
+                animator.SetBool("Active", !animator.GetBool("Active"));
+        }
+        IsMouseOverUI();
+    }
+    
+
+     private void IsMouseOverUI()
+    {
+        PointerEventData pointerData = new PointerEventData(EventSystem.current)
+        {
+            pointerId = -1,
+        };
+
+        pointerData.position = Input.mousePosition;
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointerData, results);
+
+        if (results.Count > 0)
+        {
+            for (int i = 0; i < results.Count; ++i)
+            {
+                if (results[i].gameObject.CompareTag("Phone"))
+                {
+                    isMouseOver = true;
+                    break;
+                }
+            }
+        }
+        else
+        {
+            isMouseOver = false;
+        }
+        animator.SetBool("IsMouseOver", isMouseOver && Input.GetMouseButton(0));
+    }
+
+    /*private void IsMouseOverUI()
     {
         if (EventSystem.current.IsPointerOverGameObject())
         {
@@ -42,7 +76,6 @@ public class UIPhone : MonoBehaviour
                     {
                         isMouseOver = true ;
                         animator.SetBool("IsMouseOver", true);
-                        //Debug.Log("ta aqui");
                     }              
                 }   
             }
@@ -51,19 +84,6 @@ public class UIPhone : MonoBehaviour
         {
             isMouseOver = false;
             animator.SetBool("IsMouseOver", false);
-            //Debug.Log("nao ta aqui");
         }
-    }
-
-    /*void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
-    {
-        Debug.Log("ta em cima");
-        throw new System.NotImplementedException();     
-    }
-
-    void IPointerExitHandler.OnPointerExit(PointerEventData eventData)
-    {
-        Debug.Log("Nao ta");
-        throw new System.NotImplementedException();   
     }*/
 }
