@@ -42,7 +42,7 @@ MonoBehaviour:
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
-  - _choiceDialogue: "(Confiante)Vamos tratar disso ent\xE3o."
+  - _choiceDialogue: "(Confiante) Vamos tratar disso ent\xE3o."
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
