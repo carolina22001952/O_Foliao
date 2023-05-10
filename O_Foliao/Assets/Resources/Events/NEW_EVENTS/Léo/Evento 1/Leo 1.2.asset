@@ -16,12 +16,11 @@ MonoBehaviour:
   _dialogue:
   - _text: "Toma. Manda mensagem aos teus amigos a dizer que o Celeiro est\xE1 a
       dar cart\xF5es de bebida gr\xE1tis."
-    _npc: {fileID: 11400000, guid: 0f8fce1b152ad794c92e9f570fbb88bf, type: 2}
+    _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: "(Surpresa) Ok, nice! Acho que nunca foi t\xE3o f\xE1cil beber
       \xE0 pala. "
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -34,6 +33,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: f46b34c99b72bbe4b9000649f8293746, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -42,8 +42,8 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
   - _choiceDialogue: "(Brincalhona) E se n\xE3o tiver amigos, d\xE1s-me a mim?"
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -56,6 +56,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: ba9c6190c99d56746b74cbadff59f093, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -64,8 +65,9 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 

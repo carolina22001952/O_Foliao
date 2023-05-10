@@ -15,11 +15,10 @@ MonoBehaviour:
   _eventType: 0
   _dialogue:
   - _text: Boa resposta.
-    _npc: {fileID: 11400000, guid: 657fe297657509f4e90bee1dda84b394, type: 2}
+    _npc: {fileID: 11400000, guid: 3feaf9489a8c2614b8ae55b6e6a003fa, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: (Descarada) Tenho direito a um shot portanto.
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 60
     _minEnergy: 0
@@ -32,6 +31,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 7b115244fac95284eb1db84cce14b00e, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 10
@@ -40,8 +40,8 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: d8d7a0c90cbc7e048aac7dade68583e1, type: 2}
+      _eventsToInsert: []
   - _choiceDialogue: (Insegura) Boa o suficiente para sermos amigos?
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -54,6 +54,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 92a7d2aa9e023604692d1cea21ad682a, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -62,8 +63,9 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 

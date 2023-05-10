@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Estranho 1.1
+  m_EditorClassIdentifier: 
+  _eventType: 0
+  _dialogue:
+  - _text: "Aposto que n\xE3o consegues mandar de p\xEAnalti esta cerveja."
+    _npc: {fileID: 11400000, guid: 05001e193a04cf34d9db52abfe06e63b, type: 2}
+    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+  _decisions:
+  - _choiceDialogue: E mando!
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 5
+      _alcoolPlus: 10
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 3b341ac3dfe7425449863a76c74de287, type: 2}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 5
+      _alcoolPlus: 5
+      _funPlus: 0
+      _moneyPlus: -2
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: b6f3750b45a8dff4ca4fc3e96146bb2b, type: 2}
+      _eventsToInsert: []
+  - _choiceDialogue: "Ep\xE1 n\xE3o, manda tu."
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 9ce5fb7c380873144a9dc5651781e558, type: 2}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 5
+      _alcoolPlus: 10
+      _funPlus: 0
+      _moneyPlus: -1
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: b2b09e831c5f23540a8ecc8418327701, type: 2}
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 020000000000000001000000
+    _dayOfWeek: 0000000001000000
+    _locals: 020000000300000004000000050000000000000001000000
+    _alcohol: 01000000

@@ -10,85 +10,62 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: Pracas 1
+  m_Name: Estranho 3.1
   m_EditorClassIdentifier: 
-  _eventType: 2
+  _eventType: 0
   _dialogue:
-  - _text: xfcgfsd
+  - _text: "T\xE1s a olhar?"
     _npc: {fileID: 11400000, guid: 05001e193a04cf34d9db52abfe06e63b, type: 2}
-    _background: {fileID: 21300000, guid: 83040aa0720f4a845b1cea562900a1aa, type: 3}
+    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
-  - _choiceDialogue: "Apanhar dinheiro do ch\xE3o."
+  - _choiceDialogue: Calma chefe...
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
+      _timePassed: 5
       _alcoolPlus: 0
-      _funPlus: 0
-      _moneyPlus: 5
-      _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
-      _eventsToInsert: []
-    _failedEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: 0
+      _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: c9398dfc95f08e446a1d1103344dace1, type: 2}
       _eventsToInsert: []
-  - _choiceDialogue: Aceitar bebida de um desconhecido.
+    _failedEvent:
+      _timePassed: 5
+      _alcoolPlus: 5
+      _funPlus: 0
+      _moneyPlus: -2
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: b6f3750b45a8dff4ca4fc3e96146bb2b, type: 2}
+      _eventsToInsert: []
+  - _choiceDialogue: Pois, tenho olhos.
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
-      _alcoolPlus: 20
-      _funPlus: 0
+      _timePassed: 5
+      _alcoolPlus: 0
+      _funPlus: -10
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 60e4a9b366d9af447a3f1390425815d7, type: 2}
       _eventsToInsert: []
     _failedEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
+      _timePassed: 5
+      _alcoolPlus: 10
       _funPlus: 0
-      _moneyPlus: 0
+      _moneyPlus: -1
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
-      _eventsToInsert: []
-  - _choiceDialogue: "Dan\xE7ar com um b\xEAbedo. "
-    _minAlcool: 0
-    _minFun: 0
-    _minEnergy: 0
-    _minMoney: 0
-    _sucessEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: 10
-      _moneyPlus: 0
-      _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
-      _eventsToInsert: []
-    _failedEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: 0
-      _moneyPlus: 0
-      _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: b2b09e831c5f23540a8ecc8418327701, type: 2}
       _eventsToInsert: []
   _eventBaseData:
-    _timeOfDay: 000000000100000002000000
+    _timeOfDay: 020000000000000001000000
     _dayOfWeek: 0000000001000000
-    _locals: 0000000001000000
+    _locals: 020000000300000004000000050000000000000001000000
     _alcohol: 01000000

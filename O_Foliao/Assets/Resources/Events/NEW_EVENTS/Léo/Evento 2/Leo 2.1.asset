@@ -15,7 +15,7 @@ MonoBehaviour:
   _eventType: 0
   _dialogue:
   - _text: Tu por aqui, outra vez.
-    _npc: {fileID: 11400000, guid: 0f8fce1b152ad794c92e9f570fbb88bf, type: 2}
+    _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
     _background: {fileID: 21300000, guid: 8535024eaf10d37439aa1497469d236e, type: 3}
   _decisions:
   - _choiceDialogue: "(Simp\xE1tica) Boas noites."
@@ -42,29 +42,6 @@ MonoBehaviour:
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Educada) Sr. L\xE9o, certo?"
-    _minAlcool: 0
-    _minFun: 0
-    _minEnergy: 0
-    _minMoney: 0
-    _sucessEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: 0
-      _moneyPlus: 0
-      _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
-      _eventsToInsert: []
-    _failedEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: 0
-      _moneyPlus: 0
-      _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
-      _eventsToInsert: []
-  - _choiceDialogue: (Divertida) Vim para animar a festa!
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
