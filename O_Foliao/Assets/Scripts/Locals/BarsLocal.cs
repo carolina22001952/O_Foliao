@@ -91,7 +91,10 @@ public class BarsLocal : MonoBehaviour, ILocal
                 }
                 break;
             case 1:
-                BarEvents();
+                if (player.Position() == this.gameObject)
+                {
+                    BarEvents();
+                }
                 break;
             case 2:
                 QuitBar();
