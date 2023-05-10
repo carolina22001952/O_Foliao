@@ -42,6 +42,8 @@ public class BarsLocal : MonoBehaviour, ILocal
     private Events VinilUI;
     [SerializeField]
     private Events CeleiroUI;
+    [SerializeField]
+    private Player player;
 
     private Events currentBar;
     [SerializeField]
@@ -68,7 +70,6 @@ public class BarsLocal : MonoBehaviour, ILocal
     {
         if (more)
         {
-            shopUi.ButtonInteraction(true);
             dialogueAction.StartDialogue();
         }
         else
@@ -80,10 +81,14 @@ public class BarsLocal : MonoBehaviour, ILocal
 
     public void BarChoices(int choice)
     {
+        shopUi.ButtonInteraction(false);
         switch(choice)
         {
             case 0:
-                BarmenEvents();
+                if (player.Position() == this.gameObject)
+                {
+                    BarmenEvents();
+                }
                 break;
             case 1:
                 BarEvents();
@@ -94,21 +99,22 @@ public class BarsLocal : MonoBehaviour, ILocal
         }
     }
 
-
     public void BarmenEvents()
     {
         List<Events> events = new List<Events>();
         Events chosenEvent;
-
+        Debug.Log(barType);
         switch (barType)
         {
             case Bar.Skadi:
                 events = GenericBarmenEvents;
                 break;
             case Bar.Vinil:
+                Debug.Log("Vinil");
                 events = GenericBarmenEvents;
                 break;
             case Bar.Celeiro:
+                Debug.Log("Celeiro");
                 events = primaryEventList.GetBarmenEvents();
                 break;
         }
@@ -162,6 +168,7 @@ public class BarsLocal : MonoBehaviour, ILocal
         }
         else
         {
+            shopUi.ButtonInteraction(true);
             uiEvents.CloseCanvas();
         }
     }
