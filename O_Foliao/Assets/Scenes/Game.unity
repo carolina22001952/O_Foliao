@@ -197,7 +197,8 @@ MonoBehaviour:
   benchUI: {fileID: 0}
   uiEvents: {fileID: 1780539478}
   dialogueAction: {fileID: 60811742}
-  alcoholEvents: []
+  alcoholEvents:
+  - {fileID: 11400000, guid: b693d9ae1c394ec47b33923e742d1bc9, type: 2}
   game: {fileID: 60811733}
 --- !u!1 &7912527
 GameObject:
@@ -584,7 +585,6 @@ GameObject:
   - component: {fileID: 60811732}
   - component: {fileID: 60811735}
   - component: {fileID: 60811740}
-  - component: {fileID: 60811739}
   - component: {fileID: 60811741}
   - component: {fileID: 60811742}
   m_Layer: 0
@@ -638,7 +638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1592390869}
   move: {fileID: 60811732}
-  node: {fileID: 1305438559}
+  node: {fileID: 0}
   clock: {fileID: 60811737}
   sceneChanger: {fileID: 60811735}
 --- !u!114 &60811735
@@ -674,28 +674,6 @@ MonoBehaviour:
   iconAfternoon: {fileID: 302797542}
   iconNight: {fileID: 73864721}
   time: {fileID: 882819511}
---- !u!114 &60811739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60811730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83b0e18f483d30340b0465db35a20892, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiEvents: {fileID: 1780539478}
-  primaryEventList: {fileID: 0}
-  player: {fileID: 1592390869}
-  reading: 0
-  index: 0
-  textSpeed: 0.1
-  currentEvent: {fileID: 0}
-  time: {fileID: 60811737}
-  game: {fileID: 60811733}
-  restart: 0
 --- !u!114 &60811740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2270,7 +2248,8 @@ MonoBehaviour:
   benchUI: {fileID: 0}
   uiEvents: {fileID: 1780539478}
   dialogueAction: {fileID: 60811742}
-  alcoholEvents: []
+  alcoholEvents:
+  - {fileID: 11400000, guid: b693d9ae1c394ec47b33923e742d1bc9, type: 2}
   game: {fileID: 60811733}
 --- !u!1 &237376493
 GameObject:
@@ -2442,7 +2421,8 @@ MonoBehaviour:
   benchUI: {fileID: 0}
   uiEvents: {fileID: 1780539478}
   dialogueAction: {fileID: 60811742}
-  alcoholEvents: []
+  alcoholEvents:
+  - {fileID: 11400000, guid: b693d9ae1c394ec47b33923e742d1bc9, type: 2}
   game: {fileID: 60811733}
 --- !u!1 &251691202
 GameObject:
@@ -4961,6 +4941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 723327612}
+  - component: {fileID: 723327613}
   m_Layer: 0
   m_Name: Cheats
   m_TagString: Untagged
@@ -4983,6 +4964,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &723327613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723327610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f17088571170d4291e43b7223daad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1592390869}
+  clock: {fileID: 60811737}
+  dialogueAction: {fileID: 60811742}
+  eventToCheat: {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
+  primaryEventList: {fileID: 1305438561}
 --- !u!1 &727104298
 GameObject:
   m_ObjectHideFlags: 0
@@ -9552,7 +9550,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1305438557}
-  - component: {fileID: 1305438559}
   - component: {fileID: 1305438561}
   m_Layer: 0
   m_Name: Events
@@ -9576,23 +9573,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1305438559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305438556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a10b7f7853430d14c8107b23e66f5ae9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  normal: {fileID: 0}
-  highLight: {fileID: 0}
-  node: {fileID: 0}
-  options: []
 --- !u!114 &1305438561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9612,30 +9592,36 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a15dd788d74404c4897dbe4964276586, type: 2}
   - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
   - {fileID: 11400000, guid: 4cef214400ae2e544a5d0a9ad81863ec, type: 2}
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   cebola:
   - {fileID: 11400000, guid: 92b66dc39b14eea43b431fdf569641e4, type: 2}
   - {fileID: 11400000, guid: a93bece6c7a93204db3306092fb3a61d, type: 2}
   - {fileID: 11400000, guid: 03ba44fbe609cb1458063c477af92422, type: 2}
   - {fileID: 11400000, guid: d579435ac7d8331459373cc203582d75, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   market:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
   hotel:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
   tunel:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
-  celeiro: []
+  celeiro:
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   vinil:
-  - {fileID: 0}
-  skadi: []
-  barsInside:
-  - {fileID: 11400000, guid: 525ace12fe6735f45be5307d4c867d6f, type: 2}
-  - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
-  - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  skadi:
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  barsInside: []
   barmen:
   - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
-  - {fileID: 11400000, guid: d667ea3feaee2c04ab5020f20ffe5d3e, type: 2}
-  barDance:
-  - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
+  barDance: []
   morningDeck:
   - {fileID: 11400000, guid: a15dd788d74404c4897dbe4964276586, type: 2}
   - {fileID: 11400000, guid: 191c1ac5679bbe14e91c29d8f02dbe00, type: 2}
@@ -9651,7 +9637,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 525ace12fe6735f45be5307d4c867d6f, type: 2}
   - {fileID: 11400000, guid: 4cef214400ae2e544a5d0a9ad81863ec, type: 2}
   - {fileID: 11400000, guid: d579435ac7d8331459373cc203582d75, type: 2}
-  afternoonDeck: []
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
+  afternoonDeck:
+  - {fileID: 11400000, guid: bb74c007bcaf0f7499b8c263200ea4d6, type: 2}
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   nightDeck:
   - {fileID: 11400000, guid: a15dd788d74404c4897dbe4964276586, type: 2}
   - {fileID: 11400000, guid: 191c1ac5679bbe14e91c29d8f02dbe00, type: 2}
@@ -9667,6 +9658,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 03ba44fbe609cb1458063c477af92422, type: 2}
   - {fileID: 11400000, guid: 4cef214400ae2e544a5d0a9ad81863ec, type: 2}
   - {fileID: 11400000, guid: d579435ac7d8331459373cc203582d75, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
   day1Deck:
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
@@ -9679,6 +9672,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a15dd788d74404c4897dbe4964276586, type: 2}
   - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
   - {fileID: 11400000, guid: d18b2c03119dc9049843a2ecb5000a48, type: 2}
+  - {fileID: 11400000, guid: bb74c007bcaf0f7499b8c263200ea4d6, type: 2}
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   day2Deck:
   - {fileID: 11400000, guid: 191c1ac5679bbe14e91c29d8f02dbe00, type: 2}
   - {fileID: 11400000, guid: fef55af9564470544a7cf6c9ddbee2ae, type: 2}
@@ -9694,7 +9690,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4cef214400ae2e544a5d0a9ad81863ec, type: 2}
   - {fileID: 11400000, guid: d579435ac7d8331459373cc203582d75, type: 2}
   - {fileID: 11400000, guid: ab44e0ac53bc7904d8bfc50e016363bb, type: 2}
-  day3Deck: []
+  - {fileID: 11400000, guid: bb74c007bcaf0f7499b8c263200ea4d6, type: 2}
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
+  day3Deck:
+  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
   lowAlcohol: []
   highAlcohol: []
   lowEnergy: []
@@ -9704,6 +9704,9 @@ MonoBehaviour:
   lowAlcoholThreshold: 20
   highAlcoholThreshold: 80
   lowEnergyThreshold: 20
+  primary: 80
+  random: 20
+  secondary: 0
 --- !u!1 &1319043134
 GameObject:
   m_ObjectHideFlags: 0
