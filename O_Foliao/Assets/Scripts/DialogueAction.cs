@@ -100,7 +100,7 @@ public class DialogueAction : MonoBehaviour
 
             ///
             primaryEventList.EventContinuation(currentEvent.decisions[choice].sucessEvent.eventsToInsert);
-            //Call achievemen
+            //Call achievement
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
                 Debug.Log("yup");

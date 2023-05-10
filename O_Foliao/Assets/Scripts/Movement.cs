@@ -100,6 +100,7 @@ public class Movement: MonoBehaviour
 
                     if (waypoints.Count == 0)
                     {
+                        player.ChangeStats(player, 0, 0, 0, -10);
                         moving = false;
                         StopTakingMovementInput();
                         game.CheckForInteraction();
