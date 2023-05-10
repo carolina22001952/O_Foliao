@@ -15,11 +15,11 @@ MonoBehaviour:
   _eventType: 0
   _dialogue:
   - _text: "Por acaso at\xE9 n\xE3o, fica bem."
-    _npc: {fileID: 11400000, guid: 228120d56cd44aa44887eff68a7ccc0a, type: 2}
+    _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions: []
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 

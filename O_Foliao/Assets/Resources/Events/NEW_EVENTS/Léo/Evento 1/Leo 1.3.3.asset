@@ -15,11 +15,11 @@ MonoBehaviour:
   _eventType: 0
   _dialogue:
   - _text: "N\xE3o me tires a paci\xEAncia. Embora."
-    _npc: {fileID: 11400000, guid: 0f8fce1b152ad794c92e9f570fbb88bf, type: 2}
+    _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions: []
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 

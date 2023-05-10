@@ -15,11 +15,11 @@ MonoBehaviour:
   _eventType: 0
   _dialogue:
   - _text: "Imposs\xEDvel recusar."
-    _npc: {fileID: 11400000, guid: 657fe297657509f4e90bee1dda84b394, type: 2}
+    _npc: {fileID: 11400000, guid: 3feaf9489a8c2614b8ae55b6e6a003fa, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions: []
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 

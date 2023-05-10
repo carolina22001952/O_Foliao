@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Dinheiro
+  m_EditorClassIdentifier: 
+  _eventType: 2
+  _dialogue:
+  - _text: "Encontraste dinheiro no ch\xE3o."
+    _npc: {fileID: 11400000, guid: cc554d27f2b305846952ee3dc21a9a23, type: 2}
+    _background: {fileID: 21300000, guid: 83040aa0720f4a845b1cea562900a1aa, type: 3}
+  _decisions:
+  - _choiceDialogue: Apanhar o dinheiro.
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 2
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+  - _choiceDialogue: "Deixar o dinheiro no s\xEDtio."
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 20
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 000000000100000002000000
+    _dayOfWeek: 0000000001000000
+    _locals: 0000000001000000
+    _alcohol: 01000000

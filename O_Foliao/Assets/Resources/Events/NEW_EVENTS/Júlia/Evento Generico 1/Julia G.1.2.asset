@@ -16,12 +16,11 @@ MonoBehaviour:
   _dialogue:
   - _text: "Ol\xE1 para ti tamb\xE9m. N\xE3o sei se mereces saber, mas hoje sou a
       J\xFAlia."
-    _npc: {fileID: 11400000, guid: 228120d56cd44aa44887eff68a7ccc0a, type: 2}
+    _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: (Confiante) E eu sou a pessoa que te vai bancar a bebida hoje.
       Bora.
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -34,6 +33,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -42,9 +42,9 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
   - _choiceDialogue: "(Brincalhona) Come\xE7amos bem, a minha m\xE3e tamb\xE9m se
       chama J\xFAlia."
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -57,6 +57,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -65,8 +66,9 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 
