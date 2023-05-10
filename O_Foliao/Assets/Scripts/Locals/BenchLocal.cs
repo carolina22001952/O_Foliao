@@ -36,14 +36,15 @@ public class BenchLocal : MonoBehaviour, ILocal
         benchEvents = primaryEventList.GetBenchEvents();
         //Intersect the events
 
-        if (player.GetAlcohol() > 80)
-        {
-            events = eventListTools.UnionEvents(benchEvents, alcoholEvents);
-        }
+
         //Get only 1 type of events and choose a random one
 
         events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
         chosenEvent = eventListTools.ChooseARandomEvent(events);
+        if (player.GetAlcohol() > 80)
+        {
+            chosenEvent = eventListTools.ChooseARandomEvent(alcoholEvents);
+        }
 
         primaryEventList.ChangeCurrentEvent(chosenEvent);
 

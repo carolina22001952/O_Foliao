@@ -81,7 +81,7 @@ public class Clock : MonoBehaviour
 
         TimeOfDay();
         UpdateClockUI();
-        return (hours.ToString() + ":" + minutes.ToString());
+        return (hours.ToString().PadLeft(2,'0') + ":" + minutes.ToString().PadLeft(2, '0'));
         
     }
 
