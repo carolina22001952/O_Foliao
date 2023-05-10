@@ -52,8 +52,7 @@ public class PrimaryEventList : MonoBehaviour
     [SerializeField] private List<Events> lowEnergy;
 
     [Header("Bench Event")]
-    [SerializeField] private List<Events> Bench;
-    [SerializeField] private List<Events> RandomBench;
+    [SerializeField] private List<Events> bench;
 
     [Header("Hotel")]
     [SerializeField] private List<Events> Hotel;
@@ -167,7 +166,7 @@ public class PrimaryEventList : MonoBehaviour
 
     public List<Events> GetBenchEvents()
     {
-        return this.Bench;
+        return this.bench;
     }
 
     public List<Events> GetDayDeck(Clock time)
