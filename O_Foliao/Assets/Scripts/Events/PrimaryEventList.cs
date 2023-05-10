@@ -251,7 +251,7 @@ public class PrimaryEventList : MonoBehaviour
                 {
                     if (events.eventType == EventType.Random)
                     {
-                        return EventType.Secondary;
+                        return EventType.Random;
                     }
                 }
             }
