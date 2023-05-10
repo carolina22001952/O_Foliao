@@ -26,7 +26,7 @@ MonoBehaviour:
     _sucessEvent:
       _timePassed: 0
       _alcoolPlus: 0
-      _funPlus: 0
+      _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
@@ -48,12 +48,12 @@ MonoBehaviour:
     _minMoney: 0
     _sucessEvent:
       _timePassed: 0
-      _alcoolPlus: 0
+      _alcoolPlus: -5
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 12197e2573ccf854d8de4dfe1ca9a1e5, type: 2}
       _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
@@ -64,19 +64,19 @@ MonoBehaviour:
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
-  - _choiceDialogue: "(Simp\xE1tica) Uma cerveja, por favor."
+  - _choiceDialogue: "(Simp\xE1tica) Uma cerveja (1\u20AC), por favor."
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
       _timePassed: 0
-      _alcoolPlus: 0
+      _alcoolPlus: 5
       _funPlus: 0
-      _moneyPlus: 0
+      _moneyPlus: -1
       _energyPlus: 0
       _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 12197e2573ccf854d8de4dfe1ca9a1e5, type: 2}
       _eventsToInsert: []
     _failedEvent:
       _timePassed: 0

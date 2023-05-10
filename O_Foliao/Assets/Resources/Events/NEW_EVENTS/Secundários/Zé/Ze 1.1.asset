@@ -19,19 +19,19 @@ MonoBehaviour:
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: "(Confusa) N\xE3o s\xE3o 6...?"
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
+      _timePassed: 10
       _alcoolPlus: 0
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: ef833b309f9ed344bb6537d827e45a32, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -40,20 +40,21 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
   - _choiceDialogue: "(Divertida) N\xE3o sei se aguento um dia sequer."
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
+      _timePassed: 10
       _alcoolPlus: 0
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: ef833b309f9ed344bb6537d827e45a32, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -62,8 +63,9 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 
