@@ -10,11 +10,6 @@ using Random = System.Random;
 
 public class PrimaryEventList : MonoBehaviour
 {
-    [Header("Probabilities")]
-    [SerializeField] const int primary = 80;
-    [SerializeField] const int random = 20;
-    [SerializeField] const int secondary = 0;
-
     public EventListTools eventListTools;
 
     public Events currentEvent;
@@ -66,9 +61,15 @@ public class PrimaryEventList : MonoBehaviour
     [Header("Hotel")]
     [SerializeField] private List<Events> Hotel;
 
+    [Header("ResourceEvents lvls")]
     [SerializeField] private int lowAlcoholThreshold = 20;
     [SerializeField] private int highAlcoholThreshold = 80;
     [SerializeField] private int lowEnergyThreshold = 20;
+
+    [Header("Probabilities")]
+    [SerializeField] private int primary = 80;
+    [SerializeField] private int random = 20;
+    [SerializeField] private int secondary = 0;
 
     public void ChangeCurrentEvent(Events events)
     {

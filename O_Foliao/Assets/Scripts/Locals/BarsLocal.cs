@@ -66,7 +66,6 @@ public class BarsLocal : MonoBehaviour, ILocal
     }
     public void localChoice(bool more)
     {
-        Debug.Log("LocalChoice");
         if (more)
         {
             shopUi.ButtonInteraction(true);
@@ -105,7 +104,6 @@ public class BarsLocal : MonoBehaviour, ILocal
         {
             case Bar.Skadi:
                 events = GenericBarmenEvents;
-                Debug.Log("Yah skadi");
                 break;
             case Bar.Vinil:
                 events = GenericBarmenEvents;
@@ -157,7 +155,6 @@ public class BarsLocal : MonoBehaviour, ILocal
 
     public void localDialogue(bool more)
     {
-        Debug.Log("LocalDialogue");
         if (more)
         {
             shopUi.ButtonInteraction(false);
