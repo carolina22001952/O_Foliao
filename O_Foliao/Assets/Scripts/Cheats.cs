@@ -50,7 +50,11 @@ public class Cheats : MonoBehaviour
         {
             player.ChangeStats(player, 0, 0, -10, 0);
         }
-
+        if(Input.GetKeyUp(KeyCode.E))
+        {
+            primaryEventList.ChangeCurrentEvent(eventToCheat);
+            dialogueAction.StartDialogue();
+        }
 
 
         if(Input.GetKeyUp(KeyCode.M))
