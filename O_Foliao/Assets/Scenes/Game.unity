@@ -690,7 +690,9 @@ MonoBehaviour:
   primaryEventList: {fileID: 0}
   player: {fileID: 1592390869}
   reading: 0
+  index: 0
   textSpeed: 0.1
+  currentEvent: {fileID: 0}
   time: {fileID: 60811737}
   game: {fileID: 60811733}
   restart: 0
@@ -4778,7 +4780,6 @@ MonoBehaviour:
   eventListTools: {fileID: 60811740}
   dialogueAction: {fileID: 60811742}
   shopUi: {fileID: 60811741}
-  barsUI: {fileID: 0}
   game: {fileID: 60811733}
   uiEvents: {fileID: 1780539478}
   GenericBarmenEvents:
@@ -8015,7 +8016,6 @@ MonoBehaviour:
   eventListTools: {fileID: 60811740}
   dialogueAction: {fileID: 60811742}
   shopUi: {fileID: 60811741}
-  barsUI: {fileID: 0}
   game: {fileID: 60811733}
   uiEvents: {fileID: 1780539478}
   GenericBarmenEvents:
@@ -9607,7 +9607,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventListTools: {fileID: 60811740}
   currentEvent: {fileID: 0}
-  bars: []
   batata:
   - {fileID: 11400000, guid: d18b2c03119dc9049843a2ecb5000a48, type: 2}
   - {fileID: 11400000, guid: a15dd788d74404c4897dbe4964276586, type: 2}
@@ -9616,23 +9615,18 @@ MonoBehaviour:
   cebola:
   - {fileID: 11400000, guid: 92b66dc39b14eea43b431fdf569641e4, type: 2}
   - {fileID: 11400000, guid: a93bece6c7a93204db3306092fb3a61d, type: 2}
-  - {fileID: 11400000, guid: 92b66dc39b14eea43b431fdf569641e4, type: 2}
   - {fileID: 11400000, guid: 03ba44fbe609cb1458063c477af92422, type: 2}
   - {fileID: 11400000, guid: d579435ac7d8331459373cc203582d75, type: 2}
-  bench: []
   market:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
   hotel:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
   tunel:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
-  celeiro:
-  - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
-  - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
+  celeiro: []
   vinil:
-  - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
-  skadi:
-  - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
+  - {fileID: 0}
+  skadi: []
   barsInside:
   - {fileID: 11400000, guid: 525ace12fe6735f45be5307d4c867d6f, type: 2}
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
@@ -9673,7 +9667,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 03ba44fbe609cb1458063c477af92422, type: 2}
   - {fileID: 11400000, guid: 4cef214400ae2e544a5d0a9ad81863ec, type: 2}
   - {fileID: 11400000, guid: d579435ac7d8331459373cc203582d75, type: 2}
-  - {fileID: 0}
   day1Deck:
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
@@ -14295,7 +14288,6 @@ MonoBehaviour:
   eventListTools: {fileID: 60811740}
   dialogueAction: {fileID: 60811742}
   shopUi: {fileID: 60811741}
-  barsUI: {fileID: 0}
   game: {fileID: 60811733}
   uiEvents: {fileID: 1780539478}
   GenericBarmenEvents:

@@ -20,10 +20,9 @@ public class PrimaryEventList : MonoBehaviour
     public Events currentEvent;
 
     [Header("Zones")]
-    [SerializeField] private List<Events> bars;
+
     [SerializeField] private List<Events> batata;
     [SerializeField] private List<Events> cebola;
-    [SerializeField] private List<Events> bench;
 
     [Header("Market")]
     [SerializeField] private List<Events> market;
@@ -84,11 +83,6 @@ public class PrimaryEventList : MonoBehaviour
     {
         return currentEvent;
     }
-    public List<Events> GetBarsZoneEvents()
-    {
-        return this.bars;
-    }
-
     public List<Events> GetBarmenEvents()
     {
         return this.barmen;
@@ -104,10 +98,6 @@ public class PrimaryEventList : MonoBehaviour
     public List<Events> GetCebolaZoneEvents()
     {
         return this.cebola;
-    }
-    public List<Events> GetBenchZoneEvents()
-    {
-        return this.bench;
     }
     public List<Events> GetMarketZoneEvents()
     {
@@ -308,12 +298,6 @@ public class PrimaryEventList : MonoBehaviour
                             break;
                         case Locals.Batata:
                             eventListTools.InsertAnEvent(events, batata);
-                            break;
-                        case Locals.Bars:
-                            eventListTools.InsertAnEvent(events, bars);
-                            break;
-                        case Locals.Bench:
-                            eventListTools.InsertAnEvent(events, bench);
                             break;
                         case Locals.Barmen:
                             eventListTools.InsertAnEvent(events, barmen);
