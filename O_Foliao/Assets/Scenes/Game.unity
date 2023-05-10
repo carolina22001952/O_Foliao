@@ -189,13 +189,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 3950660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7919b9c66b93dee4e8aa38472dd52d0f, type: 3}
+  m_Script: {fileID: 11500000, guid: eac7a7de5ef584643b0dedc6c8f30912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  dialogueAction: {fileID: 60811742}
+  benchUI: {fileID: 0}
   uiEvents: {fileID: 1780539478}
+  dialogueAction: {fileID: 60811742}
+  alcoholEvents: []
   game: {fileID: 60811733}
 --- !u!1 &7912527
 GameObject:
@@ -2206,7 +2208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233815543}
   - component: {fileID: 233815545}
-  - component: {fileID: 233815544}
+  - component: {fileID: 233815546}
   m_Layer: 0
   m_Name: Node_Banco1
   m_TagString: Point
@@ -2230,31 +2232,6 @@ Transform:
   m_Father: {fileID: 642078585}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &233815544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233815542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barType: 0
-  primaryEventList: {fileID: 0}
-  eventListTools: {fileID: 0}
-  dialogueAction: {fileID: 0}
-  shopUi: {fileID: 0}
-  barsUI: {fileID: 0}
-  game: {fileID: 0}
-  uiEvents: {fileID: 0}
-  GenericBarmenEvents: []
-  SkadiUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
-  VinilUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
-  CeleiroUI: {fileID: 11400000, guid: f59df3e1df6afef47bf3c423c069efed, type: 2}
-  clock: {fileID: 0}
 --- !u!114 &233815545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2274,6 +2251,25 @@ MonoBehaviour:
   options:
   - target: {fileID: 1342336684}
     waypoints: []
+--- !u!114 &233815546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233815542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac7a7de5ef584643b0dedc6c8f30912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  benchUI: {fileID: 0}
+  uiEvents: {fileID: 1780539478}
+  dialogueAction: {fileID: 60811742}
+  alcoholEvents: []
+  game: {fileID: 60811733}
 --- !u!1 &237376493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,13 +2432,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 239217040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7919b9c66b93dee4e8aa38472dd52d0f, type: 3}
+  m_Script: {fileID: 11500000, guid: eac7a7de5ef584643b0dedc6c8f30912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  dialogueAction: {fileID: 60811742}
+  benchUI: {fileID: 0}
   uiEvents: {fileID: 1780539478}
+  dialogueAction: {fileID: 60811742}
+  alcoholEvents: []
   game: {fileID: 60811733}
 --- !u!1 &251691202
 GameObject:
@@ -9675,6 +9673,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 03ba44fbe609cb1458063c477af92422, type: 2}
   - {fileID: 11400000, guid: 4cef214400ae2e544a5d0a9ad81863ec, type: 2}
   - {fileID: 11400000, guid: d579435ac7d8331459373cc203582d75, type: 2}
+  - {fileID: 0}
   day1Deck:
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
