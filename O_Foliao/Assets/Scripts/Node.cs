@@ -35,9 +35,9 @@ public class Node : MonoBehaviour
     private IEnumerator ScaleSprite()
     {
         SpriteRenderer spriteRenderer = gameObject.transform.GetComponentInChildren<SpriteRenderer>();
-        float scale = 0.012f;
-        float maxScale = 0.02f;
-        float step = 0.0001f;
+        float scale = 0.01f;
+        float maxScale = 0.013f;
+        float step = 0.00005f;
         bool scalingUp = true;
         while (true)
         {
@@ -53,10 +53,10 @@ public class Node : MonoBehaviour
             else
             {
                 scale -= step;
-                if (scale < 0.012f)
+                if (scale < 0.01f)
                 {
                     scalingUp = true;
-                    scale = 0.012f;
+                    scale = 0.01f;
                 }
             }
             spriteRenderer.transform.localScale = new Vector3(scale, scale, 1);
@@ -74,7 +74,7 @@ public class Node : MonoBehaviour
     {
         gameObject.transform.GetComponentInChildren<SpriteRenderer>().sprite = normal;
         StopAllCoroutines();
-        gameObject.transform.GetComponentInChildren<SpriteRenderer>().transform.localScale = new Vector3(0.012f, 0.014f, 1);
+        gameObject.transform.GetComponentInChildren<SpriteRenderer>().transform.localScale = new Vector3(0.01f, 0.01f, 1);
     }
 
     public Node GetNode(Player player)

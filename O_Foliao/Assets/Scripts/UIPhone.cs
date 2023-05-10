@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class UIPhone : MonoBehaviour
 {
-    [SerializeField] Animator animator;
+    [SerializeField] private Animator animator;
 
     private bool isMouseOver = false;
     void Update()
@@ -42,7 +43,7 @@ public class UIPhone : MonoBehaviour
         {
             for(int i = 0; i < results.Count; ++i)
             {
-                if (results[i].gameObject.CompareTag("Phone"))
+                if(results[i].gameObject.CompareTag("Phone"))
                 {
                     isMouseOver = true;
                     break;
