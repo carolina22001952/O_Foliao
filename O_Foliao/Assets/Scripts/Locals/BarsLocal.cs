@@ -50,6 +50,7 @@ public class BarsLocal : MonoBehaviour, ILocal
     private Clock clock;
     public void localInteraction(Player player, Clock clock)
     {
+        shopUi.ButtonInteraction(true);
         switch (barType)
         {
             case Bar.Skadi:
@@ -62,7 +63,6 @@ public class BarsLocal : MonoBehaviour, ILocal
                 currentBar = CeleiroUI;
                 break;
         }
-
         OpenBar();
         
     }
@@ -106,19 +106,16 @@ public class BarsLocal : MonoBehaviour, ILocal
     {
         List<Events> events = new List<Events>();
         Events chosenEvent;
-        Debug.Log(barType);
         switch (barType)
         {
             case Bar.Skadi:
                 events = GenericBarmenEvents;
                 break;
             case Bar.Vinil:
-                Debug.Log("Vinil");
                 events = GenericBarmenEvents;
                 break;
             case Bar.Celeiro:
-                Debug.Log("Celeiro");
-                events = primaryEventList.GetBarmenEvents();
+                events = eventListTools.IntersectEventLists(primaryEventList.GetBarmenEvents(), primaryEventList.GetDayDeck(clock), primaryEventList.GetTimeOfDayDeck(clock));
                 break;
         }
 
