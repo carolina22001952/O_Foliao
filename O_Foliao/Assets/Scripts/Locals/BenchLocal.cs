@@ -12,9 +12,6 @@ public class BenchLocal : MonoBehaviour, ILocal
     private EventListTools eventListTools;
 
     [SerializeField]
-    private BenchUI benchUI;
-
-    [SerializeField]
     private UIEvents uiEvents;
 
     [SerializeField]
@@ -35,11 +32,11 @@ public class BenchLocal : MonoBehaviour, ILocal
         //Get the events
         benchEvents = primaryEventList.GetBenchEvents();
         //Intersect the events
-
+        events = benchEvents;
 
         //Get only 1 type of events and choose a random one
 
-        events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
+       // events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
         chosenEvent = eventListTools.ChooseARandomEvent(events);
         if (player.GetAlcohol() > 80)
         {
@@ -53,18 +50,6 @@ public class BenchLocal : MonoBehaviour, ILocal
         dialogueAction.StartDialogue();
     }
 
-    public void ChoiceBench(int choice)
-    {
-        switch (choice)
-        {
-            case 0:
-                benchUI.OpenBenchUI();
-                break;
-            case 1:
-                benchUI.CloseBenchUI();
-                break;
-        }
-    }
 
     public void localChoice(bool more)
     {
