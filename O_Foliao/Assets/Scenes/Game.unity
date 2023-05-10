@@ -194,7 +194,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  benchUI: {fileID: 0}
   uiEvents: {fileID: 1780539478}
   dialogueAction: {fileID: 60811742}
   alcoholEvents:
@@ -723,7 +722,7 @@ MonoBehaviour:
   primaryEventList: {fileID: 1305438561}
   player: {fileID: 1592390869}
   reading: 0
-  textSpeed: 1.5
+  textSpeed: 0.5
   time: {fileID: 60811737}
   game: {fileID: 60811733}
   restart: 0
@@ -2245,7 +2244,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  benchUI: {fileID: 0}
   uiEvents: {fileID: 1780539478}
   dialogueAction: {fileID: 60811742}
   alcoholEvents:
@@ -2418,7 +2416,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryEventList: {fileID: 1305438561}
   eventListTools: {fileID: 60811740}
-  benchUI: {fileID: 0}
   uiEvents: {fileID: 1780539478}
   dialogueAction: {fileID: 60811742}
   alcoholEvents:
@@ -9701,9 +9698,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 62856d2e0df0679418cbfb8e2012f393, type: 2}
   - {fileID: 11400000, guid: 7b994e7205c1ac74cb3293de14e63389, type: 2}
   lowEnergy: []
-  Bench:
+  bench:
   - {fileID: 11400000, guid: 9a36e302444e5cf46a11a566381e5e21, type: 2}
-  RandomBench: []
   Hotel: []
   lowAlcoholThreshold: 20
   highAlcoholThreshold: 80

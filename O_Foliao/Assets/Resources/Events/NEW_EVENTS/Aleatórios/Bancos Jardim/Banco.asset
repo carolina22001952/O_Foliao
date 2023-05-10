@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventType: 2
   _dialogue:
-  - _text: 
-    _npc: {fileID: 0}
+  - _text: Sentar?
+    _npc: {fileID: 11400000, guid: 56e438c918f255f46875e154c99d7cd2, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: Sentar-se.
