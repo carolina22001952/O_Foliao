@@ -48,7 +48,6 @@ public class BarsLocal : MonoBehaviour, ILocal
     private Clock clock;
     public void localInteraction(Player player, Clock clock)
     {
-        bool inBar = true;
         switch (barType)
         {
             case Bar.Skadi:

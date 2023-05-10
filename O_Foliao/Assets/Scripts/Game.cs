@@ -12,12 +12,11 @@ public class Game : MonoBehaviour
     [SerializeField] private Clock clock;
     [SerializeField] private SceneChanger sceneChanger;
 
-    private bool interacting;
+
 
     private void Start()
     {
         move.TakeMovementInput();
-        interacting = false;
     }
 
     private Events randomEvent;

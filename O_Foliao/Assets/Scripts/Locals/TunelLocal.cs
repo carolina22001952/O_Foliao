@@ -11,9 +11,6 @@ public class TunelLocal : MonoBehaviour, ILocal
     private EventListTools eventListTools;
 
     [SerializeField]
-    private UIEventManager uiEventManager;
-
-    [SerializeField]
     private TunelUi tunelUi;
 
     public void localInteraction(Player player, Clock clock)

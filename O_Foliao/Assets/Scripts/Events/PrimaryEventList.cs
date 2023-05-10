@@ -71,8 +71,6 @@ public class PrimaryEventList : MonoBehaviour
     [SerializeField] private int highAlcoholThreshold = 80;
     [SerializeField] private int lowEnergyThreshold = 20;
 
-    public event EventHandler Event;
-
     public void ChangeCurrentEvent(Events events)
     {
         if (events.eventType != EventType.Random)

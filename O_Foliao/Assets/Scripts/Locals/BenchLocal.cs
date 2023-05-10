@@ -67,7 +67,6 @@ public class BenchLocal : MonoBehaviour, ILocal
 
     public void localChoice(bool more)
     {
-        Debug.Log("LocalChoice");
         if (more)
         {
             dialogueAction.StartDialogue();
@@ -81,7 +80,6 @@ public class BenchLocal : MonoBehaviour, ILocal
 
     public void localDialogue(bool more)
     {
-        Debug.Log("LocalDialogue");
         if (more)
         {
             dialogueAction.StartChoices();
