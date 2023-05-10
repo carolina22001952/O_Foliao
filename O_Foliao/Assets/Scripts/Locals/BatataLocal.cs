@@ -57,7 +57,7 @@ public class BatataLocal : MonoBehaviour, ILocal
         }else
         {
             uiEvents.CloseCanvas();
-            game.StartMovement();
+            Restart();
         }
     }
     public void localDialogue(bool more)

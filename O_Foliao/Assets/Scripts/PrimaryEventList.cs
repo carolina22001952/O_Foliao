@@ -1,13 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 //using System.Runtime.CompilerServices;
 using UnityEngine;
 using static EventBaseData;
 using DayOfWeek = EventBaseData.DayOfWeek;
+using Random = System.Random;
 
 public class PrimaryEventList : MonoBehaviour
 {
+    [Header("Probabilities")]
+    [SerializeField] const int primary = 80;
+    [SerializeField] const int random = 20;
+    [SerializeField] const int secondary = 0;
+
     public EventListTools eventListTools;
 
     public Events currentEvent;
@@ -172,6 +179,11 @@ public class PrimaryEventList : MonoBehaviour
         return this.lowEnergy;
     }
 
+    public List<Events> GetBenchEvents()
+    {
+        return this.Bench;
+    }
+
     public List<Events> GetDayDeck(Clock time)
     {
         switch(time.GetDay())
@@ -223,34 +235,49 @@ public class PrimaryEventList : MonoBehaviour
 
     public EventType CheckForEventType(List<Events> eventList)
     {
-        List<Events> auxList = null;
-        bool primaryEventExists = false;
-        foreach(Events events in eventList)
+        do
         {
-            if(events.eventType == EventType.Primary)
+            int number = RandomNumber();
+            if (number < primary)
             {
-                return EventType.Primary;
+                foreach (Events events in eventList)
+                {
+                    if (events.eventType == EventType.Primary)
+                    {
+                        return EventType.Primary;
+                    }
+                }
             }
-        }
-
-        foreach (Events events in eventList)
-        {
-            if (events.eventType == EventType.Secondary)
+            else if (number > primary && number < primary + secondary)
             {
-                return EventType.Secondary;
+                foreach (Events events in eventList)
+                {
+                    if (events.eventType == EventType.Secondary)
+                    {
+                        return EventType.Secondary;
+                    }
+                }
             }
-        }
-
-        foreach (Events events in eventList)
-        {
-            if (events.eventType == EventType.Random)
+            else
             {
-                return EventType.Secondary;
+
+                foreach (Events events in eventList)
+                {
+                    if (events.eventType == EventType.Random)
+                    {
+                        return EventType.Secondary;
+                    }
+                }
             }
-        }
+        } while (true);
 
 
-        throw new NotImplementedException("EventType not Implemented");
+    }
+
+    public int RandomNumber()
+    {
+        Random rnd = new Random();
+        return rnd.Next(1,101);
     }
 
     public List<Events> GetAllEventsOfOneType(List<Events> eventList, EventType eventType)
