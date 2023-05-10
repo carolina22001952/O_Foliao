@@ -24,8 +24,7 @@ public class BarsLocal : MonoBehaviour, ILocal
     [SerializeField]
     private ShopsUI shopUi;
 
-    [SerializeField]
-    private BarslUI barsUI;
+
 
     [SerializeField]
     private Game game;
