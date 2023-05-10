@@ -51,9 +51,11 @@ public class Cheats : MonoBehaviour
             player.ChangeStats(player, 0, 0, -10, 0);
         }
 
-        if (Input.GetKeyUp(KeyCode.M))
+
+
+        if(Input.GetKeyUp(KeyCode.M))
         {
-            primaryEventList.ChangeCurrentEvent(eventToCheat);
+            clock.UpdateTime(60);
         }
     }
 
