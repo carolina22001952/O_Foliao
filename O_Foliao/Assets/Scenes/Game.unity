@@ -4759,13 +4759,11 @@ MonoBehaviour:
   shopUi: {fileID: 60811741}
   game: {fileID: 60811733}
   uiEvents: {fileID: 1780539478}
-  GenericBarmenEvents:
-  - {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
-  - {fileID: 11400000, guid: 70a7744e42eb10744be027fbb1534db0, type: 2}
-  - {fileID: 11400000, guid: b197c0aeff0628042a80315091f6d213, type: 2}
+  GenericBarmenEvents: []
   SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
   VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
   CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
+  player: {fileID: 1592390869}
   clock: {fileID: 60811737}
 --- !u!1 &701223692
 GameObject:
@@ -8020,6 +8018,7 @@ MonoBehaviour:
   SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
   VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
   CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
+  player: {fileID: 1592390869}
   clock: {fileID: 60811737}
 --- !u!1 &1098563097
 GameObject:
@@ -8280,6 +8279,30 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1080495811}
+        m_TargetAssemblyTypeName: BarsLocal, Assembly-CSharp
+        m_MethodName: BarChoices
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 699324355}
+        m_TargetAssemblyTypeName: BarsLocal, Assembly-CSharp
+        m_MethodName: BarChoices
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1946886344}
         m_TargetAssemblyTypeName: BarsLocal, Assembly-CSharp
         m_MethodName: BarChoices
         m_Mode: 3
@@ -14300,6 +14323,7 @@ MonoBehaviour:
   SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
   VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
   CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
+  player: {fileID: 1592390869}
   clock: {fileID: 60811737}
 --- !u!1 &1955006304
 GameObject:
