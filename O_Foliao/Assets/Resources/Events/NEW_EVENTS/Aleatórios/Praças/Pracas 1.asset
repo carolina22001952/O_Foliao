@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Pracas 1
   m_EditorClassIdentifier: 
   _eventType: 2
-  _dialogue: []
+  _dialogue:
+  - _text: xfcgfsd
+    _npc: {fileID: 11400000, guid: 05001e193a04cf34d9db52abfe06e63b, type: 2}
+    _background: {fileID: 21300000, guid: 83040aa0720f4a845b1cea562900a1aa, type: 3}
   _decisions:
   - _choiceDialogue: "Apanhar dinheiro do ch\xE3o."
     _minAlcool: 0

@@ -74,6 +74,7 @@ public class CebolaLocal : MonoBehaviour, ILocal
             dialogueAction.StartChoices();
         }else
         {
+            uiEvents.CloseCanvas();
             Restart();
         }
     }

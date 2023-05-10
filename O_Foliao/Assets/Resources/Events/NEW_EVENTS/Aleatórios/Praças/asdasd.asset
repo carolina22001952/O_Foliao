@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: Chao 1.3.1
+  m_Name: asdasd
   m_EditorClassIdentifier: 
-  _eventType: 2
+  _eventType: 0
   _dialogue:
-  - _text: Adorei, quero repetir.
-    _npc: {fileID: 11400000, guid: 5f0d60e8550fbd849afa4fd29ef3ea0f, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+  - _text: qweqwe
+    _npc: {fileID: 11400000, guid: 05001e193a04cf34d9db52abfe06e63b, type: 2}
+    _background: {fileID: 21300000, guid: c5919fae6a9072f47a80eb41ac6722c7, type: 3}
   _decisions: []
   _eventBaseData:
     _timeOfDay: 

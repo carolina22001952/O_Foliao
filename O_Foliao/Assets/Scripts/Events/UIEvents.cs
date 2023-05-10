@@ -60,7 +60,8 @@ public class UIEvents : MonoBehaviour
     public void CloseCanvas()
     {
         animator.SetBool("Active", false);
-        //DialogCanvas.SetActive(false);
+        ClosePlayerChoicesGroup();
+        DialogCanvas.SetActive(false);
     }
 
     public void UpdateNpcSprite(Sprite sprite)
