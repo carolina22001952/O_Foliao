@@ -103,7 +103,6 @@ public class DialogueAction : MonoBehaviour
             //Call achievement
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
-                Debug.Log("yup");
                 primaryEventList.ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
                 player.Position().GetComponent<ILocal>().localChoice(true);
             }
@@ -126,7 +125,6 @@ public class DialogueAction : MonoBehaviour
             primaryEventList.EventContinuation(currentEvent.decisions[choice].failedEvent.eventsToInsert);
             if (currentEvent.decisions[choice].failedEvent.nextEvent != null)
             {
-                Debug.Log("yup2");
                 primaryEventList.ChangeCurrentEvent(currentEvent.decisions[choice].failedEvent.nextEvent);
                 player.Position().GetComponent<ILocal>().localChoice(true);
             }

@@ -20,7 +20,6 @@ MonoBehaviour:
   _decisions:
   - _choiceDialogue: "(Divertida) Eu lavo o ch\xE3o da casa de banho at\xE9 ficar
       a brilhar... em troca de bebida."
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -33,6 +32,8 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 94358d2b0e08b8745bac21fcbf91b084, type: 2}
+      _eventsToInsert:
+      - {fileID: 11400000, guid: d667ea3feaee2c04ab5020f20ffe5d3e, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -41,9 +42,9 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
   - _choiceDialogue: "(Ousada) Eu ajudo-te aqui no bar, durante o carnaval inteiro
       e em troca bebo \xE0 pala... durante o carnaval inteiro, claro. "
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -56,6 +57,8 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 94358d2b0e08b8745bac21fcbf91b084, type: 2}
+      _eventsToInsert:
+      - {fileID: 11400000, guid: d667ea3feaee2c04ab5020f20ffe5d3e, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -64,8 +67,9 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 

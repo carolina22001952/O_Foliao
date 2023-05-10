@@ -723,7 +723,7 @@ MonoBehaviour:
   primaryEventList: {fileID: 1305438561}
   player: {fileID: 1592390869}
   reading: 0
-  textSpeed: 0.8
+  textSpeed: 1.5
   time: {fileID: 60811737}
   game: {fileID: 60811733}
   restart: 0
@@ -9612,12 +9612,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
+  - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   vinil:
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  - {fileID: 11400000, guid: a93bece6c7a93204db3306092fb3a61d, type: 2}
   skadi:
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  - {fileID: 11400000, guid: 525ace12fe6735f45be5307d4c867d6f, type: 2}
   barsInside: []
   barmen:
   - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
@@ -9696,9 +9699,13 @@ MonoBehaviour:
   day3Deck:
   - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
   lowAlcohol: []
-  highAlcohol: []
+  highAlcohol:
+  - {fileID: 11400000, guid: b693d9ae1c394ec47b33923e742d1bc9, type: 2}
+  - {fileID: 11400000, guid: 62856d2e0df0679418cbfb8e2012f393, type: 2}
+  - {fileID: 11400000, guid: 7b994e7205c1ac74cb3293de14e63389, type: 2}
   lowEnergy: []
-  Bench: []
+  Bench:
+  - {fileID: 11400000, guid: 9a36e302444e5cf46a11a566381e5e21, type: 2}
   RandomBench: []
   Hotel: []
   lowAlcoholThreshold: 20

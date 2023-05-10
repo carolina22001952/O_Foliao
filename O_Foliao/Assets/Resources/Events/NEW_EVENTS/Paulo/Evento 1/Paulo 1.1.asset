@@ -19,7 +19,6 @@ MonoBehaviour:
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: "(Provocadora) Elucida-me l\xE1 ent\xE3o."
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 50
     _minEnergy: 0
@@ -27,21 +26,23 @@ MonoBehaviour:
     _sucessEvent:
       _timePassed: 0
       _alcoolPlus: 0
-      _funPlus: -10
-      _moneyPlus: 0
-      _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 022183db5f2186f41af925b496146bcf, type: 2}
-    _failedEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6a30a6bf231c1cc48859ebdce1539d75, type: 2}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 022183db5f2186f41af925b496146bcf, type: 2}
+      _eventsToInsert:
+      - {fileID: 11400000, guid: fef55af9564470544a7cf6c9ddbee2ae, type: 2}
   - _choiceDialogue: '(Direta) Que humilde da tua parte. '
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 30
     _minEnergy: 0
@@ -49,21 +50,24 @@ MonoBehaviour:
     _sucessEvent:
       _timePassed: 0
       _alcoolPlus: 0
-      _funPlus: -15
-      _moneyPlus: 0
-      _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 830addc6c2b29cc4aab8871da0b03f8b, type: 2}
-    _failedEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: ea84b440fc535fd4290444bfbfbb1696, type: 2}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: -10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 830addc6c2b29cc4aab8871da0b03f8b, type: 2}
+      _eventsToInsert:
+      - {fileID: 11400000, guid: fef55af9564470544a7cf6c9ddbee2ae, type: 2}
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 

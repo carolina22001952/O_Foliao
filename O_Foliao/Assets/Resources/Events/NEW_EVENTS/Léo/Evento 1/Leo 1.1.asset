@@ -20,20 +20,11 @@ MonoBehaviour:
   _decisions:
   - _choiceDialogue: (Animada) Aposto que se meteres a "Samba da Matrafona" o pessoal
       aparece todo.
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 50
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
-      _alcoolPlus: 0
-      _funPlus: 5
-      _moneyPlus: 0
-      _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 8aacc6986b183364cb728a5576d90db2, type: 2}
-    _failedEvent:
       _timePassed: 0
       _alcoolPlus: 10
       _funPlus: 10
@@ -41,14 +32,35 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: dd9d349b5c989f245bb9022f91e5fb8a, type: 2}
+      _eventsToInsert:
+      - {fileID: 11400000, guid: d667ea3feaee2c04ab5020f20ffe5d3e, type: 2}
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 5
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 8aacc6986b183364cb728a5576d90db2, type: 2}
+      _eventsToInsert:
+      - {fileID: 11400000, guid: ab44e0ac53bc7904d8bfc50e016363bb, type: 2}
   - _choiceDialogue: "(Intrigada) E n\xE3o temos DJ tamb\xE9m? N\xE3o estou a criticar
       a m\xFAsica, aten\xE7\xE3o."
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 30
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 5
+      _funPlus: 10
+      _moneyPlus: 0
+      _energyPlus: 0
+      _achievement: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: a84496cd6eda1524685c1e6a762d2e7e, type: 2}
+      _eventsToInsert:
+      - {fileID: 11400000, guid: d667ea3feaee2c04ab5020f20ffe5d3e, type: 2}
+    _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: -10
@@ -56,16 +68,10 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 0e6914eec31da9a4c95fcf9491b2d5fd, type: 2}
-    _failedEvent:
-      _timePassed: 0
-      _alcoolPlus: 10
-      _funPlus: 5
-      _moneyPlus: 0
-      _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: a84496cd6eda1524685c1e6a762d2e7e, type: 2}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert:
+      - {fileID: 11400000, guid: ab44e0ac53bc7904d8bfc50e016363bb, type: 2}
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 
