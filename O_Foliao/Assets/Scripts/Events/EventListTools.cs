@@ -40,7 +40,10 @@ public class EventListTools : MonoBehaviour
         List<Events> unionList = new List<Events>();
         foreach (List<Events> list in eventListsToUnite)
         {
-            unionList = unionList.Union(list).ToList();
+            if(list != null)
+            {
+                unionList = unionList.Union(list).ToList();
+            }
         }
 
         return unionList;

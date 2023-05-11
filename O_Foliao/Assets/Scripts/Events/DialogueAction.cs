@@ -103,7 +103,6 @@ public class DialogueAction : MonoBehaviour
             //Call achievement
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
-                Debug.Log("ya");
                 primaryEventList.ChangeCurrentEvent(currentEvent.decisions[choice].sucessEvent.nextEvent);
                 player.Position().GetComponent<ILocal>().localChoice(true);
             }
@@ -111,7 +110,6 @@ public class DialogueAction : MonoBehaviour
             {
                 uiEvents.CloseDialogueObject();
                 player.Position().GetComponent<ILocal>().localChoice(false);
-                Debug.Log("no");
             }
 
         }
