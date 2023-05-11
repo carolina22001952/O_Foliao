@@ -15,7 +15,7 @@ MonoBehaviour:
   _eventType: 2
   _dialogue:
   - _text: "J\xE1 sabes o que queres?"
-    _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
+    _npc: {fileID: 11400000, guid: 4943ea1683f2edb47bf926adb3417996, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: "Uma caipirinha (6\u20AC)."
@@ -29,7 +29,6 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: -6
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6df1343d278f55f45a8bb88cc99738aa, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +37,6 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: -5
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 111c80bfa12a461468980535b2f32103, type: 2}
       _eventsToInsert: []
   - _choiceDialogue: "Uma jola (2\u20AC)."
@@ -52,7 +50,6 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: -2
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6df1343d278f55f45a8bb88cc99738aa, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +58,6 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: -2
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 23d6e2762219e954baaf7c36beb3bc8f, type: 2}
       _eventsToInsert: []
   _eventBaseData:

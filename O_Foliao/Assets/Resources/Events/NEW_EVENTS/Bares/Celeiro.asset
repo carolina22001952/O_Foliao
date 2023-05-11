@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: ...
     _npc: {fileID: 0}
-    _background: {fileID: 21300000, guid: 83040aa0720f4a845b1cea562900a1aa, type: 3}
+    _background: {fileID: 21300000, guid: 9c1c2b85271bd0c41963e7c20c417ea7, type: 3}
   _decisions:
   - _choiceDialogue: Ir beber.
     _minAlcool: 0
@@ -29,7 +29,6 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +37,6 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "Ir dan\xE7ar para a pista."
@@ -52,7 +50,6 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +58,6 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: Sair do bar.
@@ -75,7 +71,6 @@ MonoBehaviour:
       _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
     _failedEvent:
@@ -84,7 +79,6 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

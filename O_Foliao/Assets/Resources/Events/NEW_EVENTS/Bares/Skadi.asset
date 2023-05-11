@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: ...
     _npc: {fileID: 0}
-    _background: {fileID: 21300000, guid: 83040aa0720f4a845b1cea562900a1aa, type: 3}
+    _background: {fileID: 21300000, guid: 984563485c73e514b96ef85b8e19a1b3, type: 3}
   _decisions:
   - _choiceDialogue: Ir beber.
     _minAlcool: 0
@@ -29,7 +29,6 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +37,6 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: Ir para a fila da casa de banho.
@@ -52,7 +50,6 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +58,6 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: Sair do bar.
@@ -75,7 +71,6 @@ MonoBehaviour:
       _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
     _failedEvent:
@@ -84,7 +79,6 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:
