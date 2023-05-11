@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Julia NPC
   m_EditorClassIdentifier: 
   _name: "J\xFAlia"
-  _sprite: {fileID: 21300000, guid: 8535024eaf10d37439aa1497469d236e, type: 3}
+  _sprite: {fileID: 21300000, guid: 1b0f6be06b83b824f896ec98bf5fe2a3, type: 3}
   _eventsFriendship: []

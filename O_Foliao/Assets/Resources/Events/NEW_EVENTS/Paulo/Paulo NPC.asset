@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Paulo NPC
   m_EditorClassIdentifier: 
   _name: Paulo
-  _sprite: {fileID: 21300000, guid: 8535024eaf10d37439aa1497469d236e, type: 3}
+  _sprite: {fileID: 21300000, guid: fa8aec3022ddaa74593f023a16d5e8e7, type: 3}
   _eventsFriendship: []

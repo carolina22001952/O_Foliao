@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Descansar NPC
   m_EditorClassIdentifier: 
   _name: "Os meus p\xE9s e bexiga"
-  _sprite: {fileID: 21300000, guid: c5919fae6a9072f47a80eb41ac6722c7, type: 3}
+  _sprite: {fileID: 21300000, guid: 6b9fbf6102e982a4ca036b9845ee066d, type: 3}
   _eventsFriendship: []

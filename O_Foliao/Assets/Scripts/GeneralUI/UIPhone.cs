@@ -20,6 +20,7 @@ public class UIPhone : MonoBehaviour
         {
             if(isMouseOver)
             {
+                Debug.Log("subir");
                 animator.SetBool("Active", !animator.GetBool("Active"));
             }   
         }
