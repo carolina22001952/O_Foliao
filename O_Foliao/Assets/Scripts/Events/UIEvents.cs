@@ -67,7 +67,7 @@ public class UIEvents : MonoBehaviour
     public void UpdateNpcSprite(Sprite sprite)
     {
 
-        npcSprite = sprite;
+        npcSpriteGameObject.GetComponent<Image>().sprite = sprite;
     }
 
     public void OpenNpcGameObject()
