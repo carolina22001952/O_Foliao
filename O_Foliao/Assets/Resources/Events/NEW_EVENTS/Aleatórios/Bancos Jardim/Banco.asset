@@ -28,7 +28,7 @@ MonoBehaviour:
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
-      _energyPlus: 20
+      _energyPlus: 15
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []

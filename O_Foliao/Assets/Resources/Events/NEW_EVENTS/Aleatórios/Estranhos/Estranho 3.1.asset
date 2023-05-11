@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventType: 2
   _dialogue:
-  - _text: "T\xE1s a olhar?"
+  - _text: "'T\xE1s a olhar?"
     _npc: {fileID: 11400000, guid: 05001e193a04cf34d9db52abfe06e63b, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
-  - _choiceDialogue: Calma chefe...
+  - _choiceDialogue: Calma, chefe...
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0

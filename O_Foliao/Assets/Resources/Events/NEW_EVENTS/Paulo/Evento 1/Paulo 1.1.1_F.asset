@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _text: "Sou o Paulo.  Sou de uma fam\xEDlia  importante aqui de Torres."
+  - _text: "Sou o Paulo. Sou de uma fam\xEDlia importante aqui de Torres."
     _npc: {fileID: 11400000, guid: 3feaf9489a8c2614b8ae55b6e6a003fa, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
@@ -24,7 +24,7 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
+      _timePassed: 10
       _alcoolPlus: 0
       _funPlus: 15
       _moneyPlus: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 20
+      _timePassed: 10
       _alcoolPlus: 10
       _funPlus: 15
       _moneyPlus: 0

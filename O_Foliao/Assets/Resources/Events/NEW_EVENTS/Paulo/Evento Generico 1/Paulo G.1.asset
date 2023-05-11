@@ -41,7 +41,7 @@ MonoBehaviour:
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
-  - _choiceDialogue: (Empolgada) Ei Paulo!
+  - _choiceDialogue: (Empolgada) Ei, Paulo!
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0

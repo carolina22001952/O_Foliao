@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _text: "Podes s\xF3 espalhar por a\xED  que ando a oferecer cart\xF5es."
+  - _text: "Podes s\xF3 espalhar por a\xED que ando a oferecer cart\xF5es."
     _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
     _background: {fileID: 21300000, guid: 8535024eaf10d37439aa1497469d236e, type: 3}
   _decisions:

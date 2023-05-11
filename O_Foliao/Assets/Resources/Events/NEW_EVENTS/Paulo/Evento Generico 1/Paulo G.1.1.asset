@@ -18,7 +18,7 @@ MonoBehaviour:
     _npc: {fileID: 11400000, guid: 3feaf9489a8c2614b8ae55b6e6a003fa, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
-  - _choiceDialogue: (Brincalhona) Pago-te uma cerveja em forma de paz.
+  - _choiceDialogue: "(Brincalhona) Pago-te uma cerveja (1\u20AC) em forma de paz."
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
       _timePassed: 15
       _alcoolPlus: 5
       _funPlus: 15
-      _moneyPlus: -5
+      _moneyPlus: -1
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: cb152c11ef41fdc4f8cecbe2b74659b1, type: 2}

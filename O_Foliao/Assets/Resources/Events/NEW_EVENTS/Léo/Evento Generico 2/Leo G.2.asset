@@ -18,16 +18,17 @@ MonoBehaviour:
     _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
     _background: {fileID: 21300000, guid: 8535024eaf10d37439aa1497469d236e, type: 3}
   _decisions:
-  - _choiceDialogue: "(Engra\xE7ada) Uma jola... e um pedido de desculpas v\xE1."
+  - _choiceDialogue: "(Engra\xE7ada) Uma jola (1\u20AC)... e um pedido de desculpas
+      v\xE1."
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
       _timePassed: 0
-      _alcoolPlus: 0
+      _alcoolPlus: 5
       _funPlus: 0
-      _moneyPlus: 0
+      _moneyPlus: -1
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: bac880918f0448146a9584d3f1a05a3d, type: 2}

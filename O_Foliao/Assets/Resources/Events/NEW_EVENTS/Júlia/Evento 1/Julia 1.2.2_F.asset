@@ -18,13 +18,13 @@ MonoBehaviour:
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
-  - _choiceDialogue: "(Misteriosa)Tou s\xF3 a ver."
+  - _choiceDialogue: "(Misteriosa) 'Tou s\xF3 a ver."
     _minAlcool: 0
     _minFun: -5
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
+      _timePassed: 10
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0

@@ -18,16 +18,16 @@ MonoBehaviour:
     _npc: {fileID: 11400000, guid: 4943ea1683f2edb47bf926adb3417996, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
-  - _choiceDialogue: Um balde, por favor.
+  - _choiceDialogue: "Um balde (4\u20AC), por favor."
     _minAlcool: 80
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
       _timePassed: 5
-      _alcoolPlus: 0
-      _funPlus: -15
-      _moneyPlus: 0
+      _alcoolPlus: 10
+      _funPlus: 5
+      _moneyPlus: -4
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6df1343d278f55f45a8bb88cc99738aa, type: 2}
@@ -41,16 +41,16 @@ MonoBehaviour:
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: a131a475d172cf24bb5097a32c00fb1d, type: 2}
       _eventsToInsert: []
-  - _choiceDialogue: O shot mais barato!
+  - _choiceDialogue: "O shot (1\u20AC) mais barato!"
     _minAlcool: 80
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
       _timePassed: 5
-      _alcoolPlus: 0
-      _funPlus: -15
-      _moneyPlus: 0
+      _alcoolPlus: 15
+      _funPlus: 5
+      _moneyPlus: -1
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6df1343d278f55f45a8bb88cc99738aa, type: 2}

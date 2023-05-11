@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _text: olha, olha...
+  - _text: Olha, olha...
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
-  - _choiceDialogue: "(Simples) Ent\xE3o, t\xE1s bom?"
+  - _choiceDialogue: "(Simples) Ent\xE3o, 't\xE1s bom?"
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0

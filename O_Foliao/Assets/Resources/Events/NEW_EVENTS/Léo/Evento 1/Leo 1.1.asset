@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _text: " \xC9 verdade... Infelizmente tamos assim."
+  - _text: " \xC9 verdade... Infelizmente 'tamos assim."
     _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
@@ -25,7 +25,7 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
+      _timePassed: 10
       _alcoolPlus: 10
       _funPlus: 10
       _moneyPlus: 0
@@ -51,9 +51,9 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
-      _alcoolPlus: 5
-      _funPlus: 10
+      _timePassed: 10
+      _alcoolPlus: 0
+      _funPlus: -10
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}

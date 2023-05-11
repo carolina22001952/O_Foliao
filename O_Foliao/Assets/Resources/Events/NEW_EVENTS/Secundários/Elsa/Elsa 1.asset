@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _text: Ei tu,  anda aqui fazer o  teste de alcoolemia.
+  - _text: Ei tu, anda aqui fazer o teste de alcoolemia.
     _npc: {fileID: 11400000, guid: fc87fd425ac701e448a6df4048297b0d, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
@@ -41,7 +41,6 @@ MonoBehaviour:
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
-    _choice: 
   - _choiceDialogue: "(Confusa a dobrar) O teu fato \xE9 demasiado real...?"
     _minAlcool: 0
     _minFun: 0
@@ -65,7 +64,6 @@ MonoBehaviour:
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
-    _choice: 
   _eventBaseData:
     _timeOfDay: 
     _dayOfWeek: 

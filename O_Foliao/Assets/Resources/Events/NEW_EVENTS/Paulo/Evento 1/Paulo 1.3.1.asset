@@ -24,7 +24,7 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
+      _timePassed: 15
       _alcoolPlus: 10
       _funPlus: 15
       _moneyPlus: 0
@@ -41,13 +41,13 @@ MonoBehaviour:
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
-  - _choiceDialogue: (Humilde)  Obrigada, obrigada, tenho os meus dias.
+  - _choiceDialogue: (Humilde) Obrigada, obrigada, tenho os meus dias.
     _minAlcool: 0
     _minFun: 40
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
+      _timePassed: 15
       _alcoolPlus: 0
       _funPlus: 10
       _moneyPlus: 0

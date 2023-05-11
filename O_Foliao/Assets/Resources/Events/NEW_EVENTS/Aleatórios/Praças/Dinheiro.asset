@@ -48,8 +48,8 @@ MonoBehaviour:
     _minMoney: 0
     _sucessEvent:
       _timePassed: 1
-      _alcoolPlus: 20
-      _funPlus: 0
+      _alcoolPlus: 0
+      _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
       _achievement: {fileID: 0}

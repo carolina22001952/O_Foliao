@@ -18,8 +18,7 @@ MonoBehaviour:
     _npc: {fileID: 11400000, guid: 02909333923443f428a5de210a55a5c9, type: 2}
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
-  - _choiceDialogue: "(Divertida) T\xE1s-me a desafiar para uma?"
-    _maxAlcool: 0
+  - _choiceDialogue: "(Divertida) 'T\xE1s-me a desafiar para uma?"
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -32,6 +31,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: d1f1efe846b76274995da2c67ee7e905, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -40,8 +40,8 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
   - _choiceDialogue: "(S\xE9ria) Tenho cara de quem gosta de espetar paus em animais?"
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -54,6 +54,7 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: d1f1efe846b76274995da2c67ee7e905, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -62,8 +63,9 @@ MonoBehaviour:
       _energyPlus: 0
       _achievement: {fileID: 0}
       _nextEvent: {fileID: 0}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 
+    _dayOfWeek: 
+    _locals: 
+    _alcohol: 

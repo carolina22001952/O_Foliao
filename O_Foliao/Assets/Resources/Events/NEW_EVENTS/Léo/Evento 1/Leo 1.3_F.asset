@@ -24,7 +24,7 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
+      _timePassed: 10
       _alcoolPlus: 0
       _funPlus: 5
       _moneyPlus: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
     _minEnergy: 0
     _minMoney: 0
     _sucessEvent:
-      _timePassed: 0
+      _timePassed: 15
       _alcoolPlus: 10
       _funPlus: 5
       _moneyPlus: 0
