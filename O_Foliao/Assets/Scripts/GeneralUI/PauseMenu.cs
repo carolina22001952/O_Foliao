@@ -1,12 +1,15 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
+    [SerializeField] private static bool GameIsPaused = false;
 
-    public GameObject pauseMenuUI;
-    public GameObject game;
+    [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private GameObject confirmationMenu, confirmationQuit;
+    [SerializeField] private GameObject game;
+    [SerializeField] private Button resumeButton, menuButton, quitButton;
 
     private void Start()
     {
@@ -32,13 +35,13 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        confirmationMenu.SetActive(false);
+        confirmationQuit.SetActive(false);
 
         game.GetComponent<Game>().enabled = true;
         game.GetComponent<Movement>().enabled = true;
 
         GameIsPaused = false;
-
-        Debug.Log("resume");
     }
 
     public void Pause()
@@ -54,7 +57,7 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         pauseMenuUI.SetActive(false);
-
+        GameIsPaused = false;
         SceneManager.LoadScene("Start Menu");
     }
 

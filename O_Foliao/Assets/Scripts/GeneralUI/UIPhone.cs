@@ -16,7 +16,7 @@ public class UIPhone : MonoBehaviour
 
     private void IsMouseDown()
     {
-        if(Input.GetMouseButtonUp(0))
+        if(Input.GetMouseButtonUp(1))
         {
             if(isMouseOver)
             {

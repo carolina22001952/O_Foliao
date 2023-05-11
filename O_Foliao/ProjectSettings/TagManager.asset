@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Point
   - Phone
+  - Money
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Money
   - Water
   - UI
   - 
