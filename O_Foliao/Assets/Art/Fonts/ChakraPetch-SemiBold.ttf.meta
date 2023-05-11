@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 551dc1ddda889f14eb1571ffb5ec9a41
+guid: b19c6dd874ec3f44ca78becbe0acc437
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,10 +9,8 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - LEMON MILK
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: dfa45ed11d830174eba1d14bd99b2abf, type: 3}
-  - {fileID: 12800000, guid: e57020a27093a5040818eb16bfe2c828, type: 3}
+  - Chakra Petch SemiBold
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

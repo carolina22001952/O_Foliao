@@ -54,6 +54,5 @@ public class UIPhone : MonoBehaviour
         {
             isMouseOver = false;
         }
-        //animator.SetBool("Active", isMouseOver && Input.GetMouseButton(0));
     }
 }
