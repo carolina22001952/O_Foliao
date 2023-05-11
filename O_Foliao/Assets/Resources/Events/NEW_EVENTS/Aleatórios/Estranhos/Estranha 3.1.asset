@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Estranha 3.1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 2
   _dialogue:
   - _text: Amiga, fazes barreira para eu fazer xixi, por favor?
     _npc: {fileID: 11400000, guid: 0cf98d9849258ac48b5622683426a4df, type: 2}

@@ -2041,8 +2041,6 @@ GameObject:
   - component: {fileID: 229586431}
   - component: {fileID: 229586433}
   - component: {fileID: 229586434}
-  - component: {fileID: 229586435}
-  - component: {fileID: 229586436}
   m_Layer: 0
   m_Name: Phone
   m_TagString: Phone
@@ -2147,36 +2145,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &229586435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 229586429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!65 &229586436
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 229586429}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 175, y: 175, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &233815542
 GameObject:
   m_ObjectHideFlags: 0
@@ -9638,13 +9606,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4cef214400ae2e544a5d0a9ad81863ec, type: 2}
   - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
+  - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
+  - {fileID: 11400000, guid: ab731a491c2f175479381b0483e6a42e, type: 2}
+  - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
   cebola:
   - {fileID: 11400000, guid: 92b66dc39b14eea43b431fdf569641e4, type: 2}
-  - {fileID: 11400000, guid: a93bece6c7a93204db3306092fb3a61d, type: 2}
   - {fileID: 11400000, guid: 03ba44fbe609cb1458063c477af92422, type: 2}
   - {fileID: 11400000, guid: d579435ac7d8331459373cc203582d75, type: 2}
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
+  - {fileID: 11400000, guid: 6e9d401ece15b75428d1dbc382043e85, type: 2}
+  - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
+  - {fileID: 11400000, guid: 37111feaf8f903b4dbb93d99cc691e7b, type: 2}
+  - {fileID: 11400000, guid: ab731a491c2f175479381b0483e6a42e, type: 2}
   market:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
   hotel:
@@ -9657,14 +9631,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
+  - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
+  - {fileID: 11400000, guid: ab731a491c2f175479381b0483e6a42e, type: 2}
   vinil:
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
   - {fileID: 11400000, guid: a93bece6c7a93204db3306092fb3a61d, type: 2}
+  - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
+  - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
   skadi:
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
   - {fileID: 11400000, guid: 525ace12fe6735f45be5307d4c867d6f, type: 2}
+  - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
+  - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
+  - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
   barsInside: []
   barmen:
   - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
@@ -9686,12 +9667,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: 9a36e302444e5cf46a11a566381e5e21, type: 2}
   - {fileID: 11400000, guid: c2e4396737617be469af37069b77fb96, type: 2}
+  - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
+  - {fileID: 11400000, guid: ab731a491c2f175479381b0483e6a42e, type: 2}
+  - {fileID: 11400000, guid: 37111feaf8f903b4dbb93d99cc691e7b, type: 2}
+  - {fileID: 11400000, guid: 6e9d401ece15b75428d1dbc382043e85, type: 2}
+  - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
+  - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
   afternoonDeck:
   - {fileID: 11400000, guid: bb74c007bcaf0f7499b8c263200ea4d6, type: 2}
   - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: 9a36e302444e5cf46a11a566381e5e21, type: 2}
   - {fileID: 11400000, guid: c2e4396737617be469af37069b77fb96, type: 2}
+  - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
+  - {fileID: 11400000, guid: ab731a491c2f175479381b0483e6a42e, type: 2}
+  - {fileID: 11400000, guid: 37111feaf8f903b4dbb93d99cc691e7b, type: 2}
+  - {fileID: 11400000, guid: 6e9d401ece15b75428d1dbc382043e85, type: 2}
+  - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
+  - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
   nightDeck:
   - {fileID: 11400000, guid: a15dd788d74404c4897dbe4964276586, type: 2}
   - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
@@ -9709,6 +9702,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
   - {fileID: 11400000, guid: 9a36e302444e5cf46a11a566381e5e21, type: 2}
   - {fileID: 11400000, guid: c2e4396737617be469af37069b77fb96, type: 2}
+  - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
+  - {fileID: 11400000, guid: ab731a491c2f175479381b0483e6a42e, type: 2}
+  - {fileID: 11400000, guid: 37111feaf8f903b4dbb93d99cc691e7b, type: 2}
+  - {fileID: 11400000, guid: 6e9d401ece15b75428d1dbc382043e85, type: 2}
+  - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
+  - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
   day1Deck:
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
@@ -9726,6 +9725,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: 9a36e302444e5cf46a11a566381e5e21, type: 2}
   - {fileID: 11400000, guid: c2e4396737617be469af37069b77fb96, type: 2}
+  - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
+  - {fileID: 11400000, guid: ab731a491c2f175479381b0483e6a42e, type: 2}
+  - {fileID: 11400000, guid: 37111feaf8f903b4dbb93d99cc691e7b, type: 2}
+  - {fileID: 11400000, guid: 6e9d401ece15b75428d1dbc382043e85, type: 2}
+  - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
+  - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
   day2Deck:
   - {fileID: 11400000, guid: d18b2c03119dc9049843a2ecb5000a48, type: 2}
   - {fileID: 11400000, guid: 7957467acff200e419cb93a530355471, type: 2}
@@ -9743,8 +9748,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ffcfccdc937be7141947b6c4e93aadd7, type: 2}
   - {fileID: 11400000, guid: 9a36e302444e5cf46a11a566381e5e21, type: 2}
   - {fileID: 11400000, guid: c2e4396737617be469af37069b77fb96, type: 2}
+  - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
+  - {fileID: 11400000, guid: ab731a491c2f175479381b0483e6a42e, type: 2}
+  - {fileID: 11400000, guid: 37111feaf8f903b4dbb93d99cc691e7b, type: 2}
+  - {fileID: 11400000, guid: 6e9d401ece15b75428d1dbc382043e85, type: 2}
+  - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
+  - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
   day3Deck:
-  - {fileID: 11400000, guid: e078a9ae347c88f44b55a42d2ca655f5, type: 2}
+  - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
   lowAlcohol: []
   highAlcohol:
   - {fileID: 11400000, guid: b693d9ae1c394ec47b33923e742d1bc9, type: 2}

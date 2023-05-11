@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Estranho 2.1.1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 2
   _dialogue:
   - _text: "Ep\xE1 que cortes."
     _npc: {fileID: 11400000, guid: 05001e193a04cf34d9db52abfe06e63b, type: 2}
