@@ -19,6 +19,11 @@ public class CebolaLocal : MonoBehaviour, ILocal
     [SerializeField]
     private Game game;
 
+    [SerializeField]
+    private List<Quest> quests;
+
+    [SerializeField]
+    private QuestSystem questSystem;
 
 
 
@@ -33,17 +38,27 @@ public class CebolaLocal : MonoBehaviour, ILocal
         List<Events> events = new List<Events>();
         Events chosenEvent;
         //Get the events
-        cebolaEvents = primaryEventList.GetCebolaZoneEvents();
-        dayEvents = primaryEventList.GetDayDeck(clock);
-        timeOfDayEvents = primaryEventList.GetTimeOfDayDeck(clock);
-        resourceEvents = primaryEventList.GetResourceEvents(player);
-        //Intersect the events
-        events = eventListTools.IntersectEventLists(cebolaEvents, dayEvents,timeOfDayEvents);
-        events = eventListTools.UnionEvents(events, resourceEvents);
-        //Get only 1 type of events and choose a random one
 
-        events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
-        chosenEvent = eventListTools.ChooseARandomEvent(events);
+        if (quests.Count > 0)
+        {
+            chosenEvent = quests[0].events;
+            questSystem.CompleteQuest(quests[0]);
+            quests.RemoveAt(0);
+        }
+        else
+        {
+            cebolaEvents = primaryEventList.GetCebolaZoneEvents();
+            dayEvents = primaryEventList.GetDayDeck(clock);
+            timeOfDayEvents = primaryEventList.GetTimeOfDayDeck(clock);
+            resourceEvents = primaryEventList.GetResourceEvents(player);
+            //Intersect the events
+            events = eventListTools.IntersectEventLists(cebolaEvents, dayEvents, timeOfDayEvents);
+            events = eventListTools.UnionEvents(events, resourceEvents);
+            //Get only 1 type of events and choose a random one
+
+            events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
+            chosenEvent = eventListTools.ChooseARandomEvent(events);
+        }
         primaryEventList.ChangeCurrentEvent(chosenEvent);
 
         uiEvents.OpenCanvas();
@@ -82,6 +97,11 @@ public class CebolaLocal : MonoBehaviour, ILocal
     public void Restart()
     {
         game.StartMovement();
+    }
+
+    public void LocalAddQuest(Quest quest)
+    {
+        quests.Add(quest);
     }
 
 }

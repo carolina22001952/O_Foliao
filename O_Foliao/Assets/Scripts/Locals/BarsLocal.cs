@@ -35,6 +35,7 @@ public class BarsLocal : MonoBehaviour, ILocal
     [Header("Events for Every Bar")]
     [SerializeField]
     private List<Events> GenericBarmenEvents;
+    
     [Header("UI Event of Every Bar")]
     [SerializeField]
     private Events SkadiUI;
@@ -48,6 +49,14 @@ public class BarsLocal : MonoBehaviour, ILocal
     private Events currentBar;
     [SerializeField]
     private Clock clock;
+
+    [SerializeField]
+    private List<Quest> quests;
+
+    [SerializeField]
+    private QuestSystem questSystem;
+
+
     public void localInteraction(Player player, Clock clock)
     {
         shopUi.ButtonInteraction(true);
@@ -131,22 +140,31 @@ public class BarsLocal : MonoBehaviour, ILocal
     {
         List<Events> events = new List<Events>();
         Events chosenEvent;
-
-        switch (barType)
+        if (quests.Count > 0)
         {
-            case Bar.Skadi:
-                events = eventListTools.IntersectEventLists(primaryEventList.GetSkadiZoneEvents(), primaryEventList.GetDayDeck(clock), primaryEventList.GetTimeOfDayDeck(clock)) ;
-                break;
-            case Bar.Vinil:
-                events = eventListTools.IntersectEventLists(primaryEventList.GetVinilZoneEvents(), primaryEventList.GetDayDeck(clock), primaryEventList.GetTimeOfDayDeck(clock));
-                break;
-            case Bar.Celeiro:
-                events = eventListTools.IntersectEventLists(primaryEventList.GetCeleiroZoneEvents(), primaryEventList.GetDayDeck(clock), primaryEventList.GetTimeOfDayDeck(clock));
-                break;
+            chosenEvent = quests[0].events;
+            questSystem.CompleteQuest(quests[0]);
+            quests.RemoveAt(0);
         }
+        else
+        {
+            switch (barType)
+            {
+                case Bar.Skadi:
+                    events = eventListTools.IntersectEventLists(primaryEventList.GetSkadiZoneEvents(), primaryEventList.GetDayDeck(clock), primaryEventList.GetTimeOfDayDeck(clock));
+                    break;
+                case Bar.Vinil:
+                    events = eventListTools.IntersectEventLists(primaryEventList.GetVinilZoneEvents(), primaryEventList.GetDayDeck(clock), primaryEventList.GetTimeOfDayDeck(clock));
+                    break;
+                case Bar.Celeiro:
+                    events = eventListTools.IntersectEventLists(primaryEventList.GetCeleiroZoneEvents(), primaryEventList.GetDayDeck(clock), primaryEventList.GetTimeOfDayDeck(clock));
+                    break;
+            }
 
-        events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
-        chosenEvent = eventListTools.ChooseARandomEvent(events);
+
+            events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
+            chosenEvent = eventListTools.ChooseARandomEvent(events);
+        }
         primaryEventList.ChangeCurrentEvent(chosenEvent);
         uiEvents.OpenCanvas();
         uiEvents.ResetCanvas();
@@ -180,6 +198,9 @@ public class BarsLocal : MonoBehaviour, ILocal
         shopUi.UpdateChoices(currentBar);
     }
 
-
+    public void LocalAddQuest(Quest quest)
+    {
+        quests.Add(quest);
+    }
 
 }

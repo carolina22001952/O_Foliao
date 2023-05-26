@@ -9,4 +9,6 @@ public interface ILocal
     void localChoice(bool more);
 
     void localDialogue(bool more);
+
+    void LocalAddQuest(Quest quest);
 }

@@ -16,6 +16,12 @@ public class BenchLocal : MonoBehaviour, ILocal
     [SerializeField]
     private DialogueAction dialogueAction;
 
+    [SerializeField]
+    private List<Quest> quests;
+
+    [SerializeField]
+    private QuestSystem questSystem;
+
 
     private List<Events> benchEvents;
     [SerializeField]
@@ -34,14 +40,23 @@ public class BenchLocal : MonoBehaviour, ILocal
         events = benchEvents;
 
         //Get only 1 type of events and choose a random one
-
-       // events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
-        chosenEvent = eventListTools.ChooseARandomEvent(events);
-        if (player.GetAlcohol() > 80)
+        if (quests.Count > 0)
         {
-            chosenEvent = eventListTools.ChooseARandomEvent(alcoholEvents);
+            chosenEvent = quests[0].events;
+            questSystem.CompleteQuest(quests[0]);
+            quests.RemoveAt(0);
         }
+        else
+        {
 
+            // events = primaryEventList.GetAllEventsOfOneType(events, primaryEventList.CheckForEventType(events));
+            chosenEvent = eventListTools.ChooseARandomEvent(events);
+
+            if (player.GetAlcohol() > 80)
+            {
+                chosenEvent = eventListTools.ChooseARandomEvent(alcoholEvents);
+            }
+        }
         primaryEventList.ChangeCurrentEvent(chosenEvent);
 
         uiEvents.OpenCanvas();
@@ -78,5 +93,10 @@ public class BenchLocal : MonoBehaviour, ILocal
     public void Restart()
     {
         game.StartMovement();
+    }
+
+    public void LocalAddQuest(Quest quest)
+    {
+        quests.Add(quest);
     }
 }

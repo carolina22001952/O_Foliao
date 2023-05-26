@@ -13,6 +13,13 @@ public class TunelLocal : MonoBehaviour, ILocal
     [SerializeField]
     private TunelUi tunelUi;
 
+    [SerializeField]
+    private List<Quest> quests;
+
+    [SerializeField]
+    private QuestSystem questSystem;
+
+
     public void localInteraction(Player player, Clock clock)
     {
         tunelUi.OpenBusUI();
@@ -52,6 +59,11 @@ public class TunelLocal : MonoBehaviour, ILocal
     public void localDialogue(bool more)
     {
 
+    }
+
+    public void LocalAddQuest(Quest quest)
+    {
+        quests.Add(quest);
     }
 
 }

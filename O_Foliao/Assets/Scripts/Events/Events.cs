@@ -81,8 +81,8 @@ public struct EventOutcome
     [SerializeField] private int _energyPlus;
     public int energyPlus { get { return _energyPlus; } }
 
-    //[SerializeField] private Achievement _achievement;
-    //public Achievement achievement { get { return _achievement; } }
+    [SerializeField] Quest _questToInsert;
+    public Quest questToInsert { get { return _questToInsert; } }
 
     [SerializeField] Events _nextEvent;
     public Events nextEvent { get { return _nextEvent; } }

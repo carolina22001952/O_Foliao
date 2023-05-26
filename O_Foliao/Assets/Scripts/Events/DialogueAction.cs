@@ -19,6 +19,8 @@ public class DialogueAction : MonoBehaviour
     [SerializeField]
     private bool restart;
 
+    [SerializeField]
+    private QuestSystem questSystem;
     //1 
 
     public void OpenCanvas()
@@ -100,6 +102,7 @@ public class DialogueAction : MonoBehaviour
 
             ///
             primaryEventList.EventContinuation(currentEvent.decisions[choice].sucessEvent.eventsToInsert);
+            questSystem.InsertQuest(currentEvent.decisions[choice].sucessEvent.questToInsert);
             //Call achievement
             if (currentEvent.decisions[choice].sucessEvent.nextEvent != null)
             {
@@ -122,6 +125,7 @@ public class DialogueAction : MonoBehaviour
                 currentEvent.decisions[choice].failedEvent.energyPlus);
             time.UpdateTime(currentEvent.decisions[choice].sucessEvent.timePassed);
             //Call achievement
+            questSystem.InsertQuest(currentEvent.decisions[choice].failedEvent.questToInsert);
             primaryEventList.EventContinuation(currentEvent.decisions[choice].failedEvent.eventsToInsert);
             if (currentEvent.decisions[choice].failedEvent.nextEvent != null)
             {
