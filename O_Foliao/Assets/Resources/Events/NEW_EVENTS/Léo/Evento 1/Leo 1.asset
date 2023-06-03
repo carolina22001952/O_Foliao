@@ -30,7 +30,7 @@ MonoBehaviour:
       _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 11400000, guid: 305a5fe6f0688b148aa5431768a0c7fe, type: 2}
       _nextEvent: {fileID: 11400000, guid: 24133a26aca108b45b777776cd8f9c83, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -39,7 +39,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Interessada) O que est\xE1 a acontecer?"
@@ -53,7 +53,7 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 7a5ea8a45b4ab174a910abbe904b3f80, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -62,7 +62,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Amig\xE1vel) A oferecer bebidas? J\xE1 \xE9 o meu bar preferido."
@@ -76,7 +76,7 @@ MonoBehaviour:
       _funPlus: -10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6ea70abfec4445d4c8701a3490c3b501, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -85,7 +85,7 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 3541d6291a17c0447ac8e564b9d4d96f, type: 2}
       _eventsToInsert: []
   _eventBaseData:

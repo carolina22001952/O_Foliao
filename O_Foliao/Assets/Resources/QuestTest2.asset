@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d571f90abec97f24084a9b3c0e12a89b, type: 3}
+  m_Name: QuestTest2
+  m_EditorClassIdentifier: 
+  _questTitle: Ola goku numero 2
+  _questDescription: lllll
+  _location: {fileID: 0}
+  _events: {fileID: 11400000, guid: 7b994e7205c1ac74cb3293de14e63389, type: 2}

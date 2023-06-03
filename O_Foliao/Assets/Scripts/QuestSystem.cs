@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class QuestSystem : MonoBehaviour
 {
-    NodeList nodelist;
-
+    public NodeList nodelist;
+    public QuestsUI questsUI;
     public void InsertQuest(Quest quest)
     {
         if(quest != null)
         {
-            List<Node> nodes = nodelist.GetNodeList();
-            foreach(Node node in nodes)
+            List<GameObject> nodes = nodelist.GetNodeList();
+            foreach(GameObject node in nodes)
             {
                 if(node == quest.location)
                 {
@@ -27,7 +27,16 @@ public class QuestSystem : MonoBehaviour
             }
         }
 
-        //Add ui
+        if(quest != null)
+        {
+            questsUI.InsertNewButton(quest);
+        }
+        
+    }
+
+    public void UpdateUI()
+    {
+
     }
 
     public void CompleteQuest(Quest quest)

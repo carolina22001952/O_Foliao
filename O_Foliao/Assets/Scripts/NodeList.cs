@@ -5,9 +5,9 @@ using UnityEngine;
 public class NodeList : MonoBehaviour
 {
     [SerializeField]
-    private List<Node> nodeList;
+    private List<GameObject> nodeList;
 
-    public List<Node> GetNodeList()
+    public List<GameObject> GetNodeList()
     {
         return nodeList;
     }

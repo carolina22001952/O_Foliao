@@ -57,6 +57,9 @@ public class PrimaryEventList : MonoBehaviour
     [Header("Hotel")]
     [SerializeField] private List<Events> Hotel;
 
+    [Header("EventosParaTeste")]
+    [SerializeField] private List<Events> testeLocal;
+
     [Header("ResourceEvents lvls")]
     [SerializeField] private int lowAlcoholThreshold = 20;
     [SerializeField] private int highAlcoholThreshold = 80;
@@ -169,6 +172,11 @@ public class PrimaryEventList : MonoBehaviour
     public List<Events> GetBenchEvents()
     {
         return this.bench;
+    }
+
+    public List<Events> GetTestEvents()
+    {
+        return this.testeLocal;
     }
 
     public List<Events> GetDayDeck(Clock time)
