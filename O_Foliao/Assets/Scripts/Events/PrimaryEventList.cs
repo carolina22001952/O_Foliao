@@ -72,10 +72,8 @@ public class PrimaryEventList : MonoBehaviour
 
     public void ChangeCurrentEvent(Events events)
     {
-        Debug.Log(events.eventType);
         if (events.eventType != EventType.Random)
         {
-            Debug.Log("Ya");
             eventListTools.RemoveEvent(events, morningDeck, afternoonDeck, nightDeck);
         }
         currentEvent = events;

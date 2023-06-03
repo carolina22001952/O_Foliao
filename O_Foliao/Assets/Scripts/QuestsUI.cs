@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class QuestsUI : MonoBehaviour
 {
@@ -16,16 +17,23 @@ public class QuestsUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI questDescription;
 
+   // [SerializeField]
+   // private List<Button> buttonsList;
+
     [SerializeField]
-    private List<Button> buttonsList;
+    private Dictionary<Button,Quest> buttonsList;
 
     [SerializeField]
     private GameObject questInformationParent;
 
+    private void Start()
+    {
+        buttonsList = new Dictionary<Button, Quest>();
+    }
     public void InsertNewButton(Quest quest)
     {
         Button buttonInstance = Instantiate(buttonPrefab, transform);
-        buttonsList.Add(buttonInstance);
+        buttonsList.Add(buttonInstance,quest);
         ChangeQuestButtonName(buttonInstance, quest.questTitle);
 
         buttonInstance.onClick.RemoveAllListeners();
@@ -47,6 +55,7 @@ public class QuestsUI : MonoBehaviour
 
     public void UpdateCompletedQuest(Quest quest)
     {
-        
+        Button button = buttonsList.FirstOrDefault(x => x.Value == quest).Key;
+        ChangeQuestButtonName(button, "(Completed) " + quest.questTitle);
     }
 }

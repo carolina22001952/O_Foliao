@@ -1854,7 +1854,6 @@ MonoBehaviour:
   buttonPrefab: {fileID: 5593120044336568349, guid: a4c288a612fc2c64a9fb8eff66d3efd8, type: 3}
   questTitle: {fileID: 1466423192}
   questDescription: {fileID: 1502765973}
-  buttonsList: []
   questInformationParent: {fileID: 608702452}
 --- !u!114 &167610301
 MonoBehaviour:
@@ -2551,7 +2550,7 @@ MonoBehaviour:
   uiEvents: {fileID: 1780539478}
   game: {fileID: 60811733}
   quests: []
-  questSystem: {fileID: 0}
+  questSystem: {fileID: 1242739344}
 --- !u!1 &233815542
 GameObject:
   m_ObjectHideFlags: 0
