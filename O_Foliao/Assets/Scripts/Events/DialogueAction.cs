@@ -147,9 +147,11 @@ public class DialogueAction : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        foreach (char c in currentEvent.dialogue[index].text.ToCharArray())
+        for (int i = 0; i <= currentEvent.dialogue[index].text.Length;i++) 
         {
-            uiEvents.TypeNpcDialogue(c);
+            string text = currentEvent.dialogue[index].text.Substring(0, i);
+            text += "<color=#00000000>" + currentEvent.dialogue[index].text.Substring(i) + "</color>";
+            uiEvents.TypeNpcDialogue(text);
             yield return new WaitForSeconds(textSpeed);
         }
     }
@@ -162,7 +164,7 @@ public class DialogueAction : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
 
-                if (uiEvents.GetDialogueText() == currentEvent.dialogue[index].text)
+                if (uiEvents.GetDialogueText() == currentEvent.dialogue[index].text + "<color=#00000000></color>")
                 {
                     NextLine();
                 }
@@ -207,3 +209,14 @@ public class DialogueAction : MonoBehaviour
 
 
 }
+
+
+
+
+
+// Safeguard
+//  foreach (char c in currentEvent.dialogue[index].text.ToCharArray())
+//  {
+//      uiEvents.TypeNpcDialogue(c);
+//      yield return new WaitForSeconds(textSpeed);
+//  }

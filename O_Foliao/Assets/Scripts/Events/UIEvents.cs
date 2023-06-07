@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -45,6 +46,7 @@ public class UIEvents : MonoBehaviour
     [SerializeField]
     private Image Background;
 
+    private string dialogueTextaux;
 
     // Animation
     [SerializeField]
@@ -95,9 +97,9 @@ public class UIEvents : MonoBehaviour
         return dialogueText.text;
     }
 
-    public void TypeNpcDialogue(char c)
+    public void TypeNpcDialogue(string text)
     {
-        dialogueText.text += c;
+        dialogueText.text = text;
     }
 
     public void UpdatePlayerChoice1Text(string choice)

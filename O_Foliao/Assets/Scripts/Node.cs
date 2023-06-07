@@ -13,6 +13,8 @@ public class Node : MonoBehaviour
     private Sprite normal;
     [SerializeField]
     private Sprite highLight;
+    [SerializeField]
+    private Sprite questHighLight;
     public Node node;
     [SerializeField]
     private List<ILocal> local;
@@ -95,6 +97,16 @@ public class Node : MonoBehaviour
         {
             HighLight();
         }
+    }
+
+    public void QuestHighLight(GameObject location)
+    {
+        location.transform.GetComponentInChildren<SpriteRenderer>().sprite = questHighLight;
+    }
+
+    public void QuestToNormal(GameObject location)
+    {
+        location.transform.GetComponentInChildren<SpriteRenderer>().sprite = normal;
     }
 }
 

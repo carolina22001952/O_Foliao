@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using Unity.VisualScripting;
 
 public class QuestsUI : MonoBehaviour
 {
@@ -24,7 +25,16 @@ public class QuestsUI : MonoBehaviour
     private Dictionary<Button,Quest> buttonsList;
 
     [SerializeField]
+    private GameObject contentGrid;
+
+    [SerializeField]
     private GameObject questInformationParent;
+
+    [SerializeField]
+    private GameObject locationText;
+
+    [SerializeField]
+    private LocationHighLight locationHighLight;
 
     private void Start()
     {
@@ -32,7 +42,7 @@ public class QuestsUI : MonoBehaviour
     }
     public void InsertNewButton(Quest quest)
     {
-        Button buttonInstance = Instantiate(buttonPrefab, transform);
+        Button buttonInstance = Instantiate(buttonPrefab, contentGrid.transform);
         buttonsList.Add(buttonInstance,quest);
         ChangeQuestButtonName(buttonInstance, quest.questTitle);
 
@@ -45,6 +55,7 @@ public class QuestsUI : MonoBehaviour
     {
         questTitle.text = quest.questTitle;
         questDescription.text = quest.questDescription;
+        locationHighLight.UpdateLocation(quest.location);
         questInformationParent.SetActive(true);
     }
 
@@ -58,4 +69,6 @@ public class QuestsUI : MonoBehaviour
         Button button = buttonsList.FirstOrDefault(x => x.Value == quest).Key;
         ChangeQuestButtonName(button, "(Completed) " + quest.questTitle);
     }
+
+
 }
