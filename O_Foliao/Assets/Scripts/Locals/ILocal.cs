@@ -11,4 +11,6 @@ public interface ILocal
     void localDialogue(bool more);
 
     void LocalAddQuest(Quest quest);
+
+
 }

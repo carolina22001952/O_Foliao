@@ -41,12 +41,8 @@ public class QuestSystem : MonoBehaviour
 
     public void CompleteQuest(Quest quest)
     {
-        Debug.Log("Ye");
-        questsUI.UpdateCompletedQuest(quest);  
-        if(quest.location.gameObject.GetComponent("QuestOnlyLocal") as QuestOnlyLocal != null )
-        {
-            quest.location.gameObject.SetActive(false);
-        }
+       // Debug.Log("Ye");
+       // questsUI.UpdateCompletedQuest(quest);  
     }
 }
   

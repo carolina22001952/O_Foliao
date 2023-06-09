@@ -55,7 +55,7 @@ public class QuestsUI : MonoBehaviour
     {
         questTitle.text = quest.questTitle;
         questDescription.text = quest.questDescription;
-        locationHighLight.UpdateLocation(quest.location);
+      //  locationHighLight.UpdateLocation(quest.location);
         questInformationParent.SetActive(true);
     }
 

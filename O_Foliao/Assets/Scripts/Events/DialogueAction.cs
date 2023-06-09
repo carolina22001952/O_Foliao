@@ -163,8 +163,9 @@ public class DialogueAction : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-
-                if (uiEvents.GetDialogueText() == currentEvent.dialogue[index].text + "<color=#00000000></color>")
+                Debug.Log(currentEvent.dialogue[index].text);
+                if (uiEvents.GetDialogueText() == currentEvent.dialogue[index].text + "<color=#00000000></color>" 
+                    || uiEvents.GetDialogueText() == currentEvent.dialogue[index].text)
                 {
                     NextLine();
                 }
@@ -210,7 +211,7 @@ public class DialogueAction : MonoBehaviour
 
 }
 
-
+ 
 
 
 
