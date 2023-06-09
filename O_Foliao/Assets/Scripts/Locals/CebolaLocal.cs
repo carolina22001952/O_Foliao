@@ -52,9 +52,7 @@ public class CebolaLocal : MonoBehaviour, ILocal
             timeOfDayEvents = primaryEventList.GetTimeOfDayDeck(clock);
             resourceEvents = primaryEventList.GetResourceEvents(player);
             //Intersect the events
-            Debug.Log("Sup");
             events = eventListTools.IntersectEventLists(cebolaEvents, dayEvents, timeOfDayEvents);
-            Debug.Log("Bro");
             events = eventListTools.UnionEvents(events, resourceEvents);
             //Get only 1 type of events and choose a random one
 
@@ -65,7 +63,6 @@ public class CebolaLocal : MonoBehaviour, ILocal
 
         uiEvents.OpenCanvas();
         uiEvents.ResetCanvas();
-        Debug.Log("Yasss");
         dialogueAction.StartDialogue();
 
 
@@ -77,11 +74,9 @@ public class CebolaLocal : MonoBehaviour, ILocal
     {
         if (more)
         {
-            Debug.Log("Yasss6");
             dialogueAction.StartDialogue();
         }else
         {
-            Debug.Log("Yasss5");
             uiEvents.CloseCanvas();
             game.StartMovement();
         }
@@ -91,11 +86,9 @@ public class CebolaLocal : MonoBehaviour, ILocal
     {
         if (more)
         {
-            Debug.Log("Yasss4");
             dialogueAction.StartChoices();
         }else
         {
-            Debug.Log("Yasss3");
             uiEvents.CloseCanvas();
             Restart();
         }

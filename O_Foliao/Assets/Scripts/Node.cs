@@ -15,6 +15,8 @@ public class Node : MonoBehaviour
     private Sprite highLight;
     [SerializeField]
     private Sprite questHighLight;
+    [SerializeField]
+    private Sprite deactivatedNode;
     public Node node;
     [SerializeField]
     private List<ILocal> local;
@@ -68,15 +70,18 @@ public class Node : MonoBehaviour
 
     public void HighLight()
     {
-        gameObject.transform.GetComponentInChildren<SpriteRenderer>().sprite = highLight;
-        StartCoroutine(ScaleSprite());
+        if (gameObject.transform.GetComponentInChildren<SpriteRenderer>(true).gameObject.activeSelf == true)
+        {
+            gameObject.transform.GetComponentInChildren<SpriteRenderer>(true).sprite = highLight;
+            StartCoroutine(ScaleSprite());
+        }
     }
 
     public void BacktoNormal()
     {
-        gameObject.transform.GetComponentInChildren<SpriteRenderer>().sprite = normal;
+        gameObject.transform.GetComponentInChildren<SpriteRenderer>(true).sprite = normal;
         StopAllCoroutines();
-        gameObject.transform.GetComponentInChildren<SpriteRenderer>().transform.localScale = new Vector3(0.01f, 0.01f, 1);
+        gameObject.transform.GetComponentInChildren<SpriteRenderer>(true).transform.localScale = new Vector3(0.01f, 0.01f, 1);
     }
 
     public Node GetNode(Player player)
@@ -107,6 +112,11 @@ public class Node : MonoBehaviour
     public void QuestToNormal(GameObject location)
     {
         location.transform.GetComponentInChildren<SpriteRenderer>().sprite = normal;
+    }
+
+    public void QuestToDeactivate(GameObject location)
+    {
+        location.transform.GetComponentInChildren<SpriteRenderer>().sprite = deactivatedNode;
     }
 }
 

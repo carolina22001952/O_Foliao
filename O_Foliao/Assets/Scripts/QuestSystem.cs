@@ -41,8 +41,8 @@ public class QuestSystem : MonoBehaviour
 
     public void CompleteQuest(Quest quest)
     {
-       // Debug.Log("Ye");
-       // questsUI.UpdateCompletedQuest(quest);  
+       Debug.Log("Ye");
+       questsUI.UpdateCompletedQuest(quest);  
     }
 }
   

@@ -30,6 +30,31 @@ public class QuestOnlyLocal : MonoBehaviour, ILocal
     private LocationHighLight locationHighLight;
 
     private Events chosenEvent;
+    [SerializeField]
+    private GameObject capsuleCollider;
+    [SerializeField]
+    private Node node;
+
+    private int stop = 0;
+
+    public void Update()
+    {
+        if(quests.Count == 0)
+        {
+            capsuleCollider.GetComponent<CapsuleCollider>().enabled = false;
+            node.QuestToDeactivate(this.gameObject);
+            stop = 0;
+        }else
+        {
+            capsuleCollider.GetComponent<CapsuleCollider>().enabled = true;
+            if(stop == 0)
+            {
+                node.QuestToNormal(this.gameObject);
+                stop++;
+            }
+        }
+    }
+
     public void localInteraction(Player player, Clock clock)
     {
         Events chosenEvent;
@@ -50,13 +75,10 @@ public class QuestOnlyLocal : MonoBehaviour, ILocal
             game.StartMovement();
         }
 
-        if(quests.Count == 0)
-        {
-            
-        }
-
 
     }
+
+
 
     public void localChoice(bool more)
     {
