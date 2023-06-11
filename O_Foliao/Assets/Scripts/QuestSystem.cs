@@ -11,11 +11,23 @@ public class QuestSystem : MonoBehaviour
     {
         if(quest != null)
         {
-            List<GameObject> nodes = nodelist.GetNodeList();
+           GameObject location = GameObject.Find(quest.location);
+
+            if (location.GetComponent<ILocal>() is ILocal)
+            {
+                location.SetActive(true);
+                location.GetComponent<ILocal>().LocalAddQuest(quest);
+
+            }
+
+
+
+          /*  List<GameObject> nodes = nodelist.GetNodeList();
             foreach(GameObject node in nodes)
             {
                 if(node == quest.location)
                 {
+
                     if (quest.location.gameObject.GetComponent<ILocal>() is ILocal)
                     {
                         quest.location.gameObject.SetActive(true);
@@ -25,6 +37,7 @@ public class QuestSystem : MonoBehaviour
                
                 }
             }
+          */
         }
 
         if(quest != null)
@@ -41,7 +54,6 @@ public class QuestSystem : MonoBehaviour
 
     public void CompleteQuest(Quest quest)
     {
-       Debug.Log("Ye");
        questsUI.UpdateCompletedQuest(quest);  
     }
 }

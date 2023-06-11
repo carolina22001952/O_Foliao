@@ -50,7 +50,6 @@ public class DialogueAction : MonoBehaviour
         OpenCanvas();
         currentEvent = primaryEventList.GetCurrentEvent();
         uiEvents.UpdateNpcName(currentEvent.dialogue[index].npc.name);
-        uiEvents.OpenCharacterGameObject();
         uiEvents.OpenNpcGameObject();
         uiEvents.UpdateNpcSprite(currentEvent.dialogue[index].npc.sprite);
         
@@ -64,26 +63,26 @@ public class DialogueAction : MonoBehaviour
     public void StartChoices()
     {
         uiEvents.OpenPlayerChoicesGroup();
-        switch (currentEvent.decisions.Length)
+
+        for (int i = 0; i < currentEvent.decisions.Length; i++)
         {
-            case 0:
-                break;
-            case 1:
-                uiEvents.UpdatePlayerChoice1Text(currentEvent.decisions[0].choiceDialogue);
-                uiEvents.OpenMultipleChoices(currentEvent.decisions.Length);
-                break;
-            case 2:
-                uiEvents.UpdatePlayerChoice1Text(currentEvent.decisions[0].choiceDialogue);
-                uiEvents.UpdatePlayerChoice2Text(currentEvent.decisions[1].choiceDialogue);
-                uiEvents.OpenMultipleChoices(currentEvent.decisions.Length);
-                break;
-            case 3:
-                uiEvents.UpdatePlayerChoice1Text(currentEvent.decisions[0].choiceDialogue);
-                uiEvents.UpdatePlayerChoice2Text(currentEvent.decisions[1].choiceDialogue);
-                uiEvents.UpdatePlayerChoice3Text(currentEvent.decisions[2].choiceDialogue);
-                uiEvents.OpenMultipleChoices(currentEvent.decisions.Length);
-                break;
+            switch (currentEvent.decisions.Length)
+            {
+                case 0:
+                    break;
+                case 1:
+                    uiEvents.UpdatePlayerChoice1Text(currentEvent.decisions[0].choiceDialogue);
+                    break;
+                case 2:
+                    uiEvents.UpdatePlayerChoice2Text(currentEvent.decisions[1].choiceDialogue);
+                    break;
+                case 3:
+                    uiEvents.UpdatePlayerChoice3Text(currentEvent.decisions[2].choiceDialogue);
+                    break;
+            }
+
         }
+        uiEvents.OpenMultipleChoices(currentEvent.decisions.Length);
     }
 
     public void Choice(int choice)
