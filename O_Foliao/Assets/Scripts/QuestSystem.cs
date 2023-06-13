@@ -19,25 +19,6 @@ public class QuestSystem : MonoBehaviour
                 location.GetComponent<ILocal>().LocalAddQuest(quest);
 
             }
-
-
-
-          /*  List<GameObject> nodes = nodelist.GetNodeList();
-            foreach(GameObject node in nodes)
-            {
-                if(node == quest.location)
-                {
-
-                    if (quest.location.gameObject.GetComponent<ILocal>() is ILocal)
-                    {
-                        quest.location.gameObject.SetActive(true);
-                        quest.location.gameObject.GetComponent<ILocal>().LocalAddQuest(quest);
-                                             
-                    }
-               
-                }
-            }
-          */
         }
 
         if(quest != null)
@@ -57,4 +38,21 @@ public class QuestSystem : MonoBehaviour
        questsUI.UpdateCompletedQuest(quest);  
     }
 }
-  
+
+
+/*  List<GameObject> nodes = nodelist.GetNodeList();
+  foreach(GameObject node in nodes)
+  {
+      if(node == quest.location)
+      {
+
+          if (quest.location.gameObject.GetComponent<ILocal>() is ILocal)
+          {
+              quest.location.gameObject.SetActive(true);
+              quest.location.gameObject.GetComponent<ILocal>().LocalAddQuest(quest);
+
+          }
+
+      }
+  }
+*/

@@ -82,15 +82,15 @@ public class UIEvents : MonoBehaviour
         npcSpriteGameObject.SetActive(false);
     }
 
-    public void OpenCharacterGameObject()
-    {
-        characterSpriteGameObject.SetActive(true);
-    }
+   // public void OpenCharacterGameObject()
+   // {
+   //     characterSpriteGameObject.SetActive(true);
+   // }
 
-    public void CloseCharacterGameObject()
-    {
-        characterSpriteGameObject.SetActive(false);
-    }
+   // public void CloseCharacterGameObject()
+   // {
+   //     characterSpriteGameObject.SetActive(false);
+   // }
 
     public string GetDialogueText()
     {
@@ -217,7 +217,7 @@ public class UIEvents : MonoBehaviour
     {
         CloseNpcGameObject();
         CloseMultipleChoices(3);
-        CloseCharacterGameObject();
+       // CloseCharacterGameObject();
         CloseDialogueObject();
         
     }

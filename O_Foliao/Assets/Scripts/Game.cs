@@ -44,7 +44,9 @@ public class Game : MonoBehaviour
     }
     public void StartMovement()
     {
+        
         move.TakeMovementInput();
+
     }
 
 
