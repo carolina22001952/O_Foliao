@@ -41,6 +41,7 @@ public class QuestOnlyLocal : MonoBehaviour, ILocal
         if(quests.Count == 0)
         {
             capsuleCollider.GetComponent<CapsuleCollider>().enabled = false;
+
             node.QuestToDeactivate(this.gameObject);
             stop = 0;
         }else
