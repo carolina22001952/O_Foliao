@@ -16,4 +16,3 @@ MonoBehaviour:
   _questDescription: gggg
   _location: {fileID: 0}
   _events: {fileID: 0}
-  _completed: 0
