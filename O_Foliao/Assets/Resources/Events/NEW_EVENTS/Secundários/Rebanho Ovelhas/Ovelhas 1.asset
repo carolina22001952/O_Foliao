@@ -19,7 +19,6 @@ MonoBehaviour:
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: (Brincalhona) Deviam estar na terrinha suas malucas!
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -30,18 +29,19 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: e18d7875f1da9e1488fe2cbda8fdcc1c, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
   - _choiceDialogue: "(Divertida) Ahh tenho que avisar a minha av\xF3!"
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -52,18 +52,44 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: e18d7875f1da9e1488fe2cbda8fdcc1c, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert: []
+  - _choiceDialogue: "(Ignorar) A minha av\xF3 't\xE1 morta!"
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert:
+      - {fileID: 11400000}
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 000000000100000002000000
+    _dayOfWeek: 0000000001000000
+    _locals: 
+    _alcohol: 

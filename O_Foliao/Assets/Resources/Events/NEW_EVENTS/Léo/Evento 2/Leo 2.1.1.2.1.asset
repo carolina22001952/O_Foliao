@@ -29,16 +29,17 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6bcefb5f77ad1cb4681b7a0f10ae1ec7, type: 2}
-      _eventsToInsert: []
+      _eventsToInsert:
+      - {fileID: 11400000, guid: 22f4e349d098a7149b79df878c09cfdf, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: (Calculista) Achas que conseguia ajudar nalguma coisa?
@@ -52,7 +53,7 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 47444f8aa2373ed488ddaf4ac1ac9dde, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +62,7 @@ MonoBehaviour:
       _funPlus: -10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 0cf5083b771e23843ae4df945ad2a2bb, type: 2}
       _eventsToInsert: []
   _eventBaseData:

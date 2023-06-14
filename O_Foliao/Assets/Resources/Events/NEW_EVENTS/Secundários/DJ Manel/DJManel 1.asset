@@ -19,7 +19,6 @@ MonoBehaviour:
     _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
   _decisions:
   - _choiceDialogue: (Perdida) Eu?
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -30,19 +29,20 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 30b204c79ab5c9f4dac8fe188b13f1f3, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
+      _eventsToInsert: []
   - _choiceDialogue: "(Sarc\xE1stica) Ep\xE1 da \xFAltima vez que verifiquei fazia
       no ver\xE3o."
-    _maxAlcool: 0
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -53,18 +53,44 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 30b204c79ab5c9f4dac8fe188b13f1f3, type: 2}
+      _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
-  alcool: 0
-  energy: 0
-  _timeOfDay: 0
-  _dayOfWeek: 0
-  _locals: 
+      _eventsToInsert: []
+  - _choiceDialogue: "(Ignorar) N\xE3o me chateies."
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert:
+      - {fileID: 11400000}
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 000000000100000002000000
+    _dayOfWeek: 0000000001000000
+    _locals: 
+    _alcohol: 

@@ -30,17 +30,17 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 94358d2b0e08b8745bac21fcbf91b084, type: 2}
       _eventsToInsert:
-      - {fileID: 11400000, guid: d667ea3feaee2c04ab5020f20ffe5d3e, type: 2}
+      - {fileID: 11400000, guid: 3a66d9f73dc24a3499d02231270890aa, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Ousada) Eu ajudo-te aqui no bar, durante o carnaval inteiro
@@ -55,17 +55,17 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 94358d2b0e08b8745bac21fcbf91b084, type: 2}
       _eventsToInsert:
-      - {fileID: 11400000, guid: d667ea3feaee2c04ab5020f20ffe5d3e, type: 2}
+      - {fileID: 11400000, guid: 9f8c0b1b740a50d44924c5a7cd56aff1, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

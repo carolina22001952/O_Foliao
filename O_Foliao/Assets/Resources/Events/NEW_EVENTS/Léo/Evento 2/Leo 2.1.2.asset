@@ -29,8 +29,8 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 7c829ed7bf7a5f743bf40ac32cfdd208, type: 2}
       _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Grata) Claro, tu \xE9 que mandas."
@@ -52,8 +52,8 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 12197e2573ccf854d8de4dfe1ca9a1e5, type: 2}
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 7c829ed7bf7a5f743bf40ac32cfdd208, type: 2}
       _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(C\xF3mica) A minha m\xE3e ensinou-me a ter respeito pelos
@@ -76,7 +76,7 @@ MonoBehaviour:
       _funPlus: -10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 1ccf8eba3cd15f34e9c7a24385f51a69, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -85,7 +85,7 @@ MonoBehaviour:
       _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 564e9338953716c4383c04f4efcfae74, type: 2}
       _eventsToInsert: []
   _eventBaseData:
