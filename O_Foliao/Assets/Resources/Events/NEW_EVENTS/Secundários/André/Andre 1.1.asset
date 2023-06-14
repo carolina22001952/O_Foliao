@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Andre 1.1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 1
   _dialogue:
   - _text: "Eu n\xE3o sei nads, d\xF3 quero ir dormir..."
     _npc: {fileID: 11400000, guid: e7378539399b5aa49ab0e25110b398c4, type: 2}
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: -15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: dba92e863af784f40b2abc95d2abe39b, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Pr\xE1tica) D\xE1-me o teu telem\xF3vel, vou ligar a um amigo
@@ -53,7 +53,7 @@ MonoBehaviour:
       _funPlus: -15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: dba92e863af784f40b2abc95d2abe39b, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -62,7 +62,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

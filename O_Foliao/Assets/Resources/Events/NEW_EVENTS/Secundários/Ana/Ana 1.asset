@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Ana 1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 1
   _dialogue:
   - _text: "\xC9s a favor de touradas?"
     _npc: {fileID: 11400000, guid: 02909333923443f428a5de210a55a5c9, type: 2}
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: d1f1efe846b76274995da2c67ee7e905, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(S\xE9ria) Tenho cara de quem gosta de espetar paus em animais?"
@@ -52,7 +52,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: d1f1efe846b76274995da2c67ee7e905, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,11 +61,35 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+  - _choiceDialogue: "(Ignorar) N\xE3o vou ter esta conversa contigo."
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert:
+      - {fileID: 11400000}
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:
-    _timeOfDay: 
-    _dayOfWeek: 
+    _timeOfDay: 000000000100000002000000
+    _dayOfWeek: 0000000001000000
     _locals: 
     _alcohol: 

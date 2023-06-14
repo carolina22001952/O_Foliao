@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Elsa 1.2
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 1
   _dialogue:
   - _text: "Fecha os olhos, tapa o nariz, mete a boca aqui e faz o 4, em simult\xE2neo!
       \xC9 uma ordem!"

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: DJManel 1.1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 1
   _dialogue:
   - _text: "PARAB\xC9NS A VOC\xCA... NESTA DATA QUERIDA..."
     _npc: {fileID: 11400000, guid: b1a75f89d43887446ad24b7fbacfa814, type: 2}
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 27c71662f54e23540a20a8ece7300223, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "ANIVERS\xC1RIO PRECOCE... AI QUE PERVERTIDA..."
@@ -52,7 +52,7 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 27c71662f54e23540a20a8ece7300223, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +61,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

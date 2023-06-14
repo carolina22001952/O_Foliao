@@ -29,16 +29,17 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000}
-      _eventsToInsert: []
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert:
+      - {fileID: 11400000, guid: 46a5a8b20a9bac9419f6d9c4dca88c7e, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

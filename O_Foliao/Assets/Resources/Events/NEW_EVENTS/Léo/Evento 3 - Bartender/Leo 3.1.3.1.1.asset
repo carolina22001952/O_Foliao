@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
+  m_Name: Leo 3.1.3.1.1
+  m_EditorClassIdentifier: 
+  _eventType: 0
+  _dialogue:
+  - _text: Estou seriamente a pensar no teu caso.
+    _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
+    _background: {fileID: 21300000, guid: 8535024eaf10d37439aa1497469d236e, type: 3}
+  _decisions:
+  - _choiceDialogue: "(Interessada) Precisas mesmo de algu\xE9m?"
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 97efe38972f0b6944a6f51cf29dca3e4, type: 2}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+  - _choiceDialogue: (Silenciosa) ...
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 97efe38972f0b6944a6f51cf29dca3e4, type: 2}
+      _eventsToInsert: []
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+  _eventBaseData:
+    _timeOfDay: 02000000
+    _dayOfWeek: 0000000001000000
+    _locals: 03000000
+    _alcohol: 01000000

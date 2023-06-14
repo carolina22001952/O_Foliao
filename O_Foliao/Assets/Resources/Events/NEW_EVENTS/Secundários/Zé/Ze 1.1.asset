@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Ze 1.1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 1
   _dialogue:
   - _text: "Aproveita, esta vida s\xE3o dois dias. O carnaval, s\xE3o tr\xEAs."
     _npc: {fileID: 11400000, guid: 0bcc5e136a1408c43a3ef705e3e11ddd, type: 2}
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: ef833b309f9ed344bb6537d827e45a32, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Divertida) N\xE3o sei se aguento um dia sequer."
@@ -52,7 +52,7 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: ef833b309f9ed344bb6537d827e45a32, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +61,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

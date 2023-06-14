@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Andre 1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 1
   _dialogue:
   - _text: Ajuda-mE por favor, os mwus... amigos...
     _npc: {fileID: 11400000, guid: e7378539399b5aa49ab0e25110b398c4, type: 2}
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 9689968b868c2704fae7440cc53a256c, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Preocupa) Est\xE1s bem?"
@@ -52,7 +52,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 9689968b868c2704fae7440cc53a256c, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,11 +61,35 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert: []
+  - _choiceDialogue: "(Ignorar) N\xE3o percebi, xau."
+    _minAlcool: 0
+    _minFun: 0
+    _minEnergy: 0
+    _minMoney: 0
+    _sucessEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 0}
+      _eventsToInsert:
+      - {fileID: 11400000}
+    _failedEvent:
+      _timePassed: 0
+      _alcoolPlus: 0
+      _funPlus: 0
+      _moneyPlus: 0
+      _energyPlus: 0
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:
-    _timeOfDay: 
-    _dayOfWeek: 
+    _timeOfDay: 000000000100000002000000
+    _dayOfWeek: 0000000001000000
     _locals: 
     _alcohol: 

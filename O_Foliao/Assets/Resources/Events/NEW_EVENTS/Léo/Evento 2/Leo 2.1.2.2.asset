@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 791311e0ea0c44144a5ff51e05bf2d50, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Ir\xF3nica) Que a minha av\xF3 educou como deve ser a minha
@@ -53,8 +53,8 @@ MonoBehaviour:
       _funPlus: -10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 1b7417ec52d94f44086fe602ebc4bf54, type: 2}
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 57e5845063d32fa48aa085282f2f1de9, type: 2}
       _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

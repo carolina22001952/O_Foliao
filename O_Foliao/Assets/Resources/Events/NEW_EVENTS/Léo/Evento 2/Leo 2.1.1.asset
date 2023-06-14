@@ -29,8 +29,8 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _questToInsert: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 06f62efb22950bb4b85d4e302221499a, type: 2}
       _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Educada) Para j\xE1, n\xE3o, obrigada."
@@ -52,7 +52,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 12197e2573ccf854d8de4dfe1ca9a1e5, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +61,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Simp\xE1tica) Uma cerveja (1\u20AC), por favor."
@@ -75,7 +75,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: -1
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 12197e2573ccf854d8de4dfe1ca9a1e5, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -84,7 +84,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

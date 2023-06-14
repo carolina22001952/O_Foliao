@@ -29,16 +29,17 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
-      _eventsToInsert: []
+      _eventsToInsert:
+      - {fileID: 11400000, guid: 9f8c0b1b740a50d44924c5a7cd56aff1, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Misteriosa) Pod\xEDamos fazer troca de favores..."
@@ -52,16 +53,17 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
-      _eventsToInsert: []
+      _eventsToInsert:
+      - {fileID: 11400000, guid: 9f8c0b1b740a50d44924c5a7cd56aff1, type: 2}
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:
