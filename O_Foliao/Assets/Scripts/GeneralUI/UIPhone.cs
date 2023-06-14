@@ -6,9 +6,29 @@ using UnityEngine.EventSystems;
 
 public class UIPhone : MonoBehaviour
 {
+    [Header("Animators")]
     [SerializeField] private Animator animator;
+    [SerializeField] private Animator timeDayIcon;
+
+    [Header("Images")]
+    [SerializeField] private Image mainBgImage;
+
+    [Header("Sprites")]
+    [SerializeField] private Sprite mainBgSprite;
+    [SerializeField] private Sprite bankBgSprite;
+    //[SerializeField] private Sprite questBgSprite;
+    //[SerializeField] private Sprite achieveBgSprite;
+    //[SerializeField] private Sprite optionBgSprit;
+   
 
     private bool isMouseOver = false;
+    private bool mainBG = true;
+
+    void Start()
+    {
+        mainBgSprite = mainBgImage.sprite;
+    }
+
     void Update()
     {
         IsMouseDown();
@@ -56,4 +76,40 @@ public class UIPhone : MonoBehaviour
             isMouseOver = false;
         }
     }
+
+    private void ChangeBg(Sprite appBg)
+    {
+        if(mainBG == true)
+        {
+            mainBgImage.sprite = appBg;
+            timeDayIcon.SetBool("Active", true);
+            mainBG = false;
+        }
+        else
+        {
+            mainBgImage.sprite = mainBgSprite;
+            timeDayIcon.SetBool("Active", false);
+            mainBG = true;
+        }
+    }
+
+    public void ChangeBankApp()
+    {
+       ChangeBg(bankBgSprite);
+    }
+
+    public void ChangeQuestApp()
+    {
+       //ChangeBg(questBgSprite);
+    }
+
+    public void ChangeAchieveApp()
+    {
+       //ChangeBg(achieveBgSprite);
+    }
+    public void ChangeOptionApp()
+    {
+       //ChangeBg(optionBgSprit);
+    }
 }
+
