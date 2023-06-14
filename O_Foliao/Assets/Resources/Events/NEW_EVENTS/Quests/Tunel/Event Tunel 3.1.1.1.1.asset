@@ -30,7 +30,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _questToInsert: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: cacf4c3a9bf32d04b9de80145c5aad91, type: 2}
+      _nextEvent: {fileID: 11400000, guid: 469f21d25687353418a5889147ff55ed, type: 2}
       _eventsToInsert: []
     _failedEvent:
       _timePassed: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _questToInsert: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: cacf4c3a9bf32d04b9de80145c5aad91, type: 2}
+      _nextEvent: {fileID: 11400000, guid: 469f21d25687353418a5889147ff55ed, type: 2}
       _eventsToInsert: []
     _failedEvent:
       _timePassed: 0

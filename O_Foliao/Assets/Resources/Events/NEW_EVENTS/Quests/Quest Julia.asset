@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d571f90abec97f24084a9b3c0e12a89b, type: 3}
   m_Name: Quest Julia
   m_EditorClassIdentifier: 
-  _questTitle: 
-  _questDescription: 
-  _location: 
+  _questTitle: "Tomar Banho Casa J\xFAlia"
+  _questDescription: "Tomar um duche em casa da J\xFAlia \xE0s x horas."
+  _location: Perto do Vinil Bar.
   _events: {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}

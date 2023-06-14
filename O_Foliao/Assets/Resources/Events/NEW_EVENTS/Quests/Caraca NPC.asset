@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9865c8bc5decd294eac82f4a017c4bf2, type: 3}
   m_Name: Caraca NPC
   m_EditorClassIdentifier: 
-  _name: 
-  _sprite: {fileID: 0}
+  _name: "Cara\xE7a"
+  _sprite: {fileID: 21300000, guid: 06857166071f65143be0a52676460359, type: 3}
   _eventsFriendship: []

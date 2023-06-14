@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d571f90abec97f24084a9b3c0e12a89b, type: 3}
   m_Name: Quest Leo
   m_EditorClassIdentifier: 
-  _questTitle: 
-  _questDescription: 
-  _location: 
+  _questTitle: "Jantar Casa L\xE9o"
+  _questDescription: "Jantar em casa do L\xE9o \xE0s x horas."
+  _location: Perto do Bar O Celeiro.
   _events: {fileID: 11400000, guid: bc717ee177db9fc458288f5f73114915, type: 2}

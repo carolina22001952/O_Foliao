@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d571f90abec97f24084a9b3c0e12a89b, type: 3}
   m_Name: Quest Tunel
   m_EditorClassIdentifier: 
-  _questTitle: 
-  _questDescription: 
-  _location: 
-  _events: {fileID: 0}
+  _questTitle: "Ir ao T\xFAnel"
+  _questDescription: "Apanhar o autocarro para a discoteca T\xFAnel com a J\xFAlia."
+  _location: Paragem de Autocarro
+  _events: {fileID: 11400000, guid: 66f0655863b3c1f40a9e55af97b206db, type: 2}
