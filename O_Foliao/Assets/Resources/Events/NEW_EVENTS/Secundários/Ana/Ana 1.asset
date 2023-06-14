@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Ana 1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 1
   _dialogue:
   - _text: "\xC9s a favor de touradas?"
     _npc: {fileID: 11400000, guid: 02909333923443f428a5de210a55a5c9, type: 2}

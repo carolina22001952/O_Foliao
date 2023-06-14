@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: DJManel 1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 1
   _dialogue:
   - _text: Tens cara de quem faz anos hoje...
     _npc: {fileID: 11400000, guid: b1a75f89d43887446ad24b7fbacfa814, type: 2}

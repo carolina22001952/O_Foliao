@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Ovelhas 1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 1
   _dialogue:
   - _text: "Somos as ovelhas da tua av\xF3!"
     _npc: {fileID: 11400000, guid: 5cd960cb475926149868b5516c345b6d, type: 2}

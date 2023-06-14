@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
   m_Name: Elsa 1
   m_EditorClassIdentifier: 
-  _eventType: 0
+  _eventType: 1
   _dialogue:
   - _text: Ei tu, anda aqui fazer o teste de alcoolemia.
     _npc: {fileID: 11400000, guid: fc87fd425ac701e448a6df4048297b0d, type: 2}
