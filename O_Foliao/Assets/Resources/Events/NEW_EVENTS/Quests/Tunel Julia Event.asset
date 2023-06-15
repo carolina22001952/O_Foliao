@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d571f90abec97f24084a9b3c0e12a89b, type: 3}
-  m_Name: Quest Tunel
+  m_Script: {fileID: 11500000, guid: 09edbec847d6d0a45bc62a9ba10b10e3, type: 3}
+  m_Name: Tunel Julia Event
   m_EditorClassIdentifier: 
-  _questTitle: "Ir ao T\xFAnel"
-  _questDescription: "Apanhar o autocarro para a discoteca T\xFAnel com a J\xFAlia."
-  _location: Paragem de Autocarro
   _events: {fileID: 11400000, guid: 66f0655863b3c1f40a9e55af97b206db, type: 2}
+  _day: 1
+  _hour: 5
+  _minutes: 0
+  _local: 

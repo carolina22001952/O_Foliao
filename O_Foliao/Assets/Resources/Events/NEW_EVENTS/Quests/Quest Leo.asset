@@ -15,4 +15,10 @@ MonoBehaviour:
   _questTitle: "Jantar Casa L\xE9o"
   _questDescription: "Jantar em casa do L\xE9o \xE0s x horas."
   _location: Perto do Bar O Celeiro.
-  _events: {fileID: 11400000, guid: bc717ee177db9fc458288f5f73114915, type: 2}
+  _events: {fileID: 11400000, guid: fb11d88ffb17e72468f100b26b77bf86, type: 2}
+  _startingDay: 2
+  _startingHours: 20
+  _startingMinutes: 0
+  _endDay: 2
+  _endHours: 22
+  _endMinutes: 0

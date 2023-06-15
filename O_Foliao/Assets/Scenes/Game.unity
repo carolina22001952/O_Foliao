@@ -10871,7 +10871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventsList:
-  - {fileID: 11400000, guid: a85a8f7f28ba338488c2a7d5cdbfe693, type: 2}
+  - {fileID: 11400000, guid: cc66191f90418724581586a9b3f2f86e, type: 2}
   player: {fileID: 1592390869}
   primaryEventList: {fileID: 1305438561}
   uiEvents: {fileID: 1780539478}
@@ -11371,6 +11371,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bb74c007bcaf0f7499b8c263200ea4d6, type: 2}
   - {fileID: 11400000, guid: bb74c007bcaf0f7499b8c263200ea4d6, type: 2}
   - {fileID: 11400000, guid: 338019d381fc9a94e84051186f73ae66, type: 2}
+  - {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}
+  - {fileID: 11400000, guid: bc717ee177db9fc458288f5f73114915, type: 2}
+  - {fileID: 11400000, guid: c9417effd1cebe343a7154ffdc9893b6, type: 2}
   cebola:
   - {fileID: 11400000, guid: 92b66dc39b14eea43b431fdf569641e4, type: 2}
   - {fileID: 11400000, guid: 03ba44fbe609cb1458063c477af92422, type: 2}
@@ -11384,6 +11387,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bb74c007bcaf0f7499b8c263200ea4d6, type: 2}
   - {fileID: 11400000, guid: a0a5e588cac416f4aa670029b9771f38, type: 2}
   - {fileID: 11400000, guid: 338019d381fc9a94e84051186f73ae66, type: 2}
+  - {fileID: 11400000, guid: bc717ee177db9fc458288f5f73114915, type: 2}
+  - {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}
+  - {fileID: 11400000, guid: c9417effd1cebe343a7154ffdc9893b6, type: 2}
   market:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
   hotel:
@@ -11484,6 +11490,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6e9d401ece15b75428d1dbc382043e85, type: 2}
   - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
   - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
+  - {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}
+  - {fileID: 11400000, guid: bc717ee177db9fc458288f5f73114915, type: 2}
+  - {fileID: 11400000, guid: c9417effd1cebe343a7154ffdc9893b6, type: 2}
   day1Deck:
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
@@ -11530,6 +11539,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6e9d401ece15b75428d1dbc382043e85, type: 2}
   - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
   - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
+  - {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}
+  - {fileID: 11400000, guid: bc717ee177db9fc458288f5f73114915, type: 2}
+  - {fileID: 11400000, guid: c9417effd1cebe343a7154ffdc9893b6, type: 2}
   day3Deck:
   - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
   lowAlcohol: []
@@ -11546,9 +11558,9 @@ MonoBehaviour:
   lowAlcoholThreshold: 20
   highAlcoholThreshold: 80
   lowEnergyThreshold: 20
-  primary: 80
-  random: 20
-  secondary: 0
+  primary: 60
+  random: 10
+  secondary: 30
 --- !u!1 &1319043134
 GameObject:
   m_ObjectHideFlags: 0

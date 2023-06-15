@@ -15,4 +15,10 @@ MonoBehaviour:
   _questTitle: "Tomar Banho Casa J\xFAlia"
   _questDescription: "Tomar um duche em casa da J\xFAlia \xE0s x horas."
   _location: Perto do Vinil Bar.
-  _events: {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}
+  _events: {fileID: 11400000, guid: 0b0b857e6f5efe84abc4f2db2bd28737, type: 2}
+  _startingDay: 2
+  _startingHours: 12
+  _startingMinutes: 0
+  _endDay: 2
+  _endHours: 16
+  _endMinutes: 0
