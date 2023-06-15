@@ -264,7 +264,8 @@ MonoBehaviour:
   m_text: Falar com o Barman
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -874,7 +875,8 @@ MonoBehaviour:
     pertences\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2146,7 +2148,8 @@ MonoBehaviour:
   m_text: "Ir para a pista dan\xE7ar!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4059,7 +4062,8 @@ MonoBehaviour:
     pertences\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4469,7 +4473,8 @@ MonoBehaviour:
   m_text: Sim
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4949,7 +4954,8 @@ MonoBehaviour:
   m_text: Sim
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5737,7 +5743,8 @@ MonoBehaviour:
   m_text: "Primeira op\xE7\xE3o?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7060,7 +7067,8 @@ MonoBehaviour:
   m_text: 20:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
-  m_sharedMaterial: {fileID: 365832687516138948, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
+  m_sharedMaterial: {fileID: 365832687516138948, guid: 8958ac5d3142d8a418aca16bf331a231,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7623,7 +7631,8 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8281,7 +8290,8 @@ MonoBehaviour:
   m_text: Sair do Bar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8608,7 +8618,8 @@ MonoBehaviour:
   m_text: "N\xE3o"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9734,7 +9745,8 @@ MonoBehaviour:
   m_text: "Tens a certeza? \nO progresso n\xE3o ser\xE1 guardado."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10548,7 +10560,8 @@ MonoBehaviour:
     no Carnaval!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10853,7 +10866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac6f4b9bf222b645a243113f08e1c13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonPrefab: {fileID: 5593120044336568349, guid: a4c288a612fc2c64a9fb8eff66d3efd8, type: 3}
+  buttonPrefab: {fileID: 5593120044336568349, guid: a4c288a612fc2c64a9fb8eff66d3efd8,
+    type: 3}
   questTitle: {fileID: 1466423192}
   questDescription: {fileID: 1502765973}
   contentGrid: {fileID: 167610294}
@@ -10873,7 +10887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventsList:
-  - {fileID: 11400000, guid: a85a8f7f28ba338488c2a7d5cdbfe693, type: 2}
+  - {fileID: 11400000, guid: cc66191f90418724581586a9b3f2f86e, type: 2}
   player: {fileID: 1592390869}
   primaryEventList: {fileID: 1305438561}
   uiEvents: {fileID: 1780539478}
@@ -11117,7 +11131,8 @@ MonoBehaviour:
     - s\xE3o baratos e fortes, o suficiente para deixar a concorr\xEAncia com inveja. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11373,6 +11388,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bb74c007bcaf0f7499b8c263200ea4d6, type: 2}
   - {fileID: 11400000, guid: bb74c007bcaf0f7499b8c263200ea4d6, type: 2}
   - {fileID: 11400000, guid: 338019d381fc9a94e84051186f73ae66, type: 2}
+  - {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}
+  - {fileID: 11400000, guid: bc717ee177db9fc458288f5f73114915, type: 2}
+  - {fileID: 11400000, guid: c9417effd1cebe343a7154ffdc9893b6, type: 2}
   cebola:
   - {fileID: 11400000, guid: 92b66dc39b14eea43b431fdf569641e4, type: 2}
   - {fileID: 11400000, guid: 03ba44fbe609cb1458063c477af92422, type: 2}
@@ -11386,6 +11404,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bb74c007bcaf0f7499b8c263200ea4d6, type: 2}
   - {fileID: 11400000, guid: a0a5e588cac416f4aa670029b9771f38, type: 2}
   - {fileID: 11400000, guid: 338019d381fc9a94e84051186f73ae66, type: 2}
+  - {fileID: 11400000, guid: bc717ee177db9fc458288f5f73114915, type: 2}
+  - {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}
+  - {fileID: 11400000, guid: c9417effd1cebe343a7154ffdc9893b6, type: 2}
   market:
   - {fileID: 11400000, guid: f10b932e009a5284e85f4fbb60581719, type: 2}
   hotel:
@@ -11486,6 +11507,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6e9d401ece15b75428d1dbc382043e85, type: 2}
   - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
   - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
+  - {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}
+  - {fileID: 11400000, guid: bc717ee177db9fc458288f5f73114915, type: 2}
+  - {fileID: 11400000, guid: c9417effd1cebe343a7154ffdc9893b6, type: 2}
   day1Deck:
   - {fileID: 11400000, guid: 2487af2a12a800e4186511a3e44cb4d9, type: 2}
   - {fileID: 11400000, guid: 4b5f168e933df8542aefad5df145f480, type: 2}
@@ -11532,6 +11556,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6e9d401ece15b75428d1dbc382043e85, type: 2}
   - {fileID: 11400000, guid: 016c33c7b0291d04aaacb6d7aec18beb, type: 2}
   - {fileID: 11400000, guid: 1441167f020956d4e885ed76faa3c080, type: 2}
+  - {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}
+  - {fileID: 11400000, guid: bc717ee177db9fc458288f5f73114915, type: 2}
+  - {fileID: 11400000, guid: c9417effd1cebe343a7154ffdc9893b6, type: 2}
   day3Deck:
   - {fileID: 11400000, guid: 89b15dca257ef274fa6a7516006b7e24, type: 2}
   lowAlcohol: []
@@ -11548,9 +11575,9 @@ MonoBehaviour:
   lowAlcoholThreshold: 20
   highAlcoholThreshold: 80
   lowEnergyThreshold: 20
-  primary: 80
-  random: 20
-  secondary: 0
+  primary: 60
+  random: 10
+  secondary: 30
 --- !u!1 &1319043134
 GameObject:
   m_ObjectHideFlags: 0
@@ -11719,7 +11746,8 @@ MonoBehaviour:
   m_text: asdasdiagsigdigasgidiugdsadsagdsgs
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12710,7 +12738,8 @@ MonoBehaviour:
   m_text: Dia 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
-  m_sharedMaterial: {fileID: 365832687516138948, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
+  m_sharedMaterial: {fileID: 365832687516138948, guid: 8958ac5d3142d8a418aca16bf331a231,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13870,7 +13899,8 @@ MonoBehaviour:
   m_text: "Terceira op\xE7\xE3o?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15506,7 +15536,8 @@ MonoBehaviour:
     pertences\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16724,7 +16755,8 @@ MonoBehaviour:
     Portugal\xBB \xE9 em Torres Vedras!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16860,7 +16892,8 @@ MonoBehaviour:
     paragem no Vinil \xE9 obrigat\xF3ria!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17170,7 +17203,8 @@ MonoBehaviour:
   m_text: "N\xE3o"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17686,7 +17720,8 @@ MonoBehaviour:
   m_text: asdaisdbaskfbjaksfbjaksbjdaipsbdasbdipasbdasbjdaksjdbkasdjb
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18156,7 +18191,8 @@ MonoBehaviour:
   m_text: "Primeira op\xE7\xE3o?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18671,7 +18707,8 @@ MonoBehaviour:
   m_text: "Tens a certeza? \nO progresso n\xE3o ser\xE1 guardado."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19233,7 +19270,8 @@ MonoBehaviour:
     grupo! \nBoa vibe, boa m\xFAsica, bons drinks, anda da\xED!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
