@@ -543,6 +543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game: {fileID: 60811733}
   player: {fileID: 1592390869}
+  clock: {fileID: 60811737}
 --- !u!114 &60811733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,6 +561,8 @@ MonoBehaviour:
   node: {fileID: 0}
   clock: {fileID: 60811737}
   sceneChanger: {fileID: 60811735}
+  questSystem: {fileID: 1242739344}
+  timedEventsSystem: {fileID: 1242739346}
 --- !u!114 &60811735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,11 +591,12 @@ MonoBehaviour:
   minutes: 0
   day: 1
   minTimeBetweenEvents: 1
-  minuterPerHour: 60
+  minutesPerHour: 60
   iconMorning: {fileID: 778502439}
   iconAfternoon: {fileID: 302797542}
   iconNight: {fileID: 73864721}
   time: {fileID: 882819511}
+  dayText: {fileID: 1428536987}
 --- !u!114 &60811740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10795,6 +10799,7 @@ GameObject:
   - component: {fileID: 1242739343}
   - component: {fileID: 1242739344}
   - component: {fileID: 1242739345}
+  - component: {fileID: 1242739346}
   m_Layer: 0
   m_Name: QuestsSystem
   m_TagString: Untagged
@@ -10831,6 +10836,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodelist: {fileID: 61069694}
   questsUI: {fileID: 1242739345}
+  questsTimed: []
+  currentTimedQuests: []
+  clock: {fileID: 60811737}
 --- !u!114 &1242739345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10850,6 +10858,25 @@ MonoBehaviour:
   questInformationParent: {fileID: 608702452}
   locationText: {fileID: 0}
   locationHighLight: {fileID: 0}
+--- !u!114 &1242739346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242739341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a356673b0bac2d4ea8430e8228b13f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventsList:
+  - {fileID: 11400000, guid: a85a8f7f28ba338488c2a7d5cdbfe693, type: 2}
+  player: {fileID: 1592390869}
+  primaryEventList: {fileID: 1305438561}
+  uiEvents: {fileID: 1780539478}
+  dialogueAction: {fileID: 60811742}
+  clock: {fileID: 60811737}
 --- !u!1 &1249028321
 GameObject:
   m_ObjectHideFlags: 0
