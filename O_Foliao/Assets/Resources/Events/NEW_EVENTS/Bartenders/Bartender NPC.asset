@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Bartender NPC
   m_EditorClassIdentifier: 
   _name: Bartender
-  _sprite: {fileID: 21300000, guid: c137a209552a6564e9c700b5973531fe, type: 3}
+  _sprite: {fileID: 21300000, guid: 449e118e7fb14fa47975bc5014d15d1b, type: 3}
   _eventsFriendship: []

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Banco NPC
   m_EditorClassIdentifier: 
   _name: Banco
-  _sprite: {fileID: 21300000, guid: e96905f799144394da3251e3c61b16e9, type: 3}
+  _sprite: {fileID: 21300000, guid: 19721c289477c3642b89c158969fc866, type: 3}
   _eventsFriendship: []

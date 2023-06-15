@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Dinheiro NPC
   m_EditorClassIdentifier: 
   _name: Dinheiro
-  _sprite: {fileID: 21300000, guid: 3e9d4b0a23816b94ea1f68be10732bf0, type: 3}
+  _sprite: {fileID: 21300000, guid: f292e5c77ca6fd2489e2e4d34ba31de9, type: 3}
   _eventsFriendship: []

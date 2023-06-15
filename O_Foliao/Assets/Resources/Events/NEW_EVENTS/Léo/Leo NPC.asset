@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Leo NPC
   m_EditorClassIdentifier: 
   _name: "L\xE9o"
-  _sprite: {fileID: 21300000, guid: deb9f0ee90c64b44f88a5af333f65ac0, type: 3}
+  _sprite: {fileID: 21300000, guid: 449e118e7fb14fa47975bc5014d15d1b, type: 3}
   _eventsFriendship: []

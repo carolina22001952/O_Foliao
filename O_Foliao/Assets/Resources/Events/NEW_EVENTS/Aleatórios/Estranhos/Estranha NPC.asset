@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Estranha NPC
   m_EditorClassIdentifier: 
   _name: Estranha
-  _sprite: {fileID: 21300000, guid: e8040f182d1067c4db99d27b9566611f, type: 3}
+  _sprite: {fileID: 21300000, guid: 623451b25f3b80740ab9f6b9258613b7, type: 3}
   _eventsFriendship: []

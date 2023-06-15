@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Willy NPC
   m_EditorClassIdentifier: 
   _name: Willy
-  _sprite: {fileID: 21300000, guid: 3f77b29e3fc634b43a661f810c19fd93, type: 3}
+  _sprite: {fileID: 21300000, guid: 12424aa25ce04234d83e8b1f9b5fc874, type: 3}
   _eventsFriendship: []

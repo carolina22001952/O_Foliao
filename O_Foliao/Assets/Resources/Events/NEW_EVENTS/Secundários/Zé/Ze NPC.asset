@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Ze NPC
   m_EditorClassIdentifier: 
   _name: "Z\xE9"
-  _sprite: {fileID: 21300000, guid: 3f77b29e3fc634b43a661f810c19fd93, type: 3}
+  _sprite: {fileID: 21300000, guid: 5997c57705600a7448610a7105f8a451, type: 3}
   _eventsFriendship: []

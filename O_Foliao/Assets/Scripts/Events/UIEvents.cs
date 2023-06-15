@@ -172,6 +172,7 @@ public class UIEvents : MonoBehaviour
     public void OpenMultipleChoices(int numberOfChoices)
     {
         OpenPlayerChoicesGroup();
+        CloseNpcGameObject();
         switch(numberOfChoices)
         {
             case 0:
@@ -194,6 +195,7 @@ public class UIEvents : MonoBehaviour
     public void CloseMultipleChoices(int numberOfChoices)
     {
         ClosePlayerChoicesGroup();
+        OpenNpcGameObject();
         switch (numberOfChoices)
         {
             case 0:

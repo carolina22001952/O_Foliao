@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Ovelhas NPC
   m_EditorClassIdentifier: 
   _name: Rebanho de Ovelhas
-  _sprite: {fileID: 21300000, guid: 37a2ade0de0e8484e959b62a9f9daf52, type: 3}
+  _sprite: {fileID: 21300000, guid: 9021dca5af464fa48a1c2ac96b5060d0, type: 3}
   _eventsFriendship: []
