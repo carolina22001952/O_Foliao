@@ -14,6 +14,9 @@ public class TimedEvent : ScriptableObject
     [SerializeField] private int _hour;
     public int hour { get { return _hour; } }
 
+    [SerializeField] private int _minutes;
+    public int minutes { get { return _minutes; } }
+
     [SerializeField] private string _local;
     public string local { get { return _local; } }
 }

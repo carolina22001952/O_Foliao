@@ -9,8 +9,8 @@ public class Clock : MonoBehaviour
     [SerializeField] private int hours = 20;
     [SerializeField] private int minutes = 0;
     [SerializeField] private int day = 1;
-    [SerializeField] private int minTimeBetweenEvents = 120;
-    [SerializeField] private int minuterPerHour = 60;
+    [SerializeField] private int minTimeBetweenEvents = 1;
+    [SerializeField] private int minutesPerHour = 60;
     [SerializeField] private Image iconMorning;
     [SerializeField] private Image iconAfternoon;
     [SerializeField] private Image iconNight;
@@ -56,15 +56,15 @@ public class Clock : MonoBehaviour
 
         this.minutes += (minTimeBetweenEvents + timepassed);
 
-        extraHours = this.minutes / minuterPerHour;
+        extraHours = this.minutes / minutesPerHour;
 
         this.hours += extraHours;
 
 
-        extraMin = this.minutes % minuterPerHour;
+        extraMin = this.minutes % minutesPerHour;
 
 
-        if (this.minutes >= minuterPerHour)
+        if (this.minutes >= minutesPerHour)
         {
 
             this.minutes = 0 + extraMin;

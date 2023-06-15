@@ -19,22 +19,25 @@ public class TimedEventsSystem : MonoBehaviour
 
     private void Start()
     {
-        eventsList = new List<TimedEvent>();
     }
     public void CheckForTimedEvents()
     {
         if (eventsList.Count > 0)
         {
             Debug.Log("same");
-            foreach (TimedEvent t in eventsList)
+            for (int i = 0; i < eventsList.Count; i++)
             {
-                if (clock.GetDay() == t.day)
+
+                if (clock.GetDay() >= eventsList[i].day)
                 {
-                    if (clock.GetHours() >= t.hour)
+                    if (eventsList[i].day < clock.GetDay() ||clock.GetHours() >= eventsList[i].hour
+                        || (eventsList[i].hour == clock.GetHours() && eventsList[i].minutes <=clock.GetMinutes()))
                     {
-                        ActivateTimedEvent(t.events);
+                        ActivateTimedEvent(eventsList[i].events);
+
                     }
                 }
+
             }
         }
     }
