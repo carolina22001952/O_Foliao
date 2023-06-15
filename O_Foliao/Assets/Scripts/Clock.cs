@@ -6,15 +6,16 @@ using UnityEngine.UI;
 public class Clock : MonoBehaviour
 {
 
-    [SerializeField] private int hours = 22;
+    [SerializeField] private int hours = 20;
     [SerializeField] private int minutes = 0;
     [SerializeField] private int day = 1;
-    [SerializeField] private int minTimeBetweenEvents = 120;
-    [SerializeField] private int minuterPerHour = 60;
+    [SerializeField] private int minTimeBetweenEvents = 1;
+    [SerializeField] private int minutesPerHour = 60;
     [SerializeField] private Image iconMorning;
     [SerializeField] private Image iconAfternoon;
     [SerializeField] private Image iconNight;
     [SerializeField] private TextMeshProUGUI time;
+    [SerializeField] private TextMeshProUGUI dayText;
 
     public enum TimesOfDay
     {
@@ -34,6 +35,11 @@ public class Clock : MonoBehaviour
         return this.hours;
     }
 
+    public int GetMinutes()
+    {
+        return this.minutes; 
+    }
+
     public int GetDay()
     {
         return this.day;
@@ -50,15 +56,15 @@ public class Clock : MonoBehaviour
 
         this.minutes += (minTimeBetweenEvents + timepassed);
 
-        extraHours = this.minutes / minuterPerHour;
+        extraHours = this.minutes / minutesPerHour;
 
         this.hours += extraHours;
 
 
-        extraMin = this.minutes % minuterPerHour;
+        extraMin = this.minutes % minutesPerHour;
 
 
-        if (this.minutes >= minuterPerHour)
+        if (this.minutes >= minutesPerHour)
         {
 
             this.minutes = 0 + extraMin;
@@ -67,14 +73,16 @@ public class Clock : MonoBehaviour
 
         if (this.hours >= 24)
         {
+            Debug.Log(this.hours + "Bruv");
             this.hours = 0 + extraHours-1;
             daychange = true;
 
         }
 
-        if(this.hours >= 6 && daychange == true)
+        if(daychange == true)
         {
             this.day += 1;
+            Debug.Log(this.day + "LPOL");
             daychange = false;
 
         }
@@ -120,5 +128,6 @@ public class Clock : MonoBehaviour
     public void UpdateClockUI()
     {
         time.text = hours.ToString().PadLeft(2,'0') + ":" + minutes.ToString().PadLeft(2, '0');
+        dayText.text ="Dia " + this.day.ToString();
     }
 }

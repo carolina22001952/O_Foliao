@@ -12,5 +12,5 @@ public interface ILocal
 
     void LocalAddQuest(Quest quest);
 
-
+    void LocalRemoveQuest(Quest quest);
 }

@@ -43,11 +43,8 @@ public class ShopsUI : MonoBehaviour
     public void UpdateChoices(Events events)
     {
         choice1Dialogue.text = events.decisions[0].choiceDialogue;
-        Debug.Log(events.decisions[0].choiceDialogue);
         choice2Dialogue.text = events.decisions[1].choiceDialogue;
-        Debug.Log(events.decisions[1].choiceDialogue);
         choice3Dialogue.text = events.decisions[2].choiceDialogue;
-        Debug.Log(events.decisions[2].choiceDialogue);
     }
 
     public void UpdateBackground(Sprite newbackground)

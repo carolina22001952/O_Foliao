@@ -5,36 +5,35 @@ using UnityEngine;
 public class TimedEventsSystem : MonoBehaviour
 {
     [SerializeField]
-    private TimedEvents[] eventsList;
+    private List<TimedEvent> eventsList;
+    [SerializeField]
+    private Player player;
+    [SerializeField]
+    private PrimaryEventList primaryEventList;
+    [SerializeField]
+    private UIEvents uiEvents;
+    [SerializeField]
+    private DialogueAction dialogueAction;
     [SerializeField]
     private Clock clock;
 
+    private void Start()
+    {
+    }
     public void CheckForTimedEvents()
     {
-        if(eventsList != null)
+        if (eventsList.Count > 0)
         {
-             foreach(TimedEvents t in eventsList)
+            Debug.Log("same");
+            for (int i = 0; i < eventsList.Count; i++)
             {
-                if(clock.GetDay() == t.day)
+
+                if (clock.GetDay() >= eventsList[i].day)
                 {
-                    if(clock.GetHours() <= t.hour )
+                    if (eventsList[i].day < clock.GetDay() ||clock.GetHours() >= eventsList[i].hour
+                        || (eventsList[i].hour == clock.GetHours() && eventsList[i].minutes <=clock.GetMinutes()))
                     {
-                        if(t.local == null)
-                        {
-                            GameObject location = GameObject.Find(t.local);
-
-                            if (location.GetComponent<ILocal>() is ILocal)
-                            {
-                                location.SetActive(true);
-                               // location.GetComponent<ILocal>().LocalAddQuest(t.events);
-
-                            }
-                            Debug.Log("Null local");
-                        }else if (t.local != null)
-                        {
-
-                            Debug.Log("Not null local");
-                        }
+                        ActivateTimedEvent(eventsList[i].events);
 
                     }
                 }
@@ -42,4 +41,14 @@ public class TimedEventsSystem : MonoBehaviour
             }
         }
     }
+
+
+    public void ActivateTimedEvent(Events events)
+    {
+        primaryEventList.ChangeCurrentEvent(events);
+        uiEvents.OpenCanvas();
+        uiEvents.ResetCanvas();
+        dialogueAction.StartDialogue();
+    }
 }
+
