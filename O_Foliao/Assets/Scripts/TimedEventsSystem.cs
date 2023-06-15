@@ -5,41 +5,47 @@ using UnityEngine;
 public class TimedEventsSystem : MonoBehaviour
 {
     [SerializeField]
-    private TimedEvents[] eventsList;
+    private List<TimedEvent> eventsList;
+    [SerializeField]
+    private Player player;
+    [SerializeField]
+    private PrimaryEventList primaryEventList;
+    [SerializeField]
+    private UIEvents uiEvents;
+    [SerializeField]
+    private DialogueAction dialogueAction;
     [SerializeField]
     private Clock clock;
 
+    private void Start()
+    {
+        eventsList = new List<TimedEvent>();
+    }
     public void CheckForTimedEvents()
     {
-        if(eventsList != null)
+        if (eventsList.Count > 0)
         {
-             foreach(TimedEvents t in eventsList)
+            Debug.Log("same");
+            foreach (TimedEvent t in eventsList)
             {
-                if(clock.GetDay() == t.day)
+                if (clock.GetDay() == t.day)
                 {
-                    if(clock.GetHours() <= t.hour )
+                    if (clock.GetHours() >= t.hour)
                     {
-                        if(t.local == null)
-                        {
-                            GameObject location = GameObject.Find(t.local);
-
-                            if (location.GetComponent<ILocal>() is ILocal)
-                            {
-                                location.SetActive(true);
-                               // location.GetComponent<ILocal>().LocalAddQuest(t.events);
-
-                            }
-                            Debug.Log("Null local");
-                        }else if (t.local != null)
-                        {
-
-                            Debug.Log("Not null local");
-                        }
-
+                        ActivateTimedEvent(t.events);
                     }
                 }
-
             }
         }
     }
+
+
+    public void ActivateTimedEvent(Events events)
+    {
+        primaryEventList.ChangeCurrentEvent(events);
+        uiEvents.OpenCanvas();
+        uiEvents.ResetCanvas();
+        dialogueAction.StartDialogue();
+    }
 }
+

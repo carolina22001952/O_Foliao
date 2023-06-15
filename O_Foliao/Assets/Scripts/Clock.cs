@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Clock : MonoBehaviour
 {
 
-    [SerializeField] private int hours = 22;
+    [SerializeField] private int hours = 20;
     [SerializeField] private int minutes = 0;
     [SerializeField] private int day = 1;
     [SerializeField] private int minTimeBetweenEvents = 120;
@@ -15,6 +15,7 @@ public class Clock : MonoBehaviour
     [SerializeField] private Image iconAfternoon;
     [SerializeField] private Image iconNight;
     [SerializeField] private TextMeshProUGUI time;
+    [SerializeField] private TextMeshProUGUI dayText;
 
     public enum TimesOfDay
     {
@@ -32,6 +33,11 @@ public class Clock : MonoBehaviour
     public int GetHours()
     {
         return this.hours;
+    }
+
+    public int GetMinutes()
+    {
+        return this.minutes; 
     }
 
     public int GetDay()
@@ -67,14 +73,16 @@ public class Clock : MonoBehaviour
 
         if (this.hours >= 24)
         {
+            Debug.Log(this.hours + "Bruv");
             this.hours = 0 + extraHours-1;
             daychange = true;
 
         }
 
-        if(this.hours >= 6 && daychange == true)
+        if(daychange == true)
         {
             this.day += 1;
+            Debug.Log(this.day + "LPOL");
             daychange = false;
 
         }
@@ -120,5 +128,6 @@ public class Clock : MonoBehaviour
     public void UpdateClockUI()
     {
         time.text = hours.ToString().PadLeft(2,'0') + ":" + minutes.ToString().PadLeft(2, '0');
+        dayText.text ="Dia " + this.day.ToString();
     }
 }

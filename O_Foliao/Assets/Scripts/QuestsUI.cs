@@ -70,5 +70,11 @@ public class QuestsUI : MonoBehaviour
         ChangeQuestButtonName(button, "(Completed) " + quest.questTitle);
     }
 
+    public void UpdateFailedQuest(Quest quest)
+    {
+        Button button = buttonsList.FirstOrDefault(x => x.Value == quest).Key;
+        ChangeQuestButtonName(button, "(Failed) " + quest.questTitle);
+    }
+
 
 }

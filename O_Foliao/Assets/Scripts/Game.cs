@@ -8,7 +8,8 @@ public class Game : MonoBehaviour
     [SerializeField] private Node node;
     [SerializeField] private Clock clock;
     [SerializeField] private SceneChanger sceneChanger;
-
+    [SerializeField] private QuestSystem questSystem;
+    [SerializeField] private TimedEventsSystem timedEventsSystem;
 
 
     private void Start()
@@ -42,9 +43,25 @@ public class Game : MonoBehaviour
         }
 
     }
+    public void CheckForTimedEvents()
+    {
+        timedEventsSystem.CheckForTimedEvents();
+    }
+
+    public void CheckForQuestTimers()
+    {
+        questSystem.CheckForQuestTimers();
+    }
+
+    public void CheckForFailingQuests()
+    {
+        questSystem.EndFailedTimedQuets();
+    }
     public void StartMovement()
     {
-        
+        CheckForTimedEvents();
+        CheckForQuestTimers();
+        CheckForFailingQuests();
         move.TakeMovementInput();
 
     }

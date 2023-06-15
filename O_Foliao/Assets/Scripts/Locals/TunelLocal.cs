@@ -66,4 +66,9 @@ public class TunelLocal : MonoBehaviour, ILocal
         quests.Add(quest);
     }
 
+    public void LocalRemoveQuest(Quest quest)
+    {
+        quests.Remove(quest);
+    }
+
 }

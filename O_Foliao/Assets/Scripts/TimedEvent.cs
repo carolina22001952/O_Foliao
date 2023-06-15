@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "new Timed Event", menuName = "Events/New Timed Event")]
-public class TimedEvents : ScriptableObject
+public class TimedEvent : ScriptableObject
 {
     [SerializeField] private Events _events;
     public Events events { get { return _events; } }

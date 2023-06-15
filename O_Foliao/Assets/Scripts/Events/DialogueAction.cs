@@ -160,7 +160,6 @@ public class DialogueAction : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log(currentEvent.dialogue[index].text);
                 if (uiEvents.GetDialogueText() == currentEvent.dialogue[index].text + "<color=#00000000></color>" 
                     || uiEvents.GetDialogueText() == currentEvent.dialogue[index].text)
                 {

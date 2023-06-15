@@ -104,4 +104,9 @@ public class CebolaLocal : MonoBehaviour, ILocal
         quests.Add(quest);
     }
 
+    public void LocalRemoveQuest(Quest quest)
+    {
+        quests.Remove(quest);
+    }
+
 }

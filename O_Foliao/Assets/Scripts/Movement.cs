@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
 
 public class Movement: MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Movement: MonoBehaviour
     private bool timetomove = true;
     private bool stillmoving = false;
     private bool moving = false;
+    public Clock clock;
+
 
     List<Transform> waypoints = new List<Transform>();
 
@@ -100,6 +103,7 @@ public class Movement: MonoBehaviour
 
                     if (waypoints.Count == 0)
                     {
+                        clock.UpdateTime(4);
                         player.ChangeStats(player, 0, 0, 0, -10);
                         moving = false;
                         StopTakingMovementInput();
