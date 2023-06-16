@@ -43,6 +43,7 @@ public class QuestOnlyLocal : MonoBehaviour, ILocal
             capsuleCollider.GetComponent<CapsuleCollider>().enabled = false;
 
             node.QuestToDeactivate(this.gameObject);
+            node.StopAnimation(true);
             stop = 0;
         }else
         {
@@ -50,6 +51,7 @@ public class QuestOnlyLocal : MonoBehaviour, ILocal
             if(stop == 0)
             {
                 node.QuestToNormal(this.gameObject);
+                node.StopAnimation(false);
                 stop++;
             }
         }
