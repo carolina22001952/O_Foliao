@@ -17,8 +17,8 @@ public class UIPhone : MonoBehaviour
     [SerializeField] private Sprite mainBgSprite;
     [SerializeField] private Sprite bankBgSprite;
     [SerializeField] private Sprite questBgSprite;
-    //[SerializeField] private Sprite achieveBgSprite;
-    //[SerializeField] private Sprite optionBgSprit;
+    [SerializeField] private Sprite achieveBgSprite;
+    [SerializeField] private Sprite optionBgSprit;
    
 
     private bool isMouseOver = false;
@@ -40,7 +40,6 @@ public class UIPhone : MonoBehaviour
         {
             if(isMouseOver)
             {
-                Debug.Log("ola");
                 animator.SetBool("Active", !animator.GetBool("Active"));
             }   
         }
@@ -105,11 +104,11 @@ public class UIPhone : MonoBehaviour
 
     public void ChangeAchieveApp()
     {
-       //ChangeBg(achieveBgSprite);
+       ChangeBg(achieveBgSprite);
     }
     public void ChangeOptionApp()
     {
-       //ChangeBg(optionBgSprit);
+       ChangeBg(optionBgSprit);
     }
 }
 
