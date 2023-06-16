@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tunel Julia Event
   m_EditorClassIdentifier: 
   _events: {fileID: 11400000, guid: 66f0655863b3c1f40a9e55af97b206db, type: 2}
-  _day: 1
+  _day: 2
   _hour: 5
   _minutes: 0
   _local: 

@@ -16,7 +16,7 @@ public class UIPhone : MonoBehaviour
     [Header("Sprites")]
     [SerializeField] private Sprite mainBgSprite;
     [SerializeField] private Sprite bankBgSprite;
-    //[SerializeField] private Sprite questBgSprite;
+    [SerializeField] private Sprite questBgSprite;
     //[SerializeField] private Sprite achieveBgSprite;
     //[SerializeField] private Sprite optionBgSprit;
    
@@ -100,7 +100,7 @@ public class UIPhone : MonoBehaviour
 
     public void ChangeQuestApp()
     {
-       //ChangeBg(questBgSprite);
+       ChangeBg(questBgSprite);
     }
 
     public void ChangeAchieveApp()
