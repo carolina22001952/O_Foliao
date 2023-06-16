@@ -651,6 +651,7 @@ MonoBehaviour:
   game: {fileID: 60811733}
   restart: 0
   questSystem: {fileID: 1242739344}
+  achievementManager: {fileID: 0}
 --- !u!1 &61069692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,6 +2950,118 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206006343}
   m_CullTransparentMesh: 1
+--- !u!1 &209658565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 209658571}
+  - component: {fileID: 209658570}
+  - component: {fileID: 209658569}
+  - component: {fileID: 209658568}
+  - component: {fileID: 209658567}
+  - component: {fileID: 209658566}
+  m_Layer: 0
+  m_Name: AchievementManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &209658566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209658565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb221397d063a342b7466ccd492cdf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: Ser DJ de um Bar
+  isUnlocked: 0
+  achievementSprite: {fileID: 1666129273}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+--- !u!114 &209658567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209658565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b874d0d65c4d440a49fe70c8c95d87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: Encontrar o verdadeiro amor
+  isUnlocked: 0
+  achievementSprite: {fileID: 260953564}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+--- !u!114 &209658568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209658565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f365d1812cf7e14fbbc6b4cdfc21ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: Engatar uma matrafona
+  isUnlocked: 0
+  achievementSprite: {fileID: 1828067328}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+--- !u!114 &209658569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209658565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc5e03f8f9921246a7d39e58a33caea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: Arranjar bebidas para o carro
+  isUnlocked: 0
+  achievementSprite: {fileID: 1994028362}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+--- !u!114 &209658570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209658565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0f9d76b1becb04b8e0a429fbdb0e1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &209658571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209658565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 655.89594, y: 393.32397, z: 59.965347}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &221523135
 GameObject:
   m_ObjectHideFlags: 0
@@ -3996,7 +4109,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6536b9f0e9e502b4295c41607aea4b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5387,7 +5500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6536b9f0e9e502b4295c41607aea4b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6401,7 +6514,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6536b9f0e9e502b4295c41607aea4b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6594,7 +6707,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6536b9f0e9e502b4295c41607aea4b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16444,7 +16557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6536b9f0e9e502b4295c41607aea4b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19047,7 +19160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6536b9f0e9e502b4295c41607aea4b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21204,7 +21317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6536b9f0e9e502b4295c41607aea4b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22564,7 +22677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6536b9f0e9e502b4295c41607aea4b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23224,7 +23337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6536b9f0e9e502b4295c41607aea4b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
