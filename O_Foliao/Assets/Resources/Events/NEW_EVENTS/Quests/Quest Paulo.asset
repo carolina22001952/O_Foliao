@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Quest Paulo
   m_EditorClassIdentifier: 
   _questTitle: Jantar Casa Paulo
-  _questDescription: "Jantar em casa do Paulo \xE0s x horas."
-  _location: "Perto da Pra\xE7a da Cebola."
+  _questDescription: "Jantar em casa do Paulo, ao p\xE9 da Pra\xE7a da Cebola, \xE0s
+    20 horas."
+  _location: Node_CasaPaulo
   _events: {fileID: 11400000, guid: f828fadb79aac7649b3123d8b56b57c3, type: 2}
   _startingDay: 2
   _startingHours: 20

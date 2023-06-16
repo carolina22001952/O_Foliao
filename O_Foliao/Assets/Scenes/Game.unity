@@ -2828,7 +2828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196591642}
   - component: {fileID: 196591644}
-  - component: {fileID: 196591643}
+  - component: {fileID: 196591645}
   m_Layer: 0
   m_Name: Node_CasaPaulo
   m_TagString: Point
@@ -2852,25 +2852,6 @@ Transform:
   m_Father: {fileID: 763636934}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &196591643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196591641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8425a6e7230dc3a4dbe46e126a1e27d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  primaryEventList: {fileID: 1305438561}
-  eventListTools: {fileID: 60811740}
-  dialogueAction: {fileID: 60811742}
-  uiEvents: {fileID: 1780539478}
-  game: {fileID: 60811733}
-  quests: []
-  questSystem: {fileID: 0}
 --- !u!114 &196591644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2886,8 +2867,8 @@ MonoBehaviour:
   type: 0
   normal: {fileID: 21300000, guid: ff2ed90b8634abc408d1fae0bc0b4d2a, type: 3}
   highLight: {fileID: 21300000, guid: 61c00212774395040b0549c071802dd0, type: 3}
-  questHighLight: {fileID: 0}
-  deactivatedNode: {fileID: 0}
+  questHighLight: {fileID: 21300000, guid: 61c00212774395040b0549c071802dd0, type: 3}
+  deactivatedNode: {fileID: 21300000, guid: 5641e9cb148cfba4cb93a6ab25d234e0, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 119468170}
@@ -2901,6 +2882,28 @@ MonoBehaviour:
     waypoints: []
   - target: {fileID: 895441763}
     waypoints: []
+--- !u!114 &196591645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196591641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb39d02cc122d544597135b35461ae1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
+  quests: []
+  questSystem: {fileID: 1242739344}
+  locationHighLight: {fileID: 1351697084}
+  capsuleCollider: {fileID: 763636933}
+  node: {fileID: 196591644}
 --- !u!1 &206006343
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,6 +4469,8 @@ MonoBehaviour:
   - target: {fileID: 845040698}
     waypoints: []
   - target: {fileID: 895441763}
+    waypoints: []
+  - target: {fileID: 196591644}
     waypoints: []
 --- !u!114 &290813225
 MonoBehaviour:
@@ -8658,8 +8663,7 @@ MonoBehaviour:
   node: {fileID: 0}
   options:
   - target: {fileID: 1342336684}
-    waypoints:
-    - {fileID: 288064073}
+    waypoints: []
   - target: {fileID: 1946886343}
     waypoints:
     - {fileID: 143398866}
@@ -8671,6 +8675,8 @@ MonoBehaviour:
   - target: {fileID: 290813224}
     waypoints:
     - {fileID: 288064073}
+  - target: {fileID: 1800790386}
+    waypoints: []
 --- !u!114 &699324355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10089,6 +10095,8 @@ MonoBehaviour:
   - target: {fileID: 895441763}
     waypoints:
     - {fileID: 2117271565}
+  - target: {fileID: 196591644}
+    waypoints: []
 --- !u!4 &845040699
 Transform:
   m_ObjectHideFlags: 0
@@ -10706,6 +10714,8 @@ MonoBehaviour:
   - target: {fileID: 2125884204}
     waypoints: []
   - target: {fileID: 290813224}
+    waypoints: []
+  - target: {fileID: 196591644}
     waypoints: []
 --- !u!4 &895441764
 Transform:
@@ -13221,6 +13231,9 @@ MonoBehaviour:
     waypoints: []
   - target: {fileID: 290813224}
     waypoints: []
+  - target: {fileID: 1657944183}
+    waypoints:
+    - {fileID: 1974181452}
 --- !u!114 &1080495811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13243,6 +13256,7 @@ MonoBehaviour:
   GenericBarmenEvents:
   - {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
   - {fileID: 11400000, guid: 70a7744e42eb10744be027fbb1534db0, type: 2}
+  - {fileID: 11400000, guid: b197c0aeff0628042a80315091f6d213, type: 2}
   SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
   VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
   CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
@@ -16207,6 +16221,8 @@ MonoBehaviour:
   - target: {fileID: 233815545}
     waypoints: []
   - target: {fileID: 845040698}
+    waypoints: []
+  - target: {fileID: 1800790386}
     waypoints: []
 --- !u!114 &1342336685
 MonoBehaviour:
@@ -19827,7 +19843,7 @@ GameObject:
   - component: {fileID: 1657944180}
   - component: {fileID: 1657944183}
   - component: {fileID: 1657944182}
-  - component: {fileID: 1657944181}
+  - component: {fileID: 1657944184}
   m_Layer: 0
   m_Name: Node_CasaJulia
   m_TagString: Point
@@ -19856,36 +19872,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.1, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1657944181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657944179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barType: 1
-  primaryEventList: {fileID: 1305438561}
-  eventListTools: {fileID: 60811740}
-  dialogueAction: {fileID: 60811742}
-  shopUi: {fileID: 60811741}
-  game: {fileID: 60811733}
-  uiEvents: {fileID: 1780539478}
-  GenericBarmenEvents:
-  - {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
-  - {fileID: 11400000, guid: 70a7744e42eb10744be027fbb1534db0, type: 2}
-  - {fileID: 11400000, guid: b197c0aeff0628042a80315091f6d213, type: 2}
-  SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
-  VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
-  CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
-  player: {fileID: 1592390869}
-  clock: {fileID: 60811737}
-  quests: []
-  questSystem: {fileID: 0}
 --- !u!222 &1657944182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19909,14 +19895,35 @@ MonoBehaviour:
   type: 1
   normal: {fileID: 21300000, guid: ff2ed90b8634abc408d1fae0bc0b4d2a, type: 3}
   highLight: {fileID: 21300000, guid: 61c00212774395040b0549c071802dd0, type: 3}
-  questHighLight: {fileID: 0}
-  deactivatedNode: {fileID: 0}
+  questHighLight: {fileID: 21300000, guid: 61c00212774395040b0549c071802dd0, type: 3}
+  deactivatedNode: {fileID: 21300000, guid: 5641e9cb148cfba4cb93a6ab25d234e0, type: 3}
   node: {fileID: 1657944183}
   options:
-  - target: {fileID: 1342336684}
-    waypoints: []
-  - target: {fileID: 0}
-    waypoints: []
+  - target: {fileID: 1080495810}
+    waypoints:
+    - {fileID: 1974181452}
+--- !u!114 &1657944184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657944179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb39d02cc122d544597135b35461ae1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
+  quests: []
+  questSystem: {fileID: 1242739344}
+  locationHighLight: {fileID: 1351697084}
+  capsuleCollider: {fileID: 650703839}
+  node: {fileID: 1657944183}
 --- !u!1 &1666129271
 GameObject:
   m_ObjectHideFlags: 0
@@ -21044,6 +21051,7 @@ Transform:
   - {fileID: 288064073}
   - {fileID: 143398866}
   - {fileID: 2117271565}
+  - {fileID: 1974181452}
   m_Father: {fileID: 61069693}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21458,7 +21466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800790384}
   - component: {fileID: 1800790386}
-  - component: {fileID: 1800790385}
+  - component: {fileID: 1800790387}
   m_Layer: 0
   m_Name: Node_CasaLeo
   m_TagString: Point
@@ -21482,33 +21490,6 @@ Transform:
   m_Father: {fileID: 1582777109}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1800790385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800790383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3adbdf0e90edf7a4aa5f55f9a1a3ea48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barType: 2
-  primaryEventList: {fileID: 1305438561}
-  eventListTools: {fileID: 60811740}
-  dialogueAction: {fileID: 60811742}
-  shopUi: {fileID: 60811741}
-  game: {fileID: 60811733}
-  uiEvents: {fileID: 1780539478}
-  GenericBarmenEvents: []
-  SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
-  VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
-  CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
-  player: {fileID: 1592390869}
-  clock: {fileID: 60811737}
-  quests: []
-  questSystem: {fileID: 0}
 --- !u!114 &1800790386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21524,24 +21505,36 @@ MonoBehaviour:
   type: 1
   normal: {fileID: 21300000, guid: ff2ed90b8634abc408d1fae0bc0b4d2a, type: 3}
   highLight: {fileID: 21300000, guid: 61c00212774395040b0549c071802dd0, type: 3}
-  questHighLight: {fileID: 0}
-  deactivatedNode: {fileID: 0}
+  questHighLight: {fileID: 21300000, guid: 61c00212774395040b0549c071802dd0, type: 3}
+  deactivatedNode: {fileID: 21300000, guid: 5641e9cb148cfba4cb93a6ab25d234e0, type: 3}
   node: {fileID: 0}
   options:
   - target: {fileID: 1342336684}
-    waypoints:
-    - {fileID: 288064073}
-  - target: {fileID: 1946886343}
-    waypoints:
-    - {fileID: 143398866}
-    - {fileID: 840118858}
-    - {fileID: 1048900945}
-  - target: {fileID: 119468170}
-    waypoints:
-    - {fileID: 288064073}
-  - target: {fileID: 290813224}
-    waypoints:
-    - {fileID: 288064073}
+    waypoints: []
+  - target: {fileID: 699324354}
+    waypoints: []
+--- !u!114 &1800790387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800790383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb39d02cc122d544597135b35461ae1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryEventList: {fileID: 1305438561}
+  eventListTools: {fileID: 60811740}
+  dialogueAction: {fileID: 60811742}
+  uiEvents: {fileID: 1780539478}
+  game: {fileID: 60811733}
+  quests: []
+  questSystem: {fileID: 1242739344}
+  locationHighLight: {fileID: 1351697084}
+  capsuleCollider: {fileID: 1582777108}
+  node: {fileID: 1800790386}
 --- !u!1 &1801720281
 GameObject:
   m_ObjectHideFlags: 0
@@ -23691,6 +23684,7 @@ MonoBehaviour:
   GenericBarmenEvents:
   - {fileID: 11400000, guid: bc22f77cb6c372b41aa33c8144221284, type: 2}
   - {fileID: 11400000, guid: 70a7744e42eb10744be027fbb1534db0, type: 2}
+  - {fileID: 11400000, guid: b197c0aeff0628042a80315091f6d213, type: 2}
   SkadiUI: {fileID: 11400000, guid: d5cc33ac2f38e594996a1510e4bd9875, type: 2}
   VinilUI: {fileID: 11400000, guid: 6330406d477d36548846e2ad2944b64d, type: 2}
   CeleiroUI: {fileID: 11400000, guid: c04fc9fff5c2a16449b3cde95abf6fdf, type: 2}
@@ -23953,6 +23947,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968383093}
   m_CullTransparentMesh: 1
+--- !u!1 &1974181451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974181452}
+  m_Layer: 0
+  m_Name: Waypoint (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1974181452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974181451}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 869, y: 123, z: 30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757904128}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1991518495
 GameObject:
   m_ObjectHideFlags: 0

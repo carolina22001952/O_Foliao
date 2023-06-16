@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Quest Leo
   m_EditorClassIdentifier: 
   _questTitle: "Jantar Casa L\xE9o"
-  _questDescription: "Jantar em casa do L\xE9o \xE0s x horas."
-  _location: Perto do Bar O Celeiro.
+  _questDescription: "Jantar em casa do L\xE9o, ao p\xE9 do Celeiro o Bar, \xE0s
+    20 horas."
+  _location: Node_CasaLeo
   _events: {fileID: 11400000, guid: fb11d88ffb17e72468f100b26b77bf86, type: 2}
   _startingDay: 2
   _startingHours: 20

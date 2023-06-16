@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Quest Julia
   m_EditorClassIdentifier: 
   _questTitle: "Tomar Banho Casa J\xFAlia"
-  _questDescription: "Tomar um duche em casa da J\xFAlia \xE0s x horas."
-  _location: Perto do Vinil Bar.
+  _questDescription: "Tomar um duche em casa da J\xFAlia, ao p\xE9 do Vinil Bar,
+    \xE0s 12 horas."
+  _location: Node_CasaJulia
   _events: {fileID: 11400000, guid: 0b0b857e6f5efe84abc4f2db2bd28737, type: 2}
   _startingDay: 2
   _startingHours: 12
