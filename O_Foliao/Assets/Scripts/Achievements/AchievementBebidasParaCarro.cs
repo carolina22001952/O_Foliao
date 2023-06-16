@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AchievementBebidasParaCarro : MonoBehaviour, IAchievements
 {
     [SerializeField]
-    public string achievementName;
+    private string achievementName;
+    
     [SerializeField]
-    public string achievementDescription;
-    [SerializeField]
-    public bool isUnlocked;
+    private bool isUnlocked;
 
     [SerializeField]
-    private SpriteRenderer achievementSprite;
+    private Image achievementSprite;
     [SerializeField]
     private Sprite completedAchievementSprite;
 

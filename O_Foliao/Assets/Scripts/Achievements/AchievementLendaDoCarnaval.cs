@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AchievementLendaDoCarnaval : MonoBehaviour, IAchievements
 {
     [SerializeField]
-    public string achievementName;
-    [SerializeField]
-    public string achievementDescription;
-    [SerializeField]
-    public bool isUnlocked;
+    private string achievementName;
 
     [SerializeField]
-    private SpriteRenderer achievementSprite;
+    private bool isUnlocked;
+
+    [SerializeField]
+    private Image achievementSprite;
     [SerializeField]
     private Sprite completedAchievementSprite;
 
