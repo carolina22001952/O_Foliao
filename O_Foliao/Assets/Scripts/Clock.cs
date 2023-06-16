@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Clock : MonoBehaviour
 {
 
-    [SerializeField] private int hours = 20;
+    [SerializeField] private int hours = 18;
     [SerializeField] private int minutes = 0;
     [SerializeField] private int day = 1;
     [SerializeField] private int minTimeBetweenEvents = 1;

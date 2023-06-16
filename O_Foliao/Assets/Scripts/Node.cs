@@ -20,6 +20,7 @@ public class Node : MonoBehaviour
     public Node node;
     [SerializeField]
     private List<ILocal> local;
+    bool stop = false;
 
     [System.Serializable]
     public struct TargetNode
@@ -70,11 +71,17 @@ public class Node : MonoBehaviour
 
     public void HighLight()
     {
-        if (gameObject.transform.GetComponentInChildren<SpriteRenderer>(true).gameObject.activeSelf == true)
-        {
-            gameObject.transform.GetComponentInChildren<SpriteRenderer>(true).sprite = highLight;
-            StartCoroutine(ScaleSprite());
-        }
+
+            if (gameObject.transform.GetComponentInChildren<SpriteRenderer>(true).gameObject.activeSelf == true)
+            {
+                gameObject.transform.GetComponentInChildren<SpriteRenderer>(true).sprite = highLight;
+
+                if (stop == false)
+                {
+                    StartCoroutine(ScaleSprite());
+                }
+            }
+        
     }
 
     public void BacktoNormal()
@@ -117,6 +124,11 @@ public class Node : MonoBehaviour
     public void QuestToDeactivate(GameObject location)
     {
         location.transform.GetComponentInChildren<SpriteRenderer>().sprite = deactivatedNode;
+    }
+
+    public void StopAnimation(bool stop)
+    {
+        this.stop = stop;
     }
 }
 
