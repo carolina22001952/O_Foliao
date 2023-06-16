@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Boa noite.
     _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 338682dcc3802bf4aaa8a8fc27f2a9f3, type: 3}
   _decisions:
   - _choiceDialogue: "(Educada) Ol\xE1 L\xE9o!"
     _minAlcool: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 80e541bf87ca2894fafbcc2ba8e97eed, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Brincalhona) Ent\xE3o, \xE9 desta que vou beber um shot contigo?"
@@ -52,7 +52,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 3865dcc1c6354da4fb17efa8288427b7, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +61,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

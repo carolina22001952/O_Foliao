@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "Claro, nunca foste? N\xE3o existe carnaval sem ir ao T\xFAnel!"
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: eda791fb729fc4249beb67fac6f00101, type: 3}
   _decisions:
   - _choiceDialogue: "(Entusiasmada) Bora ent\xE3o!"
     _minAlcool: 0

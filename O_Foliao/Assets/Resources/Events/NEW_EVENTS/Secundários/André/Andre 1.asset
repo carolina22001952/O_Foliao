@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Ajuda-mE por favor, os mwus... amigos...
     _npc: {fileID: 11400000, guid: e7378539399b5aa49ab0e25110b398c4, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 4894ba71b8271834ebcd95e8b5624668, type: 3}
   _decisions:
   - _choiceDialogue: "(Direta) Onde \xE9 que eles est\xE3o?"
     _minAlcool: 0

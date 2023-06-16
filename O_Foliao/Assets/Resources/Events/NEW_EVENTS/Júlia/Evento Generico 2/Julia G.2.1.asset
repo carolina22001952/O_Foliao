@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "Vamos l\xE1 ver ent\xE3o."
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: b5278bde8fececd43a88f25ae829875d, type: 3}
   _decisions:
   - _choiceDialogue: "(Engra\xE7ada) Fazes mais o que, para al\xE9m de me deixares
       sem ar?"
@@ -30,7 +30,7 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: db13786edf411414480760d14f06b87b, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -39,7 +39,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Engra\xE7ada) Pronto, j\xE1 estou aqui! Quais s\xE3o os outros
@@ -54,7 +54,7 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: db13786edf411414480760d14f06b87b, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -63,7 +63,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

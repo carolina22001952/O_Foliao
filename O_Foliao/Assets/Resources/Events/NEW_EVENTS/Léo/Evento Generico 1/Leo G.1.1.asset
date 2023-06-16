@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "Olha quem \xE9 ela..."
     _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 338682dcc3802bf4aaa8a8fc27f2a9f3, type: 3}
   _decisions:
   - _choiceDialogue: (Divertida) Voltei pelos shots... e pelo melhor barman de Torres,
       claro!
@@ -30,7 +30,7 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert:
       - {fileID: 11400000, guid: d667ea3feaee2c04ab5020f20ffe5d3e, type: 2}
@@ -40,7 +40,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Amig\xE1vel) V\xE1, hoje sou eu que ofere\xE7o."
@@ -54,7 +54,7 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert:
       - {fileID: 11400000, guid: d667ea3feaee2c04ab5020f20ffe5d3e, type: 2}
@@ -64,7 +64,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

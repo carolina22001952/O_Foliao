@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "Aproveita, esta vida s\xE3o dois dias. O carnaval, s\xE3o tr\xEAs."
     _npc: {fileID: 11400000, guid: 0bcc5e136a1408c43a3ef705e3e11ddd, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: b5278bde8fececd43a88f25ae829875d, type: 3}
   _decisions:
   - _choiceDialogue: "(Confusa) N\xE3o s\xE3o 6...?"
     _minAlcool: 0

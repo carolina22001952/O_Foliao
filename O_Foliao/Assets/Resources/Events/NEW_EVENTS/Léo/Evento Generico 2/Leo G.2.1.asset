@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "Acho que mere\xE7o, sim."
     _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
-    _background: {fileID: 21300000, guid: 8535024eaf10d37439aa1497469d236e, type: 3}
+    _background: {fileID: 21300000, guid: 338682dcc3802bf4aaa8a8fc27f2a9f3, type: 3}
   _decisions:
   - _choiceDialogue: "(Honesta) N\xE3o se volta a repetir L\xE9o."
     _minAlcool: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 35a84eafaca669d47bdb16255646a498, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Simp\xE1tica) Pazes?"
@@ -52,7 +52,7 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 35a84eafaca669d47bdb16255646a498, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +61,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

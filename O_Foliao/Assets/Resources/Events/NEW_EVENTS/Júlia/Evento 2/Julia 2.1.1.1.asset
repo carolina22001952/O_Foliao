@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "Isto o qu\xEA?"
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 04291fbd744a0694bb529c308da517c2, type: 3}
   _decisions:
   - _choiceDialogue: O cheiro.
     _minAlcool: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 3f0ac3bd45450b3409cbfe057511c537, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: A energia.
@@ -52,7 +52,7 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 3f0ac3bd45450b3409cbfe057511c537, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +61,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

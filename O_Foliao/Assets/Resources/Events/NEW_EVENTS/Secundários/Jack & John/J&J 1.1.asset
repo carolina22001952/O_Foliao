@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Portuguese people are amazingggg.
     _npc: {fileID: 11400000, guid: a17c916dd575e554c8470be11c8bbe30, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: c2b9488702943504e8c9ade6424718ac, type: 3}
   _decisions:
   - _choiceDialogue: "(Ir\xF3nica) O tuga \xE9 uma esp\xE9cie rara."
     _minAlcool: 0

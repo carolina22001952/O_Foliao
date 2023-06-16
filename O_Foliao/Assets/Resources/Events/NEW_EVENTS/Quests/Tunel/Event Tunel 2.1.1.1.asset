@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "J\xC1 FEZ 50 ANOS!"
     _npc: {fileID: 11400000, guid: 3feaf9489a8c2614b8ae55b6e6a003fa, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: c55819eceb0f3634b8ffc2616f414319, type: 3}
   _decisions:
   - _choiceDialogue: "Ol\xE1 Paulo!"
     _minAlcool: 0

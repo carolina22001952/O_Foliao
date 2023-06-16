@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "Estava s\xF3 a testar-te."
     _npc: {fileID: 11400000, guid: 02909333923443f428a5de210a55a5c9, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 40b92a337d905134bbeb1ac75b66853b, type: 3}
   _decisions:
   - _choiceDialogue: "(Amig\xE1vel) Espero ter passado."
     _minAlcool: 0

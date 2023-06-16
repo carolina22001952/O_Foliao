@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "Esquisita p\xE1, era s\xF3 uma sentada."
     _npc: {fileID: 11400000, guid: 5f0d60e8550fbd849afa4fd29ef3ea0f, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 40b92a337d905134bbeb1ac75b66853b, type: 3}
   _decisions: []
   _eventBaseData:
     _timeOfDay: 

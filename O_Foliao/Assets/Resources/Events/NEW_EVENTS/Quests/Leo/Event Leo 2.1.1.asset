@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "Vamos para a sala, j\xE1 est\xE1 tudo pronto para comer! "
     _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 710db6c1061fb304e8b0ee335c3680e9, type: 3}
   _decisions:
   - _choiceDialogue: Cheira bem!
     _minAlcool: 0

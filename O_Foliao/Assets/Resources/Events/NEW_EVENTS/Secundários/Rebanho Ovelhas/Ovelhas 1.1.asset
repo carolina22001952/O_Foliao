@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Tira uma foto connosco e manda-lhe.
     _npc: {fileID: 11400000, guid: 5cd960cb475926149868b5516c345b6d, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: b5278bde8fececd43a88f25ae829875d, type: 3}
   _decisions:
   - _choiceDialogue: "(Ir\xF3nica) Ela vai adorar ver-me assim."
     _minAlcool: 0

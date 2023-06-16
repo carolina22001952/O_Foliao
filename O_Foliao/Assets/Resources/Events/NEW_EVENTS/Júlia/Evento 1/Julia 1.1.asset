@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Oi?
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 04291fbd744a0694bb529c308da517c2, type: 3}
   _decisions:
   - _choiceDialogue: "(Brincalhona) O teu pai \xE9 piloto? \xC9 que \xE9s c\xE1 um
       avi\xE3o."
@@ -30,7 +30,7 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 273a818040befff4ba4f0d0532b5bc25, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -39,7 +39,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Brincalhona) \xC9s toda boa. *piscadela*"
@@ -53,7 +53,7 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 273a818040befff4ba4f0d0532b5bc25, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -62,7 +62,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(S\xE9ria) *Ficar em sil\xEAncio ao p\xE9 delas.*"
@@ -76,7 +76,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 5aae10f910c28ca44bc22a4102c3e237, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -85,7 +85,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 0e78cdc5ab205534683ecdb48069acab, type: 2}
       _eventsToInsert: []
   _eventBaseData:

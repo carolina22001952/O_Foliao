@@ -17,7 +17,7 @@ MonoBehaviour:
   - _text: "Vai l\xE1 a casa, podes tomar banho \xE0 vontade. Eu j\xE1 partilho a
       localiza\xE7\xE3o contigo."
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 3aeda4e7567ee364ba4d9edadb4ab75b, type: 3}
   _decisions:
   - _choiceDialogue: "Obrigada J\xFAlia!"
     _minAlcool: 0

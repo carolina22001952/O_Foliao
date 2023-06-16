@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Toda a gente me conhece.
     _npc: {fileID: 11400000, guid: 3feaf9489a8c2614b8ae55b6e6a003fa, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: c2b9488702943504e8c9ade6424718ac, type: 3}
   _decisions:
   - _choiceDialogue: "(Provocadora) Elucida-me l\xE1 ent\xE3o."
     _minAlcool: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6a30a6bf231c1cc48859ebdce1539d75, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: -10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 022183db5f2186f41af925b496146bcf, type: 2}
       _eventsToInsert:
       - {fileID: 11400000, guid: fef55af9564470544a7cf6c9ddbee2ae, type: 2}
@@ -53,7 +53,7 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: ea84b440fc535fd4290444bfbfbb1696, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -62,7 +62,7 @@ MonoBehaviour:
       _funPlus: -10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 830addc6c2b29cc4aab8871da0b03f8b, type: 2}
       _eventsToInsert:
       - {fileID: 11400000, guid: fef55af9564470544a7cf6c9ddbee2ae, type: 2}

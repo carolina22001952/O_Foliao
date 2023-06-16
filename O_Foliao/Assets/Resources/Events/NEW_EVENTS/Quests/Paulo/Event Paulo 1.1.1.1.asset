@@ -17,7 +17,7 @@ MonoBehaviour:
   - _text: "Vou fazer ganda jantar em minha casa, aparece se quiseres. J\xE1 te envio
       a morada e a hora."
     _npc: {fileID: 11400000, guid: 3feaf9489a8c2614b8ae55b6e6a003fa, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 4894ba71b8271834ebcd95e8b5624668, type: 3}
   _decisions:
   - _choiceDialogue: Ah nice, obrigada pelo convite!
     _minAlcool: 0

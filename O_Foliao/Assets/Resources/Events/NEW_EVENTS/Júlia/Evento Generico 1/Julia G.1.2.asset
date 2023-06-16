@@ -17,7 +17,7 @@ MonoBehaviour:
   - _text: "Ol\xE1 para ti tamb\xE9m. N\xE3o sei se mereces saber, mas hoje sou a
       J\xFAlia."
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: eda791fb729fc4249beb67fac6f00101, type: 3}
   _decisions:
   - _choiceDialogue: (Confiante) E eu sou a pessoa que te vai bancar a bebida hoje.
       Bora.
@@ -31,7 +31,7 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: -5
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
     _failedEvent:
@@ -40,7 +40,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Brincalhona) Come\xE7amos bem, a minha m\xE3e tamb\xE9m se
@@ -55,7 +55,7 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
     _failedEvent:
@@ -64,7 +64,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

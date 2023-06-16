@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "O que \xE9 que andas aqui a fazer? 'T\xE1 na hora de ir para o T\xFAnel! "
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: eda791fb729fc4249beb67fac6f00101, type: 3}
   _decisions:
   - _choiceDialogue: "(Interessada) Isso \xE9 uma discoteca?"
     _minAlcool: 0

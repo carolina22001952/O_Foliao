@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "PARAB\xC9NS A VOC\xCA... NESTA DATA QUERIDA..."
     _npc: {fileID: 11400000, guid: b1a75f89d43887446ad24b7fbacfa814, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 4894ba71b8271834ebcd95e8b5624668, type: 3}
   _decisions:
   - _choiceDialogue: 'MUITAS FELICIDADES, MUITOS ANOS DE VIDA! '
     _minAlcool: 0
