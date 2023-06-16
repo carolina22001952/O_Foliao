@@ -20,7 +20,7 @@ public class QuestOnlyLocal : MonoBehaviour, ILocal
     private Game game;
 
     [SerializeField]
-    private List<Quest> quests;
+    private List<Quest> quests = new List<Quest>();
 
     [SerializeField]
     private QuestSystem questSystem;
@@ -30,30 +30,44 @@ public class QuestOnlyLocal : MonoBehaviour, ILocal
 
     private Events chosenEvent;
     [SerializeField]
-    private GameObject capsuleCollider;
+    private MeshRenderer parentGameobject;
+    [SerializeField]
+    private SpriteRenderer childGameobject;
     [SerializeField]
     private Node node;
 
+
+    [SerializeField]
+    private Quest added;
     private int stop = 0;
 
     public void Update()
     {
-        if(quests.Count == 0)
+        Debug.Log(quests.Count+"lol");
+        if (quests.Count == 0)
         {
-            capsuleCollider.GetComponent<CapsuleCollider>().enabled = false;
+            Debug.Log("yes");
+            parentGameobject.enabled = false;
 
             node.QuestToDeactivate(this.gameObject);
             node.StopAnimation(true);
             stop = 0;
         }else
         {
-            capsuleCollider.GetComponent<CapsuleCollider>().enabled = true;
-            if(stop == 0)
+            Debug.Log(quests.Count);
+            parentGameobject.enabled = true;
+            childGameobject.enabled = true;
+            if (stop == 0)
             {
                 node.QuestToNormal(this.gameObject);
                 node.StopAnimation(false);
                 stop++;
             }
+        }
+
+        if (Input.GetKeyUp(KeyCode.Z))
+        {
+            quests.Add(added);
         }
     }
 

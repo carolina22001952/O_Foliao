@@ -61,9 +61,7 @@ public class QuestSystem : MonoBehaviour
     public void CheckForQuestTimers()
     {
         int day = clock.GetDay();
-        Debug.Log(day);
         int hour = clock.GetHours();
-        Debug.Log(hour);
         int minutes = clock.GetMinutes();
         if (questsTimed.Count > 0)
         {

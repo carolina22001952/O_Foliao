@@ -24,7 +24,6 @@ public class TimedEventsSystem : MonoBehaviour
     {
         if (eventsList.Count > 0)
         {
-            Debug.Log("same");
             for (int i = 0; i < eventsList.Count; i++)
             {
 

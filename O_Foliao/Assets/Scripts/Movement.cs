@@ -43,7 +43,7 @@ public class Movement: MonoBehaviour
             var nodes = player.Position().GetComponent<Node>().GetOptions();
             foreach (var node in nodes)
             {
-                if (node.target)
+                if (node.target && node.target.gameObject.transform.parent.gameObject.activeSelf)
                 {
                     node.target.HighLight();
                 }
