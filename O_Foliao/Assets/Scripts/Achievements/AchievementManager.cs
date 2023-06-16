@@ -20,22 +20,34 @@ public class AchievementManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
+
+        Component[] components = gameObject.GetComponents<Component>();
+        foreach(Component comp in components)
+        {
+            if(comp is IAchievements achievementsComponents)
+            {
+                achievementList.Add(achievementsComponents);
+            }
+        }
     }
+   
 
 
     public void UnlockAchievement(string achievementName)
     {
         if (achievementName != null || achievementName != string.Empty)
         {
+            Debug.Log(achievementList.Count);
             foreach (IAchievements achievement in achievementList)
             {
+                Debug.Log(achievement.GetAchievementName() + " " + achievementName);
                 if (achievement.GetAchievementName() == achievementName)
                 {
                     achievement.AchievementLogic();
                 }
                 else
                 {
-                    throw new System.Exception("Achievement name does not exist");
+                    //throw new System.Exception("Achievement name does not exist");
                 }
             }
         }
@@ -43,3 +55,4 @@ public class AchievementManager : MonoBehaviour
 
 
 }
+

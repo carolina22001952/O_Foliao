@@ -30,6 +30,7 @@ public class Achievement5shots : MonoBehaviour, IAchievements
     public void AchievementLogic()
     {
         drinkedShots++;
+        Debug.Log(drinkedShots);
         if (drinkedShots == 5)
         {
             AchievementUnlock();
