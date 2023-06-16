@@ -90,6 +90,9 @@ public struct EventOutcome
     [SerializeField] Events[] _eventsToInsert;
     public Events[] eventsToInsert { get { return _eventsToInsert; } }
 
+    [SerializeField] string _achievementName;
+    public string achievementName { get { return _achievementName; } }
+
 
 }
 [Serializable]
