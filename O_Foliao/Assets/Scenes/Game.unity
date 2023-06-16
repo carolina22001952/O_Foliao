@@ -3193,7 +3193,7 @@ MonoBehaviour:
   mainBgSprite: {fileID: 21300000, guid: 3c90f838d7d6e824fa32360913bdafd2, type: 3}
   bankBgSprite: {fileID: 21300000, guid: f182d8394dbb4304d862e2a643449154, type: 3}
   questBgSprite: {fileID: 21300000, guid: 419228e73759d0042a3bec661954008b, type: 3}
-  achieveBgSprite: {fileID: 21300000, guid: 88bbad7c2632a24428ce7a0c02f192cd, type: 3}
+  achieveBgSprite: {fileID: 21300000, guid: c058cab1012284e47ac5ebf30cf7e334, type: 3}
   optionBgSprit: {fileID: 21300000, guid: 91ab793815413be4eaf9179a66beb217, type: 3}
 --- !u!95 &229586434
 Animator:
