@@ -17,7 +17,7 @@ MonoBehaviour:
   - _text: "Oh Paulo, j\xE1 que \xE9s t\xE3o V.I.P., vai l\xE1 perceber o que se
       passa."
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: c55819eceb0f3634b8ffc2616f414319, type: 3}
   _decisions:
   - _choiceDialogue: "(Medrosa) O que ser\xE1 que se est\xE1 a passar?"
     _minAlcool: 0

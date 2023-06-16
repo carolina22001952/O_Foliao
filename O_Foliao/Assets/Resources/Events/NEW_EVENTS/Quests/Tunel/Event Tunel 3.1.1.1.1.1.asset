@@ -18,7 +18,7 @@ MonoBehaviour:
       50 anos, os foli\xF5es despediram-se uma \xFAltima vez da discoteca mais cobi\xE7ada
       do pa\xEDs... sem saberem."
     _npc: {fileID: 11400000, guid: d1ab2ef0edadd2e4d9d0eb9fbba8de1f, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 44e3b1118eb93444186eab4748e9cff5, type: 3}
   _decisions:
   - _choiceDialogue: ...
     _minAlcool: 0

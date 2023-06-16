@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Temos comediante.
     _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
-    _background: {fileID: 21300000, guid: 8535024eaf10d37439aa1497469d236e, type: 3}
+    _background: {fileID: 21300000, guid: 338682dcc3802bf4aaa8a8fc27f2a9f3, type: 3}
   _decisions:
   - _choiceDialogue: "\xC0s vezes safo-me."
     _minAlcool: 0

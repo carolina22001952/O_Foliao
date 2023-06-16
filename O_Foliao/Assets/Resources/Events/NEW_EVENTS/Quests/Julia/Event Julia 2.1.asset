@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Sempre vieste.
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: a90a160958a6b3848997df1e753861f4, type: 3}
   _decisions:
   - _choiceDialogue: "(Educada) Ya, obrigada, a s\xE9rio!"
     _minAlcool: 0

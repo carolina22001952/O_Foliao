@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Ei tu, anda aqui fazer o teste de alcoolemia.
     _npc: {fileID: 11400000, guid: fc87fd425ac701e448a6df4048297b0d, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 3aeda4e7567ee364ba4d9edadb4ab75b, type: 3}
   _decisions:
   - _choiceDialogue: "(Confusa) \xC9 uma obriga\xE7\xE3o ou um convite?"
     _minAlcool: 0

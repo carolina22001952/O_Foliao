@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Amiga, fazes barreira para eu fazer xixi, por favor?
     _npc: {fileID: 11400000, guid: 0cf98d9849258ac48b5622683426a4df, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 40b92a337d905134bbeb1ac75b66853b, type: 3}
   _decisions:
   - _choiceDialogue: Claro, amiga.
     _minAlcool: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: a5a8647e94c5dd148adfb8a0ff574c07, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: -2
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: b6f3750b45a8dff4ca4fc3e96146bb2b, type: 2}
       _eventsToInsert: []
   - _choiceDialogue: "Desculpa... est\xE3o-me a chamar."
@@ -52,7 +52,7 @@ MonoBehaviour:
       _funPlus: -5
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 70d1d6d21cacb2846aeb34856a019e4e, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +61,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: -1
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: b2b09e831c5f23540a8ecc8418327701, type: 2}
       _eventsToInsert: []
   _eventBaseData:

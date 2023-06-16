@@ -17,7 +17,7 @@ MonoBehaviour:
   - _text: "O teu sorriso \xE9 t\xE3o lindo quanto a view from the  top of the London
       Eye, n\xE3o \xE9 mate?"
     _npc: {fileID: 11400000, guid: 708ab0e83232ca74bb2713f9c735427f, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: c2b9488702943504e8c9ade6424718ac, type: 3}
   _decisions:
   - _choiceDialogue: "(Ir\xF3nica) Very thanks, innit."
     _minAlcool: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "\xC9 logo assim, nem me pagas um copo antes?"
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 04291fbd744a0694bb529c308da517c2, type: 3}
   _decisions:
   - _choiceDialogue: "(T\xEDmida) Claro, tens raz\xE3o."
     _minAlcool: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 85039486fb800604b81974abbfd0e312, type: 2}
       _eventsToInsert:
       - {fileID: 11400000, guid: 191c1ac5679bbe14e91c29d8f02dbe00, type: 2}
@@ -39,7 +39,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: "(Confiante) Vamos tratar disso ent\xE3o."
@@ -53,7 +53,7 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: -5
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert:
       - {fileID: 11400000, guid: a0a5e588cac416f4aa670029b9771f38, type: 2}
@@ -63,7 +63,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

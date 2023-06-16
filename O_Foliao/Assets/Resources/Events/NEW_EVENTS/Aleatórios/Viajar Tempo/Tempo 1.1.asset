@@ -17,7 +17,7 @@ MonoBehaviour:
   - _text: "Ol\xE1 camarada, eu vim do futuro para te dizer que n\xE3o h\xE1 nada
       para fazer agora."
     _npc: {fileID: 11400000, guid: f82ada1047a4f234c9feb1bfe0559d1c, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 3aeda4e7567ee364ba4d9edadb4ab75b, type: 3}
   _decisions:
   - _choiceDialogue: Como assim?
     _minAlcool: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: ec289fe386eab254a863d800212fcca5, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -39,7 +39,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   - _choiceDialogue: Aham?
@@ -53,7 +53,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: ec289fe386eab254a863d800212fcca5, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -62,7 +62,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
   _eventBaseData:

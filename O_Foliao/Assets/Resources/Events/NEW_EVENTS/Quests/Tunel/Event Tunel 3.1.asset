@@ -17,7 +17,7 @@ MonoBehaviour:
   - _text: "Pessoal, obrigado pela vossa presen\xE7a! Vamos ter que encerrar o T\xFAnel
       mais cedo hoje. At\xE9 j\xE1!"
     _npc: {fileID: 11400000, guid: b1a75f89d43887446ad24b7fbacfa814, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: c55819eceb0f3634b8ffc2616f414319, type: 3}
   _decisions:
   - _choiceDialogue: "(Confusa) J\xE1 't\xE1 a fechar? Ainda \xE9 cedo."
     _minAlcool: 0

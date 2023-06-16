@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: Vou preparar o jantar com a minha esposa.
     _npc: {fileID: 11400000, guid: a2a280a27acc9804183cf70de099ff02, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: b5278bde8fececd43a88f25ae829875d, type: 3}
   _decisions:
   - _choiceDialogue: (Educada) Fazes muito bem! Bom jantar!
     _minAlcool: 0

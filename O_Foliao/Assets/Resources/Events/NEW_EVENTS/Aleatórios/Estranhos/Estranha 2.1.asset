@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: '''Tamos com o mesmo fato!'
     _npc: {fileID: 11400000, guid: 0cf98d9849258ac48b5622683426a4df, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 4894ba71b8271834ebcd95e8b5624668, type: 3}
   _decisions:
   - _choiceDialogue: OMG!
     _minAlcool: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 10
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 9a9a71e6543a7304ab1efbda1f274a8b, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -38,7 +38,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: -2
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: b6f3750b45a8dff4ca4fc3e96146bb2b, type: 2}
       _eventsToInsert: []
   - _choiceDialogue: TIRA UMA FOTO!
@@ -52,7 +52,7 @@ MonoBehaviour:
       _funPlus: 15
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 64d8f444723bee147b2932ee97196353, type: 2}
       _eventsToInsert: []
     _failedEvent:
@@ -61,7 +61,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: -1
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: b2b09e831c5f23540a8ecc8418327701, type: 2}
       _eventsToInsert: []
   _eventBaseData:

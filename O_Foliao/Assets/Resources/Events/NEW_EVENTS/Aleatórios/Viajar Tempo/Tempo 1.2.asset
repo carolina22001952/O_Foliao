@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogue:
   - _text: "Os eventos da parte da tarde ainda est\xE3o em processo criativo."
     _npc: {fileID: 11400000, guid: f82ada1047a4f234c9feb1bfe0559d1c, type: 2}
-    _background: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+    _background: {fileID: 21300000, guid: 3aeda4e7567ee364ba4d9edadb4ab75b, type: 3}
   _decisions:
   - _choiceDialogue: Mas eu quero continuar a explorar.
     _minAlcool: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert:
       - {fileID: 11400000, guid: bfbfd90184e666e4fa780a77d8d6756a, type: 2}
@@ -39,10 +39,9 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
-    _choice: 
   - _choiceDialogue: "Teletransporta-me para a noite ent\xE3o."
     _minAlcool: 0
     _minFun: 0
@@ -54,7 +53,7 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
     _failedEvent:
@@ -63,10 +62,9 @@ MonoBehaviour:
       _funPlus: 0
       _moneyPlus: 0
       _energyPlus: 0
-      _achievement: {fileID: 0}
+      _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
-    _choice: 
   _eventBaseData:
     _timeOfDay: 01000000
     _dayOfWeek: 0000000001000000
