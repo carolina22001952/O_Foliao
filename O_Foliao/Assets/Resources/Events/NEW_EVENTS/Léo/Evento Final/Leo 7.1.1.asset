@@ -32,6 +32,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: cde84bcb9bc13d34cacc3336687e3ef8, type: 2}
       _eventsToInsert: []
+      _achievementName: Arranjar bebidas para o carro
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -41,6 +42,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
     _timeOfDay: 02000000
     _dayOfWeek: 0000000001000000

@@ -32,6 +32,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6df1343d278f55f45a8bb88cc99738aa, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 5
       _alcoolPlus: 5
@@ -41,6 +42,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: a131a475d172cf24bb5097a32c00fb1d, type: 2}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "O shot (1\u20AC) mais barato!"
     _minAlcool: 80
     _minFun: 0
@@ -55,6 +57,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6df1343d278f55f45a8bb88cc99738aa, type: 2}
       _eventsToInsert: []
+      _achievementName: Beber 5 shots
     _failedEvent:
       _timePassed: 5
       _alcoolPlus: 15
@@ -64,6 +67,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 6e65afc590293ba4ba8353bc5242576e, type: 2}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
     _timeOfDay: 020000000000000001000000
     _dayOfWeek: 0000000001000000

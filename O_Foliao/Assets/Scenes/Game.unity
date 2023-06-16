@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2bab6f46e4322438f472794d548855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hours: 19
+  hours: 20
   minutes: 0
   day: 1
   minTimeBetweenEvents: 1
@@ -651,7 +651,7 @@ MonoBehaviour:
   game: {fileID: 60811733}
   restart: 0
   questSystem: {fileID: 1242739344}
-  achievementManager: {fileID: 0}
+  achievementManager: {fileID: 209658570}
 --- !u!1 &61069692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,6 +2964,10 @@ GameObject:
   - component: {fileID: 209658568}
   - component: {fileID: 209658567}
   - component: {fileID: 209658566}
+  - component: {fileID: 209658574}
+  - component: {fileID: 209658573}
+  - component: {fileID: 209658572}
+  - component: {fileID: 209658575}
   m_Layer: 0
   m_Name: AchievementManager
   m_TagString: Untagged
@@ -2999,7 +3003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b874d0d65c4d440a49fe70c8c95d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  achievementName: Encontrar o verdadeiro amor
+  achievementName: Engatar uma matrafona
   isUnlocked: 0
   achievementSprite: {fileID: 260953564}
   completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
@@ -3015,7 +3019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f365d1812cf7e14fbbc6b4cdfc21ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  achievementName: Engatar uma matrafona
+  achievementName: Encontrar o verdadeiro amor
   isUnlocked: 0
   achievementSprite: {fileID: 1828067328}
   completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
@@ -3062,6 +3066,70 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &209658572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209658565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027229a4a58625f4d970284802f885a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: "Ir ao t\xFAnel"
+  isUnlocked: 0
+  achievementSprite: {fileID: 436654523}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+--- !u!114 &209658573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209658565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b55289ab4e8b20409956780f3787ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: "Receber bebida de gra\xE7a"
+  isUnlocked: 0
+  achievementSprite: {fileID: 1926406799}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+--- !u!114 &209658574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209658565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd22cc877e5eb7046b799b99567bd10a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: "Jantar em casa de algu\xE9m"
+  isUnlocked: 0
+  achievementSprite: {fileID: 615966132}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+--- !u!114 &209658575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209658565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222b56a91ce464d40a6a65058a2d40bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: Beber 5 shots
+  isUnlocked: 0
+  achievementSprite: {fileID: 571725378}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
 --- !u!1 &221523135
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,7 +3374,7 @@ MonoBehaviour:
   mainBgSprite: {fileID: 21300000, guid: 3c90f838d7d6e824fa32360913bdafd2, type: 3}
   bankBgSprite: {fileID: 21300000, guid: f182d8394dbb4304d862e2a643449154, type: 3}
   questBgSprite: {fileID: 21300000, guid: 419228e73759d0042a3bec661954008b, type: 3}
-  achieveBgSprite: {fileID: 21300000, guid: c058cab1012284e47ac5ebf30cf7e334, type: 3}
+  achieveBgSprite: {fileID: 21300000, guid: 0f2672a14292f1d45b7ce764c3d02056, type: 3}
   optionBgSprit: {fileID: 21300000, guid: 91ab793815413be4eaf9179a66beb217, type: 3}
 --- !u!95 &229586434
 Animator:
@@ -9637,7 +9705,8 @@ MonoBehaviour:
   - target: {fileID: 1342336684}
     waypoints: []
   - target: {fileID: 895441763}
-    waypoints: []
+    waypoints:
+    - {fileID: 2117271565}
 --- !u!4 &845040699
 Transform:
   m_ObjectHideFlags: 0
@@ -9914,7 +9983,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 19:00
+  m_text: 20:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
   m_sharedMaterial: {fileID: 365832687516138948, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
@@ -9941,7 +10010,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.2
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10248,10 +10317,9 @@ MonoBehaviour:
   node: {fileID: 0}
   options:
   - target: {fileID: 845040698}
-    waypoints: []
+    waypoints:
+    - {fileID: 2117271565}
   - target: {fileID: 3950662}
-    waypoints: []
-  - target: {fileID: 1657135961}
     waypoints: []
   - target: {fileID: 2125884204}
     waypoints: []
@@ -16223,7 +16291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1de85c42747641643b67654f2cf4db7e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 338682dcc3802bf4aaa8a8fc27f2a9f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19065,8 +19133,6 @@ MonoBehaviour:
     waypoints: []
   - target: {fileID: 2125884204}
     waypoints: []
-  - target: {fileID: 895441763}
-    waypoints: []
 --- !u!4 &1657135962
 Transform:
   m_ObjectHideFlags: 0
@@ -20228,6 +20294,7 @@ Transform:
   - {fileID: 1048900945}
   - {fileID: 288064073}
   - {fileID: 143398866}
+  - {fileID: 2117271565}
   m_Father: {fileID: 61069693}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24510,6 +24577,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 4, z: 200}
   m_Center: {x: 0, y: 0, z: 0.000030517578}
+--- !u!1 &2117271564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2117271565}
+  m_Layer: 0
+  m_Name: Waypoint (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2117271565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117271564}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 6, y: -147, z: 30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757904128}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2122361241
 GameObject:
   m_ObjectHideFlags: 0
@@ -24820,7 +24918,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 83040aa0720f4a845b1cea562900a1aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4160f80ccf14e6747b44f95379d64fb2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

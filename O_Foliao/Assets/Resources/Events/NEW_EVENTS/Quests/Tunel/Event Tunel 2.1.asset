@@ -32,6 +32,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 546aaf8a41684684d9f25296b01423e6, type: 2}
       _eventsToInsert: []
+      _achievementName: "Ir ao t\xFAnel"
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -41,6 +42,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: Ir ao bar.
     _minAlcool: 0
     _minFun: 0
@@ -55,6 +57,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 546aaf8a41684684d9f25296b01423e6, type: 2}
       _eventsToInsert: []
+      _achievementName: "Ir ao t\xFAnel"
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -64,6 +67,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "Ir para a pista de dan\xE7a."
     _minAlcool: 0
     _minFun: 0
@@ -78,6 +82,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 546aaf8a41684684d9f25296b01423e6, type: 2}
       _eventsToInsert: []
+      _achievementName: "Ir ao t\xFAnel"
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -87,6 +92,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
     _timeOfDay: 000000000100000002000000
     _dayOfWeek: 0000000001000000
