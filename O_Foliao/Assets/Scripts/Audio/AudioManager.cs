@@ -6,7 +6,12 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] private AudioSource buttonSound;
     [SerializeField] private AudioSource notificationSound;
-    //[SerializeField] private AudioSource 
+
+    [Header("Random Sounds")]
+    [SerializeField] AudioClip[] clips;
+    //[SerializeField] private AudioSource megaphoneSound;
+    //[SerializeField] private AudioSource whistleSound;
+    //[SerializeField] private AudioSource Sound;
 
 
     public void PlayButtonSound()
