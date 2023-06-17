@@ -175,6 +175,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 1ecd1b7aacb52594480b32046a35f8a3, type: 3}
   options:
   - target: {fileID: 895441763}
     waypoints: []
@@ -1666,6 +1668,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 119468170}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 7e06f31ffdb220d4b84635478eefefd5, type: 3}
   options:
   - target: {fileID: 1080495810}
     waypoints: []
@@ -2892,6 +2896,8 @@ MonoBehaviour:
   questHighLight: {fileID: 21300000, guid: 29a270664c43f1a47bebf53f64764fca, type: 3}
   deactivatedNode: {fileID: 21300000, guid: 5641e9cb148cfba4cb93a6ab25d234e0, type: 3}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: dd208d8552b20cb4f9c1655accf47ab8, type: 3}
   options:
   - target: {fileID: 119468170}
     waypoints:
@@ -3668,6 +3674,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 1ecd1b7aacb52594480b32046a35f8a3, type: 3}
   options:
   - target: {fileID: 1342336684}
     waypoints: []
@@ -3844,6 +3852,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 239217042}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 1ecd1b7aacb52594480b32046a35f8a3, type: 3}
   options:
   - target: {fileID: 1946886343}
     waypoints: []
@@ -4504,6 +4514,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 7074afe9fce49ba4ba7299fb6a10cd1e, type: 3}
   options:
   - target: {fileID: 119468170}
     waypoints:
@@ -8819,6 +8831,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 6edb2ade08299ab4983ea72d514da3e4, type: 3}
   options:
   - target: {fileID: 1342336684}
     waypoints: []
@@ -10257,6 +10271,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 7074afe9fce49ba4ba7299fb6a10cd1e, type: 3}
   options:
   - target: {fileID: 290813224}
     waypoints: []
@@ -10791,6 +10807,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 1d4bc3d9757ce32499c9d05940639eb8, type: 3}
   options:
   - target: {fileID: 845040698}
     waypoints:
@@ -13249,6 +13267,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 1080495810}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 7e06f31ffdb220d4b84635478eefefd5, type: 3}
   options:
   - target: {fileID: 119468170}
     waypoints: []
@@ -16247,6 +16267,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 7074afe9fce49ba4ba7299fb6a10cd1e, type: 3}
   options:
   - target: {fileID: 290813224}
     waypoints: []
@@ -18386,7 +18408,6 @@ GameObject:
   - component: {fileID: 1538747128}
   - component: {fileID: 1538747129}
   - component: {fileID: 1538747130}
-  - component: {fileID: 1538747131}
   m_Layer: 0
   m_Name: Cebola_Icon
   m_TagString: Untagged
@@ -18474,102 +18495,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 4, z: 200}
   m_Center: {x: 0, y: 0, z: 0.000030517578}
---- !u!82 &1538747131
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538747127}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -1067366984462752880, guid: 8be850823eedf2641b7fecd29c6987c0, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 6edb2ade08299ab4983ea72d514da3e4, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.2
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 0
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 50
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1539594641
 GameObject:
   m_ObjectHideFlags: 0
@@ -19862,6 +19787,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 1d4bc3d9757ce32499c9d05940639eb8, type: 3}
   options:
   - target: {fileID: 3950662}
     waypoints: []
@@ -19968,6 +19895,8 @@ MonoBehaviour:
   questHighLight: {fileID: 21300000, guid: 29a270664c43f1a47bebf53f64764fca, type: 3}
   deactivatedNode: {fileID: 21300000, guid: 5641e9cb148cfba4cb93a6ab25d234e0, type: 3}
   node: {fileID: 1657944183}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: dd208d8552b20cb4f9c1655accf47ab8, type: 3}
   options:
   - target: {fileID: 1080495810}
     waypoints:
@@ -21530,6 +21459,8 @@ MonoBehaviour:
   questHighLight: {fileID: 21300000, guid: 29a270664c43f1a47bebf53f64764fca, type: 3}
   deactivatedNode: {fileID: 21300000, guid: 5641e9cb148cfba4cb93a6ab25d234e0, type: 3}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: dd208d8552b20cb4f9c1655accf47ab8, type: 3}
   options:
   - target: {fileID: 1342336684}
     waypoints: []
@@ -23698,6 +23629,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 5bce08dc6829c584f9050cfca096557b, type: 3}
   options:
   - target: {fileID: 239217042}
     waypoints: []
@@ -25276,6 +25209,7 @@ GameObject:
   - component: {fileID: 2103319042}
   - component: {fileID: 2103319043}
   - component: {fileID: 2103319044}
+  - component: {fileID: 2103319046}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -25327,6 +25261,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 2103319043}
   notificationSound: {fileID: 209658576}
+  musicSource: {fileID: 2103319046}
+  vinilMusic: {fileID: 8300000, guid: 7e06f31ffdb220d4b84635478eefefd5, type: 3}
+  celeiroMusic: {fileID: 8300000, guid: 6edb2ade08299ab4983ea72d514da3e4, type: 3}
+  skadiMusic: {fileID: 8300000, guid: 5bce08dc6829c584f9050cfca096557b, type: 3}
+  cebolaMusic: {fileID: 8300000, guid: 7074afe9fce49ba4ba7299fb6a10cd1e, type: 3}
+  batataMusic: {fileID: 8300000, guid: 1d4bc3d9757ce32499c9d05940639eb8, type: 3}
+  benchMusic: {fileID: 8300000, guid: 1ecd1b7aacb52594480b32046a35f8a3, type: 3}
+  casaMusic: {fileID: 8300000, guid: dd208d8552b20cb4f9c1655accf47ab8, type: 3}
   clips:
   - {fileID: 8300000, guid: 04ef26e3f3a94994eb2e758c98549669, type: 3}
   - {fileID: 8300000, guid: 07162a002932bdb42aca7fe48fb65bf1, type: 3}
@@ -25336,10 +25278,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 19f7d9007e65d4140a53abf73a70e134, type: 3}
   - {fileID: 8300000, guid: e4a2770632d442b4794633d443894214, type: 3}
   - {fileID: 8300000, guid: 573669ea0295a5741818bff58aa0db6d, type: 3}
-  - {fileID: 8300000, guid: c50d0eae9c1e63f409758dc8f0300701, type: 3}
-  - {fileID: 8300000, guid: 9fb580934c1b08a49ae3bfcd379c4f23, type: 3}
-  - {fileID: 8300000, guid: e078aa01d13a1a94bb66d515c1499abb, type: 3}
-  - {fileID: 8300000, guid: 3c2d7dc39812fa74a97111d3b383e346, type: 3}
+  clipsVoices:
+  - {fileID: 8300000, guid: 6dacc6e755b761c4c8c31acee3d951f6, type: 3}
   audioSource: {fileID: 2103319044}
 --- !u!82 &2103319043
 AudioSource:
@@ -25449,9 +25389,105 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 6377385935939403518, guid: 8be850823eedf2641b7fecd29c6987c0, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &2103319046
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103319039}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -1067366984462752880, guid: 8be850823eedf2641b7fecd29c6987c0, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -25887,6 +25923,8 @@ MonoBehaviour:
   questHighLight: {fileID: 0}
   deactivatedNode: {fileID: 0}
   node: {fileID: 0}
+  audioManager: {fileID: 2103319042}
+  audioClip: {fileID: 8300000, guid: 1d4bc3d9757ce32499c9d05940639eb8, type: 3}
   options:
   - target: {fileID: 1657135961}
     waypoints: []

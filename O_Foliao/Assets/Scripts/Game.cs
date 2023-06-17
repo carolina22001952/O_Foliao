@@ -41,7 +41,7 @@ public class Game : MonoBehaviour
         {
             player.Position().GetComponent<ILocal>().localInteraction(player, clock);
         }
-
+        player.Position().GetComponent<Node>().NodeSound();
     }
     public void CheckForTimedEvents()
     {

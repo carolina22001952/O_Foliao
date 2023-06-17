@@ -22,6 +22,11 @@ public class Node : MonoBehaviour
     private List<ILocal> local;
     bool stop = false;
 
+    [SerializeField]
+    private AudioManager audioManager;
+    [SerializeField]
+    private AudioClip audioClip;
+
     [System.Serializable]
     public struct TargetNode
     {
@@ -71,7 +76,6 @@ public class Node : MonoBehaviour
 
     public void HighLight()
     {
-
         if (gameObject.transform.GetComponentInChildren<SpriteRenderer>(true).gameObject.activeSelf == true)
         {
             gameObject.transform.GetComponentInChildren<SpriteRenderer>(true).sprite = highLight;
@@ -82,8 +86,7 @@ public class Node : MonoBehaviour
                 StartCoroutine(ScaleSprite());
                 
             }
-        }
-        
+        }      
     }
 
     public void BacktoNormal()
@@ -132,6 +135,11 @@ public class Node : MonoBehaviour
     public void StopAnimation(bool stop)
     {
         this.stop = stop;
+    }
+
+    public void NodeSound()
+    {
+        audioManager.ChooseMusic(audioClip);
     }
 }
 
