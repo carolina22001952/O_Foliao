@@ -16,9 +16,9 @@ MonoBehaviour:
   _questDescription: lllll
   _location: Node_Doc
   _events: {fileID: 11400000, guid: 7b994e7205c1ac74cb3293de14e63389, type: 2}
-  _startingDay: 1
-  _startingHours: 23
+  _startingDay: 0
+  _startingHours: 0
   _startingMinutes: 0
-  _endDay: 2
-  _endHours: 13
+  _endDay: 0
+  _endHours: 0
   _endMinutes: 0
