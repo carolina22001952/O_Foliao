@@ -3724,6 +3724,7 @@ GameObject:
   - component: {fileID: 237376497}
   - component: {fileID: 237376496}
   - component: {fileID: 237376495}
+  - component: {fileID: 237376498}
   m_Layer: 5
   m_Name: Bench3_Panel_Info
   m_TagString: Untagged
@@ -3812,6 +3813,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237376493}
   m_CullTransparentMesh: 1
+--- !u!65 &237376498
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237376493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &239217040
 GameObject:
   m_ObjectHideFlags: 0
@@ -5758,6 +5772,14 @@ MonoBehaviour:
   bench1Collider: {fileID: 1556704549}
   bench2Collider: {fileID: 187098931}
   bench3Collider: {fileID: 1028190810}
+  vinilInfoCollider: {fileID: 1734740954}
+  celeiroInfoCollider: {fileID: 931832406}
+  skadiInfoCollider: {fileID: 1991518500}
+  batataInfoCollider: {fileID: 1871157336}
+  cebolaInfoCollider: {fileID: 947671423}
+  bench1InfoCollider: {fileID: 1031236575}
+  bench2InfoCollider: {fileID: 1261607739}
+  bench3InfoCollider: {fileID: 237376498}
   vinilPanelAnimator: {fileID: 1734740953}
   celeiroPanelAnimator: {fileID: 931832403}
   skadiPanelAnimator: {fileID: 1991518497}
@@ -10212,7 +10234,7 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.2
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -10967,6 +10989,7 @@ GameObject:
   - component: {fileID: 931832405}
   - component: {fileID: 931832404}
   - component: {fileID: 931832403}
+  - component: {fileID: 931832406}
   m_Layer: 5
   m_Name: Celeiro_Panel_Info
   m_TagString: Untagged
@@ -11055,6 +11078,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931832401}
   m_CullTransparentMesh: 1
+--- !u!65 &931832406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931832401}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &938050666
 GameObject:
   m_ObjectHideFlags: 0
@@ -11327,6 +11363,7 @@ GameObject:
   - component: {fileID: 947671422}
   - component: {fileID: 947671421}
   - component: {fileID: 947671420}
+  - component: {fileID: 947671423}
   m_Layer: 5
   m_Name: Cebola_Panel_Info
   m_TagString: Untagged
@@ -11415,6 +11452,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947671418}
   m_CullTransparentMesh: 1
+--- !u!65 &947671423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947671418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &948022727
 GameObject:
   m_ObjectHideFlags: 0
@@ -12479,6 +12529,7 @@ GameObject:
   - component: {fileID: 1031236574}
   - component: {fileID: 1031236573}
   - component: {fileID: 1031236572}
+  - component: {fileID: 1031236575}
   m_Layer: 5
   m_Name: Bench1_Panel_Info
   m_TagString: Untagged
@@ -12567,6 +12618,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031236570}
   m_CullTransparentMesh: 1
+--- !u!65 &1031236575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031236570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1037725794
 GameObject:
   m_ObjectHideFlags: 0
@@ -15192,6 +15256,7 @@ GameObject:
   - component: {fileID: 1261607738}
   - component: {fileID: 1261607737}
   - component: {fileID: 1261607736}
+  - component: {fileID: 1261607739}
   m_Layer: 5
   m_Name: Bench2_Panel_Info
   m_TagString: Untagged
@@ -15280,6 +15345,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261607734}
   m_CullTransparentMesh: 1
+--- !u!65 &1261607739
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261607734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1269237842
 GameObject:
   m_ObjectHideFlags: 0
@@ -20526,6 +20604,7 @@ GameObject:
   - component: {fileID: 1734740952}
   - component: {fileID: 1734740951}
   - component: {fileID: 1734740953}
+  - component: {fileID: 1734740954}
   m_Layer: 5
   m_Name: Vini_Panel_Info
   m_TagString: Untagged
@@ -20614,6 +20693,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &1734740954
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734740949}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1742579585
 GameObject:
   m_ObjectHideFlags: 0
@@ -22238,7 +22330,7 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.3
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -22885,6 +22977,7 @@ GameObject:
   - component: {fileID: 1871157335}
   - component: {fileID: 1871157334}
   - component: {fileID: 1871157333}
+  - component: {fileID: 1871157336}
   m_Layer: 5
   m_Name: Batata_Panel_Info
   m_TagString: Untagged
@@ -22973,6 +23066,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871157331}
   m_CullTransparentMesh: 1
+--- !u!65 &1871157336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871157331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1883483359
 GameObject:
   m_ObjectHideFlags: 0
@@ -24084,6 +24190,7 @@ GameObject:
   - component: {fileID: 1991518499}
   - component: {fileID: 1991518498}
   - component: {fileID: 1991518497}
+  - component: {fileID: 1991518500}
   m_Layer: 5
   m_Name: Skadi_Panel_Info
   m_TagString: Untagged
@@ -24172,6 +24279,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991518495}
   m_CullTransparentMesh: 1
+--- !u!65 &1991518500
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991518495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1992769260
 GameObject:
   m_ObjectHideFlags: 0
@@ -25409,7 +25529,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 6377385935939403518, guid: 8be850823eedf2641b7fecd29c6987c0, type: 2}
   m_audioClip: {fileID: 8300000, guid: 6a100831eb7b8d244acda7209f735b9c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -25505,7 +25625,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 6377385935939403518, guid: 8be850823eedf2641b7fecd29c6987c0, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -25601,7 +25721,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -1067366984462752880, guid: 8be850823eedf2641b7fecd29c6987c0, type: 2}
   m_audioClip: {fileID: 8300000, guid: 7e06f31ffdb220d4b84635478eefefd5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

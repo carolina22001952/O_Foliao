@@ -5,7 +5,7 @@ using UnityEngine;
 public class InfoPanels : MonoBehaviour
 {
     //Colliders
-    [Header("Colliders")]
+    [Header("Icon Colliders")]
     [Header("Bars")]
     [SerializeField] private Collider vinilCollider;
     [SerializeField] private Collider celeiroCollider;
@@ -18,6 +18,19 @@ public class InfoPanels : MonoBehaviour
     [SerializeField] private Collider bench2Collider;
     [SerializeField] private Collider bench3Collider;
 
+    [Header("Icon Colliders")]
+    [Header("Bars")]
+    [SerializeField] private Collider vinilInfoCollider;
+    [SerializeField] private Collider celeiroInfoCollider;
+    [SerializeField] private Collider skadiInfoCollider;
+    [Header("Stages")]
+    [SerializeField] private Collider batataInfoCollider;
+    [SerializeField] private Collider cebolaInfoCollider;
+    [Header("Benches")]
+    [SerializeField] private Collider bench1InfoCollider;
+    [SerializeField] private Collider bench2InfoCollider;
+    [SerializeField] private Collider bench3InfoCollider;
+    
     //Animators
     [Header("Animators")]
     [Header("Bars")]
@@ -39,24 +52,24 @@ public class InfoPanels : MonoBehaviour
     {
         if(move.IsMoving())
         {
-            IsMouseOverPanel(vinilCollider, vinilPanelAnimator);
-            IsMouseOverPanel(celeiroCollider, celeiroPanelAnimator);
-            IsMouseOverPanel(skadiCollider, skadiPanelAnimator);
-            IsMouseOverPanel(batataCollider, batataPanelAnimator);
-            IsMouseOverPanel(cebolaCollider, cebolaPanelAnimator);
-            IsMouseOverPanel(bench1Collider, bench1PanelAnimator);
-            IsMouseOverPanel(bench2Collider, bench2PanelAnimator);
-            IsMouseOverPanel(bench3Collider, bench3PanelAnimator);
+            IsMouseOverPanel(vinilCollider, vinilInfoCollider, vinilPanelAnimator);
+            IsMouseOverPanel(celeiroCollider, celeiroInfoCollider, celeiroPanelAnimator);
+            IsMouseOverPanel(skadiCollider, skadiInfoCollider, skadiPanelAnimator);
+            IsMouseOverPanel(batataCollider, batataInfoCollider, batataPanelAnimator);
+            IsMouseOverPanel(cebolaCollider, cebolaInfoCollider, cebolaPanelAnimator);
+            IsMouseOverPanel(bench1Collider, bench1InfoCollider, bench1PanelAnimator);
+            IsMouseOverPanel(bench2Collider, bench2InfoCollider, bench2PanelAnimator);
+            IsMouseOverPanel(bench3Collider, bench3InfoCollider, bench3PanelAnimator);
         }
     }
 
 
-    void IsMouseOverPanel(Collider panelCollider, Animator panelAnimator)
+    void IsMouseOverPanel(Collider panelCollider, Collider infoPanel, Animator panelAnimator)
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit) && hit.collider == panelCollider)
+        if(Physics.Raycast(ray, out hit) && (hit.collider == panelCollider || hit.collider == infoPanel))
         {
             panelAnimator.SetBool("Active", true);
         }   
