@@ -16,6 +16,9 @@ public class Achievement5shots : MonoBehaviour, IAchievements
     [SerializeField]
     private Sprite completedAchievementSprite;
 
+    [SerializeField] 
+    private AudioManager audioManager;
+    
     private int drinkedShots = 0;
 
     public void AchievementUnlock()
@@ -23,6 +26,7 @@ public class Achievement5shots : MonoBehaviour, IAchievements
         if (!isUnlocked)
         {
             isUnlocked = true;
+            audioManager.PlayNotificationSound();
             AchievementUI();
         }
     }

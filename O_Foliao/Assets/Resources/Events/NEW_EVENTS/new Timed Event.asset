@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09edbec847d6d0a45bc62a9ba10b10e3, type: 3}
+  m_Name: new Timed Event
+  m_EditorClassIdentifier: 
+  _events: {fileID: 11400000, guid: f985149699cb33c49915f21742efcc8b, type: 2}
+  _day: 1
+  _hour: 20
+  _minutes: 5
+  _local: 

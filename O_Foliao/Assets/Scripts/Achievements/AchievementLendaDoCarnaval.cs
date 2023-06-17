@@ -16,11 +16,15 @@ public class AchievementLendaDoCarnaval : MonoBehaviour, IAchievements
     [SerializeField]
     private Sprite completedAchievementSprite;
 
+    [SerializeField] 
+    private AudioManager audioManager;
+
     public void AchievementUnlock()
     {
         if (!isUnlocked)
         {
             isUnlocked = true;
+            audioManager.PlayNotificationSound();
             AchievementUI();
         }
     }

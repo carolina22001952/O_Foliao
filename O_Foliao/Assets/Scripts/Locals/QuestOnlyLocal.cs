@@ -43,10 +43,8 @@ public class QuestOnlyLocal : MonoBehaviour, ILocal
 
     public void Update()
     {
-        Debug.Log(quests.Count+"lol");
         if (quests.Count == 0)
         {
-            Debug.Log("yes");
             parentGameobject.enabled = false;
 
             node.QuestToDeactivate(this.gameObject);
@@ -54,7 +52,6 @@ public class QuestOnlyLocal : MonoBehaviour, ILocal
             stop = 0;
         }else
         {
-            Debug.Log(quests.Count);
             parentGameobject.enabled = true;
             childGameobject.enabled = true;
             if (stop == 0)

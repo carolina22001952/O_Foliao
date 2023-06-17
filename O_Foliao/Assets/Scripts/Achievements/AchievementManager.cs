@@ -37,10 +37,8 @@ public class AchievementManager : MonoBehaviour
     {
         if (achievementName != null || achievementName != string.Empty)
         {
-            Debug.Log(achievementList.Count);
             foreach (IAchievements achievement in achievementList)
             {
-                Debug.Log(achievement.GetAchievementName() + " " + achievementName);
                 if (achievement.GetAchievementName() == achievementName)
                 {
                     achievement.AchievementLogic();

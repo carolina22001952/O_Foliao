@@ -36,6 +36,9 @@ public class QuestsUI : MonoBehaviour
     [SerializeField]
     private LocationHighLight locationHighLight;
 
+    [SerializeField] 
+    private AudioManager audioManager;
+
     private void Start()
     {
         buttonsList = new Dictionary<Button, Quest>();
@@ -49,6 +52,7 @@ public class QuestsUI : MonoBehaviour
         buttonInstance.onClick.RemoveAllListeners();
         buttonInstance.onClick.AddListener(() => OnClickAction(quest));
 
+        audioManager.PlayNotificationSound();
     }
 
     public void OnClickAction(Quest quest)
@@ -57,6 +61,7 @@ public class QuestsUI : MonoBehaviour
         questDescription.text = quest.questDescription;
       //  locationHighLight.UpdateLocation(quest.location);
         questInformationParent.SetActive(true);
+        audioManager.PlayButtonSound();
     }
 
     public void ChangeQuestButtonName(Button button, string text)
