@@ -133,7 +133,7 @@ public class AudioManager : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(3f, 6f));
 
         clipIndex = Random.Range(0, clips.Length);
-        audioSource.PlayOneShot(clips[clipIndex], 1f);
+        audioSource.PlayOneShot(clips[clipIndex], Random.Range(0.001f, 1f));
 
         yield return new WaitForSeconds(clips[clipIndex].length);
         StartCoroutine(PlayRandomSound());
@@ -144,7 +144,7 @@ public class AudioManager : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(3f, 6f));
 
         clipIndex = Random.Range(0, clipsVoices.Length);
-        audioSource.PlayOneShot(clipsVoices[clipIndex], 1f);
+        audioSource.PlayOneShot(clipsVoices[clipIndex], Random.Range(0.001f, 1f));
 
         yield return new WaitForSeconds(clipsVoices[clipIndex].length);
         StartCoroutine(PlayRandomVoice());
