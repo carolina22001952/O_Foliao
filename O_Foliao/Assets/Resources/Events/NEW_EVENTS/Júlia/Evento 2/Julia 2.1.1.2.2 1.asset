@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29246e1d7443f4e449d033ad0f50e05b, type: 3}
-  m_Name: Julia 2.1.1
+  m_Name: Julia 2.1.1.2.2 1
   m_EditorClassIdentifier: 
   _eventType: 0
   _dialogue:
-  - _text: Melhor agora.
+  - _text: Talvez...
     _npc: {fileID: 11400000, guid: 46357b2bac0da0947bc336086d79765b, type: 2}
     _background: {fileID: 21300000, guid: 04291fbd744a0694bb529c308da517c2, type: 3}
   _decisions:
-  - _choiceDialogue: "(Direta) 'T\xE1s a sentir isto?"
-    _minAlcool: 0
+  - _choiceDialogue: "(Preocupada) Ent\xE3o, vou-te fazer uma pergunta muito importante..."
+    _minAlcool: 70
     _minFun: 0
     _minEnergy: 0
     _minMoney: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _questToInsert: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: af4e3efef199db64ba60c4c628e3ae22, type: 2}
+      _nextEvent: {fileID: 11400000, guid: fbaf653a4777d204ebadcb24017d2e4e, type: 2}
       _eventsToInsert: []
       _achievementName: 
     _failedEvent:
@@ -43,7 +43,7 @@ MonoBehaviour:
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
       _achievementName: 
-  - _choiceDialogue: "(C\xF3mica) Diz-me l\xE1 o teu estado civil. "
+  - _choiceDialogue: "(Direta) Vamos j\xE1 esclarecer isso ent\xE3o. "
     _minAlcool: 0
     _minFun: 0
     _minEnergy: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _questToInsert: {fileID: 0}
-      _nextEvent: {fileID: 11400000, guid: 5d12fd6d6672e5949830367d92921360, type: 2}
+      _nextEvent: {fileID: 11400000, guid: fbaf653a4777d204ebadcb24017d2e4e, type: 2}
       _eventsToInsert: []
       _achievementName: 
     _failedEvent:
