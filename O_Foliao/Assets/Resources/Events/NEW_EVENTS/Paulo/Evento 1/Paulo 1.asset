@@ -32,6 +32,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 338019d381fc9a94e84051186f73ae66, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -41,6 +42,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: (Arriscada) Chamas-te Paulo, certo?
     _minAlcool: 0
     _minFun: 0
@@ -55,6 +57,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 53b4bd2257460a649a9cb53474a02d6d, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -64,6 +67,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "(Sincera) Acho que j\xE1 vi a tua cara algures por a\xED."
     _minAlcool: 0
     _minFun: 0
@@ -78,6 +82,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 175a377406f2335408b6b6cc313b40b3, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -87,8 +92,9 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
-    _timeOfDay: 
-    _dayOfWeek: 
-    _locals: 
-    _alcohol: 
+    _timeOfDay: 0200000000000000
+    _dayOfWeek: 0000000001000000
+    _locals: 00000000
+    _alcohol: 01000000

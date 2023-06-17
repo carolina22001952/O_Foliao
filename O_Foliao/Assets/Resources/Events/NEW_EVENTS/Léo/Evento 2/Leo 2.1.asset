@@ -32,6 +32,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 8c03eecee564c6046bb09874fa44f57b, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -41,6 +42,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "(Educada) Sr. L\xE9o, certo?"
     _minAlcool: 0
     _minFun: 0
@@ -55,6 +57,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 2644e445c55b60343b6871a44c8dcefd, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -64,8 +67,9 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
-    _timeOfDay: 02000000
+    _timeOfDay: 0200000000000000
     _dayOfWeek: 0000000001000000
-    _locals: 03000000
+    _locals: 08000000
     _alcohol: 01000000

@@ -30,8 +30,9 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _questToInsert: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 17a38ddae10c4724eac8edcb3cb68959, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 10
@@ -41,6 +42,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 17a38ddae10c4724eac8edcb3cb68959, type: 2}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "(Direta) J\xE1 me calei."
     _minAlcool: 0
     _minFun: 35
@@ -53,8 +55,9 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _questToInsert: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: 17a38ddae10c4724eac8edcb3cb68959, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 10
@@ -64,6 +67,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 17a38ddae10c4724eac8edcb3cb68959, type: 2}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
     _timeOfDay: 00000000
     _dayOfWeek: 0000000001000000

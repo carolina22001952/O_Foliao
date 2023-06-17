@@ -32,6 +32,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 93a6815220fe7094f9240d977d4fc4cf, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -41,6 +42,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: (Confusa) Para beber?
     _minAlcool: 0
     _minFun: 0
@@ -55,6 +57,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 93a6815220fe7094f9240d977d4fc4cf, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -64,6 +67,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "(Direta) Quero 2 barris de cerveja, no m\xEDnimo."
     _minAlcool: 0
     _minFun: 0
@@ -78,6 +82,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 4d045d39912a93b408a76ccae90d5e06, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -87,8 +92,9 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
-    _timeOfDay: 02000000
+    _timeOfDay: 0200000000000000
     _dayOfWeek: 0000000001000000
-    _locals: 03000000
+    _locals: 08000000
     _alcohol: 01000000

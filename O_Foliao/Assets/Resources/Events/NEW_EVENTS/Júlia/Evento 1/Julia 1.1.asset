@@ -33,6 +33,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 273a818040befff4ba4f0d0532b5bc25, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -42,6 +43,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "(Brincalhona) \xC9s toda boa. *piscadela*"
     _minAlcool: 0
     _minFun: 0
@@ -56,6 +58,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 273a818040befff4ba4f0d0532b5bc25, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -65,6 +68,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "(S\xE9ria) *Ficar em sil\xEAncio ao p\xE9 delas.*"
     _minAlcool: 65
     _minFun: 0
@@ -79,6 +83,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 5aae10f910c28ca44bc22a4102c3e237, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -88,8 +93,9 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 0e78cdc5ab205534683ecdb48069acab, type: 2}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
-    _timeOfDay: 
-    _dayOfWeek: 
-    _locals: 
-    _alcohol: 
+    _timeOfDay: 0000000002000000
+    _dayOfWeek: 0000000001000000
+    _locals: 00000000
+    _alcohol: 00000000

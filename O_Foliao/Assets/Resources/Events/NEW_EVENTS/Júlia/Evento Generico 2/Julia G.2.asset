@@ -32,6 +32,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 837d154b1ccd7d0468b2154a997faad4, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -41,6 +42,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "(Direta) Eu s\xF3 me arrependo do que n\xE3o fiz."
     _minAlcool: 0
     _minFun: 0
@@ -55,6 +57,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 837d154b1ccd7d0468b2154a997faad4, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -64,8 +67,9 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
     _timeOfDay: 02000000
     _dayOfWeek: 0000000001000000
-    _locals: 0000000001000000020000000300000005000000
+    _locals: 00000000010000000300000005000000
     _alcohol: 01000000

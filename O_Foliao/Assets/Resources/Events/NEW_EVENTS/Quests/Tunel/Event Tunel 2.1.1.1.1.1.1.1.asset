@@ -31,8 +31,9 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _questToInsert: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: bcedb0d5a7b7c634fabb5bd41c0b621e, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -42,6 +43,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "(Simp\xE1tica) 'T\xE1 descansado."
     _minAlcool: 0
     _minFun: 0
@@ -54,8 +56,9 @@ MonoBehaviour:
       _moneyPlus: 0
       _energyPlus: 0
       _questToInsert: {fileID: 0}
-      _nextEvent: {fileID: 0}
+      _nextEvent: {fileID: 11400000, guid: a34ba4cfd878c1e479b204ca637cfa7f, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -65,6 +68,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
     _timeOfDay: 000000000100000002000000
     _dayOfWeek: 0000000001000000

@@ -32,6 +32,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: cde84bcb9bc13d34cacc3336687e3ef8, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -41,6 +42,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "(Engra\xE7ada) 'T\xE3o s\xF3cio?"
     _minAlcool: 0
     _minFun: 0
@@ -55,6 +57,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 9524de4b96cf67d42b3ed7ee1f981122, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -64,6 +67,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: "(Direta) \xC9 para avan\xE7ar?"
     _minAlcool: 0
     _minFun: 0
@@ -78,6 +82,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: 53baeec0bd0301d42a1e4fc3c4bcdd72, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -87,8 +92,9 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
-    _timeOfDay: 02000000
+    _timeOfDay: 0200000000000000
     _dayOfWeek: 0000000001000000
-    _locals: 03000000
+    _locals: 08000000
     _alcohol: 01000000

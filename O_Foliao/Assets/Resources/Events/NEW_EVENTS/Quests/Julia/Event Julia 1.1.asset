@@ -70,6 +70,6 @@ MonoBehaviour:
       _achievementName: 
   _eventBaseData:
     _timeOfDay: 000000000100000002000000
-    _dayOfWeek: 0000000001000000
-    _locals: 
-    _alcohol: 
+    _dayOfWeek: 01000000
+    _locals: 04000000
+    _alcohol: 01000000

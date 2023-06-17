@@ -47,7 +47,6 @@ public class TimedEventsSystem : MonoBehaviour
     public void ActivateTimedEvent(Events events)
     {
         primaryEventList.ChangeCurrentEvent(events);
-        eventsList.Remove(events);
         uiEvents.OpenCanvas();
         uiEvents.ResetCanvas();
         dialogueAction.StartDialogue();

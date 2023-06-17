@@ -33,6 +33,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: bac880918f0448146a9584d3f1a05a3d, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -42,6 +43,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   - _choiceDialogue: (Arrependida) Para ti um pedido de desculpas.
     _minAlcool: 0
     _minFun: 0
@@ -56,6 +58,7 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 11400000, guid: bac880918f0448146a9584d3f1a05a3d, type: 2}
       _eventsToInsert: []
+      _achievementName: 
     _failedEvent:
       _timePassed: 0
       _alcoolPlus: 0
@@ -65,8 +68,9 @@ MonoBehaviour:
       _questToInsert: {fileID: 0}
       _nextEvent: {fileID: 0}
       _eventsToInsert: []
+      _achievementName: 
   _eventBaseData:
-    _timeOfDay: 02000000
+    _timeOfDay: 0200000000000000
     _dayOfWeek: 0000000001000000
-    _locals: 03000000
+    _locals: 08000000
     _alcohol: 01000000
