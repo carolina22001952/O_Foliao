@@ -185,7 +185,6 @@ public class BarsLocal : MonoBehaviour, ILocal
         else
         {
             uiEvents.CloseCanvas();
-
         }
     }
 

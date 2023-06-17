@@ -19,6 +19,9 @@ public class AchievementJantar : MonoBehaviour, IAchievements
     [SerializeField] 
     private AudioManager audioManager;
 
+    [SerializeField]
+    private UIPhone uiphone;
+
     public void AchievementUnlock()
     {
         if (!isUnlocked)
@@ -37,6 +40,7 @@ public class AchievementJantar : MonoBehaviour, IAchievements
     public void AchievementUI()
     {
         achievementSprite.sprite = completedAchievementSprite;
+        uiphone.TurnNotificationAchieve(true);
     }
 
     public string GetAchievementName()

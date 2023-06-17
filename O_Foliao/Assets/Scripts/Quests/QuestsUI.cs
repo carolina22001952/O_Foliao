@@ -39,6 +39,9 @@ public class QuestsUI : MonoBehaviour
     [SerializeField] 
     private AudioManager audioManager;
 
+    [SerializeField]
+    private UIPhone uiPhone;
+
     private void Start()
     {
         buttonsList = new Dictionary<Button, Quest>();
@@ -73,6 +76,7 @@ public class QuestsUI : MonoBehaviour
     {
         Button button = buttonsList.FirstOrDefault(x => x.Value == quest).Key;
         ChangeQuestButtonName(button, "(Completed) " + quest.questTitle);
+        uiPhone.TurnNotificationQuest(true);
     }
 
     public void UpdateFailedQuest(Quest quest)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,21 +29,21 @@ public class ShopsUI : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+    [SerializeField]
+    private Animator animation;
+
 
     private bool lever = true;
-    private int counter = 0;
 
     public void OpenShopUI()
     {
         dialogueGroup.SetActive(true);
         animator.SetBool("Active", true);
-        counter = 0;
     }
 
     public void CloseShopUI()
     {
         animator.SetBool("Active", false);
-        counter = 0;
         //dialogueGroup.SetActive(false);
     }
 
@@ -58,16 +59,9 @@ public class ShopsUI : MonoBehaviour
         background.sprite = newbackground;
     }
 
-    public void ButtonInteraction()
+    public void ButtonInteraction(bool lever)
     {
-        if(lever == true)
-        {
-            lever = false; 
-        }
-        else
-        {
-            lever = true;
-        }
+
         choice1Button.interactable = lever;
         choice2Button.interactable = lever;
         choice3Button.interactable = lever;
@@ -80,15 +74,23 @@ public class ShopsUI : MonoBehaviour
 
     public void Update()
     {
-        if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+        if(animation.GetCurrentAnimatorStateInfo(0).IsName("Open_EventsUICanvas"))
         {
-            if (counter == 0)
-            {
-                ButtonInteraction();
-                counter++;
-            }
+            Debug.Log("FALSE");
+            ButtonInteraction(false);
+        }
+        else if(animation.GetCurrentAnimatorStateInfo(0).IsName("New State"))
+        {
+            Debug.Log("True");
+            ButtonInteraction(true);
+        }
+        else
+        {
+            ButtonInteraction(false);
         }
     }
+
+
 
 
 

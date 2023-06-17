@@ -56,7 +56,13 @@ public class UIEvents : MonoBehaviour
     public void OpenCanvas()
     {
         animator.SetBool("Active", true);
+        
         DialogCanvas.SetActive(true);
+    }
+
+    public float AnimationTimer()
+    {
+        return animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
     }
 
     public void CloseCanvas()
@@ -85,7 +91,7 @@ public class UIEvents : MonoBehaviour
    // public void OpenCharacterGameObject()
    // {
    //     characterSpriteGameObject.SetActive(true);
-   // }
+   // }\\\\
 
    // public void CloseCharacterGameObject()
    // {

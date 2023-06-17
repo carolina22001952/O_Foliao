@@ -55,10 +55,13 @@ public class DialogueAction : MonoBehaviour
         uiEvents.UpdateNpcName(currentEvent.dialogue[index].npc.name);
         uiEvents.OpenNpcGameObject();
         uiEvents.UpdateNpcSprite(currentEvent.dialogue[index].npc.sprite);
-        
+
         index = 0;
         reading = true;
+
+
         StartCoroutine(TypeLine());
+        
 
 
     }
@@ -153,6 +156,7 @@ public class DialogueAction : MonoBehaviour
 
     IEnumerator TypeLine()
     {
+        
         for (int i = 0; i <= currentEvent.dialogue[index].text.Length;i++) 
         {
             string text = currentEvent.dialogue[index].text.Substring(0, i);
