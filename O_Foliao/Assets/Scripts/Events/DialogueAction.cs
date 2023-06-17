@@ -51,7 +51,7 @@ public class DialogueAction : MonoBehaviour
         SetupDialogue();
         OpenCanvas();
         currentEvent = primaryEventList.GetCurrentEvent();
-        uiEvents.UpdateBackground(currentEvent.dialogue[index].backgroundImage);
+        uiEvents.UpdateBackground(currentEvent.dialogue[index].background);
         uiEvents.UpdateNpcName(currentEvent.dialogue[index].npc.name);
         uiEvents.OpenNpcGameObject();
         uiEvents.UpdateNpcSprite(currentEvent.dialogue[index].npc.sprite);

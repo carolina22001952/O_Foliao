@@ -62,10 +62,6 @@ public struct Dialogue
     [SerializeField] private Sprite _background;
     public Sprite background { get { return _background; } }
 
-    [SerializeField] private Image _backgroundImage;
-    public Image backgroundImage { get { return _backgroundImage; } }
-
-
 }
 [Serializable()]
 public struct EventOutcome

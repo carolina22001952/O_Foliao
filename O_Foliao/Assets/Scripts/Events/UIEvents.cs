@@ -92,9 +92,9 @@ public class UIEvents : MonoBehaviour
    //     characterSpriteGameObject.SetActive(false);
    // }
 
-    public void UpdateBackground(Image newbackground)
+    public void UpdateBackground(Sprite newbackground)
     {
-        Background = newbackground;
+        Background.sprite = newbackground;
     }
 
     public string GetDialogueText()
