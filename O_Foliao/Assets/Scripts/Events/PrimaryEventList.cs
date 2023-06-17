@@ -350,13 +350,13 @@ public class PrimaryEventList : MonoBehaviour
                     switch (timeOfDay)
                     {
                         case DayOfWeek.Day1:
-                            eventListTools.InsertAnEvent(events, morningDeck);
+                            eventListTools.InsertAnEvent(events, day1Deck);
                             break;
                         case DayOfWeek.Day2:
-                            eventListTools.InsertAnEvent(events, afternoonDeck);
+                            eventListTools.InsertAnEvent(events, day2Deck);
                             break;
                         case DayOfWeek.Day3:
-                            eventListTools.InsertAnEvent(events, nightDeck);
+                            eventListTools.InsertAnEvent(events, day3Deck);
                             break;
                     }
 

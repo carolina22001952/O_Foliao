@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class TimedEventsSystem : MonoBehaviour
@@ -33,6 +34,7 @@ public class TimedEventsSystem : MonoBehaviour
                         || (eventsList[i].hour == clock.GetHours() && eventsList[i].minutes <=clock.GetMinutes()))
                     {
                         ActivateTimedEvent(eventsList[i].events);
+                        eventsList.RemoveAt(i);
 
                     }
                 }
@@ -45,9 +47,12 @@ public class TimedEventsSystem : MonoBehaviour
     public void ActivateTimedEvent(Events events)
     {
         primaryEventList.ChangeCurrentEvent(events);
+        eventsList.Remove(events);
         uiEvents.OpenCanvas();
         uiEvents.ResetCanvas();
         dialogueAction.StartDialogue();
     }
+
+
 }
 
