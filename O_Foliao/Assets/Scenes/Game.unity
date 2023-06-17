@@ -25373,7 +25373,6 @@ MonoBehaviour:
   benchMusic: {fileID: 8300000, guid: 1ecd1b7aacb52594480b32046a35f8a3, type: 3}
   casaMusic: {fileID: 8300000, guid: dd208d8552b20cb4f9c1655accf47ab8, type: 3}
   clips:
-  - {fileID: 8300000, guid: 04ef26e3f3a94994eb2e758c98549669, type: 3}
   - {fileID: 8300000, guid: 07162a002932bdb42aca7fe48fb65bf1, type: 3}
   - {fileID: 8300000, guid: 97c6924fef7b69447b35bc5101b3cf7f, type: 3}
   - {fileID: 8300000, guid: 67b06fb1292551442ab90fc56a65f334, type: 3}
@@ -25381,10 +25380,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 19f7d9007e65d4140a53abf73a70e134, type: 3}
   - {fileID: 8300000, guid: e4a2770632d442b4794633d443894214, type: 3}
   - {fileID: 8300000, guid: 573669ea0295a5741818bff58aa0db6d, type: 3}
-  - {fileID: 8300000, guid: 3c122020ecdf92f40a867bcbbd508f06, type: 3}
   clipsVoices:
-  - {fileID: 8300000, guid: 6dacc6e755b761c4c8c31acee3d951f6, type: 3}
   - {fileID: 8300000, guid: 3c122020ecdf92f40a867bcbbd508f06, type: 3}
+  - {fileID: 8300000, guid: 6ba49dee36fd1e44c9ba491565066dd9, type: 3}
+  - {fileID: 8300000, guid: 358f0f842445d074fab8f0c13c892a88, type: 3}
+  - {fileID: 8300000, guid: 80b36a1c4f2e81b4e86bffaca0ad33e9, type: 3}
+  - {fileID: 8300000, guid: f1bdadf67e0a76c48858c517a7c8facd, type: 3}
   audioSource: {fileID: 2103319044}
 --- !u!82 &2103319043
 AudioSource:
