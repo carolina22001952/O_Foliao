@@ -19,7 +19,10 @@ public class UIPhone : MonoBehaviour
     [SerializeField] private Sprite questBgSprite;
     [SerializeField] private Sprite achieveBgSprite;
     [SerializeField] private Sprite optionBgSprit;
-   
+
+    [Header("Notifications")]
+    [SerializeField] private GameObject notificationAchieve;
+    [SerializeField] private GameObject notificationQuest;
 
     private bool isMouseOver = false;
     private bool mainBG = true;
@@ -109,6 +112,16 @@ public class UIPhone : MonoBehaviour
     public void ChangeOptionApp()
     {
        ChangeBg(optionBgSprit);
+    }
+
+    public void TurnNotificationAchieve(bool isOn)
+    {
+        notificationAchieve.SetActive(isOn);
+    }
+
+    public void TurnNotificationQuest(bool isOn)
+    {
+        notificationQuest.SetActive(isOn);
     }
 }
 
