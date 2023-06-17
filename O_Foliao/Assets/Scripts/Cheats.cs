@@ -13,7 +13,14 @@ public class Cheats : MonoBehaviour
     [SerializeField]
     private Events eventToCheat;
     [SerializeField]
+    private Events eventToCheat2;
+    [SerializeField]
+    private Events eventToCheatQuest;
+ 
+    [SerializeField]
     private PrimaryEventList primaryEventList;
+    [SerializeField]
+    private Game game;
 
     private void Update()
     {
@@ -50,17 +57,29 @@ public class Cheats : MonoBehaviour
         {
             player.ChangeStats(player, 0, 0, -10, 0);
         }
-        if(Input.GetKeyUp(KeyCode.E))
-        {
-            primaryEventList.ChangeCurrentEvent(eventToCheat);
-            dialogueAction.StartDialogue();
-        }
-
-
         if(Input.GetKeyUp(KeyCode.M))
         {
             clock.UpdateTime(60);
         }
+        if (Input.GetKeyUp(KeyCode.Z))
+        {
+            primaryEventList.ChangeCurrentEvent(eventToCheat);
+            dialogueAction.StartDialogue();
+            game.StartMovement();
+        }
+        if (Input.GetKeyUp(KeyCode.X))
+        {
+            primaryEventList.ChangeCurrentEvent(eventToCheat2);
+            dialogueAction.StartDialogue();
+            game.StartMovement();
+        }
+        if (Input.GetKeyUp(KeyCode.C))
+        {
+            primaryEventList.ChangeCurrentEvent(eventToCheatQuest);
+            dialogueAction.StartDialogue();
+            game.StartMovement();
+        }
+
     }
 
 }

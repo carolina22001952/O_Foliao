@@ -67,7 +67,7 @@ public class PrimaryEventList : MonoBehaviour
 
     [Header("Probabilities")]
     [SerializeField] private int primary = 80;
-    [SerializeField] private int random = 20;
+    //[SerializeField] private int random = 20;
     [SerializeField] private int secondary = 0;
 
     public void ChangeCurrentEvent(Events events)

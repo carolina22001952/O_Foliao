@@ -122,6 +122,7 @@ public class UIPhone : MonoBehaviour
     public void TurnNotificationQuest(bool isOn)
     {
         notificationQuest.SetActive(isOn);
+        Debug.Log("bruv");
     }
 }
 

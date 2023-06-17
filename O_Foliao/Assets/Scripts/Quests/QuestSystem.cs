@@ -13,6 +13,8 @@ public class QuestSystem : MonoBehaviour
     private List<Quest> currentTimedQuests;
     [SerializeField]
     private Clock clock;
+    [SerializeField]
+    private UIPhone uiPhone;
 
     private void Start()
     {
@@ -32,6 +34,7 @@ public class QuestSystem : MonoBehaviour
                     location.SetActive(true);
                     location.GetComponent<ILocal>().LocalAddQuest(quest);
 
+
                 }
             }else
             {
@@ -39,6 +42,7 @@ public class QuestSystem : MonoBehaviour
             }
 
             questsUI.InsertNewButton(quest);
+            uiPhone.TurnNotificationQuest(true);
         }
       
     }

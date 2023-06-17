@@ -77,6 +77,7 @@ public class QuestsUI : MonoBehaviour
         Button button = buttonsList.FirstOrDefault(x => x.Value == quest).Key;
         ChangeQuestButtonName(button, "(Completed) " + quest.questTitle);
         uiPhone.TurnNotificationQuest(true);
+        Debug.Log("Quest");
     }
 
     public void UpdateFailedQuest(Quest quest)

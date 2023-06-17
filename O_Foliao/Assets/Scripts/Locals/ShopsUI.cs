@@ -30,10 +30,9 @@ public class ShopsUI : MonoBehaviour
     private Animator animator;
 
     [SerializeField]
-    private Animator animation;
+    private Animator animationEvents;
 
 
-    private bool lever = true;
 
     public void OpenShopUI()
     {
@@ -74,14 +73,12 @@ public class ShopsUI : MonoBehaviour
 
     public void Update()
     {
-        if(animation.GetCurrentAnimatorStateInfo(0).IsName("Open_EventsUICanvas"))
+        if(animationEvents.GetCurrentAnimatorStateInfo(0).IsName("Open_EventsUICanvas"))
         {
-            Debug.Log("FALSE");
             ButtonInteraction(false);
         }
-        else if(animation.GetCurrentAnimatorStateInfo(0).IsName("New State"))
+        else if(animationEvents.GetCurrentAnimatorStateInfo(0).IsName("New State"))
         {
-            Debug.Log("True");
             ButtonInteraction(true);
         }
         else
