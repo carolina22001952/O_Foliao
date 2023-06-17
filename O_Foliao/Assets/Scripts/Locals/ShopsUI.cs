@@ -28,15 +28,21 @@ public class ShopsUI : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+
+    private bool lever = true;
+    private int counter = 0;
+
     public void OpenShopUI()
     {
         dialogueGroup.SetActive(true);
         animator.SetBool("Active", true);
+        counter = 0;
     }
 
     public void CloseShopUI()
     {
         animator.SetBool("Active", false);
+        counter = 0;
         //dialogueGroup.SetActive(false);
     }
 
@@ -52,11 +58,36 @@ public class ShopsUI : MonoBehaviour
         background.sprite = newbackground;
     }
 
-    public void ButtonInteraction(bool lever)
+    public void ButtonInteraction()
     {
+        if(lever == true)
+        {
+            lever = false; 
+        }
+        else
+        {
+            lever = true;
+        }
         choice1Button.interactable = lever;
         choice2Button.interactable = lever;
         choice3Button.interactable = lever;
+    }
+
+    public void CheckAnimationCompletion()
+    {
+
+    }
+
+    public void Update()
+    {
+        if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+        {
+            if (counter == 0)
+            {
+                ButtonInteraction();
+                counter++;
+            }
+        }
     }
 
 

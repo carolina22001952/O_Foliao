@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 
 public enum EventType { Primary, Secondary, Random }
@@ -60,6 +61,9 @@ public struct Dialogue
 
     [SerializeField] private Sprite _background;
     public Sprite background { get { return _background; } }
+
+    [SerializeField] private Image _backgroundImage;
+    public Image backgroundImage { get { return _backgroundImage; } }
 
 
 }

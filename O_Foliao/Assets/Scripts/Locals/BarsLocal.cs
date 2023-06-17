@@ -59,7 +59,6 @@ public class BarsLocal : MonoBehaviour, ILocal
 
     public void localInteraction(Player player, Clock clock)
     {
-        shopUi.ButtonInteraction(true);
         switch (barType)
         {
             case Bar.Skadi:
@@ -83,14 +82,13 @@ public class BarsLocal : MonoBehaviour, ILocal
         }
         else
         {
-            shopUi.ButtonInteraction(true);
+
             uiEvents.CloseCanvas();
         }
     }
 
     public void BarChoices(int choice)
     {
-        shopUi.ButtonInteraction(false);
         switch(choice)
         {
             case 0:
@@ -181,13 +179,13 @@ public class BarsLocal : MonoBehaviour, ILocal
     {
         if (more)
         {
-            shopUi.ButtonInteraction(false);
+
             dialogueAction.StartChoices();
         }
         else
         {
-            shopUi.ButtonInteraction(true);
             uiEvents.CloseCanvas();
+
         }
     }
 
@@ -196,6 +194,7 @@ public class BarsLocal : MonoBehaviour, ILocal
         shopUi.OpenShopUI();
         shopUi.UpdateBackground(currentBar.dialogue[0].background);
         shopUi.UpdateChoices(currentBar);
+
     }
 
     public void LocalAddQuest(Quest quest)
@@ -206,5 +205,10 @@ public class BarsLocal : MonoBehaviour, ILocal
     public void LocalRemoveQuest(Quest quest)
     {
         quests.Remove(quest);
+    }
+
+    public void buttonInteraction()
+    {
+ 
     }
 }
