@@ -266,7 +266,8 @@ MonoBehaviour:
   m_text: Falar com o Barman
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -879,7 +880,8 @@ MonoBehaviour:
     pertences\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1423,7 +1425,8 @@ MonoBehaviour:
   m_text: Lenda do carnaval
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1558,7 +1561,8 @@ MonoBehaviour:
   m_text: Audio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1957,7 +1961,8 @@ MonoBehaviour:
   m_text: Sim
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2560,7 +2565,8 @@ MonoBehaviour:
   m_text: "Ir para a pista dan\xE7ar!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2996,7 +3002,8 @@ MonoBehaviour:
   m_text: Encontar o verdadeiro amor
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3111,7 +3118,8 @@ MonoBehaviour:
   achievementName: Ser DJ de um Bar
   isUnlocked: 0
   achievementSprite: {fileID: 1666129273}
-  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449,
+    type: 3}
   audioManager: {fileID: 2103319042}
   uiphone: {fileID: 229586433}
 --- !u!114 &209658567
@@ -3129,7 +3137,8 @@ MonoBehaviour:
   achievementName: Engatar uma matrafona
   isUnlocked: 0
   achievementSprite: {fileID: 260953564}
-  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449,
+    type: 3}
   audioManager: {fileID: 2103319042}
   uiphone: {fileID: 229586433}
 --- !u!114 &209658568
@@ -3147,7 +3156,8 @@ MonoBehaviour:
   achievementName: Encontrar o verdadeiro amor
   isUnlocked: 0
   achievementSprite: {fileID: 1828067328}
-  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449,
+    type: 3}
   audioManager: {fileID: 2103319042}
   uiphone: {fileID: 229586433}
 --- !u!114 &209658569
@@ -3165,7 +3175,8 @@ MonoBehaviour:
   achievementName: Arranjar bebidas para o carro
   isUnlocked: 0
   achievementSprite: {fileID: 1994028362}
-  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449,
+    type: 3}
   audioManager: {fileID: 2103319042}
   uiphone: {fileID: 229586433}
 --- !u!114 &209658570
@@ -3210,7 +3221,8 @@ MonoBehaviour:
   achievementName: "Ir ao t\xFAnel"
   isUnlocked: 0
   achievementSprite: {fileID: 436654523}
-  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449,
+    type: 3}
   audioManager: {fileID: 2103319042}
   uiphone: {fileID: 229586433}
 --- !u!114 &209658573
@@ -3228,7 +3240,8 @@ MonoBehaviour:
   achievementName: "Receber bebida de gra\xE7a"
   isUnlocked: 0
   achievementSprite: {fileID: 1926406799}
-  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449,
+    type: 3}
   audioManager: {fileID: 2103319042}
   uiphone: {fileID: 229586433}
 --- !u!114 &209658574
@@ -3246,7 +3259,8 @@ MonoBehaviour:
   achievementName: "Jantar em casa de algu\xE9m"
   isUnlocked: 0
   achievementSprite: {fileID: 615966132}
-  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449,
+    type: 3}
   audioManager: {fileID: 2103319042}
   uiphone: {fileID: 229586433}
 --- !u!114 &209658575
@@ -3264,7 +3278,8 @@ MonoBehaviour:
   achievementName: Beber 5 shots
   isUnlocked: 0
   achievementSprite: {fileID: 571725378}
-  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449, type: 3}
+  completedAchievementSprite: {fileID: 21300000, guid: 98fe5c8664adaf2418195492d0d01449,
+    type: 3}
   audioManager: {fileID: 2103319042}
   uiphone: {fileID: 229586433}
 --- !u!82 &209658576
@@ -3276,7 +3291,8 @@ AudioSource:
   m_GameObject: {fileID: 209658565}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 6377385935939403518, guid: 8be850823eedf2641b7fecd29c6987c0, type: 2}
+  OutputAudioMixerGroup: {fileID: 6377385935939403518, guid: 8be850823eedf2641b7fecd29c6987c0,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 05b627a96b39ab44d978890dd218f8c3, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.4
@@ -4165,7 +4181,8 @@ MonoBehaviour:
   m_text: Arrajar bebidas para o carro
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5482,7 +5499,8 @@ MonoBehaviour:
     pertences\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5980,7 +5998,8 @@ MonoBehaviour:
   m_text: Sim
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6263,7 +6282,8 @@ MonoBehaviour:
   m_text: SFX
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6655,7 +6675,8 @@ MonoBehaviour:
   m_text: Beber 5 shots
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7239,7 +7260,8 @@ MonoBehaviour:
   m_text: "Jantar em casa de algu\xE9m"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7987,7 +8009,8 @@ MonoBehaviour:
   m_text: "M\xFAsica"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8442,7 +8465,8 @@ MonoBehaviour:
   m_text: "Primeira op\xE7\xE3o?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8653,7 +8677,8 @@ MonoBehaviour:
   m_text: Sair
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10502,7 +10527,8 @@ MonoBehaviour:
   m_text: 20:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
-  m_sharedMaterial: {fileID: 365832687516138948, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
+  m_sharedMaterial: {fileID: 365832687516138948, guid: 8958ac5d3142d8a418aca16bf331a231,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10637,7 +10663,8 @@ MonoBehaviour:
   m_text: Ser o DJ de um Bar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11241,7 +11268,8 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11476,7 +11504,8 @@ MonoBehaviour:
   m_text: "Ir ao T\xFAnel"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11888,7 +11917,8 @@ MonoBehaviour:
   m_text: Sair do Bar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12215,7 +12245,8 @@ MonoBehaviour:
   m_text: "N\xE3o"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13748,7 +13779,8 @@ MonoBehaviour:
   m_text: "Tens a certeza? \nO progresso n\xE3o ser\xE1 guardado."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14597,7 +14629,8 @@ MonoBehaviour:
   m_text: "Receber bebida de gra\xE7a"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14733,7 +14766,8 @@ MonoBehaviour:
     no Carnaval!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15076,7 +15110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac6f4b9bf222b645a243113f08e1c13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonPrefab: {fileID: 5593120044336568349, guid: a4c288a612fc2c64a9fb8eff66d3efd8, type: 3}
+  buttonPrefab: {fileID: 5593120044336568349, guid: a4c288a612fc2c64a9fb8eff66d3efd8,
+    type: 3}
   questTitle: {fileID: 1466423192}
   questDescription: {fileID: 1502765973}
   contentGrid: {fileID: 167610294}
@@ -15417,7 +15452,8 @@ MonoBehaviour:
   m_text: "N\xE3o"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15553,7 +15589,8 @@ MonoBehaviour:
     - s\xE3o baratos e fortes, o suficiente para deixar a concorr\xEAncia com inveja. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16250,7 +16287,8 @@ MonoBehaviour:
   m_text: asdasdiagsigdigasgidiugdsadsagdsgs
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17519,7 +17557,8 @@ MonoBehaviour:
   m_text: Dia 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
-  m_sharedMaterial: {fileID: 365832687516138948, guid: 8958ac5d3142d8a418aca16bf331a231, type: 2}
+  m_sharedMaterial: {fileID: 365832687516138948, guid: 8958ac5d3142d8a418aca16bf331a231,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17908,7 +17947,8 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18424,7 +18464,8 @@ MonoBehaviour:
   m_text: Menu Principal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18657,7 +18698,8 @@ MonoBehaviour:
   m_text: Engatar uma matrafona
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18832,7 +18874,8 @@ MonoBehaviour:
   m_text: "Terceira op\xE7\xE3o?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19778,7 +19821,8 @@ MonoBehaviour:
   m_text: "Tens a certeza? \nO progresso n\xE3o ser\xE1 guardado."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21363,7 +21407,8 @@ MonoBehaviour:
     pertences\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -23191,7 +23236,8 @@ MonoBehaviour:
     Portugal\xBB \xE9 em Torres Vedras!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -23327,7 +23373,8 @@ MonoBehaviour:
     paragem no Vinil \xE9 obrigat\xF3ria!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24241,7 +24288,8 @@ MonoBehaviour:
   m_text: asdaisdbaskfbjaksfbjaksbjdaipsbdasbdipasbdasbjdaksjdbkasdjb
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24703,7 +24751,8 @@ MonoBehaviour:
   m_text: "Primeira op\xE7\xE3o?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25383,7 +25432,6 @@ MonoBehaviour:
   benchMusic: {fileID: 8300000, guid: 1ecd1b7aacb52594480b32046a35f8a3, type: 3}
   casaMusic: {fileID: 8300000, guid: dd208d8552b20cb4f9c1655accf47ab8, type: 3}
   clips:
-  - {fileID: 8300000, guid: 04ef26e3f3a94994eb2e758c98549669, type: 3}
   - {fileID: 8300000, guid: 07162a002932bdb42aca7fe48fb65bf1, type: 3}
   - {fileID: 8300000, guid: 97c6924fef7b69447b35bc5101b3cf7f, type: 3}
   - {fileID: 8300000, guid: 67b06fb1292551442ab90fc56a65f334, type: 3}
@@ -25391,10 +25439,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 19f7d9007e65d4140a53abf73a70e134, type: 3}
   - {fileID: 8300000, guid: e4a2770632d442b4794633d443894214, type: 3}
   - {fileID: 8300000, guid: 573669ea0295a5741818bff58aa0db6d, type: 3}
-  - {fileID: 8300000, guid: 3c122020ecdf92f40a867bcbbd508f06, type: 3}
   clipsVoices:
-  - {fileID: 8300000, guid: 6dacc6e755b761c4c8c31acee3d951f6, type: 3}
   - {fileID: 8300000, guid: 3c122020ecdf92f40a867bcbbd508f06, type: 3}
+  - {fileID: 8300000, guid: 6ba49dee36fd1e44c9ba491565066dd9, type: 3}
+  - {fileID: 8300000, guid: 358f0f842445d074fab8f0c13c892a88, type: 3}
+  - {fileID: 8300000, guid: 80b36a1c4f2e81b4e86bffaca0ad33e9, type: 3}
+  - {fileID: 8300000, guid: f1bdadf67e0a76c48858c517a7c8facd, type: 3}
   audioSource: {fileID: 2103319044}
 --- !u!82 &2103319043
 AudioSource:
@@ -25405,7 +25455,8 @@ AudioSource:
   m_GameObject: {fileID: 2103319039}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 6377385935939403518, guid: 8be850823eedf2641b7fecd29c6987c0, type: 2}
+  OutputAudioMixerGroup: {fileID: 6377385935939403518, guid: 8be850823eedf2641b7fecd29c6987c0,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 6a100831eb7b8d244acda7209f735b9c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.3
@@ -25501,7 +25552,8 @@ AudioSource:
   m_GameObject: {fileID: 2103319039}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 6377385935939403518, guid: 8be850823eedf2641b7fecd29c6987c0, type: 2}
+  OutputAudioMixerGroup: {fileID: 6377385935939403518, guid: 8be850823eedf2641b7fecd29c6987c0,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.2
@@ -25597,7 +25649,8 @@ AudioSource:
   m_GameObject: {fileID: 2103319039}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -1067366984462752880, guid: 8be850823eedf2641b7fecd29c6987c0, type: 2}
+  OutputAudioMixerGroup: {fileID: -1067366984462752880, guid: 8be850823eedf2641b7fecd29c6987c0,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.3
@@ -26205,7 +26258,8 @@ MonoBehaviour:
     grupo! \nBoa vibe, boa m\xFAsica, bons drinks, anda da\xED!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
-  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a, type: 2}
+  m_sharedMaterial: {fileID: -7188484606353073181, guid: 54cabd6ff923e1d46820360ab227ad4a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
