@@ -27,7 +27,6 @@ public class Player : MonoBehaviour
     [SerializeField]
     private BarsUI bars;
 
-
     private void Start()
     {
         bars.SetMaxAllBars(maxAlcohol, maxFun, maxEnergy, money);

@@ -29,8 +29,7 @@ public class BarsUI : MonoBehaviour
 
     [SerializeField]
     private AnimationStatus animStatus;
-
-
+    
     public void SetMaxAllBars(int maxAlcohol, int maxFun,
                               int maxEnergy, int money)
     {
